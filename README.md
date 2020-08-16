@@ -9,7 +9,7 @@ Our resources and databanks are only of the highest quality—there will never b
 -----------
 
 ## Our Team
+<img src="https://github.com/JIceberg/the_jaxon_files/blob/master/images/jaxonfiles.jpg" width="250px" />
 
-![Image of Jackson](https://github.com/JIceberg/the_jaxon_files/blob/master/images/jaxonfiles.jpg)
 ### Jackson Isenberg
 My name is Jackson Isenberg. I am a rising freshman at the Georgia Institute of Technology and will be majoring in computer science. I am the founder and owner of The Jaxon Files and have been running the site since it was a small subdomain back in 2015. As my opening to the world of programming, this website introduced me to web development and served later as a gateway to my knack for artificial intelligence, scriptures, OOP, and operating systems. I currently serve as the head mentor for the Alpharetta High School Robotics Club after graduating as the Vice-President of the club in 2020. My hobbies and interests include programming, educating, writing, drawing, and watching anime.
