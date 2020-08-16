@@ -1,7 +1,7 @@
 #header {
     position: absolute;
     display: flex;
-    z-index: 100;
+    z-index: 50;
     height: 120px;
     font-weight: 600;
     background-color: #690c12;

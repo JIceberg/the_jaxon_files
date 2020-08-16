@@ -21,8 +21,10 @@
 
 #nav-pane {
     margin-top: 50vh;
-    margin-left: 60vw;
+    margin-left: 60%;
     padding: 25px;
+    position: fixed;
+    max-width: fit-content;
 }
 
 #nav-pane h2 {
@@ -40,7 +42,6 @@
 }
 
 #nav-pane .dropdown, #nav-pane h3 {
-    max-width: fit-content;
     color: white;
     padding: 10px;
     font: 400 16pt Arial, sans-serif;
@@ -73,74 +74,4 @@
 .dropdown #drop-content a:hover, #nav-pane h3:hover {
     padding-left: 15px;
     color: silver;
-}
-
-@media only screen and (max-width: 1100px) {
-    .side-bar {
-        left: calc(-100vw + 40px);
-    }
-    
-    #nav-pane {
-        padding: 12px;
-    }
-    
-    #nav-pane h2 {
-        font-size: 11pt;
-    }
-    
-    #nav-pane .dropdown, #nav-pane h3 {
-        font-size: 8pt;
-        padding: 5px;
-    }
-    
-    .dropdown:hover #drop-content a {
-        font-size: 6pt;
-        padding: 4px;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .side-bar {
-        left: calc(-100vw + 25px);
-    }
-    
-    #nav-pane h2 {
-        font-size: 6pt;
-    }
-    
-    #nav-pane {
-        padding: 8px;
-    }
-    
-    #nav-pane .dropdown, #nav-pane h3 {
-        font-size: 5pt;
-        padding: 3px;
-    }
-    
-    .dropdown:hover #drop-content a {
-        font-size: 3pt;
-        padding: 2px;
-    }
-}
-
-@media only screen and (min-width: 2200px) {
-    .side-bar {
-        left: calc(-100vw + 75px);
-    }
-    
-    #nav-pane {
-        padding: 50px;
-    }
-    
-    #nav-pane h2 {
-        font-size: 44pt;
-    }
-    
-    #nav-pane .dropdown, #nav-pane h3 {
-        font-size: 40pt;
-    }
-    
-    .dropdown:hover #drop-content a {
-        font-size: 36pt;
-    }
 }
