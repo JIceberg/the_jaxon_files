@@ -1,0 +1,98 @@
+html {
+    background: url("images/bettermap.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #333;
+    overflow: hidden;
+}
+
+body {
+    user-select: none;
+}
+
+/* A point on the map */
+point {
+    font-size: 1.5em;
+    color: red;
+    cursor: pointer;
+    transition: 0.2s steps(20);
+}
+
+point:hover {
+    color: white;
+    font-size: 1.6em;
+}
+
+/* don't worry about it */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+/* The historical event */
+.point-box {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    padding-top: 12.5vh;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.box-content {
+    background-color: #eee;
+    margin: auto;
+    min-height: 50vh;
+    float: right;
+    margin-right: 5vw;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+#point-close {
+    color: black;
+    font-size: 1.5em;
+    cursor: pointer;
+    float: right;
+    transition: 0.2s steps(20);
+    font-weight: bold;
+}
+
+#point-close:hover {
+    color: red;
+}
+
+#point-title {
+    font-size: 2em;
+    padding: 15px;
+    font-family: Segoe UI;
+}
+
+#point-img {
+    position: absolute;
+}
+
+#point-img img {
+    margin-left: 20px;
+    max-width: 300px;
+    border: 3px solid black;
+    max-height: 40vh;
+}
+
+#point-text {
+    margin-left: calc(50% + 5px);
+    font-size: 13pt;
+    overflow: auto;
+    max-height: 55vh;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | ELA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      #important {
+        cursor: pointer;
+        color: red;
+      }
+      
+      #important:active {
+        color: black;
+      }
+    </style>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Vocabulary</p>
+      <p class="header">List #8</p>
+      <table id="tlist">
+        <tr>
+          <th>Word</th>
+          <th>Part of Speech</th>
+          <th>Definition</th>
+        </tr>
+        <tr>
+          <td id="important">beget</td>
+          <td>verb</td>
+          <td>to produce; to make happen</td>
+        </tr>
+        <tr>
+          <td id="important">educe</td>
+          <td>verb</td>
+          <td>to draw or bring out</td>
+        </tr>
+        <tr>
+          <td id="important">glean</td>
+          <td>verb</td>
+          <td>to collect bit by bit; to gather with patient labor</td>
+        </tr>
+        <tr>
+          <td>chafe</td>
+          <td>verb</td>
+          <td>to wear down or irritate, often through rubbing or friction</td>
+        </tr>
+        <tr>
+          <td id="important">effrontery</td>
+          <td>noun</td>
+          <td>shameless boldness</td>
+        </tr>
+        <tr>
+          <td>imbibe</td>
+          <td>verb</td>
+          <td>to drink (especially alcohol)</td>
+        </tr>
+        <tr>
+          <td>feign</td>
+          <td>verb</td>
+          <td>to pretend</td>
+        </tr>
+        <tr>
+          <td>desist</td>
+          <td>verb</td>
+          <td>to stop; to discontinue</td>
+        </tr>
+        <tr>
+          <td>allude</td>
+          <td>verb</td>
+          <td>to hint at; to refer to indirectly</td>
+        </tr>
+        <tr>
+          <td>elite</td>
+          <td>noun</td>
+          <td>the choice members or best of a group</td>
+        </tr>
+      </table>
+      <p class="bottom"> </p>
+      <!----------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+  </html>

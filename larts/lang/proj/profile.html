@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/gg-bg-2.jpg');">
+    <head>
+        <title>The Great Gatsby</title>
+        <link rel="stylesheet" type="text/css" href="gatsby.css">
+        <script>
+            var isOpen = false;
+            var itemPage = 0;
+            
+            function openNav() {
+                var nav = document.getElementById('nav');
+                var menu = document.getElementById('menu');
+                var main = document.getElementById('main');
+                
+                if (isOpen == false) {
+                    var width = 250;
+                    nav.style.width = width + "px";
+                    menu.style.marginLeft = width + "px";
+                    main.style.paddingLeft = width + "px";
+                    isOpen = true;
+                } else {
+                    var width = 0;
+                    nav.style.width = width;
+                    menu.style.marginLeft = width;
+                    main.style.paddingLeft = width;
+                    isOpen = false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="menu" onclick="openNav();">
+            <span title="Menu">&#8285;</span>
+        </div>
+        <div id="nav">
+            <a class="title">Menu</a>
+            <a class="link" href="/larts/lang/" onclick="alert('Your progress might not have saved.');">
+                <img src="/images/delete2">
+                Exit
+            </a>
+            <a href="gatsby.html" class="sect">
+                <img src="images/gold.png">
+                Shop
+            </a>
+            <a href="settings.html" class="sect">
+                <img src="/images/settings.png">
+                Settings
+            </a>
+            <a href="help.html" class="sect">
+                <img src="/images/help.png">
+                Help
+            </a>
+        </div>
+        <div id="main">
+            <div class="sub-main">
+                <div class="title">Profile</div>
+                <br />
+                <img id="pfp" src="/images/default-user.png">
+                <div id="main-text">
+                    <h2 style="color: silver; font-style: italic; margin-bottom: 0;">Player #32268</h2>
+                    <h4 style="margin-top: 0; margin-bottom: 0;">Level: 24</h4>
+                    <h4 style="margin-top: 0; margin-bottom: 0; color: red;">1,000 / 24,000</h4>
+                    <h4 id="cost" style="margin-top: 0; margin-bottom: 0; cursor: pointer;">
+                        <span style="color: gold;">18,149</span> <img src="images/gold.png">
+                        &emsp;
+                        <span style="color: purple;">13</span> <img src="images/gem.png">
+                    </h4>
+                    <br />
+                    <i>
+                        You are the narrator of this story.
+                        Your job is to seek the truth in every possible way without falling victim
+                        to the tyrannies of the upper class.
+                        Look forward to the future, but do not let yourself be burdened by the past.
+                        Let no one change your mind as to how the world may work and seek the virtue
+                        in every last person until you cannot bear tolerance any further.
+                    </i>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

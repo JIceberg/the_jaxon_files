@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jaxon | ELA</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script> 
+$(function(){
+  $("#fixed").load("/header.html");
+  $("#footer").load("/footer.html");
+});
+</script>
+<style>
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+table#tlist tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#tlist tr:nth-child(odd) {
+   background-color:#fff;
+}
+
+table#tlist th {
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+}
+
+#important {
+    cursor: pointer;
+    color: red;
+}
+
+#important:active {
+    color: black;
+}
+</style>
+<div id="fixed"></div>
+<div id="main">
+<!---------Begin Content---------->
+<p class="subtitle">Vocabulary</p>
+<p class="header">List #11</p>
+<table id="tlist">
+  <tr>
+    <th>Word</th>
+    <th>Part of Speech</th>
+    <th>Definition</th>
+  </tr>
+  <tr>
+    <td id="important">flagrant</td>
+    <td>adjective</td>
+    <td>glaringly bad; outrageous</td>
+  </tr>
+  <tr>
+    <td>patrician</td>
+    <td>noun</td>
+    <td>an aristocrat</td>
+  </tr>
+  <tr>
+    <td>emissary</td>
+    <td>noun</td>
+    <td>one sent on a special mission to represent others</td>
+  </tr>
+  <tr>
+    <td>kindred</td>
+    <td>adjective</td>
+    <td>having similar origin, nature, or character</td>
+  </tr>
+  <tr>
+    <td id="important">fracas</td>
+    <td>noun</td>
+    <td>a loud quarrel or fight</td>
+  </tr>
+  <tr>
+    <td>lacerate</td>
+    <td>verb</td>
+    <td>to tear (flesh) jaggedly</td>
+  </tr>
+  <tr>
+    <td>futile</td>
+    <td>adjective</td>
+    <td>useless; pointless</td>
+  </tr>
+  <tr>
+    <td id="important">immaculate</td>
+    <td>adjective</td>
+    <td>spotless; perfect</td>
+  </tr>
+  <tr>
+    <td id="important">gait</td>
+    <td>noun</td>
+    <td>manner of walking</td>
+  </tr>
+  <tr>
+    <td id="important">carp</td>
+    <td>verb</td>
+    <td>to complain or find fault in a petty or nagging way</td>
+  </tr>
+  <tr>
+    <td>query</td>
+    <td>verb</td>
+    <td>to ask; to inquire</td>
+  </tr>
+  <tr>
+    <td>queue</td>
+    <td>noun</td>
+    <td>a line of people or vehicles</td>
+  </tr>
+  <tr>
+    <td>nefarious</td>
+    <td>adjective</td>
+    <td>very wicked</td>
+  </tr>
+  <tr>
+    <td>genesis</td>
+    <td>noun</td>
+    <td>beginning; origin</td>
+  </tr>
+  <tr>
+    <td>facade</td>
+    <td>noun</td>
+    <td>a deceptive outward appearance; a misrepresentation</td>
+  </tr>
+</table>
+<p class="bottom"> </p>
+<!----------End Content---------->
+<div id="footer"></div>
+</div>
+</body>
+</html>

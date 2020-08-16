@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | ELA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      #important {
+        cursor: pointer;
+        color: red;
+      }
+      
+      #important:active {
+        color: black;
+      }
+    </style>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Vocabulary</p>
+      <p class="header">List #9</p>
+      <table id="tlist">
+        <tr>
+          <th>Word</th>
+          <th>Part of Speech</th>
+          <th>Definition</th>
+        </tr>
+        <tr>
+          <td id="important">bilk</td>
+          <td>verb</td>
+          <td>to cheat or swindle; to thwart</td>
+        </tr>
+        <tr>
+          <td id="important">homily</td>
+          <td>noun</td>
+          <td>a sermon</td>
+        </tr>
+        <tr>
+          <td>demise</td>
+          <td>noun</td>
+          <td>death; a ceasing to exist</td>
+        </tr>
+        <tr>
+          <td>emit</td>
+          <td>verb</td>
+          <td>to send out; to give forth, as in sound or light</td>
+        </tr>
+        <tr>
+          <td id="important">decadence</td>
+          <td>noun</td>
+          <td>moral deterioration</td>
+        </tr>
+        <tr>
+          <td id="important">aghast</td>
+          <td>adjective</td>
+          <td>feeling great dismay or horror</td>
+        </tr>
+        <tr>
+          <td>granary</td>
+          <td>noun</td>
+          <td>a storehouse for grain</td>
+        </tr>
+        <tr>
+          <td id="important">choleric</td>
+          <td>adjective</td>
+          <td>easily angered</td>
+        </tr>
+        <tr>
+          <td>impede</td>
+          <td>verb</td>
+          <td>to hinder; to obstruct</td>
+        </tr>
+        <tr>
+          <td id="important">qualm</td>
+          <td>noun</td>
+          <td>a feeling of uneasiness</td>
+        </tr>
+      </table>
+      <p class="bottom"> </p>
+      <!----------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+  </html>

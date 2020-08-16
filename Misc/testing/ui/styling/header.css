@@ -1,0 +1,103 @@
+#header {
+    position: absolute;
+    display: flex;
+    z-index: 100;
+    height: 120px;
+    font-weight: 600;
+    background-color: #690c12;
+    font-family: Segoe UI;
+    color: #fff;
+    min-width: 300px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-left: 2em;
+}
+
+#bg-fill {
+    z-index: -10;
+}
+
+#bg-fill:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.3;
+    height: 100%;
+    background: url("../images/space-dust.jpg");
+    background-size: cover;
+    background-position: right;
+}
+    
+#header .title {
+    display: inline-block;
+    height: 100%;
+    margin: 0;
+    font-style: italic;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+    line-height: calc(120px - 0.2em);
+    min-width: 300px;
+    font-size: 2.4em;
+}
+
+#header h3.slogan {
+    display: inline-block;
+    height: 100%;
+    margin: 0 auto;
+    width: auto;
+    line-height: 120px;
+    text-shadow: 1px 1px black;
+    margin-left: calc(25% - 75px);
+    text-align: center;
+}
+
+#header h3.slogan:after {
+    content: "";
+    margin: 0;
+}
+
+@media only screen and (min-width: 1100px) {
+    #header h3.slogan:after {
+        content: "When School Just Isn't Enough";
+    }
+}
+
+#header ul.media {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    margin: 0 auto;
+    margin-right: 5.5vw;
+    float: right;
+    overflow: hidden;
+    cursor: pointer;
+    height: 100%;
+}
+
+#header ul.media li {
+    height: 100%;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#header ul.media li img {
+    max-width: 40px;
+    cursor: pointer;
+    margin-top: calc(60px - 20px);
+}
+
+@media only screen and (max-width: 700px) {
+    ul.media li img {
+        max-width: 0px;
+        display: none;
+        margin: 0;
+    }
+}

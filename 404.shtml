@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Not Found</title>
+        <style>
+            * {
+                background-color: #eee;
+                text-align: center;
+            }
+            
+            body {
+                padding: 25px;
+            }
+            
+            #warning {
+                border: 4px solid black;
+                border-radius: 50%;
+                width: 150px;
+                cursor: pointer;
+                box-shadow: 0 0 5px black;
+            }
+            
+            #warning:active {
+                box-shadow: 0 0 5px black inset;
+            }
+            
+            .title {
+                font: 200 3.6em Segoe UI, sans-serif;
+                margin-bottom: 10px;
+                color: red;
+            }
+            
+            .content {
+                margin: auto;
+                width: calc(100vw - 650px);
+            }
+            
+            .content #body {
+                font: 300 16pt Calibri, sans-serif;
+                line-height: 25pt;
+                padding-top: 15px;
+            }
+            
+            .content #sub-head {
+                font: 500 1.8em Segoe UI, Arial, sans-serif;
+            }
+            
+            hr#br-ln {
+                width: calc(100vw - 500px);
+            }
+            
+            #body a {
+                color: blue;
+                text-decoration: none;
+            }
+            
+            #body a:hover {
+                text-decoration: underline;
+            }
+            
+            #body a:visited {
+                color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <!------ Click Image to Return to Previous Page ------->
+        <a href="javascript:history.go(-1)">
+            <img id="warning" src="/images/warning-2.png">
+        </a>
+        
+        <h1 class="title">Error 404</h1>
+        <hr id="br-ln" />
+        <div class="content">
+            <h2 id="sub-head">Missing Page</h2>
+            <div id="body">
+                Looks like the page you were looking for is either missing or
+                does not exist.
+                You can either <a href="/contact.html">contact</a> us about it or
+                return to the <a href="/">home</a> page.
+                Sorry for the trouble!
+            </div>
+        </div>
+    </body>
+</html>

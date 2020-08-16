@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jaxon | ELA</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script> 
+$(function(){
+  $("#fixed").load("/header.html");
+  $("#footer").load("/footer.html");
+});
+</script>
+<style>
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+table#tlist tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#tlist tr:nth-child(odd) {
+   background-color:#fff;
+}
+
+table#tlist th {
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+}
+
+#important {
+    cursor: pointer;
+    color: red;
+}
+
+#important:active {
+    color: black;
+}
+</style>
+<div id="fixed"></div>
+<div id="main">
+<!---------Begin Content---------->
+<p class="subtitle">Vocabulary</p>
+<p class="header">List #10</p>
+<table id="tlist">
+  <tr>
+    <th>Word</th>
+    <th>Part of Speech</th>
+    <th>Definition</th>
+  </tr>
+  <tr>
+    <td>fallible</td>
+    <td>adjective</td>
+    <td>capable of error</td>
+  </tr>
+  <tr>
+    <td>blatant</td>
+    <td>adjective</td>
+    <td>obvious; too conspicuous</td>
+  </tr>
+  <tr>
+    <td>dawdle</td>
+    <td>verb</td>
+    <td>to waste time</td>
+  </tr>
+  <tr>
+    <td>affiliate</td>
+    <td>noun</td>
+    <td>an associate; a partner</td>
+  </tr>
+  <tr>
+    <td id="important">fawn</td>
+    <td>verb</td>
+    <td>to act slavishly submissive</td>
+  </tr>
+  <tr>
+    <td id="important">calumny</td>
+    <td>noun</td>
+    <td>a false and malicious accusation</td>
+  </tr>
+  <tr>
+    <td>berate</td>
+    <td>verb</td>
+    <td>to scold or rebuke severely and at length</td>
+  </tr>
+  <tr>
+    <td>minion</td>
+    <td>noun</td>
+    <td>a fawning, servile follower</td>
+  </tr>
+  <tr>
+    <td>desolate</td>
+    <td>adjective</td>
+    <td>lonely; forlorn; uninhabited; barren</td>
+  </tr>
+  <tr>
+    <td>bane</td>
+    <td>noun</td>
+    <td>the cause of ruin, harm, distress, or death</td>
+  </tr>
+  <tr>
+    <td>pacify</td>
+    <td>verb</td>
+    <td>to calm down</td>
+  </tr>
+  <tr>
+    <td id="important">garble</td>
+    <td>verb</td>
+    <td>to mix up or distort</td>
+  </tr>
+  <tr>
+    <td id="important">prevaricate</td>
+    <td>verb</td>
+    <td>to lie</td>
+  </tr>
+  <tr>
+    <td id="important">filch</td>
+    <td>verb</td>
+    <td>to steal</td>
+  </tr>
+  <tr>
+    <td id="important">neophyte</td>
+    <td>noun</td>
+    <td>a beginner</td>
+  </tr>
+</table>
+<p class="bottom"> </p>
+<!----------End Content---------->
+<div id="footer"></div>
+</div>
+</body>
+</html>

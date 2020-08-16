@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<span id="second-header">Power Series</span>
+<br><br />
+<!-- General -->
+A series that is defined by a function is a <span id="hlight-b">power series</span>.
+For example, take the following series:
+<br><br />
+&emsp; &emsp;
+<sup>&nbsp;</sup>
+<span class="summation">
+    <i>g</i>(<i>x</i>) =
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = 1</sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express">
+        <i><sup>x</sup></i>&frasl;<sub><i>n</i></sub>
+    </span>
+</span>
+<br><br />
+In this case, <i>g</i>(<i>x</i>) will have a certain interval of convergence,
+or a certain set of <i>x</i>-values that will allow for the series to converge.
+For most power series, the best method is the ratio test to find this interval of convergence.
+<br><br />
+<!-- Maclaurin/Taylor Series -->
+<span id="third-header">Taylor Polynomials</span>
+<br><br />
+A <span id="hlight-g">Taylor polynomial</span> is a polynomial that represents some function.
+For example, you can represent the function e<sup><i>x</i></sup> with the following
+power series:
+<br><br />
+&emsp; &emsp;
+<sup>&nbsp;</sup>
+<span class="summation">
+    e<sup><i>x</i></sup> =
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = 0</sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express">
+        <i><sup>x</sup></i>&frasl;<sub><i>n</i>!</sub>
+    </span>
+</span>
+<br><br />
+The <i>n</i>-th term in a Taylor polynomial for the function <i>f</i> (<i>x</i>) should follow this structure:
+<sup><i>f</i> <sup>(<i>n</i>)</sup>(<i>c</i>)</sup> &frasl;<sub><i>n</i>!</sub> &times; (<i>x</i> &minus; <i>c</i>)<sup><i>n</i></sup>.
+Breaking down this structure, we know:
+<ul style="margin-top: 0px; margin-bottom: 0px;">
+    <li>
+        <i>f</i> <sup>(<i>n</i>)</sup>(<i>c</i>),
+        which is the value of the <i>n</i>-th derivative
+        of <i>f</i> (<i>x</i>) at <i>x</i> = <i>c</i>
+    </li>
+    <li>
+        The value <i>c</i>, which is
+        the center for the function that we will use to
+        create our Taylor polynomial; when <i>c</i> = 0,
+        it is known as a Maclaurin polynomial
+    </li>
+</ul>
+<br />
+How can we find these values? The best way is to make a table with the following format:
+<table class="euler">
+    <tr>
+        <th id="step"><i>n</i></th>
+        <th><i>f</i> <sup>(<i>n</i>)</sup>(<i>x</i>)</th>
+        <th><i>f</i> <sup>(<i>n</i>)</sup>(<i>c</i>)</th>
+        <th><sup><i>f</i> <sup>(<i>n</i>)</sup>(<i>c</i>)</sup> &frasl;<sub><i>n</i>!</sub></th>
+    </tr>
+    <tr>
+        <td id="step">0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td id="step">1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td id="step">&vellip;</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<br />
+Say we are given the function <i>f</i>(<i>x</i>) = <i>x<sup>x</sup></i>. Find the
+third degree Taylor polynomial for the function centered at <i>x</i> = 1:
+<table class="euler">
+    <tr>
+        <th id="step"><i>n</i></th>
+        <th><i>f</i> <sup>(<i>n</i>)</sup>(<i>x</i>)</th>
+        <th><i>f</i> <sup>(<i>n</i>)</sup>(1)</th>
+        <th><sup><i>f</i> <sup>(<i>n</i>)</sup>(1)</sup> &frasl;<sub><i>n</i>!</sub></th>
+    </tr>
+    <tr>
+        <td id="step">0</td>
+        <td><i>x<sup>x</sup></i></td>
+        <td>1</td>
+        <td><sup>1</sup>&frasl;<sub>0!</sub> = 1</td>
+    </tr>
+    <tr>
+        <td id="step">1</td>
+        <td><i>x<sup>x</sup></i>(ln <i>x</i> + 1)</td>
+        <td>1</td>
+        <td><sup>1</sup>&frasl;<sub>1!</sub> = 1</td>
+    </tr>
+    <tr>
+        <td id="step">2</td>
+        <td><i>x<sup>x</sup></i>(ln <i>x</i> + 1)<sup>2</sup> + <i>x</i><sup> <i>x</i>&minus;1</sup></td>
+        <td>2</td>
+        <td><sup>2</sup>&frasl;<sub>2!</sub> = 1</td>
+    </tr>
+    <tr>
+        <td id="step">3</td>
+        <td><i>x</i><sup> <i>x</i>&minus;2</sup>(<i>x</i>(ln <i>x</i> + 1)(<i>x</i>(ln <i>x</i> + 1)<sup>2</sup> + 3) &minus; 1)</td>
+        <td>3</td>
+        <td><sup>3</sup>&frasl;<sub>3!</sub> = &frac12;</td>
+    </tr>
+</table>
+<br />
+Therfore, our third degree Taylor polynomial <i>P</i><sub>3</sub>(<i>x</i>) is equivalent to
+1 + (<i>x</i> &minus; 1) + (<i>x</i> &minus; 1)<sup>2</sup> + &frac12;(<i>x</i> &minus; 1)<sup>3</sup>

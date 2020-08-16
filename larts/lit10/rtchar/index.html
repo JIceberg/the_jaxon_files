@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | ELA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      table {
+        width: 100%;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+      
+      table#tlist tr:nth-child(even) {
+        background-color: #eee;
+      }
+      
+      table#tlist tr:nth-child(odd) {
+        background-color:#fff;
+      }
+      
+      table#tlist th {
+        background-color: black;
+        color: white;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Roots</p>
+      <p class="header">List #1</p>
+      <table id="tlist">
+        <tr>
+          <th>Root</th>
+          <th>Meaning</th>
+          <th>Origin</th>
+          <th>Example(s)</th>
+        </tr>
+        <tr>
+          <td>-aer-</td>
+          <td>air / atmosphere</td>
+          <td>Greek</td>
+          <td>aerisol, anaerobic, aerate</td>
+        </tr>
+        <tr>
+          <td>-ambi- | -amphi-</td>
+          <td>both</td>
+          <td>Greek</td>
+          <td>ambidextrous, amphitheater, ambiguous</td>
+        </tr>
+        <tr>
+          <td>-anim-</td>
+          <td>spirit / soul / life</td>
+          <td>Latin</td>
+          <td>animated, inanimate, magnanimous</td>
+        </tr>
+        <tr>
+          <td>-aqua- | -hydra-</td>
+          <td>water</td>
+          <td>Latin (aqua) | Greek (hydra)</td>
+          <td>aquatic, hydraulic, hydrant</td>
+        </tr>
+        <tr>
+          <td>-arch-</td>
+          <td>to rule / ruler</td>
+          <td>Latin</td>
+          <td>monarchy, hierarchy, archetype</td>
+        </tr>
+        <tr>
+          <td>-arm-</td>
+          <td>army / weapon</td>
+          <td>Latin</td>
+          <td>armadillo, armada, disarm</td>
+        </tr>
+        <tr>
+          <td>-astr-</td>
+          <td>star</td>
+          <td>Greek</td>
+          <td>asterisk, disaster, astronomical</td>
+        </tr>
+        <tr>
+          <td>-audi-</td>
+          <td>to hear</td>
+          <td>Latin</td>
+          <td>audition, audience</td>
+        </tr>
+        <tr>
+          <td>-bene/bon- | -mal-</td>
+          <td>good / well (bene/bon) | bad / wretched (mal)</td>
+          <td>Latin</td>
+          <td>benefactior, bonus, malfunction</td>
+        </tr>
+        <tr>
+          <td>-bio-</td>
+          <td>life</td>
+          <td>Greek</td>
+          <td>biohazard, biodegradable</td>
+        </tr>
+      </table>
+      <br><hr /><br />
+      <a href="/larts/lit10/">Previous List</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/larts/lit10/rtchar/2.html">Next List</a>
+      <p class="bottom"> </p>
+      <!----------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

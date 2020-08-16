@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | Physics</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/math/cal/style.css">
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+      $(function(){
+        $("#cpt-1").load("sect/cpt_1.html");
+        $("#2d-kin").load("sect/2d_kin.html");
+        $("#force").load("sect/force.html");
+        $("#wep").load("sect/wep.html");
+        $("#ucm").load("sect/ucm.html");
+        $("#moment").load("sect/moment.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Physics</p>
+      <p class="header">Kinematics</p>
+      <p class="body" style="padding-bottom: 0px;">
+        <span id="second-header">Vocabulary</span>
+        <br><br />
+        <span id="hlight-b">Distance</span> is a scalar magnitude of the movement from one position to another
+        <br><br />
+        <span id="hlight-y">Displacement</span> is a vector that measures the independent magnitude and direction of a movement from one
+        position to another [ does not care about the path taken ]
+        <br><br />
+        <span id="hlight-g">Position</span> is the displacement vector given as rectangular coordinates
+        <br><br />
+        <span id="hlight-b">Instantaneous Speed</span> is the scalar rate of change in distance at some specific point in time
+        <br><br />
+        <span id="hlight-b">Average Speed</span>, is the total distance divided by the total time (ignores direction)
+        <br><br />
+        <span id="hlight-y">Velocity</span> is displacement over change in time; points in the same direction as the displacement vector
+        <br><br />
+        <span id="hlight-b">Acceleration</span> is change in velocity over change in time
+        <br><br />
+        <br><br />
+        <span id="second-header">One-Directional Motion</span>
+        <br><br />
+        Understand the following kinematic equations:
+        <br>
+        &emsp; 1. &nbsp; <span class="form"><i>v</i><sub>f</sub> = <i>v</i><sub>0</sub> + <i>at</i></span>
+        <br />
+        &emsp; &emsp;
+        <span style="font-size: 10pt;">final velocity is equal to the sum of the initial velocity and acceleration times time</span>
+        <br>
+        &emsp; 2. &nbsp; <span class="form">&Delta;<i>x</i> = &frac12;(<i>v</i><sub>f</sub> + <i>v</i><sub>0</sub>)&times;<i>t</i></span>
+        <br />
+        &emsp; &emsp;
+        <span style="font-size: 10pt;">displacement is equal to the average velocity (initial plus final over two) times time</span>
+        <br>
+        &emsp; 3. &nbsp; <span class="form">&Delta;<i>x</i> = <i>v</i><sub>0</sub><i>t</i> + &frac12;<i>at</i>&sup2;</span>
+        <br />
+        &emsp; &emsp;
+        <span style="font-size: 10pt;">displacement is equal to the sum of the initial velocity times time and half the acceleration times time squared</span>
+        <br>
+        &emsp; 4. &nbsp; <span class="form">&Delta;<i>x</i> = <i>v</i><sub>f</sub> <i>t</i> &minus; &frac12;<i>at</i>&sup2;</span>
+        <br />
+        &emsp; &emsp;
+        <span style="font-size: 10pt;">displacement is equal to the difference between the final velocity times time and half the acceleration times time squared</span>
+        <br>
+        &emsp; 5. &nbsp; <span class="form"><i>v</i><sub>f</sub> &sup2; &minus; <i>v</i><sub>0</sub>&sup2; = 2<i>a</i>&Delta;<i>x</i></span>
+        <br />
+        &emsp; &emsp;
+        <span style="font-size: 10pt;">
+          the difference beween the final velocity squared and the initial velocity squared
+          is equal to double the acceleration times the displacement
+        </span>
+      </p>
+      
+      <p class="body" style="padding-bottom: 5px;" id="cpt-1">
+      </p>
+      
+      <p class="body">
+        <span id="third-header">1D Conceptualization</span>
+        <br><br />
+        <img id="expand" src="images/xt-2.png">
+        &emsp; &nbsp; &emsp;
+        <img id="expand" src="images/xt-1.png">
+        <br />
+        In the above images, we have graphed the displacement of an object over time.
+        The slope of each graph is <sup>&Delta;<i>x</i></sup>&frasl;<sub><i>t</i></sub>
+        ... wait, isn't the second kinematic
+        <span class="form">&Delta;<i>x</i> = &frac12;(<i>v</i><sub>f</sub> + <i>v</i><sub>0</sub>)&times;<i>t</i></span>?
+        Wouldn't that mean
+        <span class="form"><sup>&Delta;<i>x</i></sup>&frasl;<sub><i>t</i></sub> = &frac12;(<i>v</i><sub>f</sub> + <i>v</i><sub>0</sub>)</span>?
+        Yes, the slope of the position-time graph is in fact the <i>average velocity</i> of the object. A single point on the line represents the
+        <i>instantaneous velocity</i> at that point in time.
+        <br><br />
+        The difference between these two graphs is their derivatives (velocity-time) and what that means for the object.
+        Say the first position-time graph has been defined as <span class="form"><i>x</i> = &frac23;&times;<i>t</i></span>.
+        The velocity-time graph of this object would be defined as the <b>derivative</b> (<i>see</i> <a href="/math/cal/">Calculus</a>)
+        of the position-time function:
+        <span class="form"><sup>d<i>x</i></sup>&frasl;<sub>d<i>t</i></sub> = <i>v</i> = &frac23;</span>.
+        There is no <i>t</i> variable in this equation, so the
+        velocity is not dependent on the time; thus the velocity is <span id="hlight-b">constant</span> and does not change
+        ( <i>v</i><sub>0</sub> = <i>v</i><sub>f</sub> ).
+        <br />
+        If the second position-time graph is defined as <span class="form"><i>x</i> = &frac14;&times;<i>t</i>&sup2;</span>,
+        then <span class="form"><sup>d<i>x</i></sup>&frasl;<sub>d<i>t</i></sub> = <i>v</i> = &frac12;&times;<i>t</i></span>.
+        Since the velocity function does contain <i>t</i>, the velocity is dependent on the time and thus is changing (at a constant rate).
+        <br><br />
+        This same trick can be applied to all of the "-time" functions.
+      </p>
+      <p class="body" id="2d-kin"></p>
+      
+      <p class="header">Forces and Dynamics</p>
+      <p class="body" id="force"></p>
+      <p class="body" id="wep"></p>
+      <p class="body" id="ucm"></p>
+      <p class="body" id="moment"></p>
+      
+      <p class="body">
+          Here's my AP exam review video:
+          <br><br />
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/J4qBNHKwxbo" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </p>
+      
+      <!--------End Content--------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

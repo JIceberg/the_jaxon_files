@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jaxon | CoachTube</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script> 
+$(function(){
+  $("#fixed").load("/header.html");
+  $("#footer").load("/footer.html");
+});
+</script>
+<style>
+.vid img {
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 12vw;
+    min-width: 24vw;
+}
+
+.vid {
+    height: 12vw;
+    width: 24vw;
+    cursor: pointer;
+    border: 4px outset #eee;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.vid:hover {
+    border-style: inset;
+}
+</style>
+</head>
+<div id="fixed"></div>
+<div id="main">
+<!------Begin Content------->
+<p class="subtitle">CoachTube</p>
+<p class="header">Videos</p>
+<div class="vid" style="float: left;">
+  <img src="/images/dasinger-1.png" onclick="window.location.href='001.html';" title="Coach Dasinger Review for Unit 1 Test">
+</div>
+<div class="vid" style="float: left;">
+  <img src="/images/dasinger-2.png" onclick="window.location.href='002.html';" title="Review Part 2">
+</div>
+<div class="vid" style="float: left;">
+  <img src="/images/dasinger-3.png" onclick="window.location.href='003.html';" title="Federalism Review">
+</div>
+<div class="vid" style="float: left;">
+  <img src="/images/dasinger-4.png" onclick="window.location.href='004.html';" title="Angry Civil Rights and Liberties Review">
+</div>
+<div class="vid" style="float: left;">
+  <img src="/images/dasinger-5.png" onclick="window.location.href='005.html';" title="SORRY!!! Crazy Day...NO Pork">
+</div>
+<div class="vid" style="float: left;">
+  <img src="/images/dasinger-6.png" onclick="window.location.href='006.html';" title="Public Ideology">
+</div>
+<div class="vid" style="float: left;">
+  <img src="/images/dasinger-7.png" onclick="window.location.href='007.html';" title="Interest Groups and Mass Media">
+</div>
+<div class="vid" style="float: left;">
+  <img src="/images/dasinger-8.png" onclick="window.location.href='008.html';" title="Final Exam Review for 2016 Fall Semester">
+</div>
+<div class="vid" style="float:left;">
+  <img src="/images/dasinger-9 (1).png" onclick="window.location.href='009.html';" title="Congress">
+</div>
+<br style="clear: left;" />
+<p class="bottom"> </p>
+<!-------End Content-------->
+<div id="footer"></div>
+</div>
+</body>
+</html>

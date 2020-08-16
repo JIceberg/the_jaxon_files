@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | Calculus</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+      $(function(){
+        // limits
+        $("#lim-1").load("sect/lim_1.html");
+        $("#lim-2").load("sect/lim_2.html");
+
+        // differentiation
+        $("#diff-1").load("sect/diff_1.html");
+        $("#diff-2").load("sect/diff_2.html");
+        $("#diff-3").load("sect/diff_3.html");
+        
+        // integration
+        $("#int-1").load("sect/int_1.html");
+        $("#int-2").load("sect/int_2.html");
+        $("#int-3").load("sect/int_3.html");
+        
+        // differential equations
+        $("#oth-1").load("sect/oth_1.html");
+        
+        // series
+        $("#oth-2").load("sect/oth_2.html");
+        $("#pow-ser").load("sect/pow_ser.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Calculus</p>
+      
+      <!--------- LIMITS --------->
+      
+      <p class="header">Limits and Continuity</p>
+      <p class="body" id="lim-1"></p>
+      <p class="body" id="lim-2"></p>
+      
+      <div class="graph-img" id="one" onclick="cover('one')">
+        <img src="images/y = x + 2.png">
+      </div>
+      <div class="graph-img" id="two" onclick="cover('two')">
+        <img src="images/func2.png">
+      </div>
+      <div class="graph-img" id="three" onclick="cover('three')">
+        <img src="images/func3.png">
+      </div>
+      <div class="graph-img" id="four" onclick="cover('four')">
+        <img src="images/func4.png">
+      </div>
+      <div class="graph-img" id="five" onclick="cover('five')">
+        <img src="images/func5.png">
+      </div>
+      <div class="graph-img" id="six" onclick="cover('six')">
+        <img src="images/func6.png">
+      </div>
+      <div class="graph-img" id="seven" onclick="cover('seven')">
+        <img src="images/func7.png">
+      </div>
+      <div class="graph-img" id="eight" onclick="cover('eight')">
+        <img src="images/func8.png">
+      </div>
+      <div class="graph-img" id="nine" onclick="cover('nine')">
+        <img src="images/func9.png">
+      </div>
+      <div class="graph-img" id="ten" onclick="cover('ten')">
+        <img src="images/func10.png">
+      </div>
+      <div class="graph-img" id="eleven" onclick="cover('eleven')">
+        <img src="images/func11.png">
+      </div>
+      
+      <!------- DIFFERENTIATION ---------->
+      
+      <p class="header">Differentiation</p>
+      <p class="body" id="diff-1"></p>
+      <p class="body" id="diff-2"></p>
+      <p class="body" id="diff-3"></p>
+      
+      <div class="graph-img" id="twelve" onclick="cover('twelve')">
+        <img src="images/func12.png">
+      </div>
+      <div class="graph-img" id="deriv1" onclick="cover('deriv1')">
+        <img src="images/deriv1.png">
+      </div>
+      <div class="graph-img" id="deriv2" onclick="cover('deriv2')">
+        <img src="images/deriv2.png">
+      </div>
+      <div class="graph-img" id="thirteen" onclick="cover('thirteen')">
+        <img src="images/func13.png">
+      </div>
+      
+      <!------- INTEGRATION ---------->
+      
+      <p class="header">Integration</p>
+      <p class="body" id="int-1"></p>
+      <p class="body" id="int-2"></p>
+      <p class="body" id="int-3"></p>
+      
+      <div class="graph-img" id="int1" onclick="cover('int1')">
+        <img src="images/int1.png">
+      </div>
+      <div class="graph-img" id="int2" onclick="cover('int2')">
+        <img src="images/int2.png">
+      </div>
+      
+      <!------- OTHER UNITS ---------->
+      
+      <p class="header">Differential Equations</p>
+      <p class="body" id="oth-1"></p>
+     
+      <p class="header">Series</p>
+      <p class="body" id="oth-2"></p>
+      <p class="body" id="pow-ser"></p>
+
+      <div class="graph-img" id="de1" onclick="cover('de1')">
+          <img src="images/de1.png">
+      </div>
+      <div class="graph-img" id="ser1" onclick="cover('ser1')">
+          <img src="images/ser1.png">
+      </div>
+      <div class="graph-img" id="ser2" onclick="cover('ser2')">
+          <img src="images/ser2.png">
+      </div>
+      
+      <!---------End Content----------->
+      <div id="footer"></div>
+    </div>
+    <script>
+      function uncover(x) {
+        document.getElementById(x).style.display = "block";
+      }
+      
+      function cover(x) {
+        document.getElementById(x).style.display = "none";
+      }
+      
+      function reveal(quiz, num) {
+        var qid = "quiz-" + quiz;
+        var rid = "reveal-" + quiz;
+        for (var counter = 1; counter <= num; counter++) {
+          document.getElementById(counter + "-" + qid).style.display = "inline-block";
+        }
+        document.getElementById(rid).style.display = "none";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+/* A line of text, used especially for subheaders */
+ln {font: 500 15pt Times, Arial}
+
+/* The name of a character in the play */
+#char {
+  font-style: italic;
+  color: green;
+}
+
+/* An inline span of text, used for important information */
+iln {font: 500 12pt Times, Arial}
+
+/* A quote by one of the characters in the play */
+.quo {
+  color: blue;
+  cursor: pointer;
+}
+
+/* An MLA parenthetical citation */
+#p-cit {font: 300 11pt Times, Arial}
+
+/* A characteristic of a character */
+#chr {
+  color: red;
+  font-weight: bold;
+}

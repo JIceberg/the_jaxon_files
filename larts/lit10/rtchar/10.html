@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | ELA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      table {
+        width: 100%;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+      
+      table#tlist tr:nth-child(even) {
+        background-color: #eee;
+      }
+      
+      table#tlist tr:nth-child(odd) {
+        background-color:#fff;
+      }
+      
+      table#tlist th {
+        background-color: black;
+        color: white;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Roots</p>
+      <p class="header">List #10</p>
+      <table id="tlist">
+        <tr>
+          <th>Root</th>
+          <th>Meaning</th>
+          <th>Origin</th>
+          <th>Example(s)</th>
+        </tr>
+        <tr>
+          <td>-phys-</td>
+          <td>nature</td>
+          <td>Greek</td>
+          <td>physics, physiology, physiocratic</td>
+        </tr>
+        <tr>
+          <td>-plur-</td>
+          <td>more</td>
+          <td>Latin</td>
+          <td>pluralist, plural, plurality</td>
+        </tr>
+        <tr>
+          <td>-port-</td>
+          <td>to carry</td>
+          <td>Latin</td>
+          <td>portal, export, portfolio</td>
+        </tr>
+        <tr>
+          <td>-pos-</td>
+          <td>to place / put / lay</td>
+          <td>Latin</td>
+          <td>jjuxtapose, compose, expose, posture</td>
+        </tr>
+        <tr>
+          <td>-poten-</td>
+          <td>powerful</td>
+          <td>Latin</td>
+          <td>potent, despot, potential, bellipotent</td>
+        </tr>
+        <tr>
+          <td>-pyr-</td>
+          <td>heat / fire</td>
+          <td>Greek</td>
+          <td>pyroclastic, pyromania, pyrite</td>
+        </tr>
+        <tr>
+          <td>-quer- | -ques- | -quir- | -quis-</td>
+          <td>to ask or seek</td>
+          <td>Latin</td>
+          <td>query, conquest, exquisite</td>
+        </tr>
+        <tr>
+          <td>-rog-</td>
+          <td>to ask or demand</td>
+          <td>Latin</td>
+          <td>interrogate, aarrogant, prerogative</td>
+        </tr>
+        <tr>
+          <td>-rot-</td>
+          <td>wheel</td>
+          <td>Latin</td>
+          <td>rotisserie, rotation, rototiller</td>
+        </tr>
+        <tr>
+          <td>-rupt-</td>
+          <td>to break or burst</td>
+          <td>Latin</td>
+          <td>interrupt, corruption, abrupt, erupt</td>
+        </tr>
+      </table>
+      <br><hr /><br />
+      <a href="/larts/lit10/rtchar/9.html">Previous List</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/larts/lit10/rtchar/11.html">Next List</a>
+      <p class="bottom"> </p>
+      <!----------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

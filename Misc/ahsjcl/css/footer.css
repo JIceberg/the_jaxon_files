@@ -1,0 +1,89 @@
+ #footer {
+   	width: 100.3vw;
+	height: 180px;
+    display: flex;
+   	margin: 0 auto;
+  	left: -1vw;
+    position: relative;
+  }
+  
+  #bg-ft-fill {
+    z-index: -10;
+    background-color: #1797e8;
+  }
+  
+  #bg-ft-fill:after {
+    content: "";
+    top: 0;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    opacity: 0.3;
+    height: 100%;
+    background: url(../images/rome2.jpg);
+    background-size: cover;
+    background-position: right;
+  }
+  
+  ul.ft-menu {
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0;
+    list-style-type: none;
+    height: 100%;
+  }
+  
+  .ft-menu li {
+    float: left;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    margin-left: 25px;
+    color: #af0c0c;
+    padding-right: 75px;
+    font-family: Segoe UI;
+    font-size: 18px;
+  }
+  
+  #footer .container {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .ft-menu h2.foot-title {
+    font-size: 22px;
+  }
+  
+  .ft-menu p {
+    line-height: 22px;
+    max-width: 150px;
+    color: black;
+    font-size: 16px;
+  }
+  
+  .ft-menu ul#links {
+   	list-style-type: none;
+  }
+  
+  #links li {
+    margin-left: -40px;
+    position: relative;
+    padding: 0;
+    float: none;
+    display: block;
+  }
+  
+  #links li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  #links li a:hover {
+    text-decoration: underline;
+  }
+
+  #links li a:active {
+    color: purple
+  }

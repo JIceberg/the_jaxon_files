@@ -1,0 +1,50 @@
+<title>Bioflix - Transcription and Translation</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script> 
+$(function(){
+  $("#fixed").load("/header.html");
+  $("#footer").load("/footer.html");
+});
+</script>
+<style>
+.vid img {
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 12vw;
+    min-width: 24vw;
+}
+
+.vid {
+    height: 12vw;
+    width: 24vw;
+    cursor: pointer;
+    border: 4px outset #eee;
+    margin-right: 10px;
+}
+
+.vid:hover {
+    border-style: inset;
+}
+</style>
+<div id="fixed"></div>
+<div id="main">
+<!---------Begin Content---------->
+<p class="subtitle">Transcription and Translation</p>
+<p class="header">Video</p>
+<div style="position:relative;height:0;padding-bottom:56.19%"><iframe src="https://www.youtube.com/embed/h3b9ArupXZg" style="position:absolute;width:100%;height:100%;left:0" width="641" height="360" frameborder="0" allowfullscreen></iframe></div>
+<p class="bottom"> </p>
+<p class="header">Related Videos</p>
+<div class="vid" style="float: left;">
+  <img src="/images/bozeman-1.png" onclick="window.location.href='001.html';" title="Cell Cycle, Mitosis and Meiosis">
+</div>
+<div class="vid" style="float: left;">
+  <img src="/images/bozeman-2.png" onclick="window.location.href='002.html';" title="What are Chromosomes?">
+</div>
+<div class="vid" style="float: left;">
+  <img src="/images/bozeman-3.png" onclick="window.location.href='003.html';" title="Phases of Mitosis">
+</div>
+<br style="clear: left;" />
+<p class="bottom"> </p>
+<!----------End Content----------->
+<div id="footer"></div>
+</div>

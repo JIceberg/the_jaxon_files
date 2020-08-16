@@ -1,0 +1,44 @@
+/* an equation / formula */
+.form {
+  font-size: 11pt;
+  font-family: Cambria, serif;
+}
+
+/* a border that defines the dimensions of an info box */
+hr.border {
+  margin: 5px 0;
+  height: 1px;
+  border: 0;
+  background: #cbcbcb;
+  background-image: -webkit-gradient(linear,left bottom,right bottom,color-stop(0,#fff),color-stop(0.1,#cbcbcb),color-stop(0.9,#cbcbcb),color-stop(1,#fff));
+}
+
+/* an info box */
+.info-box {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 50vw;
+}
+
+.info-box line#header {
+  color: red;
+  text-decoration: underline;
+  font: 500 12pt Segoe UI;
+}
+
+.info-box count {
+  color: blue;
+  font: 400 12pt Times;
+}
+
+/* an expandable image */
+img#expand {
+  width:8vw;
+  height: auto;
+  transition: 0.7s steps(50);
+  cursor: zoom-in;
+}
+
+img#expand:hover {
+  width: 18vw;
+}

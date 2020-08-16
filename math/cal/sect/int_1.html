@@ -1,0 +1,308 @@
+<span id="second-header">Indefinite Integrals</span>
+<br><br />
+What is an <span id="hlight-y">indefinite integral</span>?
+An indefinite integral is a type of process that results in a function&apos;s <span id="hlight-g">anti-derivative</span>.
+But, what is an anti-derivative? Imagine that you have a function <i>f</i> (<i>x</i>).
+The anti-derivative of that function <i>F</i>(<i>x</i>) exists such that the derivative of the anti-derivative <i>F</i> &apos;(<i>x</i>) is the same as the original function,
+<i>F</i> &apos;(<i>x</i>) = <i>f</i> (<i>x</i>).
+<br><br />
+The symbol for integral is: &int;
+<br><br />
+<span id="third-header">Basic Integration Rules</span>
+<ul>
+  <li>&int; <i>x<sup>n</sup></i> d<i>x</i> = <i>x</i><sup><i>n</i> + 1</sup> &divide; (<i>n</i> + 1) + <i>C</i>, <i>n</i> &ne; -1</li>
+  <li>&int; d<i>x</i> = <i>x</i> + <i>C</i> <sup>&nbsp;</sup></li>
+  <li>&int; <i>k</i> d<i>x</i> = <i>k</i> &int; d<i>x</i> = <i>kx</i> + <i>C</i> <sup>&nbsp;</sup></li>
+  <li>&int; <i>k f</i>(<i>x</i>) d<i>x</i> = <i>k</i> &int; <i>f</i>(<i>x</i>) d<i>x</i> = <i>kF</i>(<i>x</i>) + <i>C</i> <sup>&nbsp;</sup></li>
+  <li>&int; <sup>1</sup>&frasl;<sub><i>x</i></sub> d<i>x</i> = ln |<i>x</i>| + <i>C</i></li>
+  <li>
+    &int; [<i>f</i> (<i>x</i>) &plusmn; <i>g</i>(<i>x</i>)] d<i>x</i> =
+    &int; <i>f</i>(<i>x</i>) d<i>x</i> &plusmn; &int; <i>g</i>(<i>x</i>) d<i>x</i> =
+    <i>F</i>(<i>x</i>) &plusmn; <i>G</i>(<i>x</i>) + <i>C</i>
+  </li>
+  <li>&int; e<sup><i>x</i></sup> d<i>x</i> = e<sup><i>x</i></sup> + <i>C</i></li>
+  <li>&int; cos <i>x</i> d<i>x</i> = sin <i>x</i> + <i>C</i> <sup>&nbsp;</sup></li>
+  <li>&int; sin <i>x</i> d<i>x</i> = -cos <i>x</i> + <i>C</i> <sup>&nbsp;</sup></li>
+  <li>&int; sec&sup2;<i>x</i> d<i>x</i> = tan <i>x</i> + <i>C</i>  <sup>&nbsp;</sup></li>
+  <li>&int; csc&sup2;<i>x</i> d<i>x</i> = -cot <i>x</i> + <i>C</i> <sup>&nbsp;</sup></li>
+  <li>&int; sec <i>x</i> tan <i>x</i> d<i>x</i> = sec <i>x</i> + <i>C</i> <sup>&nbsp;</sup></li>
+  <li>&int; csc <i>x</i> cot <i>x</i> d<i>x</i> = -csc <i>x</i> + <i>C</i> <sup>&nbsp;</sup></li>
+  <li>&int; <sup>1</sup>&frasl;<sub>&radic;(1 &minus; <i>x</i>&sup2;)</sub> d<i>x</i> = arcsin <i>x</i> + <i>C</i></li>
+  <li>&int; <sup>1</sup>&frasl;<sub><i>x</i>&sup2; + 1</sub> d<i>x</i> = arctan <i>x</i> + <i>C</i></li>
+  <li>&int; <sup>1</sup>&frasl;<sub><i>x</i>&radic;(<i>x</i>&sup2; &minus; 1)</sub> d<i>x</i> = arcsec |<i>x</i>| + <i>C</i></li>
+</ul>
+The reason why each of these integrals has a <i>C</i> appended to the end is because the
+derivative of a constant <i>C</i> is 0, so there are infinite many solutions to an indefinite integral.
+<br><br />
+<span id="third-header">Substitution Method</span>
+<br><br />
+Sometimes, the function within the indefinite integral can be too complex to integrate using the basic rules of integration.
+<br />
+Say you are trying to find
+<br>
+&emsp;&emsp;<sup>&nbsp;</sup> &int; <i>x</i> cos(<i>x</i><sup>2</sup>) d<i>x</i>
+<br />
+Where would you start? Well, it&apos;s easier if we replace the inside function with some variable.
+In this case, we&apos;ll use <i>u</i>. So, if we set <i>u</i> = x<sup>2</sup>, then what do we do now?
+Well, we need to replace d<i>x</i>, which represents the derivative of the variable <i>x</i>, with d<i>u</i>.
+How? We find the derivative of our <i>u</i> substitute: d<i>u</i> = (x<sup>2</sup>)&apos; = 2<i>x</i> d<i>x</i>.
+We maintain the d<i>x</i> in our d<i>u</i> because <i>x</i> could be a representation of some unkown function.
+<br />
+In our original integral, we substitute in the <i>u</i>:
+<br>
+&emsp;&emsp; <sup>&nbsp;</sup> &int; <i>x</i> cos <i>u</i> d<i>x</i>
+<br />
+Now, we have a problem with the fact that we still have d<i>x</i> in our integral. This can be fixed by substituting in our d<i>u</i> for d<i>x</i>.
+Therefore, we must find the value of d<i>x</i> in terms of d<i>u</i>: d<i>u</i> = 2<i>x</i> d<i>x</i> &rarr;
+d<i>x</i> = <sup>d<i>u</i></sup>&frasl;<sub>2<i>x</i></sub>. Now, we substitute:
+<br>
+&emsp;&emsp; <sup>&nbsp;</sup> &int; <i>x</i> cos <i>u</i> &times; <sup>d<i>u</i></sup>&frasl;<sub>2<i>x</i></sub>
+<br />
+Finally, we can simplify and apply our basic integration rules:
+<br>
+&emsp;&emsp; <sup>&nbsp;</sup>
+&frac12; &int; <i><sup>x</sup>&frasl;<sub>x</sub></i> cos <i>u</i> d<i>u</i>
+&nbsp; &rarr; &nbsp;
+&frac12; &int; cos <i>u</i> d<i>u</i>
+&nbsp; &rarr; &nbsp;
+&frac12; &times; sin <i>u</i> + <i>C</i>
+&nbsp; &rarr; &nbsp;
+&frac12;sin(<i>x</i><sup>2</sup>) + <i>C</i>
+<br><br />
+The underlying concept in substitution is <b>knowning what to substitute</b>.
+This is the <i>hardest</i> part of the substitution method. If you don&apos;t know what to substitute, you will have
+a hard time solving the problem.
+<br />
+For instance, what would you substitute in the following integral:
+<br>
+&emsp;&emsp; <sup>&nbsp;</sup> &int; <sup>1</sup>&frasl;<sub><i>x</i></sub> ln&sup2;<i>x</i> d<i>x</i> ?
+<br />
+It&apos;s like a puzzle. If you understandwhat you should be looking for, then you how to solve it.
+Since <sup>1</sup>&frasl;<sub><i>x</i></sub> is the derivative of ln <i>x</i> , then we should use ln <i>x</i> as our substitute.
+<br />
+Set <i>u</i> = ln <i>x</i> , and therefore d<i>u</i> = <sup>d<i>x</i></sup>&frasl;<sub><i>x</i></sub>.
+Since <sup>1</sup>&frasl;<sub><i>x</i></sub> is already in our integral, then we can substitute <sup>1</sup>&frasl;<sub><i>x</i></sub> d<i>x</i>
+with our d<i>u</i>:
+<br>
+&emsp;&emsp; <sup>&nbsp;</sup>
+&int; <i>u</i><sup>2</sup> d<i>u</i>
+&nbsp; &rarr; &nbsp;
+<i>u</i><sup>3</sup> &divide; 3 + <i>C</i>
+&nbsp; &rarr; &nbsp;
+&frac13;ln&sup3;<i>x</i> + <i>C</i>
+<br><br />
+Using the substitution method, find the following (#1 has been done for you):
+<ol>
+  <li>
+    <sup>&nbsp;</sup>
+    &int; tan <i>x</i> d<i>x</i>
+    &nbsp; &rarr; &nbsp;
+    &int; <sup>sin <i>x</i></sup>&frasl;<sub>cos <i>x</i></sub> d<i>x</i>
+    &nbsp;&nbsp;
+    <i>u</i> = cos <i>x</i>, d<i>u</i> = -sin <i>x</i> d<i>x</i>
+    &nbsp; &rarr; &nbsp;
+    - &int; <sup>d<i>u</i></sup>&frasl;<sub><i>u</i></sub>
+    &nbsp; &rarr; &nbsp;
+    -ln |<i>u</i>| + <i>C</i>
+    &nbsp; &rarr; &nbsp;
+    -ln | cos <i>x</i> | + <i>C</i>
+  </li>
+  <li><sup>&nbsp;</sup> &int; cot <i>x</i> d<i>x</i></li>
+  <li>
+    <sup>&nbsp;</sup> &int; (<i>x</i> &plus; 3) &divide; (<i>x</i><sup>2</sup> &minus; 4) d<i>x</i>
+  </li>
+</ol>
+<span id="third-header">Integration with Inverse Trigonometry</span>
+<br><br />
+The inverse trig functions are already defined in the basic integration rules, right?
+Yes, but not every inverse trig integral will be so simple. It is important that you recognize when the function inside the integral
+is the derivative of an inverse trig function.
+<br />
+<b>The result can only be an inverse trig function if the degree of the numerator is one less than half the degree of the denominator</b> (not counting the radical)!
+<br><br />
+Consider the following integral:
+<br>
+&emsp;&emsp; <sup>&nbsp;</sup> &int; <sup><i>k</i></sup>&frasl;<sub><i>x</i>&sup2; + <i>b</i>&sup2;</sub> d<i>x</i>
+<br />
+This follows the same structure as the integral function that yields arctan <i>x</i> .
+We can follow our basic integration rules and move <i>k</i> outside of the integral, giving us <i>k</i> &int; <i>f</i> (<i>x</i>) d<i>x</i> .
+Now, we need to get "+ 1" in the denominator. This can be done if we remove the whole <i>b</i><sup>2</sup> value outside of the integral:
+<br>
+&emsp;&emsp; <sup>&nbsp;</sup>
+<sup><i>k</i></sup>&frasl;<sub><i>b</i>&sup2;</sub>
+&int; <sup>d<i>x</i></sup>&frasl;<sub>(<sup><i>x</i>&sup2;</sup>&frasl;<sub><i>b</i>&sup2;</sub> + 1)</sub>
+<br />
+Since the numerator and denominator of <sup><i>x</i>&sup2;</sup>&frasl;<sub><i>b</i>&sup2;</sub> is squared, we can bring out the power of two, resulting in
+(<i><sup>x</sup>&frasl;<sub>b</sub></i>)<sup>2</sup>. Now, let&apos;s set <i>u</i> = <i><sup>x</sup>&frasl;<sub>b</sub></i> for our substitution
+method. This makes d<i>u</i> = <sup>1</sup>&frasl;<sub><i>b</i></sub> d<i>x</i> , so d<i>x</i> = <i>b</i> d<i>u</i>.
+Therefore, our integral is now:
+<br>
+&emsp;&emsp; <sup>&nbsp;</sup>
+<sup><i>k</i></sup>&frasl;<sub><i>b</i>&sup2;</sub>
+&int; <i>b</i> &times; <sup>d<i>u</i></sup>&frasl;<sub><i>u</i>&sup2; + 1</sub>
+&nbsp; &rarr; &nbsp;
+<sup><i>k</i></sup>&frasl;<sub><i>b</i>&sup2;</sub> &times; <i>b</i>
+&int; <sup>d<i>u</i></sup>&frasl;<sub><i>u</i>&sup2; + 1</sub>
+&nbsp; &rarr; &nbsp;
+<i><sup>k</sup>&frasl;<sub>b</sub></i>
+&int; <sup>d<i>u</i></sup>&frasl;<sub><i>u</i>&sup2; + 1</sub>
+&nbsp; &rarr; &nbsp;
+<i><sup>k</sup>&frasl;<sub>b</sub></i> arctan <i>u</i> + <i>C</i>
+&nbsp; &rarr; &nbsp;
+<i><sup>k</sup>&frasl;<sub>b</sub></i> arctan (<i><sup>x</sup>&frasl;<sub>b</sub></i>) + <i>C</i>
+<br><br />
+Let&apos;s do the same thing, but with the following integral:
+<br>
+&emsp;&emsp; <sup>&nbsp;</sup> &int; <sup><i>k</i></sup>&frasl;<sub>&radic;(<i>b</i>&sup2; &minus; <i>x</i>&sup2;)</sub> d<i>x</i>
+<br />
+This is the same structure as the integral function that yields arcsin <i>x</i>. If we follow the same steps as with the previous integral, then we get:
+<br>
+&emsp;&emsp; <sup>&nbsp;</sup>
+<i>k</i> &int; <sup>d<i>x</i></sup>&frasl;<sub>&radic;(<i>b</i>&sup2; &minus; <i>x</i>&sup2;)</sub>
+&nbsp; &rarr; &nbsp;
+<i>k</i> &int; <sup>d<i>x</i></sup>&frasl;<sub>&radic;(<i>b</i>&sup2;(1 &minus; <sup><i>x</i>&sup2;</sup>&frasl;<sub><i>b</i>&sup2;</sub>)</sub>
+&nbsp; &rarr; &nbsp;
+<i>k</i> &int; <sup>d<i>x</i></sup>&frasl;<sub>&radic;(<i>b</i>&sup2;)&radic;(1 &minus; (<i><sup>x</sup>&frasl;<sub>b</sub></i>)&sup2;)</sub>
+&nbsp; &rarr; &nbsp;
+<i><sup>k</sup>&frasl;<sub>b</sub></i> &int; <sup>d<i>x</i></sup>&frasl;<sub>&radic;(1 &minus; (<i><sup>x</sup>&frasl;<sub>b</sub></i>)&sup2;)</sub>
+&nbsp;&nbsp;
+<i>u</i> = <i><sup>x</sup>&frasl;<sub>b</sub></i>, d<i>x</i> = <i>b</i> d<i>u</i>
+&nbsp; &rarr; &nbsp;
+<i><sup>k</sup>&frasl;<sub>b</sub></i> &times; <i>b</i>
+&int; <sup>d<i>u</i></sup>&frasl;<sub>&radic;(1 &minus; <i>u</i>&sup2;)</sub>
+&nbsp; &rarr; &nbsp;
+<i>k</i> arcsin <i>u</i> + <i>C</i>
+&nbsp; &rarr; &nbsp;
+<i>k</i> arcsin (<i><sup>x</sup>&frasl;<sub>b</sub></i>) + <i>C</i>
+<br />
+Follow these steps to integrate any function that has an inverse trig anti-derivative.
+<br><br />
+<span id="third-header">Integration by Partial Fractions</span>
+<br><br />
+Say we have the following integral where <i>f<sub>t</sub></i> represents the <i>t</i>-th factor of a polynomial and <i>n</i> is the number of factors:
+<br>
+&emsp;&emsp; <sup>&nbsp;</sup>
+&int; <sup>d<i>x</i></sup>&frasl;<sub><i>f</i><sub>0</sub>&times;<i>f</i><sub>1</sub>&#9642;&#9642;&#9642;&times;<i>f</i><sub><i>n</i>&minus;1</sub></sub>
+<br />
+This integral can be expanded using <b>partial fractions</b> (<i>see</i> <a href="/math/precal/">Precalculus</a>):
+<br>
+&emsp;&emsp; <sup>&nbsp;</sup>
+&int; <sup>d<i>x</i></sup>&frasl;<sub><i>f</i><sub>0</sub>&times;<i>f</i><sub>1</sub>&#9642;&#9642;&#9642;&times;<i>f</i><sub><i>n</i>&minus;1</sub></sub>
+=
+<i>A</i> &int; <sup>d<i>x</i></sup>&frasl;<sub><i>f</i><sub>0</sub></sub>
++
+<i>B</i> &int; <sup>d<i>x</i></sup>&frasl;<sub><i>f</i><sub>1</sub></sub>
++ &#9642;&#9642;&#9642;
+<br><br />
+Here is a worked example:
+<br><br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4The24k3Abw" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><hr /><br />
+For polynomials where the degree of the numerator is equal to or greater than the degree of the denominator,
+use long division to separate the rational function into its components.
+For more, review Precalculus.
+<br><br />
+<span id="third-header">Integration by Parts</span>
+<br><br />
+The formula for integration by parts is:
+<br>
+&emsp;&emsp; <sup>&nbsp;</sup> &int; <i>u</i> d<i>v</i> = <i>uv</i> &minus; &int; <i>v</i> d<i>u</i>
+<br />
+If we have a function that cannot be integrated using the other integration methods, such as
+&int; <i>x</i>ln <i>x</i> d<i>x</i>, then we <b>must</b> use integration by parts.
+<br />
+For the integral I just stated, we would set <i>u</i> = ln <i>x</i> and d<i>v</i> = <i>x</i> d<i>x</i>.
+This is because it is easier to find <i>v</i>, which is equivalent to &int; d<i>v</i><sup>&nbsp;</sup>.
+<br />
+Since we don&apos;t know the integral of natural logarithm, we need to set d<i>v</i> = <i>x</i> d<i>x</i>.
+Now, our integral is &int; <i>u</i> d<i>v</i>,<sup>&nbsp;</sup>which means it is the same as <i>uv</i> &minus; &int; <i>v</i> d<i>u</i>.
+<i>v</i> = &int; d<i>v</i> = &int; <i>x</i> d<i>x</i> = &frac12; <i>x</i><sup>2</sup> and d<i>u</i> = <sup>d<i>x</i></sup>&frasl;<sub><i>x</i></sub>.
+If we substitute these values into our formula, we get:
+<br>
+&emsp; &emsp; <sup>&nbsp;</sup>
+ln <i>x</i> &times; &frac12; <i>x</i><sup>2</sup> &minus;
+&int; &frac12; <i>x</i><sup>2</sup> &times; <sup>1</sup>&frasl;<sub><i>x</i></sub> d<i>x</i> =
+&frac12;(<i>x</i><sup>2</sup> ln <i>x</i> &minus; &int; <i>x</i> d<i>x</i>) =
+<sup><i>x</i><sup>2</sup></sup>&frasl;<sub>2</sub> (ln <i>x</i> &minus; &frac12;) + <i>C</i>
+<br><br />
+<span id="third-header">Integration via Trigonometric Substitution</span>
+<br><br />
+Here&apos;s a video explaining the three different possible trig substitution methods:
+<br><br />
+<iframe width="500" height="315" src="https://www.youtube.com/embed/67m_c_XhCcE?list=PLo-ApKYJUjcJNOZiku_9cmU0ffzbCT5RX"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><hr /><br />
+<span id="third-header">Reduce Power Method</span>
+<br><br />
+Say we have the integral:
+<br>
+&emsp; &emsp; <sup>&nbsp;</sup> &int; sin<sup>3</sup><i>x</i> cos<sup>4</sup><i>x</i> d<i>x</i>
+<br />
+Using our knowledge of trigonometric identities (<i>see</i> <a href="/math/precal/">Precalculus</a>),
+we can simplify the integral to more manageable pieces:
+<br>
+&emsp; &emsp; <sup>&nbsp;</sup>
+&int; sin <i>x</i> sin<sup>2</sup><i>x</i> cos<sup>4</sup><i>x</i> d<i>x</i>
+&nbsp; &rarr; &nbsp;
+&int; sin <i>x</i> cos<sup>4</sup><i>x</i> (1 &minus; cos<sup>2</sup><i>x</i>) d<i>x</i>
+&nbsp; &rarr; &nbsp;
+&int; sin <i>x</i> cos<sup>4</sup><i>x</i> d<i>x</i> &minus; &int; sin <i>x</i> cos<sup>6</sup><i>x</i> d<i>x</i>
+<br />
+Now our function is much simpler and can be integrated using <i>u</i>-substitution.
+This is because we have only composite function with inside function cos <i>x</i>.
+Therefore, we set <i>u</i> = cos <i>x</i> and sin<i>x</i> d<i>x</i> = -d<i>u</i>:
+<br>
+&emsp; &emsp; <sup>&nbsp;</sup>
+-&int; <i>u</i><sup>4</sup> d<i>u</i> &minus; (-&int; <i>u</i><sup>6</sup> d<i>u</i>)
+&nbsp; &rarr; &nbsp;
+-<sup>1</sup>&frasl;<sub>5</sub> <i>u</i><sup>5</sup> &plus; <sup>1</sup>&frasl;<sub>7</sub> <i>u</i><sup>7</sup> + <i>C</i>
+&nbsp; &rarr; &nbsp;
+<sup>1</sup>&frasl;<sub>7</sub> cos<sup>7</sup><i>x</i> &minus; <sup>1</sup>&frasl;<sub>5</sub> cos<sup>5</sup><i>x</i> + <i>C</i>
+<br><br />
+Here&apos;s another example:
+<br>
+&emsp; &emsp; <sup>&nbsp;</sup>
+&int; <sup>cos<sup>3</sup><i>x</i></sup>&frasl;<sub>&radic;(sin <i>x</i>)</sub> d<i>x</i>
+&nbsp; &rarr; &nbsp;
+&int; <sup>cos <i>x</i> cos<sup>2</sup><i>x</i></sup>&frasl;<sub>&radic;(sin <i>x</i>)</sub> d<i>x</i>
+&nbsp; &rarr; &nbsp;
+&int; <sup>cos <i>x</i>(1 &minus; sin<sup>2</sup><i>x</i>)</sup>&frasl;<sub>sin<sup>&frac12;</sup><i>x</i></sub> d<i>x</i>
+&nbsp; &rarr; &nbsp;
+&int; <sup>cos <i>x</i></sup>&frasl;<sub>sin<sup>&frac12;</sup><i>x</i></sub> d<i>x</i>
+&minus; &int; cos <i>x</i> sin<sup>2</sup><i>x</i> sin<sup>&frac12;</sup><i>x</i> d<i>x</i>
+<br />
+Since our inside function of the composite function is sin <i>x</i>, <i>u</i> = sin <i>x</i> and d<i>u</i> = cos <i>x</i> d<i>x</i>:
+<br>
+&emsp; &emsp; <sup>&nbsp;</sup>
+&int; <i>u</i><sup><sup>-1</sup>&frasl;<sub>2</sub></sup> d<i>u</i> &minus; &int; <i>u</i><sup><sup>3</sup>&frasl;<sub>2</sub></sup> d<i>u</i>
+&nbsp; &rarr; &nbsp;
+<sup>1</sup>&frasl;<sub>2</sub>&radic;<i>u</i> &minus; <sup>2</sup>&frasl;<sub>5</sub>&radic;<i>u</i><sup>5</sup> + <i>C</i>
+&nbsp; &rarr; &nbsp;
+<sup>1</sup>&frasl;<sub>2</sub>&radic;(sin <i>x</i>) &minus; <sup>2</sup>&frasl;<sub>5</sub>&radic;(sin<sup>5</sup><i>x</i>) + <i>C</i>
+<br><br />
+What about the double-angle identities? Well, those come into play as well. Take the following integral:
+<br>
+&emsp; &emsp; <sup>&nbsp;</sup> &int; cos<sup>4</sup><i>x</i> d<i>x</i>
+<br />
+To break this down into more manageable pieces, it would be better if we use the double-angle identity of cos<sup>2</sup><i>x</i>.
+Since cos<sup>4</sup><i>x</i> is the same as (cos<sup>2</sup><i>x</i>)<sup>2</sup>, we can replace cos<sup>2</sup><i>x</i> with
+&frac12;(cos 2<i>x</i> &plus; 1). Now, we simplify:
+<br>
+&emsp; &emsp; <sup>&nbsp;</sup>
+&int; [&frac12;(cos 2<i>x</i> &plus; 1)]<sup>2</sup> d<i>x</i>
+&nbsp; &rarr; &nbsp;
+&frac14; &int; (cos<sup>2</sup>2<i>x</i> &plus; 2[cos 2<i>x</i>] &plus; 1) d<i>x</i>
+&nbsp; &rarr; &nbsp;
+&frac14; &int; cos<sup>2</sup>2<i>x</i> d<i>x</i> &plus; &frac12; &int; cos 2<i>x</i> d<i>x</i> &plus; &frac14; &int; d<i>x</i>
+<br />
+Now we have a problem again... cos<sup>2</sup>2<i>x</i> is a monster function.
+However, we can turn this into its double angle &frac12;(cos 4<i>x</i> + 1):
+<br>
+&emsp; &emsp; <sup>&nbsp;</sup>
+&frac14; &int; &frac12;(cos 4<i>x</i> + 1) d<i>x</i> &plus; &frac14; sin 2<i>x</i> &plus; &frac14; <i>x</i>
+&nbsp; &rarr; &nbsp;
+&frac18; &int; cos 4<i>x</i> &plus; &frac18; &int; d<i>x</i> &plus; &frac14; sin 2<i>x</i> &plus; &frac14; <i>x</i>
+&nbsp; &rarr; &nbsp;
+<sup>(sin 4<i>x</i>)</sup>&frasl;<sub>32</sub> &plus; &frac38; <i>x</i> &plus; &frac14; sin 2<i>x</i> + <i>C</i>
+<br />

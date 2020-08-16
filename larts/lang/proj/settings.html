@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/gg-bg-2.jpg');">
+    <head>
+        <title>The Great Gatsby</title>
+        <link rel="stylesheet" type="text/css" href="gatsby.css">
+        <script>
+            var isOpen = false;
+            var itemPage = 0;
+            
+            function openNav() {
+                var nav = document.getElementById('nav');
+                var menu = document.getElementById('menu');
+                var main = document.getElementById('main');
+                
+                if (isOpen == false) {
+                    var width = 250;
+                    nav.style.width = width + "px";
+                    menu.style.marginLeft = width + "px";
+                    main.style.paddingLeft = width + "px";
+                    isOpen = true;
+                } else {
+                    var width = 0;
+                    nav.style.width = width;
+                    menu.style.marginLeft = width;
+                    main.style.paddingLeft = width;
+                    isOpen = false;
+                }
+            }
+            
+            function nextPage() {
+                var page1 = document.getElementById('item-1');
+                var page2 = document.getElementById('item-2');
+                var page3 = document.getElementById('item-3');
+                var page4 = document.getElementById('item-4');
+                var page5 = document.getElementById('item-5');
+                if (itemPage == 0) {
+                    page1.style.display = "none";
+                    page2.style.display = "block";
+                    itemPage++;
+                } else if (itemPage == 1) {
+                    page2.style.display = "none";
+                    page3.style.display = "block";
+                    itemPage++;
+                } else if (itemPage == 2) {
+                    page3.style.display = "none";
+                    page4.style.display = "block";
+                    itemPage++;
+                } else if (itemPage == 3) {
+                    page4.style.display = "none";
+                    page5.style.display = "block";
+                    itemPage++;
+                } else {
+                    page5.style.display = "none";
+                    page1.style.display = "block";
+                    itemPage = 0;
+                }
+            }
+            
+            function prevPage() {
+                var page1 = document.getElementById('item-1');
+                var page2 = document.getElementById('item-2');
+                var page3 = document.getElementById('item-3');
+                var page4 = document.getElementById('item-4');
+                var page5 = document.getElementById('item-5');
+                if (itemPage == 1) {
+                    page2.style.display = "none";
+                    page1.style.display = "block";
+                    itemPage--;
+                } else if (itemPage == 2) {
+                    page3.style.display = "none";
+                    page2.style.display = "block";
+                    itemPage--;
+                } else if (itemPage == 3) {
+                    page4.style.display = "none";
+                    page3.style.display = "block";
+                    itemPage--;
+                } else if (itemPage == 4) {
+                    page5.style.display = "none";
+                    page4.style.display = "block";
+                    itemPage--;
+                } else {
+                    page1.style.display = "none";
+                    page5.style.display = "block";
+                    itemPage = 4;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="menu" onclick="openNav();">
+            <span title="Menu">&#8285;</span>
+        </div>
+        <div id="nav">
+            <a class="title">Menu</a>
+            <a class="link" href="/larts/lang/" onclick="alert('Your progress might not have saved.');">
+                <img src="/images/delete2">
+                Exit
+            </a>
+            <a href="gatsby.html" class="sect">
+                <img src="images/gold.png">
+                Shop
+            </a>
+            <a href="profile.html" class="sect">
+                <img src="/images/default-user.png">
+                Profile
+            </a>
+            <a href="help.html" class="sect">
+                <img src="/images/help.png">
+                Help
+            </a>
+        </div>
+        <div id="main">
+            <div class="sub-main">
+                <div class="title">Settings</div>
+                <br />
+                <div id="main-text" style="font-size: 12pt;">
+                    <div id="item-1">
+                        <h2>Tom Buchanan</h2>
+                        <h3>Metaphor</h3>
+                        Tom Buchanan is a red sword because of the personality traits and characteristics that
+                        he constantly portrays throughout the novel. His metaphor, the <i>Sword of Buchanan</i>,
+                        is red because Tom exhibits many 'red' character traits: intensity, arrogance, and aggressiveness.
+                        This is why he is represented as a sword that "swing[s] violently at anyone in their path no matter the consequence"
+                        (<i>Sword of Buchanan</i>). He feels no remorse for many of his brutish actions and brings destruction unto people
+                        without care. This is seen when he tells George Wilson about Gatsby and then shows Nick how little he cared about
+                        the incident regarding Gatsby's death.
+                        Tom's metaphor is related to Daisy's metaphor, <i>Fay Armor</i>, as they are both used in combat.
+                        Tom is a sword because he is violent and hurtful, and Daisy is elusive, cynical, and hides her true personality
+                        under a suit of white armor. Moreover, his metaphor is connected to Gatsby's metaphor, <i>Gatsby's Heart</i>.
+                        Gatsby's item is cracked because Tom's sword cut open Gatsby's dream of the future.
+                        This symbolically represents how Tom indirectly killed Gatsby through Wilson, thus destroying Gatsby's
+                        hopes for love and happiness with Daisy.
+                        <h3>Quote</h3>
+                        <i>"Tom would drift on forever seeking ... for the dramatic turbulence of some irrecoverable football game"</i>
+                        (Fitzgerald 6)
+                        <br />
+                        In the description of the <i>Sword of Buchanan</i>, it is stated that "the sword was much sharper [in the past,]
+                        but [now] it has lost its edge with time" (<i>Sword of Buchanan</i>).
+                        This relates to Tom's character as his career and life peaked in college as a well-known
+                        football star. However, the quote from <i>The Great Gatsby</i> shows how, despite his fame fading away
+                        with time, he still yearned for an adventure as vibrant and violent as his college days.
+                        This is the reason for many of his actions in the novel, as he gets with Myrtle Wilson to
+                        continue trying to live that great adventure he so desires.
+                    </div>
+                    <div id="item-2">
+                        <h2>Jordan Baker</h2>
+                        <h3>Metaphor</h3>
+                        Jordan Baker is represented as a stack of fake gold coins, <i>Baker's Coins</i>, because she is constantly
+                        shown to glint with golden shoulders. This symbolizes her success as a golf player,
+                        which allowed her to obtain great fame and prosperity. However, it is fake because
+                        Jordan is known to be an excessive liar. She lies about everything as if it were habitual for her.
+                        She does it to remove herself from conversing with Nick about why she did not care about Gatsby's death,
+                        stating doubtfully that she was engaged to another man (Fitzgerald 177).
+                        The fact that the coins are "gilded" shows that she hides her masculine, uncaring, lying persona
+                        underneath the glittering glow that she emits to express how successful she has become.
+                        Her relationship to the other characters is shown in her item's ability to be used as currency to buy
+                        the other items. This is because she has connection to every major character in the story and serves
+                        as a bridge between them. This connective aspect of her character can be seen when she tells
+                        Nick about what Gatsby had said to her about Daisy.
+                        <h3>Quote</h3>
+                        <i>
+                            "She was incurably dishonest ... [perhaps] she had begun dealing in subterfuges when she was very young
+                            in order to keep that cool, insolent smile turned to the world"
+                            (Fitzgerald 58)
+                        </i>
+                        <br />
+                        This quote is very representative of Jordan's character as it greatly explains her character.
+                        Nick offers a reason for why Jordan lies is to feel advantageous over others, and she stays away
+                        from witty men so they do not see the veil of lies she has put up around her. She masquerades in this
+                        aura of deceit so that she can maintain a perfect, golden appearance as a successful person
+                        that is both happy and prosperous. This explains why she enjoyed Nick's company until she realized
+                        he was witty enough to seek the truth and uncover her gilded facade.
+                    </div>
+                    <div id="item-3">
+                        <h2>Daisy Fay-Buchanan</h2>
+                        <h3>Metaphor</h3>
+                        Daisy's metaphor, <i>Fay Armor</i>, expresses her desire to shield herself from any sort of impurity
+                        and maintain a disguise of innocence. In the description of the item, it is said that
+                        "[its] purpose was to protect its wearer from the feelings of guilt that might plague her"
+                        (<i>Fay Armor</i>), since she had fled from New York after Gatsby's death with Tom.
+                        The armor is a silvery-white because Daisy's color symbolism is white. This is because she
+                        is consistently seen dressed in the color white. "White" symbolizes purity and honor, which
+                        are two traits one would not use to represent Daisy's true personality: one that is cynical and evil.
+                        Her metaphor's connection to other characters is that the last user of the armor, Daisy, used
+                        Gatsby's sword to strike down Myrtle, which is a representation of how she had run
+                        her over in his car. Furthermore, she and Tom are both displayed as items of war, because they are constantly
+                        combatting themselves by attempting to appear as perfect, moral beings despite their terrible
+                        personalities. This leads to them hiding from their problems by retreating back into their money
+                        and letting others fix the problems they had caused (Fitzgerald 179).
+                        This greatly contrasts from her outward appearance because Daisy wears a suit of armor
+                        to conceal these aspects of her character from others.
+                        <h3>Quote</h3>
+                        <i>"Her voice is full of money"</i>
+                        (Fitzgerald 120)
+                        <br />
+                        I chose this quote to represent Daisy the best because it shows how her entire being
+                        is relative to her financial status. She has never had to work a day in her life
+                        as she is from a family of very wealthy people. Thus, she has never known the
+                        feeling of want and has always been well-provided. This is shown in how
+                        she expects to get everything she wants, and when it doesn't work for her,
+                        she goes crazy with denial to the point where she accidentally kills Myrtle.
+                        However, she doesn't even stop to look back at what had happened as she felt the need
+                        to maintain her belief that her world was perfect.
+                    </div>
+                    <div id="item-4">
+                        <h2>James Gatz</h2>
+                        <h3>Metaphor</h3>
+                        Jay Gatsby's metaphor is <i>Gatsby's Heart</i> because of his dreams for
+                        love with Daisy. This is shown because the color green represents dreams, hopes,
+                        and aspirations for the future, such as with the green light at the end of Daisy's dock.
+                        The cracks in the item are from the destruction of his dream by Tom Buchanan's item,
+                        <i>Sword of Buchanan</i>. The reason for why it is a heart is because he
+                        had so much love for Daisy that his dreams ended up manipulating his vision of her.
+                        Nick notes how Gatsby had fallen for his own representation of Daisy's persona despite
+                        her inner character flaws. This hope for relationship with Daisy drives his entire
+                        character throughout the novel and consumes his every action. This is seen
+                        when he replaces all of his mansion staff with Wolfsheim's associates so that they
+                        would not spill gossip about Gatsby having Daisy over at his house.
+                        Furthermore, he had bought his house so that he could see Daisy's house on the other
+                        side of his dock.
+                        <h3>Quote</h3>
+                        <i>
+                            "If personality is an unbroken series of successful gestures, then there was something gorgeous about him,
+                            some heightened sensitivity to the promises of life"
+                        </i>
+                        (Fitzgerald 2)
+                        <br />
+                        This quote best reflects Gatsby's character because it points out both his flaws and highlights.
+                        Nick uses the term "gestures" to show that, although Gatsby may appear successful,
+                        it is just a projection of the image of success whether or not there may be any substance behind that image.
+                        This projection is an ability he had learned from Dan Cody while on his yacht: to act the part even
+                        if it isn't true. Moreover, his "heightened sensitivity" to people's aspirations of hope
+                        because he himself is the most hopeful for the future.
+                    </div>
+                    <div id="item-5">
+                        <h2>Nick Carraway</h2>
+                        <h3>Metaphor</h3>
+                        Nick is symbolized through his item, <i>Carraway Glasses</i>, because of his unique talent
+                        of seeing the truth through clear eyes. The glasses represent his ability to see things
+                        clearly, and the blue color of the frames show how miserable and moody those secrets make him.
+                        As the story progresses, Nick's feelings of anger and unhappiness grow as he realizes the truth of the
+                        events surrounding him. Moreover, 'blue' is used often to describe feelings of unhappiness
+                        or misery, such as how Michaelis and George Wilson were in a blue mood after Myrtle's death
+                        (Fitzgerald 151). In the movie adaptation, Nick is in therapy due to his depression and raging
+                        alcoholism following the events that transcribed in the novel. This proves that knowning the truth
+                        can harm those who know it, and Nick's unique ability to uncover the meaning behind everything
+                        due to his great tolerance is also his greatest weakness. 'Eyes' are also a heavy symbol in <i>The Great Gatsby</i>,
+                        as they represent knowledge and insight into the events that transpire; hence, why I chose glasses to
+                        represent Nick's character as he has great understanding of the motives and secrets of the others.
+                        The metaphor's relationship to the others' is that Nick's item can be used to see through the false purity
+                        that Daisy's <i>Fay Armor</i> radiates. Plus, the glasses can see the dull chinks in the <i>Sword of Buchanan</i>
+                        as well as the cracks in <i>Gatsby's Heart</i>.
+                        <h3>Quote</h3>
+                        <i>
+                            "I was unjustly accused of being a politician, because I was privy to the secret griefs
+                            of wild, unknown men"
+                        </i>
+                        (Fitzgerald 1)
+                        <br />
+                        This quote is the most important characterization of Nick throughout the entire novel.
+                        It explains the reasoning behind why Gatsby tells Nick  his secrets and how Nick serves
+                        his role as a narrator. His ability as a narrator is enhanced by his ability to be deemed trustworthy
+                        be even those as mysterious as Gatsby. Furthermore, it foreshadows how many will see Nick
+                        as someone like a politician or con-artist while he knows that he might be the most trustworthy
+                        and honest person he had ever known. This quote also links to his growing misery as he gets
+                        tossed into the plot of a story due to his connections and ability to serve as a vessel for
+                        people's secrets that left him depressed (as expressed in the movie adaptation).
+                    </div>
+                </div>
+                <br />
+                <span onclick="prevPage()" id="back">
+                    <img src="/images/back-arr.png">
+                </span>
+                &emsp;
+                <span onclick="nextPage()" id="next">
+                    <img src="/images/next-arr.png">
+                </span>
+            </div>
+        </div>
+    </body>
+</html>

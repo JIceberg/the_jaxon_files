@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jaxon | ELA</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script> 
+$(function(){
+  $("#fixed").load("/header.html");
+  $("#footer").load("/footer.html");
+});
+</script>
+<style>
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+table#tlist tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#tlist tr:nth-child(odd) {
+   background-color:#fff;
+}
+
+table#tlist th {
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+}
+
+#important {
+    cursor: pointer;
+    color: red;
+}
+
+#important:active {
+    color: black;
+}
+</style>
+<div id="fixed"></div>
+<div id="main">
+<!---------Begin Content---------->
+<p class="subtitle">Vocabulary</p>
+<p class="header">List #12</p>
+<table id="tlist">
+  <tr>
+    <th>Word</th>
+    <th>Part of Speech</th>
+    <th>Definition</th>
+  </tr>
+  <tr>
+    <td id="important">deluge</td>
+    <td>noun</td>
+    <td>a flood; an overwhelming rush</td>
+  </tr>
+  <tr>
+    <td id="important">catholic</td>
+    <td>adjective</td>
+    <td>universal; wide-ranging</td>
+  </tr>
+  <tr>
+    <td>eerie</td>
+    <td>adjective</td>
+    <td>weird; mysterious; strange and frightening</td>
+  </tr>
+  <tr>
+    <td>martial</td>
+    <td>adjective</td>
+    <td>warlike; relating to the military</td>
+  </tr>
+  <tr>
+    <td>anthropomorphic</td>
+    <td>adjective</td>
+    <td>attributing human characteristics or qualities to objects, animals, or gods</td>
+  </tr>
+  <tr>
+    <td>beneficiary</td>
+    <td>noun</td>
+    <td>one who receives benefits</td>
+  </tr>
+  <tr>
+    <td>careen</td>
+    <td>verb</td>
+    <td>to swerve or lurch from side to side while in motion</td>
+  </tr>
+  <tr>
+    <td id="important">aplomb</td>
+    <td>noun</td>
+    <td>self-confidence</td>
+  </tr>
+  <tr>
+    <td id="important">modicum</td>
+    <td>noun</td>
+    <td>a small amount</td>
+  </tr>
+  <tr>
+    <td id="important">fester</td>
+    <td>verb</td>
+    <td>to grow embittered over time; to rot</td>
+  </tr>
+  <tr>
+    <td id="important">languish</td>
+    <td>verb</td>
+    <td>to become weak or feeble; to lose strength</td>
+  </tr>
+  <tr>
+    <td id="important">pall</td>
+    <td>noun</td>
+    <td>something that covers or conceals</td>
+  </tr>
+  <tr>
+    <td>havoc</td>
+    <td>noun</td>
+    <td>great destruction; chaos</td>
+  </tr>
+  <tr>
+    <td id="important">guile</td>
+    <td>noun</td>
+    <td>slyness and cunning in dealing with others</td>
+  </tr>
+  <tr>
+    <td>rancid</td>
+    <td>adjective</td>
+    <td>having a bad taste or smell; spoiled</td>
+  </tr>
+</table>
+<p class="bottom"> </p>
+<!----------End Content---------->
+<div id="footer"></div>
+</div>
+</body>
+</html>

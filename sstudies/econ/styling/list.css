@@ -1,0 +1,22 @@
+ul.custom {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.custom li { 
+  padding-left: 16px; 
+}
+
+
+/* a hyphened list */
+#hyphen li:before {
+  content: "-";
+  padding-right: 8px;
+}
+
+/* an open circle list */
+#open-circle li:before {
+  content: "o";
+  padding-right: 8px;
+}

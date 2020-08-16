@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | ELA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      table {
+        width: 100%;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+      
+      table#tlist tr:nth-child(even) {
+        background-color: #eee;
+      }
+      
+      table#tlist tr:nth-child(odd) {
+        background-color:#fff;
+      }
+      
+      table#tlist th {
+        background-color: black;
+        color: white;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Roots</p>
+      <p class="header">List #13</p>
+      <table id="tlist">
+        <tr>
+          <th>Root</th>
+          <th>Meaning</th>
+          <th>Origin</th>
+          <th>Example(s)</th>
+        </tr>
+        <tr>
+          <td>-sag-</td>
+          <td>arrow</td>
+          <td>Latin</td>
+          <td>sagittarious, presage, sage</td>
+        </tr>
+        <tr>
+          <td>-sal- | -sault-</td>
+          <td>leap / spring forward</td>
+          <td>Latin</td>
+          <td>salmon, resilient, somersault, assault</td>
+        </tr>
+        <tr>
+          <td>-salut- | -san- | -sanit-</td>
+          <td>health / heal</td>
+          <td>Latin</td>
+          <td>salute, sanitary, sanitarium</td>
+        </tr>
+        <tr>
+          <td>-salv-</td>
+          <td>save</td>
+          <td>Latin</td>
+          <td>salvage, salvation</td>
+        </tr>
+        <tr>
+          <td>-sangui-</td>
+          <td>blood</td>
+          <td>Latin</td>
+          <td>sanguine, sangfroid</td>
+        </tr>
+        <tr>
+          <td>-sap-</td>
+          <td>taste / to be wise</td>
+          <td>Latin</td>
+          <td>insipid, savor, sapid</td>
+        </tr>
+        <tr>
+          <td>-scur-</td>
+          <td>coover / conceal</td>
+          <td>Latin</td>
+          <td>obscure, scurry, scurvy</td>
+        </tr>
+        <tr>
+          <td>-scend-</td>
+          <td>climb</td>
+          <td>Latin</td>
+          <td>ascend, transcend, condescend</td>
+        </tr>
+        <tr>
+          <td>-scruit-</td>
+          <td>search</td>
+          <td>Latin</td>
+          <td>inscrutable, scrutiny</td>
+        </tr>
+      </table>
+      <br><hr /><br />
+      <a href="/larts/lit10/rtchar/12.html">Previous List</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/larts/lit10/rtchar/14.html">Next List</a>
+      <p class="bottom"> </p>
+      <!----------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

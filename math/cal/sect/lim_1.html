@@ -1,0 +1,306 @@
+<span id="second-header">Introduction to Limits</span>
+<br><br />
+What is a <span id="hlight-y">limit</span>?
+It is a point on the function <i>f</i>(<i>x</i>) to which <i>f</i> approaches.
+<br><br />
+Take, for instance, the function <graphfile class="cover-div" onclick="uncover('one')"><i>h</i>(<i>x</i>) = <i>x</i> + 2</graphfile>.
+<br />
+If the limit is at the point <i>x</i> = 3, then you must look at the point to which <i>h</i> approaches from either side.
+In this case, the limit is at the point <point id="coord">( 3, 5 )</point>.
+This is because, as we increase the values of <i>x</i> nearer to 3, the <i>y</i>-value approaches 5.
+As we decrease the values of <i>x</i> nearer to 3, the <i>y</i>-value approaches 5 as well.
+Because the point is approached from both directions, the limit <u>does</u> exist, and exists at <i>y</i> = 5.
+<br><br />
+Consider the function
+<graphfile class="cover-div" onclick="uncover('two')">
+  <i>f</i>(<i>x</i>) = <sup>( <i>x</i> &minus; 1 )</sup>&frasl;<sub>( <i>x</i> &minus; 1 )</sub></graphfile>
+.
+<br />
+If the limit is at the point where <i>x</i> = 1, then look at the point to which <i>f</i> approaches from either direction.
+In this case, the function approaches the point <point id="coord">( 1, 1 )</point>, which is undefined.
+That&apos;s because it is a <b>hole</b> in the graph (<i>see</i> <a href="/math/3.html">Alg. II/Geo. B</a>).
+Even though the point is a hole, the limit does not have to be a point that exists on the graph.
+Therefore, our limit is <point id="coord">( 1, 1 )</point>.
+<br><br />
+Imagine the function
+<graphfile class="cover-div" onclick="uncover('three')">
+  <i>g</i>(<i>x</i>) = {<i>x</i><sup>2</sup> (@ <i>x</i> &ne; 2), &frac13; (@ <i>x</i> = 2)}</graphfile>.
+<br />
+What is the limit of <i>g</i>(<i>x</i>) as <i>x</i> approaches 2?
+Remember, the limit does NOT need to be a defined point on the graph; it only needs to be a point that <i>g</i> is approaching.
+In this case, the limit is <point id="coord">( 2, 4 )</point> instead of the defined point <point id="coord">( 2, 1 )</point>.
+<br><br />
+<br><br />
+<span id="second-header">Characteristics of Limits</span>
+<br><br />
+What is the limit when <i>f</i> approaches <i>x</i> = 4 for the function <i>f</i>(<i>x</i>) (<i>seen above</i>)?
+<br />
+In this case, the limit would be <point id="coord">( 1, 1 )</point> because the function is <span id="hlight-b">continuous</span>.
+If the function were <span id="hlight-b">discontitnuous</span>, then the limit would not exist.
+<br><br />
+That considered, look at this function:
+<graphfile class="cover-div" onclick="uncover('four')"><i>p</i>(<i>x</i>)</graphfile>.
+<br />
+It&apos;s clearly discontinuous, so what would the limit be at <i>x</i> = 8?
+The answer is that <b>there is no limit</b>, because there is no point to which <i>p</i> approaches from either directions at <i>x</i> = 8.
+However, at <i>x</i> = 0, the limit <i>does</i> exist&mdash;at the point <point id="coord">( 0, 0 )</point>.
+<br><br />
+<span id="third-header">Limits of One Direction</span>
+<br />
+<b>Although functions do not have a limit at points of discontinuity, there can still be a limit for each piece of the graph.</b>
+<br><br />
+In <i>p</i>(<i>x</i>), there is no existing bidirectional limit at <i>x</i> = 8.
+But what about the limit as <i>x</i> approaches 8 <i>from the left</i>?
+<br />
+The notation for a left-side limit is <i>x</i> &rarr; 8<sup>-</sup>.
+This means that <i>p</i> is approaching 8 from all <i>x</i>-values <u>less than</u> 8 (including -100, 0, 4, 7.9, 7.99, 7.99999).
+In this case, the left-side limit is at <point id="coord">( 8, 4 )</point>, the undefined point.
+<br><br />
+What is the <i>right-side limit</i>? Is it the same as the left-side limit?
+The short answer is no. The reason for this is that <i>p</i> does not approach <point id="coord">( 8, 4 )</point> from the right.
+Instead, it approaches the point that DOES exist at <i>x</i> = 8: <point id="coord">( 8, -2 )</point>.
+<br />
+The notation for the right-side limit is <i>x</i> &rarr; 8<sup>+</sup>.
+This means that <i>p</i> is approaching 8 from all <i>x</i>-values <u>greater than</u> 8 (including 50, 10, 9, 8.1, 8.01, 8.0001).
+<br><br />
+<span id="third-header">Limits of Unique Functions</span>
+<br />
+How unique is a function&apos;s limit at any one point? Not at all.
+<b>An infinite number number of various functions can be made from a limit</b>.
+<br><br />
+In a continuous function, the limit can be determined thusly:
+lim<sub><i>x</i> &rarr; <i>n</i></sub> <i>f</i>(<i>x</i>) = <i>f</i>(<i>n</i>).
+<br />
+Discontinuous functions must have, at some point, a nonexistent limit.
+If the discontinuity occurs at <i>x</i> = <i>d</i>, then the limit is the following:
+lim<sub><i>x</i> &rarr; <i>n</i></sub> <i>f</i>(<i>x</i>) = <i>f</i>(<i>n</i>),
+where <i>n</i> &ne; <i>d</i>.
+<br><br />
+<span id="third-header">Limit Properties</span>
+<br />
+<b>What are some of the basic properties that enable the ability to simplify future limit problems</b>?
+<br><br />
+<span style="color: red;">1) Addition/Subtraction</span>
+<br />
+Imagine that lim<sub><i>x</i> &rarr; <i>c</i></sub> <i>f</i>(<i>x</i>) = <i>L<sub>1</sub></i>.
+If lim<sub><i>x</i> &rarr; <i>c</i></sub> <i>g</i>(<i>x</i>) = <i>L<sub>2</sub></i>,
+then what is lim<sub><i>x</i> &rarr; <i>c</i></sub> (<i>f</i>(<i>x</i>) + <i>g</i>(<i>x</i>))?
+<br />
+The limit of a sum or difference is the sum or difference of the limits.
+<br />
+In this case, we can rewrite the question as
+lim<sub><i>x</i> &rarr; <i>c</i></sub> <i>f</i>(<i>x</i>) +
+lim<sub><i>x</i> &rarr; <i>c</i></sub> <i>g</i>(<i>x</i>),
+and then we can substitute in the limits of the functions:
+<i>L<sub>1</sub></i> + <i>L<sub>2</sub></i>.
+<br><br />
+<span style="color: red;">2) Multiplication/Division</span>
+<br />
+Keeping the limits of <i>f</i> and <i>g</i> the same,
+what is lim<sub><i>x</i> &rarr; <i>c</i></sub> (<i>f</i>(<i>x</i>) &times; <i>g</i>(<i>x</i>))?
+<br />
+      The limit of a product is equal to the product of the limits; therefore the question can be rewritten as
+lim<sub><i>x</i> &rarr; <i>c</i></sub> <i>f</i>(<i>x</i>) +
+      lim<sub><i>x</i> &rarr; <i>c</i></sub> <i>g</i>(<i>x</i>),
+and then we can substitute in the limits of the functions:
+<i>L<sub>1</sub>L<sub>2</sub></i>.
+<br />
+Similarly, dividing functions results in the quotient of their limits.
+However, the limit that is the divisor must not equal zero, or the result will be undefined.
+<br><br />
+When finding the limit of a constant times a function (e.g. lim<sub><i>x</i> &rarr; <i>c</i></sub> <i>kf</i>(<i>x</i>)),
+it is the same as the product of the constant and the limit of the function.
+<br><br />
+<span style="color: red;">3) Exponents</span>
+<br />
+What is lim<sub><i>x</i> &rarr; <i>c</i></sub> [<i>f</i>(<i>x</i>)]<sup><i>e</i></sup>,
+keeping the limits the same?
+<br />
+If <i>e</i> is real, then the result is equivalent to (<i>L<sub>1</sub></i>)<sup><i>e</i></sup>.
+<br><br />
+<span id="third-header">Unbounded Limits</span>
+<br />
+<b>What does it mean when the limit of a function is infinity as it approaches a certain <i>x</i>-value</b>?
+<br><br />
+Consider this: lim<sub><i>x</i> &rarr; 0<sup>+</sup></sub> <i>q</i>(<i>x</i>), where
+<graphfile class="cover-div" onclick="uncover('five')"><i>q</i>(<i>x</i>) = <sup>1</sup>&frasl;<sub style="font-style: italic;">x</sub></graphfile>.
+<br />
+The answer? There is no limit.
+Not because the two sides don&apos;t converge at the same point&mdash;the limit is one-sided anyways&mdash;but
+because <i>q</i> approaches infinity at <i>x</i> = 0. Therefore, we refer to the limit as <span id="hlight-b">unbounded</span>.
+<br><br />
+<br><br />
+<u>QUIZ</u>
+<br><br />
+1. lim<sub><i>x</i> &rarr; 2</sub> <i>x</i><sup>3</sup>
+<span class="quiz-ans" id="1-quiz-1">
+  = 8
+</span>
+<br><br />
+2. lim<sub><i>x</i> &rarr; 0</sub> <i>x</i><sup>-1</sup>
+<span class="quiz-ans" id="2-quiz-1">
+  = does not exist
+</span>
+<br><br />
+3. lim<sub><i>x</i> &rarr; 0</sub> <i>x</i><sup>-2</sup>
+<span class="quiz-ans" id="3-quiz-1">
+  = unbounded
+</span>
+<br><br />
+4. <i>f</i>(<i>x</i>) = &radic;(<i>x</i> + 6), <i>g</i>(<i>x</i>) = <i>x</i> + 2
+<br />
+a) lim<sub><i>x</i> &rarr; 3</sub> [<sup><i>f</i>(<i>x</i>)</sup>&frasl;<sub>3</sub>]
+<span class="quiz-ans" id="4-quiz-1">
+  = 1
+</span>
+<br />
+b) lim<sub><i>x</i> &rarr; -2</sub> (<i>g</i>(<i>x</i>) &minus; 3)
+<span class="quiz-ans" id="5-quiz-1">
+  = -3
+</span>
+<br />
+      c)
+lim<sub><i>x</i> &rarr; 10</sub> [<sup><i>f</i>(<i>x</i>)</sup>&frasl;<sub><i>g</i>(<i>x</i>)</sub>]<sup>-2</sup>
+<span class="quiz-ans" id="6-quiz-1">
+  = 9
+</span>
+<br><br />
+<button id="reveal-1" onclick="reveal(1, 6);">Reveal</button>
+<br><br />
+<br><br />
+<span id="second-header">Determining Limits from a Table of Values</span>
+<br><br />
+Consider the following table:
+<br />
+<table id="t1">
+    <tr>
+        <th><i>x</i></th>
+        <th><i>g</i>(<i>x</i>)</th>
+    </tr>
+    <tr>
+        <td>1.9</td>
+        <td>3.61</td>
+    </tr>
+    <tr>
+        <td>1.99</td>
+        <td>3.96</td>
+    </tr>
+    <tr>
+        <td>1.9999</td>
+        <td>3.9996</td>
+    </tr>
+    <tr>
+         <td>2</td>
+         <td>&frac13;</td>
+    </tr>
+    <tr>
+        <td>2.0001</td>
+        <td>4.0004</td>
+    </tr>
+    <tr>
+        <td>2.01</td>
+        <td>4.04</td>
+    </tr>
+    <tr>
+        <td>2.1</td>
+        <td>4.41</td>
+    </tr>
+</table>
+<br />
+What is a reasonable estimate for lim<sub><i>x</i> &rarr; 2</sub> <i>g</i>(<i>x</i>)?
+Despite there being an existing point at <point id="coord">( 2, &frac13; )</point>,
+the limit does not have to be defined by the function.
+Instead, it only needs to be a point that is approached by <i>g</i>, which is 4 in this case.
+<br><br />
+Look at this table:
+<br />
+<table id="t1">
+    <tr>
+      <th><i>x</i></th>
+      <th><i>p</i>(<i>x</i>)</th>
+    </tr>
+    <tr>
+      <td>7.9</td>
+      <td>3.96</td>
+    </tr>
+    <tr>
+      <td>7.99</td>
+      <td>3.985</td>
+    </tr>
+    <tr>
+      <td>7.9999</td>
+      <td>3.999</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>-2</td>
+    </tr>
+    <tr>
+      <td>8.0001</td>
+      <td>-2.0001</td>
+    </tr>
+    <tr>
+      <td>8.01</td>
+      <td>-2.01</td>
+    </tr>
+    <tr>
+      <td>8.1</td>
+      <td>-2.1</td>
+    </tr>
+</table>
+<br />
+What is the estimated value of lim<sub><i>x</i> &rarr; 8</sub> <i>p</i>(<i>x</i>)?
+Regarding the points on the table above, there is no point to which
+both sides of the function approach. Therefore, there is no bidirectional limit
+for <i>p</i>(<i>x</i>).
+<br />
+What is the estimated value of lim<sub><i>x</i> &rarr; 8<sup>+</sup></sub> <i>p</i>(<i>x</i>)?
+This question is asking for a single-side limit, rather than a bidirectional one.
+So, the limit exists at the point to which <i>p</i> nears from the right (as indicated by the superscript &apos;+&apos; after the 8).
+Thus, the right-side limit at <i>x</i> = 8 is -2.
+<br><br />
+<span id="third-header">Oscillating Limits</span>
+  <br />
+  Consider the function
+  <graphfile class="cover-div" onclick="uncover('six')">
+    <i>r</i>(<i>t</i>) = sin(<sup>1</sup>&frasl;<sub><i>t</i></sub>)</graphfile>.	<br />
+What is lim<sub><i>x</i> &rarr; 0</sub> <i>r</i>(<i>t</i>)?
+Let&apos;s set up a table:
+<table id="t1">
+  <tr>
+    <th><i>t</i></th>
+    <th><i>r</i>(<i>t</i>)</th>
+  </tr>
+  <tr>
+    <td>-2(7&pi;)<sup>-1</sup></td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>-2(65&pi;)<sup>-1</sup></td>
+    <td>-1</td>
+  </tr>
+  <tr>
+    <td>-2(635&pi;)<sup>-1</sup></td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>undef.</td>
+  </tr>
+  <tr>
+    <td>2(635&pi;)<sup>-1</sup></td>
+    <td>-1</td>
+  </tr>
+  <tr>
+    <td>2(65&pi;)<sup>-1</sup></td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>2(7&pi;)<sup>-1</sup></td>
+    <td>-1</td>
+  </tr>
+</table>
+<br />
+As you can see, there are infinitely many oscillations, never nearing any specific number.
+Therefore, we refer to these kinds of limits as <span id="hlight-b">oscillating</span>.
+Similarly to unbounded limits, oscillating limits do not truly exist.

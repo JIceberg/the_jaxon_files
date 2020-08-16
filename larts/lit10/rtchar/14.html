@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | ELA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      table {
+        width: 100%;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+      
+      table#tlist tr:nth-child(even) {
+        background-color: #eee;
+      }
+      
+      table#tlist tr:nth-child(odd) {
+        background-color:#fff;
+      }
+      
+      table#tlist th {
+        background-color: black;
+        color: white;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Roots</p>
+      <p class="header">List #14</p>
+      <table id="tlist">
+        <tr>
+          <th>Root</th>
+          <th>Meaning</th>
+          <th>Origin</th>
+          <th>Example(s)</th>
+        </tr>
+        <tr>
+          <td>ab-</td>
+          <td>off / away from / apart</td>
+          <td>Greek</td>
+          <td>aberration, abstinence, abbreviate</td>
+        </tr>
+        <tr>
+          <td>demi-</td>
+          <td>half</td>
+          <td>Greek</td>
+          <td>demigod</td>
+        </tr>
+        <tr>
+          <td>dia-</td>
+          <td>through / between / apart</td>
+          <td>Greek</td>
+          <td>dialogue, dialect, diabetes</td>
+        </tr>
+        <tr>
+          <td>dis-</td>
+          <td>not / none</td>
+          <td>Greek</td>
+          <td>discreet, dissolve, distortion</td>
+        </tr>
+        <tr>
+          <td>epi-</td>
+          <td>upon / over / on the outside</td>
+          <td>Greek</td>
+          <td>epigram, epitaph, episode</td>
+        </tr>
+        <tr>
+          <td>exo-</td>
+          <td>outside / outer</td>
+          <td>Latin</td>
+          <td>exotic, exogenous, exodus</td>
+        </tr>
+        <tr>
+          <td>fix-</td>
+          <td>fixed / fastened</td>
+          <td>Latin</td>
+          <td>fixate, affix, prefix, suffix, transfixed</td>
+        </tr>
+        <tr>
+          <td>fore-</td>
+          <td>before / previous / earlier</td>
+          <td>Latin</td>
+          <td>forestall, forecast, foretell</td>
+        </tr>
+        <tr>
+          <td>hetero-</td>
+          <td>different / other / another</td>
+          <td>Latin</td>
+          <td>heterogeneous, heterodox</td>
+        </tr>
+        <tr>
+          <td>hypo-</td>
+          <td>beneath / under</td>
+          <td>Latin</td>
+          <td>hypoglycemia, hypothesis, hypnotic</td>
+        </tr>
+      </table>
+      <br><hr /><br />
+      <a href="/larts/lit10/rtchar/13.html">Previous List</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/larts/lit10/rtchar/15.html">Next List</a>
+      <p class="bottom"> </p>
+      <!----------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

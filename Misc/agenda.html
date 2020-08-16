@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jaxon | Agenda</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script> 
+$(function(){
+  $("#fixed").load("/header.html");
+  $("#footer").load("/footer.html");
+});
+</script>
+<link href="/Misc/txt_area.css" rel="stylesheet" type="text/css">
+<style>
+textarea {
+    resize: none;
+    width: 90vw;
+    height: 12vh;
+    font-family: monospace;
+    font-size: 14pt;
+    margin-left: 1vw;
+    padding: 3px;
+}
+
+.check2 {
+    width: 3vw;
+    position: absolute;
+    margin-left: 3px;
+}
+
+.check2:hover {
+    background-color: #e6e6e6;
+    box-shadow: 0 0 3px grey inset;
+}
+
+#date {
+    border-bottom: 1px solid black;
+    width: 40vw;
+    font-family: monospace;
+    font-size: 14pt;
+}
+
+#save {
+    margin-left: 0px;
+}
+</style>
+<script>
+function checkAll() {
+    localStorage["eng"] = "";
+    localStorage["larts"] = "";
+    localStorage["latin"] = "";
+    localStorage["math"] = "";
+    localStorage["sstudies"] = "";
+    localStorage["science"] = "";
+    localStorage["other"] = "";
+    console.log("Checked All");
+    location.reload();
+}
+function savef() {
+    var eng = document.getElementById("eng").value ;
+    var lan = document.getElementById("larts").value ;
+    var lat = document.getElementById("latin").value ;
+    var mat = document.getElementById("math").value ;
+    var soc = document.getElementById("sstudies").value ;
+    var sci = document.getElementById("science").value ;
+    var oth = document.getElementById("other").value ;
+    localStorage["eng"] = eng ;
+    localStorage.setItem("eng", eng) ;
+    localStorage["larts"] = lan ;
+    localStorage.setItem("larts", lan) ;
+    localStorage["latin"] = lat ;
+    localStorage.setItem("latin", lat) ;
+    localStorage["math"] = mat ;
+    localStorage.setItem("math", mat) ;
+    localStorage["sstudies"] = soc ;
+    localStorage.setItem("sstudies", soc) ;
+    localStorage["science"] = sci ;
+    localStorage.setItem("science", sci) ;
+    localStorage["other"] = oth ;
+    localStorage.setItem("other", oth) ; 
+    console.log("Saved Successfully");
+    location.reload();
+}
+</script>
+</head>
+<body>
+<div id="fixed"></div>
+<div id="main">
+<!---------Begin Content-------------->
+<p class="subtitle">Agenda</p>
+<div class="nav">
+<img id="save" onclick="savef()" src="/images/save.png" title="Save">
+<img id="check" onclick="checkAll()" src="/images/check2.png" title="Check All">
+</div>
+<br />
+<center>
+<div id="date"></div>
+<br>
+<textarea id="eng" placeholder="1st Period"></textarea><img src="/images/check3.png" id="eng-c" class="check2" title="Check">
+<br>
+<textarea id="larts" placeholder="2nd Period"></textarea><img src="/images/check3.png" id="lan-c" class="check2" title="Check">
+<br>
+<textarea id="latin" placeholder="3rd Period"></textarea><img src="/images/check3.png" id="lat-c" class="check2" title="Check">
+<br>
+<textarea id="mathP" placeholder="4th Period"></textarea><img src="/images/check3.png" id="mat-c" class="check2" title="Check">
+<br>
+<textarea id="sstudies" placeholder="5th Period"></textarea><img src="/images/check3.png" id="soc-c" class="check2" title="Check">
+<br>
+<textarea id="science" placeholder="6th Period"></textarea><img src="/images/check3.png" id="sci-c" class="check2" title="Check">
+<br>
+<textarea id="other" placeholder="Other Events"></textarea><img src="/images/check3.png" id="oth-c" class="check2" title="Check">
+</center>
+<p class="bottom"> </p>
+<!----------End Content------------->
+<div id="footer"></div>
+</div>
+<!---------Begin Script----------->
+<script>
+if (localStorage["eng"]) {
+    var eng = localStorage["eng"] ;
+    document.getElementById("eng").value = eng ;
+    console.log("Loaded Scheduled Period 1 Events")
+} else {
+    document.getElementById("eng").value = "";
+    console.log("No Period 1 Events Scheduled")
+}
+
+if (localStorage["larts"]) {
+    var lan = localStorage["larts"] ;
+    document.getElementById("larts").value = lan ;
+    console.log("Loaded Scheduled Period 2 Events")
+} else {
+    document.getElementById("larts").value = "";
+    console.log("No Period 2 Events Scheduled")
+}
+
+if (localStorage["latin"]) {
+    var lat = localStorage["latin"] ;
+    document.getElementById("latin").value = lat ;
+    console.log("Loaded Scheduled Period 3 Events")
+} else {
+    document.getElementById("latin").value = "";
+    console.log("No Period 3 Events Scheduled")
+}
+
+if (localStorage["mathP"]) {
+    var mat = localStorage["mathP"] ;
+    document.getElementById("mathP").value = mat ;
+    console.log("Loaded Scheduled Period 4 Events")
+} else {
+    document.getElementById("mathP").value = "";
+    console.log("No Period 4 Events Scheduled")
+}
+
+if (localStorage["sstudies"]) {
+    var soc = localStorage["sstudies"] ;
+    document.getElementById("sstudies").value = soc ;
+    console.log("Loaded Scheduled Period 5 Events")
+} else {
+    document.getElementById("sstudies").value = "";
+    console.log("No Period 5 Events Scheduled")
+}
+
+if (localStorage["science"]) {
+    var sci = localStorage["science"] ;
+    document.getElementById("science").value = sci ;
+    console.log("Loaded Scheduled Period 6 Events")
+} else {
+    document.getElementById("science").value = "";
+    console.log("No Period 6 Events Scheduled")
+}
+
+if (localStorage["other"]) {
+    var oth = localStorage["other"] ;
+    document.getElementById("other").value = oth ;
+    console.log("Loaded Other Scheduled Events")
+} else {
+    document.getElementById("other").value = "";
+    console.log("No Other Events Scheduled")
+}
+
+var date = new Date();
+var day = date.getDay();
+var d;
+if (day === 0) {
+  d = "Sun's Day";
+} else if (day === 1) {
+  d = "Moon's Day";
+} else if (day === 2) {
+  d = "Tyr's Day";
+} else if (day === 3) {
+  d = "Woden's Day";
+} else if (day === 4) {
+  d = "Thor's Day";
+} else if (day === 5) {
+  d = "Frigg's Day";
+} else {
+  d = "Saturn's Day";
+}
+var month = date.getMonth();
+var m;
+if (month === 0) {
+  m = "Month of Janus";
+} else if (month === 1) {
+  m = "Month of Februa";
+} else if (month === 2) {
+  m = "Month of Mars";
+} else if (month === 3) {
+  m = "Month of Aphrodite";
+} else if (month === 4) {
+  m = "Month of Maia";
+} else if (month === 5) {
+  m = "Month of Juno";
+} else if (month === 6) {
+  m = "Month of Julius"
+} else if (month === 7) {
+  m = "Month of Augustus"
+} else if (month === 8) {
+  m = "Month of Seven";
+} else if (month === 9) {
+  m = "Month of Eight";
+} else if (month === 10) {
+  m = "Month of Nine";
+} else {
+  m = "Month of Ten";
+} 
+var dm = date.getDate();
+var y = date.getFullYear();
+var hours = date.getHours();
+var h = hours;
+if (hours === 1) {
+  h = '01';
+} else if (hours === 2) {
+  h = '02';
+} else if (hours === 3) {
+  h = '03';
+} else if (hours === 4) {
+  h = '04';
+} else if (hours === 5) {
+  h = '05';
+} else if (hours === 6) {
+  h = '06';
+} else if (hours === 7) {
+  h = '07';
+} else if (hours === 8) {
+  h = '08';
+} else if (hours === 9) {
+  h = '09';
+} else if (hours === 0) {
+  h = '00';
+}
+var minutes = date.getMinutes();
+var min = minutes;
+if (minutes === 0) {
+  min = '00';
+} else if (minutes === 1) {
+  min = '01';
+} else if (minutes === 2) {
+  min = '02';
+} else if (minutes === 3) {
+  min = '03';
+} else if (minutes === 4) {
+  min = '04';
+} else if (minutes === 5) {
+  min = '05';
+} else if (minutes === 6) {
+  min = '06';
+} else if (minutes === 7) {
+  min = '07';
+} else if (minutes === 8) {
+  min = '08';
+} else if (minutes === 9) {
+  min = '09';
+}
+document.getElementById("date").innerHTML = d + ", " + m + " " + dm + ", " + y + ", " + h + ":" + min;
+
+document.getElementById("eng-c").addEventListener("click", function() {
+    localStorage["eng"] = "";
+    location.reload();
+}, false);
+
+document.getElementById("lan-c").addEventListener("click", function() {
+    localStorage["larts"] = "";
+    location.reload();
+} , false);
+
+document.getElementById("lat-c").addEventListener("click", function() {
+    localStorage["latin"] = "";
+    location.reload();
+} , false);
+
+document.getElementById("mat-c").addEventListener("click", function() {
+    localStorage["math"] = "";
+    location.reload();
+} , false);
+
+document.getElementById("soc-c").addEventListener("click", function() {
+    localStorage["sstudies"] = "";
+    location.reload();
+} , false);
+
+document.getElementById("sci-c").addEventListener("click", function() {
+    localStorage["science"] = "";
+    location.reload();
+} , false);
+
+document.getElementById("oth-c").addEventListener("click", function() {
+    localStorage["other"] = "";
+    location.reload();
+} , false);
+</script>
+<!----------End Script------------->
+</body>
+</html>

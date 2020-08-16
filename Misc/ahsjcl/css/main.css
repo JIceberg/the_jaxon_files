@@ -1,0 +1,162 @@
+body {
+  user-select: none;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+/* the main body below the header */
+#main {
+  top: 145px;
+  position: relative;
+  max-width: calc(100vw - 200px);
+  min-height: calc(100vh - 145px);
+  padding-bottom: 50px;
+  font-size: 18px;
+}
+
+.main-text {
+  margin-left: 20px;
+  max-width: calc(100vw - 500px);
+}
+
+.main-text a {
+  text-decoration: none;
+  color: blue;
+}
+
+.main-text a:hover {text-decoration: underline}
+
+/************ CARDS ************/
+/* a card container */
+.card-cont {
+  display: inline-table;
+  width: 450px;
+  position: relative;
+  margin: 20px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+/* a standard info card */
+#card {
+  border: 1px solid silver;
+  background: white;
+  padding: 15px;
+  max-width: 450px;
+  box-shadow: 0 0 2px gray inset;
+}
+
+/* a card label */
+#card h3.label {
+  font: 600 20px Calibri, serif;
+  margin: 0;
+  color: purple;
+}
+
+/* the card's text body */
+#card p.text {
+  font: 200 18px Times, sans-serif;
+  line-height: 24px;
+  color: gray;
+}
+
+/* an important part of the card's text body */
+.text #highlight {
+  font-weight: bold;
+  color: black;
+}
+
+/* an image block */
+#card #img-block {
+  position: relative;
+  min-height: 175px;
+  min-width: 175px;
+}
+
+/* an image in a card */
+#card img {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  position: absolute;
+  margin-top: 5px;
+}
+
+/* a card image's caption */
+#card .img-capt {
+  font: 400 italic 14px Calibri, serif;
+  color: black;
+  margin-left: 190px;
+  line-height: 18px;
+}
+
+#card .quote {
+  font: 600 italic 16px serif;
+  color: silver;
+}
+
+.quote #spoke {
+  color: black;
+  font: 200 15px serif;
+  font-style: none;
+  float: right;
+}
+
+/************ NAV PANE ************/
+/* the pane box */
+.pane-box {
+  position: absolute;
+  width: 150px;
+  border: 3px solid gold;
+  background: purple;
+  padding: 10px;
+  box-shadow: 0px 5px 20px rgba(255, 215, 0, 0.7);
+  color: white;
+  font: 600 19px Segoe UI, sans-serif;
+  top: 145px;
+  right: 15px;
+}
+
+/* pane title */
+.pane-title {
+  font: 700 21px Segoe UI, sans-serif;
+  margin: 0;
+  color: gold;
+}
+
+/* pane text */
+.pane-text {line-height: 2.3em}
+
+.pane-text a
+{
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  font-weight: weaker;
+}
+
+.pane-text a:hover {
+  text-decoration: underline;
+}
+
+.pane-text a:active {
+  color: gold;
+}
+
+/* join button */
+#join-btn {
+  background: gold;
+  color: purple;
+  box-shadow: 0 0 15px black;
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+#join-btn:active {
+  box-shadow: 0 0 15px inset;
+}

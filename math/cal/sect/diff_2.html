@@ -1,0 +1,173 @@
+<span id="second-header">Logarithmic Differentiation</span>
+<br><br />
+If the product rule, quotient rule, and chain rule were too difficult for you, then logarithmic differentiation is your key to success.
+<br><br />
+When finding the derivative of the function <i>f</i>(<i>x</i>) = tan&sup2;<i>x</i>(3<i>x</i> + 2), it might be more practical to find the natural logarithm of both sides
+of the function:
+&nbsp; ln <i>f</i>(<i>x</i>) = ln(  tan&sup2;<i>x</i>(3<i>x</i> + 2) ).
+<br />
+Using properties of logarithmic functions, this can be simplied to:
+&nbsp; ln <i>f</i>(<i>x</i>) = 2ln(tan <i>x</i>) + ln(3<i>x</i> + 2).
+<br />
+Now what&apos;s next?
+<br><br />
+<span id="third-header">Natural Log and e to the x</span>
+<br><br />
+Because of the following proof (which you do not need to know), the derivative of y = ln <i>f</i>(<i>x</i>)
+is &nbsp;<sup><i>f</i> &apos;(<i>x</i>)</sup>&frasl;<sub><i>f</i>(<i>x</i>)</sub>
+<br>
+&emsp; &rarr; <i>y</i> = ln <i>f</i>(<i>x</i>)
+<br />
+&emsp; &rarr; e <sup><i>y</i></sup> = <i>f</i>(<i>x</i>)
+<br>
+&emsp; &rarr; <sup>d<i>y</i></sup>&frasl;<sub>d<i>x</i></sub> &times; e <sup><i>y</i></sup> = <i>f</i> &apos;(<i>x</i>)
+<br />
+&emsp; &rarr; <sup>d<i>y</i></sup>&frasl;<sub>d<i>x</i></sub> = <sup><i>f</i> &apos;(<i>x</i>)</sup>&frasl;<sub>e<sup> <i>y</i></sup></sub>
+<br>
+&emsp; &rarr; <sup>d<i>y</i></sup>&frasl;<sub>d<i>x</i></sub> = <sup><i>f</i> &apos;(<i>x</i>)</sup>&frasl;<sub><i>f</i>(<i>x</i>)</sub>
+<br><br />
+Knowing this, we can determine the derivative of the function we had differentiated:
+<br>
+&emsp; &rarr; ln <i>f</i>(<i>x</i>) = 2ln(tan <i>x</i>) + ln(3<i>x</i> + 2)
+<br />
+&emsp; &rarr; <sup><i>f</i> &apos;(<i>x</i>)</sup>&frasl;<sub><i>f</i>(<i>x</i>)</sub> =
+2(<sup>sec&sup2;<i>x</i></sup>&frasl;<sub>tan <i>x</i></sub>) + <sup>3</sup>&frasl;<sub>3<i>x</i> + 2</sub>
+<br>
+&emsp; &rarr; <i>f</i> &apos;(<i>x</i>) = <i>f</i>(<i>x</i>)&times;(2csc <i>x</i> sec <i>x</i> + <sup>3</sup>&frasl;<sub>3<i>x</i> + 2</sub>)
+<br />
+&emsp; &rarr; <i>f</i> &apos;(<i>x</i>) = tan&sup2;<i>x</i>(3<i>x</i> + 2)&times;(2csc <i>x</i> sec <i>x</i> + <sup>3</sup>&frasl;<sub>3<i>x</i> + 2</sub>)
+<br>
+&emsp; &rarr; <i>f</i> &apos;(<i>x</i>) = (6<i>x</i> + 4)sec&sup2;<i>x</i>tan <i>x</i> + 3tan&sup2;<i>x</i>
+<br />
+You can check your work using the product and chain rules.
+<br><br />
+Say we have the function <i>y</i> = e<sup> <i>f</i> (<i>x</i>)</sup>. What is the derivative of this function?
+<br />
+Using logarithmic differentiation, the function becomes ln <i>y</i>  = <i>f</i> (<i>x</i>).
+This therefore becomes <sup><i>y</i>&apos;</sup>&frasl;<sub>y</sub> = <i>f</i> &apos;(<i>x</i>) which simplifies to
+<i>y</i>&apos; = e <sup><i>f</i> (<i>x</i>)</sup> &times; <i>f</i> &apos;(<i>x</i>).
+<br><br />
+If it were <i>g</i>(<i>x</i>) = e<sup>e<sup>(2<i>x</i><sup>3</sup> + 3<i>x</i>)</sup></sup>, then what would be <i>g</i>&apos;(<i>x</i>)?
+<br>
+&emsp; &rarr; <i>g</i>&apos;(<i>x</i>) = e<sup>e<sup>(2<i>x</i><sup>3</sup> + 3<i>x</i>)</sup></sup> &times;
+<sup>d(e<sup>(2<i>x</i><sup>3</sup> + 3<i>x</i>)</sup>)</sup>&frasl;<sub>d<i>x</i></sub>
+<br />
+&emsp; &rarr; <i>g</i>&apos;(<i>x</i>) = e<sup>e<sup>(2<i>x</i><sup>3</sup> + 3<i>x</i>)</sup></sup> &times;
+e<sup>(2<i>x</i><sup>3</sup> + 3<i>x</i>)</sup> &times; <sup>d(2<i>x</i><sup>3</sup> + 3<i>x</i>)</sup>&frasl;<sub>d<i>x</i></sub>
+<br>
+&emsp; &rarr; <i>g</i>&apos;(<i>x</i>) = e<sup>e<sup>(2<i>x</i><sup>3</sup> + 3<i>x</i>)</sup></sup> &times;
+e<sup>(2<i>x</i><sup>3</sup> + 3<i>x</i>)</sup> &times; (6<i>x</i><sup>2</sup> + 3)
+<br />
+&emsp; &rarr; <i>g</i>&apos;(<i>x</i>) = (6<i>x</i><sup>2</sup> + 3)e<sup>(e<sup>(2<i>x</i><sup>3</sup> + 3<i>x</i>)</sup> + 2<i>x</i><sup>3</sup> + 3<i>x</i>)</sup>
+<br><br />
+<br><br />
+<u>QUIZ</u>
+<br><br />
+1. <i>y</i>  = ( (5<i>x</i>&sup2; + 3)(5<i>x</i> &minus; 3) ) &divide; ( (7<i>x</i> + 19)(7<i>x</i>&sup2; &minus; 19) )&nbsp;&mdash;&nbsp;<i>y</i> &apos;?
+<br>
+<span class="quiz-ans" id="1-quiz-2">
+  &emsp;
+  <sup>d<i>y</i></sup>&frasl;<sub>d<i>x</i></sub> =
+  <i>y</i> ( <sup>10<i>x</i></sup>&frasl;<sub>5<i>x</i>&sup2; + 3</sub> + <sup>5</sup>&frasl;<sub>5<i>x</i> &minus; 3</sub>
+  &minus; <sup>7</sup>&frasl;<sub>7<i>x</i> + 19</sub> &minus; <sup>14<i>x</i></sup>&frasl;<sub>7<i>x</i>&sup2; &minus; 19</sub> )
+</span>
+<br><br />
+2. <i>y</i> = <i>x</i><sup>e<sup>4<i>x</i><sup>2</sup></sup></sup>&nbsp;&mdash;&nbsp;<i>y</i> &apos;?
+<br>
+<span class="quiz-ans" id="2-quiz-2">
+  &emsp;
+  <sup>d<i>y</i></sup>&frasl;<sub>d<i>x</i></sub> =
+  <i>y</i>e<sup>4x<sup>2</sup></sup>(8<i>x</i>ln <i>x</i> + <sup>1</sup>&frasl;<sub><i>x</i></sub>)
+</span>
+<br><br />
+<button id="reveal-2" onclick="reveal(2, 2);">Reveal</button>
+<br><br />
+<br><br />
+<span id="third-header">Applications of Logarithms</span>
+<br><br />
+How would you find the derivative of the function <i>y</i> = <i>x<sup>x</sup></i> ?
+Well, you would differeniate it through the use of natural logarithm ( ln ). How?
+<br>
+First, take the natural log of both sides:
+ln <i>y</i> = ln  <i>x<sup>x</sup></i>
+<br />
+Using the properties of logarithms, the exponent <i>x</i> can be brought ouside the natural log:
+ln <i>y</i> = <i>x</i>ln <i>x</i>
+<br>
+Using what we know about the derivative of natural logarithms, we can deduce the result for when we take the
+derivatives of both sides of the function:
+<sup><i>y</i> &apos;</sup>&frasl;<sub><i>y</i></sub> = (<i>x</i>ln <i>x</i>)&apos;
+<br />
+To evaluate the right side, we need to use <u>product rule</u>:
+<i>y</i> &apos; = <i>y</i>(ln <i>x</i> + <i>x</i> &times; <sup>1</sup>&frasl;<sub><i>x</i></sub>)
+<br>
+Finally, simplify and replace <i>y</i> with the value of the function:
+<i>y</i>  &apos; = <i>x<sup>x</sup></i>(ln <i>x</i> + 1)
+<br><br />
+If you want to find the derivative of, say, <i>k</i>(<i>x</i>) = &pi;<sup>log<sub>7</sub>(8<i>x</i> &minus; 3)</sup>, we can use the same strategy.
+<br>
+The first step gives us ln <i>k</i>(<i>x</i>) = log<sub>7</sub>(8<i>x</i> &minus; 3) &times; ln &pi; . And now we&apos;ve reached a barrier.
+What do we do with a base-7 logarithm?
+<br />
+Well, any logarithm can be rewritten using the natural logarithm as such:
+&nbsp; log<sub><i>b</i></sub><i>a</i> = <sup>ln <i>a</i></sup>&frasl;<sub>ln <i>b</i></sub> .
+Therefore, we can rewrite the function as:
+ln <i>k</i>(<i>x</i>) = ln (8<i>x</i> &minus; 3) &divide; ln 7 &times; ln &pi;
+<br>
+Let&apos;s make this look a bit prettier by combining the two constant natural logs (ln 7 and ln &pi;) into one logarithm:
+ln <i>k</i>(<i>x</i>) = ln (8<i>x</i> &minus; 3) &times; log<sub>7</sub>&pi;
+<br />
+Take the derivative of both sides:
+<i>k</i> &apos;(<i>x</i>) = <i>k</i>(<i>x</i>) &times; <sup>8</sup>&frasl;<sub>8<i>x</i> &minus; 3</sub> &times; log<sub>7</sub>&pi;
+<br />
+Finally, simplify:
+<i>k</i> &apos;(<i>x</i>) = &pi;<sup>log<sub>7</sub>(8<i>x</i> &minus; 3)</sup> &times; <sup>8</sup>&frasl;<sub>8<i>x</i> &minus; 3</sub> &times; log<sub>7</sub>&pi;
+<p class="bottom"></p>
+<span id="second-header">Implicit Differentiation</span>
+<br><br />
+Imagine having to find the tangent line to a point on a circle, given the function for that circle. How would you do that?
+<br />
+Well, say we have the following circle and we want to find the tangent line to the point
+<point id="coord">( 3, 2 )</point>:
+<graphfile class="cover-div" onclick="uncover(&apos;thirteen&apos;)">
+  <i>x</i>&sup2; + <i>y</i>&sup2; = 13
+</graphfile>
+<br><br />
+To differentiate this function, all we need to do is treat <i>y</i> like <i>x</i>, but we need t use chain rule because <i>y</i> is actually a function instead of a variable.
+Therefore, if we differentiate the circle, we end up with:
+<br>
+&emsp; &emsp; 2<i>y</i> &times; <sup>d<i>y</i></sup>&frasl;<sub>d<i>x</i></sub> + 2<i>x</i> = 0
+<br />
+Now, to find the value of <sup>d<i>y</i></sup>&frasl;<sub>d<i>x</i></sub>, we just need to isolate the derivative:
+<br>
+&emsp; &emsp; <sup>d<i>y</i></sup>&frasl;<sub>d<i>x</i></sub> = &minus; <i><sup>x</sup>&frasl;<sub>y</sub></i>
+<br />
+Now plug in the coordinates of our point into the point-slope form for a tangent line:
+<br>
+&emsp; &emsp; <i>y</i> &minus; 2 = <sup>3</sup>&frasl;<sub>2</sub>(3 &minus; <i>x</i>)
+<p class="bottom"></p>
+<span id="second-header">L&apos;Hopital&apos;s Rule and Indeterminates</span>
+<br><br />
+Remember that a limit can yield an indertminate value, such as 0 &divide; 0 or &infin; &plusmn; &infin;.
+When you have a limit that has a numerator and denominator and results in an indeterminate value,
+you can differentiate the numerator and denominator separately as two different functions until you achieve a solution.
+This is known as <span id="hlight-b">L&apos;Hopital&apos;s rule</span>.
+<br><br />
+Here are some examples of L&apos;Hopital&apos;s rule in use with the indeterminate forms 0 &divide; 0 and &infin; &divide; &infin;:
+<ol style="margin-top: 5px; margin-bottom: 5px;">
+  <li>
+    lim <sub><i>x</i> &rarr; 0</sub> (<sup>sin <i>x</i></sup>&frasl;<sub><i>x</i></sub>) =
+    0 &divide; 0 &rarr;
+    lim <sub><i>x</i> &rarr; 0</sub> (<sup>(sin <i>x</i>)&apos;</sup>&frasl;<sub>(<i>x</i>)&apos;</sub>
+    = <sup>cos <i>x</i></sup>&frasl;<sub>1</sub>) = 1
+  </li>
+  <li>
+    lim <sub><i>x</i> &rarr; &infin;</sub> (<sup>5<i>x</i> &minus; 8</sup>&frasl;<sub>3<i>x</i> + 1</sub>)
+    = &infin; &divide; &infin; &rarr;
+    lim <sub><i>x</i> &rarr; &infin;</sub> (<sup>(5<i>x</i> &minus; 8)&apos;</sup>&frasl;<sub>(3<i>x</i> + 1)&apos;</sub>
+    = <sup>5</sup>&frasl;<sub>3</sub>) = <sup>5</sup>&frasl;<sub>3</sub>
+  </li>
+</ol>
+<br />
+It is harder to use L&apos;Hopital&apos;s rule for indeterminate values that are not immediately in a form where there is a division
+of two functions. The goal is to try and turn the limit into a division of two functions and <i>then</i> use L&apos;Hopital&apos;s rule.

@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | Precal</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      .img {
+        width: 6vw;
+        transition: 0.7s steps(50);
+        cursor: none;
+      }
+      var {
+        font: italic 12px;
+      }
+      vsup {
+        vertical-align: super;
+        font-style: italic;
+        font-size: smaller;
+      }
+      vsub {
+        vertical-align: sub;
+        font-style: italic;
+        font-size: smaller;
+      }
+      table#t1, table#t1 th, table#t1 td {
+    	border: 1px solid black;
+    	border-collapse: collapse;
+  	  }
+      table#t1 {
+        border-width: 2px;
+        position: absolute;
+      }
+  	  table#t1 th, table#t1 td {
+   	 	padding: 5px;
+        width: 65px;
+    	text-align: center;
+  	  }
+	  table#t1 tr {
+    	background-color:#fff;
+	  }
+	  table#t1 th {
+    	background-color: blue;
+    	color: white;
+    	border: 1px solid white;
+	  }
+    </style>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Precalculus</p>
+      <p class="header">Semester 1</p>
+      <p class="body">
+        <span id="second-header">Angular Properties</span>
+        <br><br />
+        <span id="third-header">Radians</span>
+        <br />
+        A <span id="hlight-y">radian</span> is a unit of angle measure, comparable to degrees (&deg;).
+        <br />
+        The conversion from degrees to radians is: &pi; = 180&deg;, therefore 2&pi; = 360&deg;
+        <br><br />
+        <span id="third-header">Angles</span>
+        <br />
+        <span id="hlight-g">Reference angles</span> are the smallest angles that connects a ray
+        to the x-axis. It is ALWAYS positive.
+        <br />
+        <span id="hlight-g">Coterminal angles</span> are the same angles with different measures.
+        A coterminal angle in degrees can be found through 360<i>n</i>&deg; +
+        <var>&theta;</var> (current angle meaure).
+        A coterminal angle in radians can be found through
+        2&pi;<i>n</i> + <var>&theta;</var> (current angle measure). In
+        both cases, <i>n</i> is a positive or negative integer (meaning WHOLE NUMBER).
+        <br><br />
+        <i>Example(s)</i>:
+        <br />
+        &nbsp;&nbsp;&nbsp;The reference angle for 145&deg; is 35&deg;, because 180&deg; &minus; 145&deg; = 35&deg;
+        <br />
+        &nbsp;&nbsp;&nbsp;The reference angle for -<sup>&pi;</sup>&frasl;<sub>3</sub> is
+        <sup>&pi;</sup>&frasl;<sub>3</sub>, because 0 &minus; (-<sup>&pi;</sup>&frasl;<sub>3</sub>)
+        = <sup>&pi;</sup>&frasl;<sub>3</sub>.
+        <br />
+        &nbsp;&nbsp;&nbsp;Two coterminal angles (one negative, one positive) of
+        145&deg; are 510&deg;(360[<i>n</i> = 1]&deg; + 145&deg;) and
+        -220&deg;(-360[<i>n</i> = -1]&deg; + 145&deg;).
+        <br />
+        &nbsp;&nbsp;&nbsp;Two coterminal angles (one negative, one positive) of
+        -<sup>&pi;</sup>&frasl;<sub>3</sub> are
+        <sup>5&pi;</sup>&frasl;<sub>3</sub>(2&pi;[<i>n</i> = 1] + -<sup>&pi;</sup>&frasl;<sub>3</sub>) and
+        -<sup>7&pi;</sup>&frasl;<sub>3</sub>(-2&pi;[<i>n</i> = -1] + -<sup>&pi;</sup>&frasl;<sub>3</sub>).
+        <br><br />
+        <span id="third-header">Trigonometric Ratios</span>
+        <br />
+        There are six trigonometric ratios of a right triangle:
+        <br />
+        sin<var>&theta;</var> = <sup>opp</sup>&frasl;<sub>hyp</sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        csc<var>&theta;</var> = <sup>hyp</sup>&frasl;<sub>opp</sub>
+        <br />
+        cos<var>&theta;</var> = <sup>adj</sup>&frasl;<sub>hyp</sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        sec<var>&theta;</var> = <sup>hyp</sup>&frasl;<sub>adj</sub>
+        <br />
+        tan<var>&theta;</var> = <sup>opp</sup>&frasl;<sub>adj</sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        cot<var>&theta;</var> = <sup>adj</sup>&frasl;<sub>opp</sub>
+        <br><br />
+        csc<var>&theta;</var>, sec<var>&theta;</var>, and cot<var>&theta;</var> are <span id="hlight-y">reciprocal functions</span>
+        becayse their ratios are reciprocals of the other three trig. ratios.
+        <br />
+        csc<var>&theta;</var> = <sup>1</sup>&frasl;<sub>sin<var>&theta;</var></sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        sec<var>&theta;</var> = <sup>1</sup>&frasl;<sub>cos<var>&theta;</var></sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        cot<var>&theta;</var> = <sup>1</sup>&frasl;<sub>tan<var>&theta;</var></sub>
+        <br><br />
+        When given a set of coordinates to determine the trigonometric ratios, use the following
+        formulae:
+        <br />
+        sin<var>&theta;</var> = <sup>y</sup>&frasl;<sub>r</sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        csc<var>&theta;</var> = <sup>r</sup>&frasl;<sub>y</sub>
+        <br />
+        cos<var>&theta;</var> = <sup>x</sup>&frasl;<sub>r</sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        sec<var>&theta;</var> = <sup>r</sup>&frasl;<sub>x</sub>
+        <br />
+        tan<var>&theta;</var> = <sup>y</sup>&frasl;<sub>x</sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        cot<var>&theta;</var> = <sup>x</sup>&frasl;<sub>y</sub>
+        <br />
+        In all of these, <i>y</i> is the y-coordinate,
+        <i>x</i> is the x-coordinate, and
+        <i>r</i> is &#8730;(x&sup2; + y&sup2;)
+        <br><br />
+        <script>
+          function reveal(x) {
+            if (x == 1) {
+              document.getElementById("1-answer-1").style.display = "block";
+              document.getElementById("1-answer-2").style.display = "block";
+              document.getElementById("1-answer-3").style.display = "block";
+              document.getElementById("1-answer-4").style.display = "block";
+              document.getElementById("1-answer-5").style.display = "block";
+              document.getElementById("reveal-1").style.display = "none";
+            }
+            if (x == 2) {
+              document.getElementById("2-answer-1").style.display = "block";
+              document.getElementById("2-answer-2").style.display = "block";
+              document.getElementById("2-answer-3").style.display = "block";
+              document.getElementById("2-answer-4").style.display = "block";
+              document.getElementById("reveal-2").style.display = "none";
+            }
+            if (x == 3) {
+              document.getElementById("3-answer-1").style.display = "block";
+              document.getElementById("3-answer-2").style.display = "block";
+              document.getElementById("3-answer-3").style.display = "block";
+              document.getElementById("3-answer-4").style.display = "block";
+              document.getElementById("reveal-3").style.display = "none";
+            }
+            if (x == 4) {
+              document.getElementById("4-answer-1").style.display = "block";
+              document.getElementById("4-answer-2").style.display = "block";
+              document.getElementById("4-answer-3").style.display = "block";
+              document.getElementById("4-answer-4").style.display = "block";
+              document.getElementById("4-answer-5").style.display = "block";
+              document.getElementById("4-answer-6").style.display = "block";
+              document.getElementById("4-answer-7").style.display = "block";
+              document.getElementById("reveal-4").style.display = "none";
+            }
+          }
+          
+          function zoomIn(x) {
+            x.style.width = "25vw";
+          }
+          
+          function zoomOut(x) {
+            x.style.width = "6vw";
+          }
+        </script>
+        <br><br />
+        <u>QUIZ</u>
+        <br><br />
+        1. Determine the six trigonometric ratios for a right triangle with an opposite
+        of 4 and hypotenuse of 5.
+        <br />
+        <span style="display: none;" id="1-answer-1">
+          sin<var>&theta;</var> = <sup>4</sup>&frasl;<sub>5</sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          csc<var>&theta;</var> = <sup>5</sup>&frasl;<sub>4</sub>
+          <br />
+          cos<var>&theta;</var> = <sup>3</sup>&frasl;<sub>5</sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          sec<var>&theta;</var> = <sup>5</sup>&frasl;<sub>3</sub>
+          <br />
+          tan<var>&theta;</var> = <sup>4</sup>&frasl;<sub>3</sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          cot<var>&theta;</var> = <sup>3</sup>&frasl;<sub>4</sub>
+        </span>
+        <br />
+        2. Determine the reference angle for 163&deg;
+        <br />
+        <span style="display: none;" id="1-answer-2">
+          17&deg;
+        </span>
+        <br />
+        3. The tan<var>&theta;</var> of a right triangle is <sup>12</sup>&frasl;<sub>13</sub>.
+        Determine the other five trigonometric ratios.
+        <br />
+        <span style="display: none;" id="1-answer-3">
+          sin<var>&theta;</var> = <sup>5</sup>&frasl;<sub>13</sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          csc<var>&theta;</var> = <sup>13</sup>&frasl;<sub>5</sub>
+          <br />
+          cos<var>&theta;</var> = <sup>12</sup>&frasl;<sub>13</sub>&nbsp; &nbsp; &nbsp; &nbsp;
+          sec<var>&theta;</var> = <sup>13</sup>&frasl;<sub>12</sub>
+          <br />
+          tan<var>&theta;</var> = <sup>5</sup>&frasl;<sub>12</sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          cot<var>&theta;</var> = <sup>12</sup>&frasl;<sub>5</sub>
+        </span>
+        <br />
+        4. If a right triangle has a csc<var>&theta;</var> of <sup>-17</sup>&frasl;<sub>8</sub>.
+        What are the other ratios if cos<var>&theta;</var> &gt; 0?
+        <br />
+        <span style="display: none" id="1-answer-4">
+          sin<var>&theta;</var> = <sup>-8</sup>&frasl;<sub>17</sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          csc<var>&theta;</var> = <sup>-17</sup>&frasl;<sub>8</sub>
+          <br />
+          cos<var>&theta;</var> = <sup>15</sup>&frasl;<sub>17</sub>&nbsp; &nbsp; &nbsp; &nbsp;
+          sec<var>&theta;</var> = <sup>17</sup>&frasl;<sub>15</sub>
+          <br />
+          tan<var>&theta;</var> = <sup>-8</sup>&frasl;<sub>15</sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          cot<var>&theta;</var> = <sup>-15</sup>&frasl;<sub>8</sub>
+        </span>
+        <br />
+        5. Find the trigonometric ratios for an angle, <var>&theta;</var>, whose terminal side ends
+        at (7, 24).
+        <br />
+        <span style="display: none;" id="1-answer-5">
+          sin<var>&theta;</var> = <sup>24</sup>&frasl;<sub>25</sub>&nbsp; &nbsp; &nbsp; &nbsp;
+          csc<var>&theta;</var> = <sup>25</sup>&frasl;<sub>24</sub>
+          <br />
+          cos<var>&theta;</var> = <sup>7</sup>&frasl;<sub>25</sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          sec<var>&theta;</var> = <sup>25</sup>&frasl;<sub>7</sub>
+          <br />
+          tan<var>&theta;</var> = <sup>24</sup>&frasl;<sub>7</sub>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          cot<var>&theta;</var> = <sup>7</sup>&frasl;<sub>24</sub>
+        </span>
+        <br><br />
+        <button id="reveal-1" onclick="reveal(1)">Reveal Answers</button>
+        <br><br />
+        <br><br />
+        <span id="second-header">Unit Circle &amp; Trig Properties</span>
+        <br><br />
+        <img class="img" src="/math/precal/images/UnitCircle.png" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <br><br />
+        The unit circle consists of various points and angle measurements.
+        The first set of numbers is the measure of the angles in degrees (&deg;),
+        and the second set is the measure of the angles in radians.
+        By using the unit circle, one can memorize any conversion between
+        degrees and radians.
+        <br />
+        For all of the points on the unit circle, the hypotenuse (or <i>r</i>) is 1.
+        Therefore, the six trigonometric ratios of the unit circle can be found through
+        the following:
+        <br />
+        sin<var>&theta;</var> = <i>y</i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        csc<var>&theta;</var> = <sup>1</sup>&frasl;<sub>y</sub>
+        <br />
+        cos<var>&theta;</var> = <i>x</i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        sec<var>&theta;</var> = <sup>1</sup>&frasl;<sub>x</sub>
+        <br />
+        tan<var>&theta;</var> = <sup>y</sup>&frasl;<sub>x</sub>&nbsp; &nbsp; &nbsp; &nbsp;
+        cot<var>&theta;</var> = <sup>x</sup>&frasl;<sub>y</sub>
+        <br><br />
+        Below is a table for the trig. ratios of the unit circle:
+        <br />
+        <img style="width: 40vw;" src="/math/precal/images/TrigChart.jpg">
+        <br><br />
+        <span id="third-header">Sinusoidals &amp; Other Trig Graphs</span>
+        <br />
+        <img style="width: 44vw;" src="/math/precal/images/TrigGraphs.png">
+        <br><br />
+        A  <span id="hlight-y">sinusoidal</span> is a graphed function that can be represented using the equation:
+        f(x) = <i>a</i>sin(<i>b</i><var>&theta;</var> &minus; <i>h</i>) + <i>k</i>, in which:
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; |<i>a</i>| is the amplitude
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; <sup>2&pi;</sup>&frasl;<sub style="font-style: italic;">b</sub> is the period (distance from trough-trough or crest-crest)
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; <sup style="font-style: italic;">h</sup>&frasl;<sub style="font-style: italic;">b</sub>
+        is the phase shift (horizontal shift determined by period)
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; <i>k</i> is the vertical shift
+        <br />
+        <span id="hlight-b">Cosine graphs</span> can also be represented through a sinusoidal.
+        y = cos<var>&theta;</var> is the same as y = sin(<var>&theta;</var> + <sup>&pi;</sup>&frasl;<sub>2</sub>).
+        <br><br />
+        Tangent Functions:
+        <br />
+        <img style="width: 40vw;" src="/math/precal/images/TangentGraph.PNG">
+        <br />
+        Cosecant and Secant Functions:
+        <br />
+        <img style="width: 40vw;" src="/math/precal/images/sec_csc.gif">
+        <br><br />
+        The formulae for the graphs of <span id="hlight-b">tangent functions</span> is similar to that of sine and cosine functions.
+        The tangent function can be represented by the equation
+        f(x) = <i>a</i> &times; <sup>sin</sup>&frasl;<sub>cos</sub>(<i>b</i><var>&theta;</var> &minus; <i>h</i>) + <i>k</i>,
+        where all previous rules apply except the period is <sup>&pi;</sup>&frasl;<sub>b</sub>.
+        Unlike sine and cosine graphs, tangent functions contain undefined domain values,
+        and thus their graphs have vertical asymptotes.
+        <br><br />
+        <span id="hlight-b">Cosecant and secant functions</span> are the reciprocals of regular sine and cosine functions.
+        Therefore, their graphs have reversed waves, where they are parabolas that face away from the central x-axis.
+        Like tangent functions, they have vertical asymptotes. The difference between secant and cosecant graphs
+        is where the asymptotes are positioned [ sec<var>&theta;</var> is the same as csc(<var>&theta;</var> + <sup>&pi;</sup>&frasl;<sub>2</sub>) ]
+        <br><br />
+        <br><br />
+        <u>QUIZ</u>
+        <br><br />
+        1. Determine the phase shift, amplitude, and period for the following function:
+        f(x) = -sin(<vsup>&theta;</vsup>&frasl;<sub>2</sub> &minus; &pi;) + 5
+        <br />
+        <span style="display: none;" id="2-answer-1">
+          Period: 4&pi;,
+          Amplitude: 1,
+          Phase Shift: right 2&pi;
+     	</span>
+        <br />
+        2. Determine five major points of following function within the domain [ -&pi;, &pi; ]:
+        f(x) = 3cos(2<var>&theta;</var> + <sup>&pi;</sup>&frasl;<sub>2</sub>) &minus; 1
+        <br/>
+         <span style="display: none;" id="2-answer-2">
+           (-<sup>3&pi;</sup>&frasl;<sub>4</sub>, -4),
+           (-<sup>&pi;</sup>&frasl;<sub>2</sub>, -1),
+           (-<sup>&pi;</sup>&frasl;<sub>4</sub>, 2),
+           (0, -1),
+           (<sup>&pi;</sup>&frasl;<sub>4</sub>, -4)
+     	</span>
+        <br />
+        3. If a sinusoidal has a phase shift of "left <sup>&pi;</sup>&frasl;<sub>12</sub>",
+        what would the trigonometric equation be if it the period is <sup>&pi;</sup>&frasl;<sub>2</sub>?
+        <br />
+        <span style="display: none;" id="2-answer-3">
+          f(x) = cos(4<var>&theta;</var> + <sup>&pi;</sup>&frasl;<sub>3</sub>)
+          or
+          f(x) = sin(4<var>&theta;</var> + <sup>&pi;</sup>&frasl;<sub>3</sub>)
+     	</span>
+        <br />
+        4. Determine the x-positions of the vertical asymptotes for the function
+        f(x) = tan(<vsup>&theta;</vsup>&frasl;<sub>3</sub> + <sup>2&pi;</sup>&frasl;<sub>3</sub>)
+        <br>
+         <span style="display: none;" id="2-answer-4">
+           x = <sup>3&pi;</sup>&frasl;<sub>2</sub>k (k &ne; 0, k &isin; Z)
+     	</span>
+        <br><br />
+        <button id="reveal-2" onclick="reveal(2)">Reveal Answers</button>
+        <br><br /><br />
+        <span id="third-header">Inverse Trig Functions</span>
+        <br />
+        Each trigonometric function has what is known as an inverse function.
+        <span id="hlight-y">Inverse functions</span>, such as sin<sup>-1</sup><i>x</i>, return angular measures rather than values.
+        For instance, sin<sup>-1</sup>(<sup>&radic;2</sup>&frasl;<sub>2</sub>) is <sup>&pi;</sup>&frasl;<sub>4</sub>.
+        Thus, sin<sup>-1</sup><i>x</i> returns the <var>&theta;</var> from the equation
+        <i>x</i> = sin<var>&theta;</var> (yes, it's the same <i>x</i> that's in the inverse).
+        <br><br />
+        There are other forms of inverse trig functions known as <span id="hlight-g">arc functions</span>.
+        Inverse functions have limited domains so that only one angle measure can be the result.
+        Arc functions, however, have unlimited domains and has two results.
+        <br><br />
+        <i>Example(s)</i>:
+        <br />
+        sin<sup>-1</sup>(-<sup>&radic;2</sup>&frasl;<sub>2</sub>) is -<sup>&pi;</sup>&frasl;<sub>4</sub>,
+        since the limited domain for inverse sin and tan functions is [ -<sup>&pi;</sup>&frasl;<sub>2</sub>, <sup>&pi;</sup>&frasl;<sub>2</sub> ].
+        <br />
+        cos<sup>-1</sup>(-<sup>&radic;2</sup>&frasl;<sub>2</sub>) is <sup>3&pi;</sup>&frasl;<sub>4</sub>,
+        since the limited domain for inverse cos function [ 0, &pi; ].
+        <br />
+        arcsin(-<sup>&radic;2</sup>&frasl;<sub>2</sub>) is
+        -<sup>&pi;</sup>&frasl;<sub>4</sub> + 2&pi;k &amp; <sup>5&pi;</sup>&frasl;<sub>4</sub> + 2&pi;k (k &isin; Z),
+        which is determined by taking the original result and another angle that results in
+        <i>x</i> (in this case, <i>x</i> = -<sup>&radic;2</sup>&frasl;<sub>2</sub>)
+        and adding 2&pi;k (k &isin; Z) to include all coterminals for that angle.
+        For arctan, &pi;k (k &isin; Z) is added instead since the domain for tangent
+        is &pi; rather than 2&pi;.
+        <br><br />
+        When give a problem that contains both a trig and inverse trig function, such as
+        "find cos(sin<sup>-1</sup><i>x</i>)",
+        construct a triangle and determine the side lengths.
+        <br />
+        For example, tan(cos<sup>-1</sup>(<sup>3</sup>&frasl;<sub>5</sub>)) = <sup>4</sup>&frasl;<sub>3</sub>.
+        <br />
+        Reasoning:
+        The triangle has an adjacent of 3 and hypotenuse of 5 since the formula for cosine
+        is <sup>adj</sup>&frasl;<sub>hyp</sub>. If there is no denominator, use 1 in its place.
+        The opposite can be found through &radic;(hyp&sup2; &minus; adj&sup2;), which in
+        this case is equal to 4. The tangent formula is <sup>opp</sup>&frasl;<sub>adj</sub>,
+        so the final result is <sup>4</sup>&frasl;<sub>3</sub>.
+        <br><br />
+        <span id="third-header">Law of Sines and Cosines</span>
+        <br />
+        Using trigonometry, how does one determine a side length or an angle measure in a triangle when given certain data?
+        The answer is the Law of Sines and Cosines.
+        <br><br />
+        In the <span id="hlight-b">Law of Sines</span>,
+        <sup>sin&alpha;</sup>&frasl;<sub><i>a</i></sub> = <sup>sin&beta;</sup>&frasl;<sub><i>b</i></sub>,
+        where &alpha; and &beta; are angle measures in a triangle, and <i>a</i> and <i>b</i> are the opposites of their respective angles.
+        Law of Sines is best used when given an angle, its opposite, and another angle or side length (AAS/SAA, SAS, SSA/ASS).
+        <br />
+        In the <span id="hlight-b">Law of Cosines</span>,
+        <i>a</i>&sup2; = <i>b</i>&sup2; + <i>c</i>&sup2; &minus; 2<i>bc</i>cos&alpha;,
+        where <i>a</i>,<i> b</i>, and <i>c</i> are side lengths and &alpha; is the angle that has <i>a</i> as its opposite.
+        Law of Cosines is best used when given an angle and two side lengths, where neither side is the angle's opposite (SAS, ASA).
+        Or, when given 3 side lengths, it can determine angle measures (SSS).
+         <br><br />
+        Regarding the Law of Sines, when given an SSA/ASS triangle, also known as an <span id="hlight-g">ambiguous case</span>,
+        there can be a certain number of possible solutions. You should know how to identify and solve ambiguous case triangles.
+        <br />
+        In these ambiguous cases, one must determine the value of <i>h</i>, or the height of the triangle.
+        The formula is <i>h</i> = <i>b</i> &times; sin&alpha;. The following conditions determine the number of solutions:
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; If &alpha; is acute and <i>a</i> (opposite of &alpha;) &#60; <i>h</i>:&nbsp;&nbsp; NO SOLUTIONS
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; If &alpha; is acute and <i>a</i> = <i>h</i>:&nbsp;&nbsp; ONE SOLUTION
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; If &alpha; is acute and <i>a</i> &gt; <i>b</i>:&nbsp;&nbsp; ONE SOLUTION
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; If &alpha; is acute and <i>h</i> &#60; <i>a</i> &#60; <i>b</i>:&nbsp;&nbsp; TWO SOLUTIONS
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; If &alpha; is obtuse and <i>a</i> &le; <i>b</i>:&nbsp;&nbsp; NO SOLUTIONS
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; If &alpha; is obtuse and <i>a</i> &gt; <i>b</i>:&nbsp;&nbsp; ONE SOLUTION
+        <br><br />
+        <i>Example(s)</i>:
+        <br />
+        Suppose a triangle ABC has the sides <i>a</i> (length of 10) and <i>b</i> (length of 13), as well as the angle &alpha;,
+        which has a measure of 35&deg;.
+        This triangle has an <i>h</i>-value of approx. 7.46, which fulfills the 4<sup>th</sup> condition (<i>h</i> &#60; <i>a</i> &#60; <i>b</i>).
+        Therefore, &Delta;ABC has two possible solutions.
+        <br />
+        After solving for your first solution,
+        the next step is to take subtract the angle measure you had determined for &beta; (angle measure of &ang;B; has <i>b</i> as its opposite)
+        from 180&deg; (180&deg; &minus; &beta; = &beta;' [beta prime: the new measure for &ang;B]).
+        Then, solve for the new values of <i>c</i> (other side length) and &gamma; (angle measure for &ang;C; has <i>c</i> as its opposite).
+        <br><br />
+        There are two formulae for determining the area of a triangle:
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; <i>A</i> = <sup>1</sup>&frasl;<sub>2</sub><i>b</i><i>c</i>sin&alpha;
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; <i>A</i> = &radic;(<i>s</i>(<i>s</i> &minus; <i>a</i>)(<i>s</i> &minus; <i>b</i>)(<i>s</i> &minus; <i>c</i>))
+        {<i>s</i> = <sup>1</sup>&frasl;<sub>2</sub>(<i>a</i> + <i>b</i> + <i>c</i>)}
+        <br><br />
+        <span id="third-header">Trig Identities</span>
+        <br />
+        There are several <span id="hlight-b">trigonometric identities</span> that are used to simplify/prove trig expressions.
+        Below is a list of several identities:
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; sin&sup2;<var>&theta;</var> + cos&sup2;<var>&theta;</var> = 1
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; tan&sup2;<var>&theta;</var> + 1 = sec&sup2;<var>&theta;</var>
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; cot&sup2;<var>&theta;</var> + 1 = csc&sup2;<var>&theta;</var>
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; sin(&alpha; &plusmn; &beta;) = sin&alpha;cos&beta; &plusmn; cos&alpha;sin&beta;
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; cos(&alpha; &plusmn; &beta;) = cos&alpha;cos&beta; &#8723; sin&alpha;sin&beta;
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+          tan(&alpha; &plusmn; &beta;) =
+          <sup>tan&alpha; &plusmn; tan&beta;</sup>&frasl;<sub>1 &#8723; tan&alpha;tan&beta;</sub>
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+          tan2<var>&theta;</var> =
+          <sup>2tan<var>&theta;</var></sup>&frasl;<sub>1 &minus; tan&sup2;(<var>&theta;</var>)</sub>
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; sin2<var>&theta;</var> = 2sin<var>&theta;</var>cos<var>&theta;</var>
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+          cos2<var>&theta;</var> = cos&sup2;<var>&theta;</var> &minus; sin&sup2;<var>&theta;</var>
+          (OR)
+          1 &minus; 2sin&sup2;<var>&theta;</var>
+          (OR)
+          2cos&sup2;<var>&theta;</var> &minus; 1
+        <br><br />
+        By using the above identities, one can verify and simplify trig expressions.
+        <u>BE CAREFUL</u>, everything requires the proper procedure, so thoroughly analyze an expression
+        before attempting to do anything! Practice makes perfect.
+      <br><br />
+      <span id="third-header">Solving Trigonometric Equations</span>
+      <br />
+      	There are multiple ways as to solve trigonometric equations.
+      	The first method is <span id="hlight-g">isolating trigonometric expressions</span>. The following is an example:
+        <br />
+        &nbsp;&nbsp;&nbsp;
+        5cos <var>x</var> = 3cos <var>x</var> + &radic;3
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        2cos <var>x</var> = &radic;3
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        cos <var>x</var> = <sup>&radic;3</sup>&frasl;<sub>2</sub>
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        <var>x</var> = arccos(<sup>&radic;3</sup>&frasl;<sub>2</sub>)
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        <var>x</var> = <sup>&pi;</sup>&frasl;<sub>6</sub> + 2<var>n</var>&pi;, <sup>11&pi;</sup>&frasl;<sub>6</sub> +
+        2<var>n</var>&pi; [<var>n</var> &isin; Z]
+        <br><br />
+        Another method is <span id="hlight-g">taking the square root of both sides</span>. The following is an example:
+        <br />
+        &nbsp;&nbsp;&nbsp;
+        3tan&sup2; <var>x</var> &minus; 4 = -3
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        3tan&sup2; <var>x</var> = 1
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        tan&sup2; <var>x</var> = <sup>1</sup>&frasl;<sub>3</sub>
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        tan <var>x</var> = &plusmn; <sup>1</sup>&frasl;<sub>&radic;3</sub>
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        <var>x</var> = arctan(<sup>1</sup>&frasl;<sub>&radic;3</sub>), arctan(- <sup>1</sup>&frasl;<sub>&radic;3</sub>)
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        <var>x</var> = <sup>&pi;</sup>&frasl;<sub>6</sub> + <var>n</var>&pi;, <sup>5&pi;</sup>&frasl;<sub>6</sub> +
+        <var>n</var>&pi; [<var>n</var> &isin; Z]
+        <br><br />
+        The next method is <span id="hlight-g">solving by factoring</span>. The following are examples:
+        <br />
+        &nbsp;&nbsp;&nbsp;
+        2sin <var>x</var> cos <var>x</var> = &radic;3 sin <var>x</var>
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        2sin <var>x</var> cos <var>x</var> &minus;  &radic;3 sin <var>x</var> = 0
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        sin <var>x</var> (2cos <var>x</var> &minus;  &radic;3) = 0
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        sin <var>x</var> = 0; cos <var>x</var> = <sup>&radic;3</sup>&frasl;<sub>2</sub>
+        <br><br />
+        &nbsp;&nbsp;&nbsp;
+        2sin&sup2; <var>x</var> + sin <var>x</var> &minus; 1 = 0
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        (2sin <var>x</var> &minus; 1)(sin <var>x</var> + 1) = 0
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        sin <var>x</var> = <sup>1</sup>&frasl;<sub>2</sub>; sin <var>x</var> = -1
+        <br><br />
+        Basically, the same ways one can solve a nontrig equation can be applied to trigonometric equations as well.
+        Furthermore, the use of identities is also an applicable solution.
+      </p>
+      <p class="header">Semester 2</p>
+      <span id="second-header">Conic Sections</span>
+      <br><br />
+      <span id="third-header">Parabola</span>
+      	<br />
+        The <span id="hlight-y">parabola</span> is a graph structure that is normally produced by a quadratic equation, such as <var>y</var> = <var>x</var>&sup2;.
+        However, the conic formulae for parabolas are the following:
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        (<var>x</var> &minus; <var>h</var>)&sup2; = 4<var>p</var>(<var>y</var> &minus; <var>k</var>), if the parabola opens up or down.
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        (<var>y</var> &minus; <var>k</var>)&sup2; = 4<var>p</var>(<var>x</var> &minus; <var>h</var>), if the parabola opens left or right.
+        <br><br />
+        You're probably wondering what <var>k</var>, <var>h</var>, and <var>p</var> represent.
+        <var>k</var> is the vertical shift, <var>h</var> is the horizontal shift, and <var>p</var> is the dilation/reflection factor.
+        <br><br />
+        When given a parabolic equation, one must determine the vertex, focus, axis of symmetry, and directrix.
+        The following are the formulae for determining these through the given equation:
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        Vertex: (<var>h</var>, <var>k</var>)
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        	Focus:
+       		(<var>h</var>, <var>k</var> + <var>p</var>), if <var>x</var> is squared;
+        	(<var>h</var> + <var>p</var>, <var>k</var>), if <var>y</var> is squared
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        	Axis of Symmetry:
+        	<var>x</var> = <var>h</var>, if <var>x</var> is squared;
+        	<var>y</var> = <var>k</var>, if <var>y</var> is squared
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        	Directrix:
+        	<var>y</var> = <var>k</var> &minus; <var>p</var>, if <var>x</var> is squared;
+        	<var>x</var> = <var>h</var> &minus; <var>p</var>, if <var>y</var> is squared
+        <br><br />
+        Therefore, if the parabolic equation were (<var>x</var> + 8)&sup2; = 8(<var>y</var> &minus; 3),
+        then these would be the results because <var>p</var> = 2:
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        Vertex: (-8, 3)
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        Focus: (-8, 5)
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        Axis of Symmetry: <var>x</var> = -8
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        Directrix: <var>y</var> = 1
+        <br><br />
+      <span id="third-header">Ellipse</span>
+      <br />
+        An <span id="hlight-y">ellipse</span> is a shape in which all of the edges are curves.
+        A circle is a type of ellipse, much like how a square is a type of rectangle.
+        <br />
+        The conic formula for an ellipse (non-circle) is
+        <sup>(<var>x</var> &minus; <var>h</var>)&sup2;</sup>&frasl;<sub><var>a</var>&sup2;</sub> +
+        <sup>(<var>y</var> &minus; <var>k</var>)&sup2;</sup>&frasl;<sub><var>b</var>&sup2;</sub> = 1.
+        If <var>a</var> is greater than <var>b</var>, then the orientation (or direction of the major/longer axis) is horizontal.
+        If <var>b</var> is greater than <var>a</var>, then the orientation is vertical.
+        <br><br />
+        When given an elliptical equation, one must determine the vertices, the co-vertices, the major axis, the minor axis, and the foci.
+        The following are the formulae with which one can find these results:
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        Vertices: (<var>h</var> + <var>a</var>, <var>k</var>), if horizontal;
+        				 (<var>h</var>, <var>k</var> + <var>b</var>), if vertical
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        Co-Vertices: (<var>h</var>, <var>k</var> + <var>b</var>), if horizontal;
+        					   (<var>h</var> + <var>a</var>, <var>k</var>), if vertical
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        Major Axis: <var>y</var> = <var>k</var>, <i>len</i> = 2<var>a</var> (if horizontal);
+       						 <var>x</var> = <var>h</var>, <i>len</i> = 2<var>b</var> (if vertical)
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        Minor Axis: <var>x</var> = <var>h</var>, <i>len</i> = 2<var>b</var> (if horizontal);
+       						 <var>y</var> = <var>k</var>, <i>len</i> = 2<var>a</var> (if vertical)
+       	<br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        Foci: (<var>h</var> &plusmn; <var>c</var>, <var>k</var>), if horizontal;
+       			  (<var>h</var>, <var>k</var> &plusmn; <var>c</var>), if vertical
+        <br><br />
+        The foci are fixed points such that the sum of the distances between each focus and any point on the ellipse is the same for all points on the ellipse.
+        This sum is actually the length of the major axis because the relationship between the
+        variables <var>c</var> (see above), <var>a</var>, and <var>b</var> is represented by the formula
+        <var>c</var> = &radic;( |<var>a</var>&sup2; &minus; <var>b</var>&sup2;| ).
+        This formula is derived from the fact that the distance between a focus and a co-vertex is equal to the larger <var>a</var> or <var>b</var> variable.
+      	<br> <br />
+        Another thing that is useful to find when given an ellipse is its <span id="hlight-b">eccentricity</span>, which measures an ellipse's elongation.
+        The formula for eccentricity is <var>e</var> = <vsup>c</vsup>&frasl;<vsub>a</vsub> if the orientation is horizontal,
+        and <var>e</var> = <vsup>c</vsup>&frasl;<vsub>b</vsub> if the orientation is vertical.
+        <br><br />
+      <span id="third-header">Hyperbola</span>
+      <br />
+        A <span id="hlight-y">hyperbola</span> is the locus of all points in a plane such that the difference of their distances from two foci is constant.
+        The conic formula for a hyperbola is
+        <sup>(<var>y</var> &minus; <var>k</var>)&sup2;</sup>&frasl;<sub><var>a</var>&sup2;</sub> &minus;
+        <sup>(<var>x</var> &minus; <var>h</var>)&sup2;</sup>&frasl;<sub><var>b</var>&sup2;</sub> = 1.
+        <br />
+        However, it could also be
+        <sup>(<var>x</var> &minus; <var>h</var>)&sup2;</sup>&frasl;<sub><var>b</var>&sup2;</sub> &minus;
+        <sup>(<var>y</var> &minus; <var>k</var>)&sup2;</sup>&frasl;<sub><var>a</var>&sup2;</sub> = 1.
+        <br />
+        There are two conic formulae for a hyperbola because either the <var>x</var> or <var>y</var> could be negative.
+        If <var>y</var> is negative, the orientation of the transverse axis (see below) is horizontal.
+        If <var>x</var> is negative, the orientation of the transervse axis is vertical.
+        <br><br />
+        When given a hyperbolic equation, one must determine the vertices, foci, transverse axis, conjugate axis, and asymptotes.
+        The following are the formulae with which one can find these results:
+        <br />
+       	<img style="width: 40vw;" src="/math/precal/images/Hyperbola.PNG">
+        <br><br />
+        <br><br />
+        <u>QUIZ</u>
+        <br><br />
+        1. Rewrite in standard form, determine the conic, and analyze the data:
+        -<var>x</var>&sup2; + 10<var>x</var> &minus; 8<var>y</var> &minus; 9 = 0
+        <br>
+        <span style="display: none;" id="3-answer-1">
+           &nbsp;&nbsp;&nbsp; &bull; Standard Form: (<var>x</var> &minus; 5)&sup2; = -8(<var>y</var> &minus; 2)
+           <br />
+           &nbsp;&nbsp;&nbsp; &bull; Conic: Parabola
+           <br />
+           &nbsp;&nbsp;&nbsp; &bull; Vertex: (5, 2)
+           <br />
+           &nbsp;&nbsp;&nbsp; &bull; Focus: (5, 0)
+           <br />
+           &nbsp;&nbsp;&nbsp; &bull; Axis of Symmetry: <var>x</var> = 5
+           <br />
+           &nbsp;&nbsp;&nbsp; &bull; Directrix: <var>y</var> = 4
+     	</span>
+        <br />
+        2. Use the following data to write the equation of a hyperbola in standard form:
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; Foci: (5 + 11&radic;2, -9), (5 &minus; 11&radic;2, -9)
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; Asymptotes: <var>y</var> = <var>x</var> &minus; 14,
+        																		<var>y</var> = -<var>x</var> &minus; 4
+        <br>
+        <span style="display: none;"  id="3-answer-2">
+         	&nbsp;&nbsp;&nbsp; &bull; Standard Form: (<var>x</var> &minus; 5)&sup2; &minus; (<var>y</var> + 9)&sup2; = 121
+     	</span>
+        <br />
+        3. Use the following data to write the equation of a parabola in standard form:
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; Focus: (2, -5&radic;3)
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; Directrix: <var>x</var> = -1
+        <br>
+        <span style="display: none;"  id="3-answer-3">
+           &nbsp;&nbsp;&nbsp; &bull; Standard Form: (<var>y</var> + 5&radic;3)&sup2; = 6(<var>x</var> &minus; &frac12;)
+     	</span>
+        <br />
+        4. Rewrite in standard form, determine the conic, and analyze the data:
+        4<var>x</var>&sup2; + 9<var>y</var>&sup2; &minus; 16<var>x</var> + 90<var>y</var> + 205 = 0
+        <br>
+        <span style="display: none;"  id="3-answer-4">
+          &nbsp;&nbsp;&nbsp; &bull; Standard Form: 4(<var>x</var> &minus; 2)&sup2; + 9(<var>y</var> + 5)&sup2; = 36
+          <br />
+          &nbsp;&nbsp;&nbsp; &bull; Conic: Ellipse
+          <br />
+          &nbsp;&nbsp;&nbsp; &bull; Vertices: (5, -5), (-1, -5)
+          <br />
+          &nbsp;&nbsp;&nbsp; &bull; Co-Vertices: (2, -3), (2, -7)
+          <br />
+          &nbsp;&nbsp;&nbsp; &bull; Foci: (2 &plusmn; &radic;5, -5)
+          <br />
+          &nbsp;&nbsp;&nbsp; &bull; Major Axis: <var>y</var> = -5, <i>len</i> = 6
+          <br />
+          &nbsp;&nbsp;&nbsp; &bull; Minor Axis: <var>x</var> = 2, <i>len</i> = 4
+          <br />
+          &nbsp;&nbsp;&nbsp; &bull; Eccentricity: 0.745
+     	</span>
+        <br><br />
+        <button id="reveal-3" onclick="reveal(3)">Reveal Answers</button>
+        <br><br />
+      <span id="second-header">Vectors</span>
+      <br><br />
+        Below are some images depicting references for data regarding vectors.
+        <br />
+        <img src="/math/precal/images/vector-info-2.PNG">
+        <br />
+        <img src="/math/precal/images/vector-info-1.PNG">
+        <br />
+        <img src="/math/precal/images/vector-info-3.PNG">
+        <br />
+        <img src="/math/precal/images/vector-info-4.PNG">
+        <hr />
+        A <span id="hlight-y">vector</span> is a type of line that has a specified direction and data value.
+        <br />
+        This direction is expressed through an angle, <var>&theta;</var>.
+        This angle can be found with the <span id="hlight-g">component form</span> of the vector (&#12296;<var>a</var>, <var>b</var>&#12297;)
+        through the formula <var>&theta;</var> = arctan(<vsup>b</vsup>&frasl;<vsub>a</vsub>) in the restricted domain of [0, 2&pi;].
+        <br />
+        The data value is known as the vector's <span id="hlight-b">magnitude</span>, which can be calculated via the formula above (second image).
+        <br><br />
+        One can write the component form of a vector when given its angle of direction and magnitude. The following is the formula:
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr; <var>v</var> = &#8214;<var>v</var>&#8214;&#12296;cos<var>&theta;</var>, sin<var>&theta;</var>&#12297;
+        <br><br />
+        Aside from the component form, there is also <span id="hlight-g">linear combination</span>.
+        Linear combination is represented through scalar multiplication of variable, where
+        <var>i</var> =&#12296;1, 0&#12297; and
+        <var>j</var> =&#12296;0, 1&#12297;
+        <br />
+        For instance, the linear combination of the vector&#12296;7, -3&#12297;would be
+      	7<var>i</var> &minus; 3<var>j</var>.
+      	In other words, for a vector, <var>v</var>, with component form&#12296;<var>a</var>, <var>b</var>&#12297;the linear combination
+      	would be <var>ai</var> + <var>bj</var>.
+        <hr />
+        Here is some more data that can be acquired from vectors:
+        <br />
+        <img src="/math/precal/images/vector-info-5.PNG">
+        <br />
+        <img src="/math/precal/images/vector-info-6.PNG">
+        <br />
+        <img src="/math/precal/images/vector-info-7.PNG">
+        <br />
+        <img src="/math/precal/images/vector-info-8.PNG">
+        <br><br />
+        The other value that is used to represent the vector <var>u</var> as a sum of two vectors
+        including the projection of <var>u</var> onto <var>v</var> is found via the following:
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr; <var>w</var><sub style="font-size: 10px;">2</sub> = <var>u</var> &minus; proj<vsub>v</vsub><var>u</var>
+        <br><br />
+      	In order to determine the angle, <var>&psi;</var>, between two vectors within the domain [0, 2&pi;],
+        one must use the following formula when given vectors <var>u</var> and <var>v</var>:
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+      	cos<var>&psi;</var> =
+      	<sup>(<var>u</var> &bull; <var>v</var>)</sup>&frasl;<sub>(&#8214;<var>v</var>&#8214; &times; &#8214;<var>u</var>&#8214;)</sub>
+        <br><br />
+      <span id="second-header">Parametric Equations</span>
+      <br><br />
+        A <span id="hlight-y">parametric equation</span> is a set of two functions of the variable <var>t</var> that represent <var>x</var> and <var>y</var> values.
+        <br>
+        	<span style="margin-left: 16vw;"><var>x</var> = <i>f</i>(<var>t</var>) &nbsp;&nbsp;&nbsp; <var>y</var> = <i>g</i>(<var>t</var>)</span>
+        <br />
+        <br />
+        The variable <var>t</var> is known as the <span id="hlight-b">parameter</span>.
+        For each value of <var>t</var>, there is a set of (<var>x</var>, <var>y</var>) coordinates.
+        Below is a table and graph that serve as a provided example:
+        <br><br />
+      <table id="t1">
+        <tr>
+          <th><var>t</var></th>
+          <th><var>x</var> = <var>t</var>&sup2; &minus; 1</th>
+          <th><var>y</var> = <vsup>t</vsup>&frasl;<sub>4</sub> + 2</th>
+        </tr>
+        <tr>
+          <td>-3</td>
+          <td>8</td>
+          <td>1.25</td>
+        </tr>
+        <tr>
+          <td>-2</td>
+          <td>3</td>
+          <td>1.5</td>
+        </tr>
+        <tr>
+          <td>-1</td>
+          <td>0</td>
+          <td>1.75</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>-1</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>2.25</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>3</td>
+          <td>2.5</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>8</td>
+          <td>2.75</td>
+        </tr>
+      </table>
+      <img style="width: 12em; margin-left: 16em;" src="/math/precal/images/ParamGraph-1.jpg">
+      <br><br /><br><br />
+      <br><br /><br><br />
+      <p class="body">
+        <span id="third-header">Parametric to Rectangular</span>
+        <br />
+        In calculus, the term <span id="hlight-y">rectangular form</span> is used very commonly.
+        The recntangular form of a equation is to derirve that equation in terms of <var>x</var> and <var>y</var>.
+        <br />
+        An example of converting parametric form to rectangular form is below:
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; <var>y</var> = 2<var>t</var>
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; <var>x</var> = <var>t</var>&sup2; + 2
+        <br />
+       	&nbsp;&nbsp;&nbsp; &rarr;  <var>t</var> = <vsup>y</vsup>&frasl;<sub>2</sub>
+        <br />
+       	&nbsp;&nbsp;&nbsp; &rarr;  <var>x</var> = ( <vsup>y</vsup>&frasl;<sub>2</sub> )&sup2; + 2
+        <br />
+       	&nbsp;&nbsp;&nbsp; &rarr;  ( <vsup>y</vsup>&frasl;<sub>2</sub> )&sup2; = <var>x</var> &minus; 2
+        <br />
+       	&nbsp;&nbsp;&nbsp; &rarr;  <vsup>y</vsup>&frasl;<sub>2</sub> = &radic;(<var>x</var> &minus; 2)
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;  <var>y</var> = 2&radic;(<var>x</var> &minus; 2)
+        <br />
+        For the conversion, the first step is to solve for <var>t</var> using one of the functions.
+        Then, substitute the parameter in the other function with the result acquired from the first step.
+        Finally, simplify until the result is a rectangular equation in terms of <var>x</var> and <var>y</var>.
+        <br><br />
+        Sometimes, the parameter is an angle, <var>&theta;</var>.
+        In this case, the goal is to put both parameters in terms of the trigonometric functions being used.
+        Here are a few examples:
+        <br />
+        <span style="margin-left: 35px;">
+          1. <var>y</var> = 5sin<var>&theta;</var> &nbsp;&nbsp;&nbsp; <var>x</var> = 3cos<var>&theta;</var>
+        </span>
+        <br />
+        <span style="margin-left: 35px;">
+          &rarr; sin<var>&theta;</var> = <vsup>y</vsup>&frasl;<sub>5</sub>
+          &nbsp;&nbsp;&nbsp; cos<var>&theta;</var> = <vsup>x</vsup>&frasl;<sub>3</sub>
+        </span>
+        <br />
+        <span style="margin-left: 35px;">
+          &rarr; ( <vsup>y</vsup>&frasl;<sub>5</sub> )&sup2; + ( <vsup>x</vsup>&frasl;<sub>3</sub> )&sup2; = 1
+          &nbsp;&nbsp; [<i>Identity</i>: sin&sup2;<var>&theta;</var> + cos&sup2;<var>&theta;</var> = 1]
+        </span>
+        <br />
+        <span style="margin-left: 35px;">
+          &rarr; <sup><var>y</var>&sup2;</sup>&frasl;<sub>25</sub> + <sup><var>x</var>&sup2;</sup>&frasl;<sub>9</sub> = 1
+        </span>
+        <br><br />
+        <span style="margin-left: 35px;">
+          2. <var>y</var> = <sup>&radic;2</sup>&frasl;<sub>4sin<var>&theta;</var></sub>
+          &nbsp; &nbsp; &nbsp; &nbsp; <var>x</var> = <sup>cot<var>&theta;</var></sup>&frasl;<sub>6</sub>
+        </span>
+        <br />
+        <span style="margin-left: 35px;">
+          &rarr; csc<var>&theta;</var> = 2<var>y</var>&radic;2
+          &nbsp;&nbsp;&nbsp; cot<var>&theta;</var> = 6<var>x</var>
+        </span>
+        <br />
+        <span style="margin-left: 35px;">
+          &rarr; (2<var>y</var>&radic;2)&sup2; = (6<var>x</var>)&sup2; + 1
+          &nbsp;&nbsp; [<i>Identity</i>: cot&sup2;<var>&theta;</var> + 1 = csc&sup2;<var>&theta;</var>]
+        </span>
+        <br />
+        <span style="margin-left: 35px;">
+          &rarr; 8<var>y</var>&sup2; &minus; 36<var>x</var>&sup2; = 1
+        </span>
+        <br><br />
+      <span id="third-header">Rectangular to Parametric</span>
+      <br />
+        The first step of converting a rectangular equation to parametric is to find the value of <var>x</var> or <var>y</var>
+        in terms of <var>t</var> or <var>&theta;</var>. Then, substitution and simplification. The following are examples:
+        <br />
+        <span style="margin-left: 35px;">
+          1.&nbsp; <var>t</var> = <var>x</var> &minus; 1
+          &nbsp;&nbsp;&nbsp; <var>y</var> = <var>x</var>&sup2; + 2
+        </span>
+        <br />
+        <span style="margin-left: 35px;">
+          &rarr; <var>x</var> = <var>t</var> + 1
+          &nbsp;&nbsp;&nbsp; <var>y</var> = (<var>t</var> + 1)&sup2; + 2
+        </span>
+        <br />
+        <span style="margin-left: 35px;">
+          &rarr; <var>x</var> = <var>t</var> + 1
+          &nbsp;&nbsp;&nbsp; <var>y</var> = <var>t</var>&sup2; + 2<var>t</var> + 3
+        </span>
+        <br><br />
+        <span style="margin-left: 35px;">
+          2.&nbsp; <var>t</var> = 4<var>y</var>&sup2;
+          &nbsp;&nbsp;&nbsp; <var>y</var> = &radic;<var>x</var>
+        </span>
+        <br />
+        <span style="margin-left: 35px;">
+          &rarr; <var>y</var> = <sup>&radic;<var>t</var></sup>&frasl;<sub>2</sub>
+          &nbsp;&nbsp;&nbsp; <sup>&radic;<var>t</var></sup>&frasl;<sub>2</sub>
+          = &radic;<var>x</var>
+        </span>
+        <br />
+        <span style="margin-left: 35px;">
+          &rarr; <var>y</var> = <sup>&radic;<var>t</var></sup>&frasl;<sub>2</sub>
+          &nbsp;&nbsp;&nbsp; <var>x</var> = <vsup>t</vsup>&frasl;<sub>4</sub>
+        </span>
+       	<br><br />
+        <span style="margin-left: 35px;">
+          3.&nbsp; sin<var>&theta;</var> = <sup>(<var>x</var> &minus; 1)</sup>&frasl;<sub>2</sub>
+          &nbsp;&nbsp;&nbsp; <sup>(<var>x</var> &minus; 1)&sup2;</sup>&frasl;<sub>4</sub>
+          + <sup><var>y</var>&sup2;</sup>&frasl;<sub>9</sub> = 1
+        </span>
+        <br />
+        <span style="margin-left: 35px;">
+          &rarr; <var>x</var> &minus; 1 = 2sin<var>&theta;</var>
+          &nbsp;&nbsp;&nbsp; <sup>4sin&sup2;<var>&theta;</var></sup>&frasl;<sub>4</sub>
+          + <sup><var>y</var>&sup2;</sup>&frasl;<sub>9</sub> = 1
+        </span>
+        <br />
+        <span style="margin-left: 35px;">
+          &rarr; <var>x</var> = 2sin<var>&theta;</var> + 1
+          &nbsp;&nbsp;&nbsp; 1 &minus; sin&sup2;<var>&theta;</var>
+          = <sup><var>y</var>&sup2;</sup>&frasl;<sub>9</sub>
+        </span>
+        <br />
+        <span style="margin-left: 35px;">
+          &rarr; <var>x</var> = 2sin<var>&theta;</var> + 1
+          &nbsp;&nbsp;&nbsp; cos&sup2;<var>&theta;</var> = <sup><var>y</var>&sup2;</sup>&frasl;<sub>9</sub>
+        </span>
+        <br />
+        <span style="margin-left: 35px;">
+          &rarr; <var>x</var> = 2sin<var>&theta;</var> + 1
+          &nbsp;&nbsp;&nbsp; <vsup>y</vsup>&frasl;<sub>3</sub> = cos<var>&theta;</var>
+        </span>
+        <br />
+        <span style="margin-left: 35px;">
+          &rarr; <var>x</var> = 1 + 2sin<var>&theta;</var>
+          &nbsp;&nbsp;&nbsp; <var>y</var> = 3cos<var>&theta;</var>
+        </span>
+        <br><br />
+      <span id="third-header">Projectile Motion</span>
+      <br />
+        When an object is thrown, it curves upward and then falls back down to the ground.
+        The movement of the object is known as <span id="hlight-y">projectile motion</span>.
+        This is caused by gravitational forces represented by a constant, <var>g</var>
+        ( <var>g</var> = 32 <sup>ft</sup>&frasl;<sub>s&sup2;</sub> or 9.8 <sup>m</sup>&frasl;<sub>s&sup2;</sub> ).
+        <br />
+        <img style="width: 50vw;" src="/math/precal/images/ProjMotion.jpg">
+        <br><br />
+        <u>The following data can be derived from projectile motion:</u>
+        <br />
+        &nbsp;&nbsp;&nbsp; 1. The time at which the object hits the ground (  <var>t</var><sub>f</sub> ).
+        	<br />
+        &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
+        &rarr; Solve for <var>t</var> when <var>y</var> = 0.
+        <br />
+        &nbsp;&nbsp;&nbsp; 2. The highest point the object reaches during its travel.
+        	<br />
+        &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
+        &rarr; Solve for <var>y</var> when <var>t</var> = &frac12; &times; <var>t</var><sub>f</sub>
+        <br />
+        &nbsp;&nbsp;&nbsp; 3. The total distance travelled by the object.
+        	<br />
+        &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
+        &rarr; Solve for <var>x</var> when <var>t</var> = <var>t</var><sub>f</sub>
+        <br><br />
+        <br><br />
+        <u>QUIZ</u>
+        <br><br />
+        1. What is the direction and magnitude of a vector that has the initial point (-1, 5) and the terminal point (2, 3).
+        <br>
+        <span style="display: none" id="4-answer-1">
+          &nbsp;&nbsp;&nbsp; &bull;
+          <var>v</var> = 3<var>i</var> &minus; 2<var>j</var>
+          <br />
+          &nbsp;&nbsp;&nbsp; &bull;
+          <var>&theta;</var> = 326.31&deg;
+          <br />
+          &nbsp;&nbsp;&nbsp; &bull;
+          &#8214;<var>v</var>&#8214; = &radic;13
+        </span>
+        <br />
+        2. Convert the following parametric equation to rectangular:
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; <var>x</var> = t&sup2; &minus; 1
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; <var>y</var> = <sup>3</sup>&frasl;<vsub>t</vsub>
+        <br>
+        <span style="display: none" id="4-answer-2">
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &rarr;
+          <var>y</var> = <sup>3</sup>&frasl;<sub>&radic;(<var>x</var> + 1)</sub>
+        </span>
+        <br />
+        3. Give the component form of a vector with a magnitude of 13&radic;2 and direction of <sup>5&pi;</sup>&frasl;<sub>4</sub>
+        <br>
+        <span style="display: none" id="4-answer-3">
+          &nbsp;&nbsp;&nbsp; &rarr;&#12296;-13, -13&#12297;
+        </span>
+        <br />
+        4. Convert the following equation to parametric form:
+        <sup>(<var>x</var> + 3)&sup2;</sup>&frasl;<sub>25</sub>
+        + <sup>(<var>y</var> &minus; 5)&sup2;</sup>&frasl;<sub>169</sub> = 1
+        <br>
+        <span style="display: none" id="4-answer-4">
+          &nbsp;&nbsp;&nbsp; &bull;
+          <var>x</var> = 5sin<var>&theta;</var> &minus; 3
+          <br />
+          &nbsp;&nbsp;&nbsp; &bull;
+          <var>y</var> = 13cos<var>&theta;</var> + 5
+        </span>
+        <br />
+        5. Find the measure of the angle between the vectors&#12296;7, 0&#12297;and&#12296;-3, -4&#12297;
+        <br>
+        <span style="display: none" id="4-answer-5">
+          <var>&psi;</var> = 126.87&deg;
+        </span>
+        <br />
+        6. Write vector <var>u</var> as a sum of two vectors, including the projection of <var>u</var> onto <var>v</var>:
+        <br />
+        &nbsp;&nbsp;&nbsp; <var>u</var> =&#12296;-5, 10&#12297;
+        <br />
+        &nbsp;&nbsp;&nbsp; <var>v</var> =&#12296;1, 2&#12297;
+        <br>
+        <span style="display: none" id="4-answer-6">
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &rarr;
+          <var>u</var> =&#12296;3, 6&#12297;+&#12296;-8, 4&#12297;
+        </span>
+        <br />
+        7. A soccer ball is kicked across a field at an angle of 60&deg; with an initial speed of 18 m/s.
+        <br />
+        &nbsp;&nbsp;&nbsp; a) Write a set of parametric equations for the motion of the soccer ball.
+        <br />
+        &nbsp;&nbsp;&nbsp; b) Determine when the soccer ball hit the ground.
+        <br />
+        &nbsp;&nbsp;&nbsp; c) Determine how far the soccer ball travelled.
+        <br />
+        &nbsp;&nbsp;&nbsp; d) Determine the soccer ball's maximum height.
+        <br /><br>
+        <span style="display: none" id="4-answer-7">
+          a) <var>x</var> = 9<var>t</var>, <var>y</var> = 9<var>t</var>&radic;3 &minus; 4.9<var>t</var>&sup2;
+          <br />
+          b) 3.18 seconds
+          <br />
+          c) 28.63 m
+          <br />
+          d) 12.4 m
+        </span>
+        <br><br />
+        <button id="reveal-4" onclick="reveal(4)">Reveal Answers</button>
+        <br><br />
+      <span id="second-header">Polar and Rectangular Systems</span>
+      <br><br />
+        <span id="third-header">Polar Coordinates</span>
+        <br />
+        In mathematics, the<span id="hlight-y">polar coordinate system</span> is a two-dimensional coordinate system
+        in which each point on a plane is determined by a distance from a reference point and an angle from a reference direction.
+        <br />
+        A <span id="hlight-g">polar coordinate</span> is a point on the coordinate system.
+        It is expressed by <var>P</var><sub>pol</sub> = (<var>r</var>, <var>&theta;</var>),
+        where <var>r</var> is the distance from the reference point, and
+        <var>&theta;</var> is the angle of direction.
+        <br />
+        A <span id="hlight-g">rectangular coordinate</span> is one that can be found on the standard coordinate plane.
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        To convert a polar coordinate to rectangular:
+        <var>P</var><sub>rect</sub> = (<var>r</var>cos<var>&theta;</var>, <var>r</var>sin<var>&theta;</var>)
+        <br><br />
+        Converting from rectangular to polar is not as simple. Consider the rectangular coordinate, <var>P</var>.
+        When given <var>P</var><sub>rect</sub> = (<var>x</var>, <var>y</var>), one must determine the
+        <var>&theta;</var> and <var>r</var> values. This can be determined thusly:
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        <var>r</var> = &radic;(<var>x</var>&sup2; + <var>y</var>&sup2;)
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        <var>&theta;</var> = arctan(<vsup>y</vsup>&frasl;<vsub>x</vsub>)
+        <br><br />
+        The distance, <var>r</var>, is usually greater than 1. However, when it is less than one,
+        there is a way to rewrite the polar coordinate with a positive <var>r</var> value.
+        The following is that method:
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull;
+        (-<var>r</var>, <var>&theta;</var>) &rarr; (<var>r</var>, <var>&theta;</var> &plusmn; 180&deg;)
+        <br><br />
+        <span id="third-header">Polar Equations</span>
+        <br />
+        A <span id="hlight-y">polar equation</span> is a function that exists on the polar coordinate system.
+        It is written in terms of <var>r</var>. The following are rectangular to polar conversions:
+        <br />
+        &nbsp;&nbsp;&nbsp;&bull; <var>x</var> = <var>r</var>cos<var>&theta;</var>
+        <br />
+        &nbsp;&nbsp;&nbsp;&bull; <var>y</var> = <var>r</var>sin<var>&theta;</var>
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; <var>r</var>&sup2; = <var>x</var>&sup2; + <var>y</var>&sup2;
+        <br />
+        &nbsp;&nbsp;&nbsp; &bull; tan<var>&theta;</var> = <vsup>y</vsup>&frasl;<vsub>x</vsub>
+        <br><br />
+        <i>Example(s)</i>:
+        <br />
+        &bull;
+        Rect: <var>x</var>&sup2; + <var>y</var>&sup2; = 9
+        &nbsp;&rarr;&nbsp;
+       	Pol: <var>r</var> = 3
+        <br />
+        &bull;
+        Pol: <var>r</var> = <sup>6</sup>&frasl;<sub>(2cos<var>&theta;</var> &minus; 3sin<var>&theta;</var>)</sub>
+        &nbsp;&rarr;&nbsp;
+        Rect: <var>2x</var> &minus; 3<var>y</var> = 6
+        <br><br />
+        <img src="/math/precal/images/Special-Polar-Graphs.png">
+        <br />
+        <img src="/math/precal/images/Special-Polar-Graphs-2.png">
+        <br><br />
+      <span id="second-header">Complex Numbers in Polar and Rectangular Systems</span>
+      <br><br />
+        A <span id="hlight-y">complex number</span> is one that contains both an imaginary and real number.
+        In reality, all numbers can be expressed as a complex number by appending 0<var>i</var>.
+        <br />
+        A complex number is normally represented by the variable <var>z</var>.
+        In a rectangular system, complex numbers are expressed by
+        <var>z</var> = <var>a</var> + <var>bi</var>.
+        <br />
+        <img style="width: 65vw;" src="/math/precal/images/complex-nums-1.PNG">
+        <br />
+       	<img style="width: 65vw;" src="/math/precal/images/ComplexinPolarForm.PNG">
+        <br><br />
+        The polar form of a complex number is expressed as
+        <var>z</var> = <var>r</var>(cos<var>&theta;,</var> + <var>i</var> sin<var>&theta;</var>).
+        A shorter method of writing this is
+        <var>z</var> = <var>r</var> c<var>i</var>s <var>&theta;</var>.
+        <br><br />
+        <img style="width: 50vw;" src="/math/precal/images/complex-nums-2.png">
+        <br />
+        <img style="width: 50vw;" src="/math/precal/images/complex-nums-3.png">
+        <br />
+        <img style="width: 50vw;" src="/math/precal/images/complex-nums-4.png">
+        <br><br />
+      <span id="second-header">Matrices</span>
+      <br><br />
+        In mathematics, a <span id="hlight-y">matrix</span> (plural: matrices) is a rectangular array of
+        numbers, symbols, or expressions, arranged in rows and columns.
+        For example, the dimensions of the matrix below are 2 &times; 3, because there are two rows and three columns:
+        <br />
+        <img style="margin-top:10px;margin-left:15px;" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d16330f5f99566fa754114ff04cd176d6185c796">
+        <br><br />
+        <span id="third-header">Basic Operations</span>
+        <br />
+        The basic operations of matrices are <i>addition</i> and <i>subtraction</i>.
+        Matrices can only do this if they share the same dimensions.
+        The following is an example:
+        <br />
+        <img src="/math/precal/images/matrix-add.png">
+        <br><br />
+        <span id="third-header">Matrix Multplication</span>
+        <br />
+        Matrix multiplication can only be done if the number of columns in matrix <var>A</var> and the number of rows in matrix <var>B</var> are the same.
+        Furthermore, matrix multiplication is not cummutative, meaning <var>AB</var> &ne; <var>BA</var>. An example of two matrices not commuting with each other is:
+        <br />
+ 		<img style="margin-top:10px;margin-left:15px;margin-bottom:5px;"
+             	  src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f04b29d8a273a3d2ccff8b2ac98c9e75c305c7bd">
+        <br />
+        whereas
+        <br />
+        <img style="margin-top:10px;margin-left:15px;margin-bottom:5px;"
+             	  src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d3d260e7e7dda974d50647f542f9968c9267eff0">
+        <br />
+        If the dimensions of matrix <var>A</var> are <var>m</var> &times; <var>n</var>,
+        and the dimensions in matrix <var>B</var> are <var>n</var> &times; <var>p</var>,
+        the dimensions of the resultant matrix ( <var>AB</var> ) are <var>m</var> &times; <var>p</var>.
+        <br><br />
+        <br />
+        <span id="third-header">Inverse Matrices</span>
+        <br />
+        It is impossible to <i>divide</i> by a matrix. However, you can multiply the <span id="hlight-b">inverse</span> of the matrix, represented as <var>A</var><sup>-1</sup>.
+        Only <span id="hlight-g">square matrices</span> with the same number of rows and columns can have inverses.
+        For pre-calculus, you will only ever need to determine the inverse of a 2 &times; 2 matrix by hand.
+        However, you can find the inverse of other square matrices using a graphing calculator.
+        <br><br />
+        What even <i>is</i> an inverse matrix? Well, it is a matrix that makes <var>A</var><sup>-1</sup><var>A</var> = <var>I</var><vsub>n</vsub>.
+        I<vsub>n</vsub> is a square <span id="hlight-g">identity matrix</span> with dimensions <var>n</var> &times; <var>n</var>.
+        An identity matrix is a matrix that, when multiplied with a matrix with dimensions <var>n</var> &times; <var>p</var>,
+        the result is that same matrix. Basically: <var>AI<sub>n</sub></var> = <var>A</var>.
+        <br />
+        An identity matrix contains all zeros, but the main diagonal is consisted of ones.
+        <br />
+        <img style="margin-top:10px;margin-left:15px;margin-bottom:5px;"
+             	  src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ccf2b24f6977851674e15f3228261eb2e4bf1bea">
+        <br />
+        When finding the inverse of a 2 &times; 2 matrix, one must find its <span id="hlight-b">determinant</span>.
+        The determinant can be found as follows:
+        <br />
+        <img style="margin-top:10px;margin-left:15px;margin-bottom:5px;"
+           		  src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8138b2141d7b9406cebd3eb82b3cf05b238ca851">
+        <br />
+        The determinant of a 3 &times; 3 matrix can be found thusly:
+        <br />
+        <img style="margin-top:10px;margin-left:15px;margin-bottom:5px;"
+           		  src="/math/precal/images/matrixDet-3by3.png">
+        <br />
+        The inverse of a 2 &times; 2 matrix is calculated via the following:
+        <br />
+        <img style="width:25vw;margin-bottom:10px;"
+           		  src="/math/precal/images/matrixInv-2by2.jpg">
+        <br><br />
+        <span id="second-header">Partial Fractions</span>
+        <br />
+        Do you remember what a <span id="hlight-g">rational function</span> is?
+        In mathematics, a rational function is any function which can be defined by a rational fraction,
+        i.e. an algebraic fraction such that both the numerator and the denominator are polynomials.
+        <br />
+        <span id="hlight-y">Partial fractions</span> make use of these rational fractions to
+        represent a rational function.
+        <br><br />
+        <span id="third-header">Partial Fraction Decomposition of Proper Rational Expressions</span>
+        <br />
+        The number of items in the partial fraction decomposition is the same as the number of factors in the denominator of the rational expression.
+        A rational expression is considered <i>proper</i> if the degree of the leading term of the denominator is greater than that of the numerator;
+        furthermore, the denominator can be factored into two or more prime factors.
+        The following is an example:
+        <br><br />
+        &nbsp; &nbsp; &nbsp; ex:
+        <sup>(3<var>x</var> &minus; 7)</sup>&frasl;<sub>(<var>x</var>&sup2; &minus; 7<var>x</var> + 12)</sub>
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        <sup>(3<var>x</var> &minus; 7)</sup>&frasl;<sub>(<var>x</var> &minus; 4)(<var>x</var> &minus; 3)</sub>
+        = <vsup>A</vsup>&frasl;<sub>(<var>x</var> &minus; 4)</sub> + <vsup>B</vsup>&frasl;<sub>(<var>x</var> &minus; 3)</sub>
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        3<var>x</var> &minus; 7 = <var>A</var>(<var>x</var> &minus; 3) + <var>B</var>(<var>x</var> &minus; 4)
+        <br />
+        &nbsp; &nbsp; &nbsp; &bull;
+        <var>A</var> = 5, &nbsp; <var>B</var> = -2
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        <sup>5</sup>&frasl;<sub>(<var>x</var> &minus; 4)</sub> &minus; <sup>2</sup>&frasl;<sub>(<var>x</var> &minus; 3)</sub>
+        <br><br />
+        <span id="third-header">Partial Fraction Decomposition of Improper Rational Expressions</span>
+        <br />
+        If the rational expression is <i>improper</i>, the polynomials must be divided to acquire a simplified proper expression.
+        <br/>
+        The decomposition occurs with the remainder ( <i>r</i>(<var>x</var>) ) of the quotient ( <i>q</i>(<var>x</var>) ).
+        An example is below:
+        <br><br />
+        &nbsp; &nbsp; &nbsp; ex:
+        <sup>(3<var>x</var>&sup2; + 5<var>x</var> + 2)</sup> &frasl;
+        <sub>(<var>x</var>&sup2; + <var>x</var>)</sub>
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        <i>q</i>(<var>x</var>) = 3 + <sup>(2 &minus; <var>x</var>)</sup>&frasl;<sub>(<var>x</var>&sup2; + 2<var>x</var>)</sub>
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        <i>r</i>(<var>x</var>) = <sup>(2 &minus; <var>x</var>)</sup>&frasl;<sub><var>x</var>(<var>x</var> + 2)</sub>
+        = <vsup>A</vsup>&frasl;<vsub>x</vsub> + <vsup>B</vsup>&frasl;<sub>(<var>x</var> + 2)</sub>
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        <i>r</i>(<var>x</var>) = 2 &minus; <var>2</var> = <var>A</var>(<var>x</var> + 2) + <var>B</var>(<var>x</var>)
+        <br />
+        &nbsp; &nbsp; &nbsp; &bull;
+        <var>A</var> = 1, &nbsp; <var>B</var> = -2
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        <i>r</i>(<var>x</var>) = <sup>1</sup>&frasl;<vsub>x</vsub> &minus; <sup>2</sup>&frasl;<sub>(<var>x</var> + 2)</sub>
+        <br />
+        &nbsp;&nbsp;&nbsp; &rarr;
+        <i>q</i>(<var>x</var>) = 3 + <i>r</i>(<var>x</var>)
+        = 3 + <sup>1</sup>&frasl;<vsub>x</vsub> &minus; <sup>2</sup>&frasl;<sub>(<var>x</var> + 2)</sub>
+      </p>
+      <!---------End Content----------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

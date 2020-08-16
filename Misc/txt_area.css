@@ -1,0 +1,67 @@
+.nav img {
+    width: 3vw;
+    height: auto; 
+    padding: 6px;
+    cursor: pointer; 
+    border: none; 
+    margin-left: 10px;
+}
+
+input[type="file"] {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+#download {
+    margin-left: -8px;
+}
+
+.nav img:hover {
+    background-color: #e6e6e6;
+    box-shadow: 0 0 3px grey inset;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-family: Times;
+    font-size: 12pt;
+    overflow-x: hidden;
+    margin-top: 3px; 
+    margin-left: 3px;
+}
+
+textarea#user {
+    resize: none;
+    width: 95vw;
+    height: 75vh;
+    font-size: 14pt; 
+    font-family: monospace;
+    padding: 5px;
+    border: 2px solid grey;
+    outline: none;
+}
+
+div.nav {
+    text-align: center;
+    width: 96vw;
+    margin: auto;
+}
+
+textarea#name {
+    resize: none;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 12pt; 
+    font-family: monospace;
+    padding: 2px;
+    width: 10vw;
+    height: 1.3vw;
+    overflow: hidden;
+    outline: none;
+}

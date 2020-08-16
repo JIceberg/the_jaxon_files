@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alpharetta JCL</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+      $(function(){
+        $("#head-cont").load("header.html");
+        $("#foot-cont").load("footer.html");
+      });
+    </script>
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <!-------- The Header --------->
+    
+    <div id="head-cont"></div>
+    
+    <!-------- The Main Body --------->
+    
+    <div id="main">
+      <div class="card-cont">
+        <div id="card">
+          <h3 class="label">AHS JCL</h3>
+          <p class="text">
+            Welcome to the AHS JCL website, designed and constructed by Jackson Isenberg.
+            To properly use the website, see the navigation panes above and to the right.
+            For additional information, see the footer below.
+          </p>
+        </div>
+        <br />
+        <div id="card">
+          <h3 class="label">Happy Birthday, Rome!</h3>
+          <div id="img-block">
+            <img src="images/rome-bday.jpg">
+            <p class="img-capt">
+              Rome turned 2,772 years old on April 21st, 2019.
+              <br><br />
+              Brutus, prepare the knives.
+              We're about to cut some cake for Caesar.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card-cont">
+        <div id="card">
+          <h3 class="label">Recent News</h3>
+          <p class="text">
+            Time for AP Exams! Yay!
+          </p>
+        </div>
+        <br><br /><br />
+        <div id="card">
+          <h3 class="label">Quote of the Month</h3>
+          <p class="quote">
+            "Non est ad astra mollis e terris via"
+            <span id="spoke">- Seneca</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pane-box">
+      <p class="pane-title">Navigation</p>
+      <p class="pane-text">
+        <a>Events</a>
+        <br />
+        <a>Latin Club</a>
+        <br />
+        <a href="about.html">About</a>
+      </p>
+      <br><br />
+      <div id="join-btn">JOIN</div>
+    </div>
+    
+    <!-------- The Footer  --------->
+    
+    <div id="foot-cont"></div>
+    
+  </body>
+</html>

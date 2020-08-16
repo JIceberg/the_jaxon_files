@@ -1,0 +1,68 @@
+/** Pop-Up Constructor Modal **/
+.pop-up {
+  display: none; /* is not originally visible */
+  position: fixed; /* does not leave center of page */
+  z-index: 10; /* appears in front */
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-top: calc(50vh - 200px);
+  height: 100%;
+  overflow-x: hidden; /* hide horizontal scroll */
+  overflow-y: auto; !important
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); !important /* Black w/ opacity */
+}
+
+/** Input Bar **/
+
+input {
+  outline: none;
+  border: 2px outset #eee;
+}
+
+input:active, input:focus {border-style: inset;}
+
+/** The Close Button **/
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 18pt;
+  font-weight: bolder;
+  user-select: none;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/** MODAL CONTENT **/
+
+.pop-up .content {
+  width: 67%;
+  background-color: #fefefe; !important;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px black;
+}
+
+.content #head {
+  font: 400 16pt Arial, sans-serif;
+}
+
+/** MISC CONVENTIONS **/
+
+req {
+  color: red;
+  font-weight: bolder;
+  user-select: none; !important;
+}
+
+#subhead {
+  font: 500 10pt Calibri, serif;
+  font-style: italic;
+  color: silver;
+}

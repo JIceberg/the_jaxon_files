@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | Science</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+      
+      function submit() {
+        var gradeText = document.getElementById("grade");
+        var grade = 0;
+        
+        var ans_1 = document.getElementById("answer-1").value;
+        var ans_1_text = document.getElementById("correct-1");
+        
+        var ans_2 = document.getElementById("answer-2").value;
+        var ans_2_text = document.getElementById("correct-2");
+        
+        var ans_3 = document.getElementById("answer-3").value;
+        var ans_3_text = document.getElementById("correct-3");
+        
+        var ans_4 = document.getElementById("answer-4").value;
+        var ans_4_text = document.getElementById("correct-4");
+        
+        var ans_5 = document.getElementById("answer-5").value;
+        var ans_5_text = document.getElementById("correct-5");
+        
+        var ans_6 = document.getElementById("answer-6").value;
+        var ans_6_text = document.getElementById("correct-6");
+        
+        var ans_7 = document.getElementById("answer-7").value;
+        var ans_7_text = document.getElementById("correct-7");
+        
+        var ans_8 = document.getElementById("answer-8").value;
+        var ans_8_text = document.getElementById("correct-8");
+        
+        var ans_9 = document.getElementById("answer-9").value;
+        var ans_9_text = document.getElementById("correct-9");
+        
+        var ans_10 = document.getElementById("answer-10").value;
+        var ans_10_text = document.getElementById("correct-10");
+        
+        var ans_11 = document.getElementById("answer-11").value;
+        var ans_11_text = document.getElementById("correct-11");
+        
+        var ans_12 = document.getElementById("answer-12").value;
+        var ans_12_text = document.getElementById("correct-12");
+        
+        var ans_13 = document.getElementById("answer-13").value;
+        var ans_13_text = document.getElementById("correct-13");
+        
+        var ans_14 = document.getElementById("answer-14").value;
+        var ans_14_text = document.getElementById("correct-14");
+        
+        var ans_15 = document.getElementById("answer-15").value;
+        var ans_15_text = document.getElementById("correct-15");
+        
+        var ans_16 = document.getElementById("answer-16").value;
+        var ans_16_text = document.getElementById("correct-16");
+        
+        var ans_17 = document.getElementById("answer-17").value;
+        var ans_17_text = document.getElementById("correct-17");
+        
+        var ans_18 = document.getElementById("answer-18").value;
+        var ans_18_text = document.getElementById("correct-18");
+        
+        var ans_19 = document.getElementById("answer-19").value;
+        var ans_19_text = document.getElementById("correct-19");
+        
+        var ans_20 = document.getElementById("answer-20").value;
+        var ans_20_text = document.getElementById("correct-20");
+        
+        if (ans_1.toLowerCase() == "c")
+          grade += 5;
+        ans_1_text.innerHTML += " \u2713";
+        if (ans_2.toLowerCase() == "d")
+          grade += 5;
+        ans_2_text.innerHTML += " \u2713";
+        if (ans_3.toLowerCase() == "d")
+          grade += 5;
+        ans_3_text.innerHTML += " \u2713";
+        if (ans_4.toLowerCase() == "a")
+          grade += 5;
+        ans_4_text.innerHTML += " \u2713";
+        if (ans_5.toLowerCase() == "c")
+          grade += 5;
+        ans_5_text.innerHTML += " \u2713";
+        if (ans_6.toLowerCase() == "b")
+          grade += 5;
+        ans_6_text.innerHTML += " \u2713";
+        if (ans_7.toLowerCase() == "b")
+          grade += 5;
+        ans_7_text.innerHTML += " \u2713";
+        if (ans_8.toLowerCase() == "a")
+          grade += 5;
+        ans_8_text.innerHTML += " \u2713";
+        if (ans_9.toLowerCase() == "d")
+          grade += 5;
+        ans_9_text.innerHTML += " \u2713";
+        if (ans_10.toLowerCase() == "c")
+          grade += 5;
+        ans_10_text.innerHTML += " \u2713";
+        if (ans_11.toLowerCase() == "a")
+          grade += 5;
+        ans_11_text.innerHTML += " \u2713";
+        if (ans_12.toLowerCase() == "b")
+          grade += 5;
+        ans_12_text.innerHTML += " \u2713";
+        if (ans_13.toLowerCase() == "d")
+          grade += 5;
+        ans_13_text.innerHTML += " \u2713";
+        if (ans_14.toLowerCase() == "b")
+          grade += 5;
+        ans_14_text.innerHTML += " \u2713";
+        if (ans_15.toLowerCase() == "a")
+          grade += 5;
+        ans_15_text.innerHTML += " \u2713";
+        if (ans_16.toLowerCase() == "d")
+          grade += 5;
+        ans_16_text.innerHTML += " \u2713";
+        if (ans_17.toLowerCase() == "c")
+          grade += 5;
+        ans_17_text.innerHTML += " \u2713";
+        if (ans_18.toLowerCase() == "b")
+          grade += 5;
+        ans_18_text.innerHTML += " \u2713";
+        if (ans_19.toLowerCase() == "c")
+          grade += 5;
+        ans_19_text.innerHTML += " \u2713";
+        if (ans_20.toLowerCase() == "a")
+          grade += 5;
+        ans_20_text.innerHTML += " \u2713";
+        
+        gradeText.innerHTML = "Grade: "+ grade + "%";
+        document.getElementById("submit").style.display = "none";
+        console.log("Returned grade of " + grade + "%");
+      }
+    </script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <style>
+      input[type=text] {;
+        width: 20px;
+        outline: none;
+        margin-left: 5px;
+        padding-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Chemistry</p>
+      <p class="header">Unit 5 Practice Test</p>
+      
+      <!---------Questions---------->
+      <ol type="1">
+        <li>
+          What is Avagadro's Number?
+          <br />
+          <ol type="a">
+            <li>5.2 &times; 10<sup>24</sup></li>
+            <li>3.011 &times; 10<sup>27</sup></li>
+            <li id="correct-1">6.022 &times; 10<sup>23</sup></li>
+            <li>6.02 &times; 10<sup>3</sup></li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-1" name="Answer 1">
+        </li>
+        <br />
+        <li>
+          How many atoms are in 6.2 moles of aluminum?
+          <br />
+          <ol type="a">
+            <li>27</li>
+            <li>6.022 &times; 10<sup>23</sup></li>
+            <li>1.03 &times; 10<sup>-23</sup></li>
+            <li id="correct-2">3.7 &times; 10<sup>24</sup></li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-2" name="Answer 2">
+        </li>
+        <br />
+        <li>
+          Convert 3.55 moles NaCl to formula units.
+          <br />
+          <ol type="a">
+            <li>3.55 &times; 10<sup>21</sup></li>
+            <li>1.7 &times; 10<sup>23</sup></li>
+            <li>58.5</li>
+            <li id="correct-3">2.14 &times; 10<sup>24</sup></li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-3" name="Answer 3">
+        </li>
+        <br />
+        <li>
+          How many moles are represented by 11.5 g of C<sub>2</sub>H<sub>5</sub>OH?
+          <br />
+          <ol type="a">
+            <li id="correct-4">0.25 mol</li>
+            <li>529.81 mol</li>
+            <li>1.91 &times; 10<sup>-23</sup> mol</li>
+            <li>6.92 &times; 10<sup>24</sup> mol</li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-4" name="Answer 4">
+        </li>
+        <br />
+        <li>
+          What is the mass of 9.30 moles of SiH<sub>4</sub>?
+          <br />
+          <ol type="a">
+            <li>5.6 &times; 10<sup>24</sup> g</li>
+            <li>0.29 g</li>
+            <li id="correct-5">298.7 g</li>
+            <li>32.12 g</li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-5" name="Answer 5">
+        </li>
+        <br />
+        <li>
+          How many atoms of hydrogen are in 12.6 moles of water?
+          <br />
+          <ol type="a">
+            <li>4.8 &times; 10<sup>22</sup></li>
+            <li id="correct-6">5.1 &times; 10<sup>24</sup></li>
+            <li>3.14 &times; 10<sup>15</sup></li>
+            <li>7.6 &times; 10<sup>24</sup></li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-6" name="Answer 6">
+        </li>
+        <br />
+        <li>
+          What is the molar mass of aluminum oxide (Al<sub>2</sub>O<sub>3</sub>)?
+          <br />
+          <ol type="a">
+            <li>43 g/mol</li>
+            <li id="correct-7">102 g/mol</li>
+            <li>72.5 g/mol</li>
+            <li>59 g/mol</li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-7" name="Answer 7">
+        </li>
+        <br />
+        <li>
+          What would the mass of 5.3 &times; 10<sup>22</sup> formula units of calcium iodide (CaI<sub>2</sub>)?
+          <br />
+          <ol type="a">
+            <li id="correct-8">26 g</li>
+            <li>6.02 &times; 10<sup>23</sup> g</li>
+            <li>1.09 &times; 10<sup>21</sup> g</li>
+            <li>293.9 g</li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-8" name="Answer 8">
+        </li>
+        <br />
+        <li>
+          All of the following are types of reactions EXCEPT
+          <br />
+          <ol type="a">
+            <li>Single-Replacement</li>
+            <li>Synthesis</li>
+            <li>Decomposition</li>
+            <li id="correct-9">Net Ionic</li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-9" name="Answer 9">
+        </li>
+        <br />
+        <li>
+          What type of reaction is the equation
+          Zn<i>(s)</i> + CuSO<sub>4</sub><i>(aq)</i> &rarr; ZnSO<sub>4</sub><i>(aq)</i> + Cu<i>(s)</i> ?
+          <br />
+          <ol type="a">
+            <li>Double-Replacement</li>
+            <li>Synthesis</li>
+            <li id="correct-10">Single-Replacement</li>
+            <li>Decomposition</li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-10" name="Answer 10">
+        </li>
+        <br />
+        <li>
+          What type of reaction is the equation
+          2NaOH<i>(aq)</i> + MgSO<sub>4</sub><i>(aq)</i> &rarr;
+          Na<sub>2</sub>SO<sub>4</sub><i>(aq)</i> + Mg(OH)<sub>2</sub><i>(s)</i> ?
+          <br />
+          <ol type="a">
+            <li id="correct-11">Double-Replacement</li>
+            <li>Synthesis</li>
+            <li>Single-Replacement</li>
+            <li>Decomposition</li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-11" name="Answer 11">
+        </li>
+        <br />
+        <li>
+          What type of reaction is the equation
+          4Al + 3O<sub>2</sub> &rarr; 2Al<sub>2</sub>O<sub>3</sub> ?
+          <br />
+          <ol type="a">
+            <li>Double-Replacement</li>
+            <li id="correct-12">Synthesis</li>
+            <li>Single-Replacement</li>
+            <li>Decomposition</li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-12" name="Answer 12">
+        </li>
+        <br />
+        <li>
+          What type of reaction is the equation
+          CuCO<sub>3</sub> &rarr; CuO + CO<sub>2</sub> ?
+          <br />
+          <ol type="a">
+            <li>Double-Replacement</li>
+            <li>Synthesis</li>
+            <li>Single-Replacement</li>
+            <li id="correct-13">Decomposition</li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-13" name="Answer 13">
+        </li>
+        <br />
+        <li>
+          What drives double-replacement reactions?
+          <br />
+          <ol type="a">
+            <li>Water</li>
+            <li id="correct-14">Precipitate formation</li>
+            <li>Solubility</li>
+            <li>Molar mass</li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-14" name="Answer 14">
+        </li>
+        <br />
+        <li>
+          Which of the following would be a precipitate?
+          <br />
+          <ol type="a">
+            <li id="correct-15">MgCO<sub>3</sub></li>
+            <li>NaOH</li>
+            <li>MgSO<sub>4</sub></li>
+            <li>H<sub>2</sub>O</li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-15" name="Answer 15">
+        </li>
+        <br />
+        <li>
+          Predict the products of the following reactants:
+          MgSO<sub>4</sub><i>(aq)</i> + LiMnO<sub>4</sub><i>(aq)</i>
+          <br />
+          <ol type="a">
+            <li>Not enough information given</li>
+            <li>Li<sub>2</sub>S<i>(aq)</i> + 3O<sub>2</sub><i>(g)</i> + MgO<sub>2</sub><i>(s)</i></li>
+            <li>Li<sub>2</sub>Mg<i>(s)</i> + SO<sub>4</sub>(MnO<sub>4</sub>)<sub>2</sub><i>(aq)</i></li>
+            <li id="correct-16">Mg(MnO<sub>4</sub>)<sub>2</sub><i>(s)</i> + Li<sub>2</sub>SO<sub>4</sub><i>(aq)</i></li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-16" name="Answer 16">
+        </li>
+        <br />
+        <li>
+          What is an empirical formula?
+          <br />
+          <ol type="a">
+            <li>The complete molecular ratio of a compound, or many compounds</li>
+            <li>A formula that conquers others</li>
+            <li id="correct-17">The lowest whole-number ratio of a compound</li>
+            <li>The quotient ratio between two chemical formulae</li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-17" name="Answer 17">
+        </li>
+        <br />
+        <li>
+          What is the difference between a complete ionic equation and a net ionic equation?
+          <br />
+          <ol type="a">
+            <li>Complete ionic equations do not have spectator ions</li>
+            <li id="correct-18">Net ionic equations do not have spectator ions</li>
+            <li>Complete is molecular, net is empirical</li>
+            <li>They are spelled differently</li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-18" name="Answer 18">
+        </li>
+        <br />
+        <li>
+          Which of the following equations is balanced correctly?
+          <br />
+          <ol type="a">
+            <li>
+              MgBr<sub>2</sub><i>(s)</i> + O<sub>2</sub><i>(g)</i>
+              &rarr; 2MgO<i>(s)</i> + Br<sub>2</sub><i>(g)</i>
+            </li>
+            <li>
+              C<sub>6</sub>H<sub>12</sub>O<sub>6</sub><i>(s)</i> + 6O<sub>2</sub><i>(g)</i>
+              &rarr; 6CO<sub>2</sub><i>(g)</i> + 6H<sub>2</sub>O<i>(l)</i>
+            </li>
+            <li id="correct-19">
+              2C<sub>6</sub>H<sub>6</sub><i>(s)</i> + 9O<sub>2</sub><i>(g)</i>
+              &rarr; 6H<sub>2</sub>O + 12CO<sub>2</sub>
+            </li>
+            <li>
+              MnO<sub>2</sub><i>(s)</i> + Sn(OH)<sub>4</sub><i>(aq)</i>
+              &rarr; Mn(OH)<sub>2</sub><i>(aq)</i> + SnO<sub>4</sub><i>(s)</i>
+            </li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-19" name="Answer 19">
+        </li>
+        <br />
+        <li>
+          How many atoms are in one mole of H<sub>2</sub> gas?
+          <br />
+          <ol type="a">
+            <li id="correct-20">1.204 &times; 10<sup>24</sup></li>
+            <li>3.011 &times; 10<sup>23</sup></li>
+            <li>6.022 &times; 10<sup>23</sup></li>
+            <li>2<sup>1</sup></li>
+          </ol>
+          <input maxlength="1" type="text" id="answer-20" name="Answer 20">
+        </li>
+      </ol>
+      <p class="bottom"> </p>
+      
+      <!-----------Submit----------->
+      <button id="submit" name="Submit" onclick="submit()">Submit</button>
+      
+      <h2 id="grade"></h2>
+      <p class="bottom"> </p>
+      <!----------End Content----------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

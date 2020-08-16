@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | ELA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      table {
+        width: 100%;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+      
+      table#tlist tr:nth-child(even) {
+        background-color: #eee;
+      }
+      
+      table#tlist tr:nth-child(odd) {
+        background-color:#fff;
+      }
+      
+      table#tlist th {
+        background-color: black;
+        color: white;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Roots</p>
+      <p class="header">List #8</p>
+      <table id="tlist">
+        <tr>
+          <th>Root</th>
+          <th>Meaning</th>
+          <th>Origin</th>
+          <th>Example(s)</th>
+        </tr>
+        <tr>
+          <td>-mega-</td>
+          <td>million / great / large</td>
+          <td>Greek</td>
+          <td>megabyte, megalomania, megaphone</td>
+        </tr>
+        <tr>
+          <td>-mem-</td>
+          <td>recall / remember / mindful</td>
+          <td>Latin</td>
+          <td>memorize, memorandum, commemorate, memorial</td>
+        </tr>
+        <tr>
+          <td>-migr-</td>
+          <td>to wander</td>
+          <td>Latin</td>
+          <td>migratory, emigrate, migrant, immigration</td>
+        </tr>
+        <tr>
+          <td>-mit- | -miss-</td>
+          <td>send</td>
+          <td>Latin</td>
+          <td>transmit, emit, intermittent, missionary</td>
+        </tr>
+        <tr>
+          <td>-mob- | -mot- | -mov-</td>
+          <td>move</td>
+          <td>Latin</td>
+          <td>motivate, emotion, commotion</td>
+        </tr>
+        <tr>
+          <td>-mon-</td>
+          <td>to warn</td>
+          <td>Latin</td>
+          <td>premonition, admonish, monster</td>
+        </tr>
+        <tr>
+          <td>-mort-</td>
+          <td>death</td>
+          <td>Latin</td>
+          <td>mortal, mortify, morbid, morality</td>
+        </tr>
+        <tr>
+          <td>-multi- | -poly-</td>
+          <td>many</td>
+          <td>Greek</td>
+          <td>multitude, multifaceted</td>
+        </tr>
+        <tr>
+          <td>-nat- | -nasc-</td>
+          <td>born / birth</td>
+          <td>Latin</td>
+          <td>nationality, innate, cognate, naive</td>
+        </tr>
+        <tr>
+          <td>-not-</td>
+          <td>to know / letter / note/ paper</td>
+          <td>Latin</td>
+          <td>notification, annotate, notorious</td>
+        </tr>
+      </table>
+      <br><hr /><br />
+      <a href="/larts/lit10/rtchar/7.html">Previous List</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/larts/lit10/rtchar/9.html">Next List</a>
+      <p class="bottom"> </p>
+      <!----------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

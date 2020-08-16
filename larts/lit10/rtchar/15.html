@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | ELA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      table {
+        width: 100%;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+      
+      table#tlist tr:nth-child(even) {
+        background-color: #eee;
+      }
+      
+      table#tlist tr:nth-child(odd) {
+        background-color:#fff;
+      }
+      
+      table#tlist th {
+        background-color: black;
+        color: white;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Roots</p>
+      <p class="header">List #15</p>
+      <table id="tlist">
+        <tr>
+          <th>Root</th>
+          <th>Meaning</th>
+          <th>Origin</th>
+          <th>Example(s)</th>
+        </tr>
+        <tr>
+          <td>meta-</td>
+          <td>along with / after / among / change</td>
+          <td>Greek</td>
+          <td>metaphor,  metastasis, metaphysical</td>
+        </tr>
+        <tr>
+          <td>mis-</td>
+          <td>wrong / mistaken / ill</td>
+          <td>Greek</td>
+          <td>misnomer, mistrial, misprint, mistrust</td>
+        </tr>
+        <tr>
+          <td>paleo-</td>
+          <td>ancient</td>
+          <td>Greek</td>
+          <td>paleontology, paleoecologist, paleoliths</td>
+        </tr>
+        <tr>
+          <td>pan-</td>
+          <td>all</td>
+          <td>Greek</td>
+          <td>panacea, pancreas, pantheon</td>
+        </tr>
+        <tr>
+          <td>peri-</td>
+          <td>around</td>
+          <td>Greek</td>
+          <td>perimeter, perigree, peripheral</td>
+        </tr>
+        <tr>
+          <td>self-</td>
+          <td>by oneself</td>
+          <td>Latin</td>
+          <td>selfish, selfless, self-made</td>
+        </tr>
+        <tr>
+          <td>suf-</td>
+          <td>below / from under</td>
+          <td>Latin</td>
+          <td>sufficient, suffix, suffocate</td>
+        </tr>
+        <tr>
+          <td>trans-</td>
+          <td>across</td>
+          <td>Latin</td>
+          <td>translate, transfer, transcend</td>
+        </tr>
+        <tr>
+          <td>ultra-</td>
+          <td>beyond</td>
+          <td>Latin</td>
+          <td>ultraviolet, ultramodern, ultraliberal</td>
+        </tr>
+        <tr>
+          <td>un-</td>
+          <td>not / none</td>
+          <td>Latin</td>
+          <td>unanimous, unfinished, unravel</td>
+        </tr>
+      </table>
+      <br><hr /><br />
+      <a href="/larts/lit10/rtchar/14.html">Previous List</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/larts/lit10">Next List</a>
+      <p class="bottom"> </p>
+      <!----------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

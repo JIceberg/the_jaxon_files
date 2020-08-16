@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jaxon | Alg II, Geo B</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script> 
+$(function(){
+  $("#fixed").load("/header.html");
+  $("#footer").load("/footer.html");
+});
+</script>
+<style>
+#red {
+  color: red;
+}
+#blue {
+  color: blue;
+}
+#green {
+  color: green;
+}
+.hw {
+  width: 64px;
+  height: auto;
+  border: 1px solid grey;
+  outline: none;
+}
+#hw {
+  margin-top: 2px;
+}
+.ex-high {
+  width: auto;
+  height: 50vh;
+  margin: 0;
+  outline: none;
+}
+.ex-wide {
+  width: 50vw;
+  height: auto;
+  margin: 0;
+  outline: none;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+#math {
+  font-family: Monospace;
+  font-style: italic;
+  font-size: 12pt;
+}
+
+input {
+  outline: none;
+  overflow-x: hidden;
+}
+
+button {
+  outline: none;
+}
+</style>
+<div id="fixed"></div>
+<div id="main">
+<!---------Begin Content---------->
+<p class="subtitle">Geom B/Alg II</p>
+
+<!----- Begin Homework ------>
+
+<p class="header">Homework</p>
+<span id="second-header">Worksheets=</span>
+<ul>
+  <li>
+    Simplifying Rational Expressions:
+<br>
+    <a id="hw" href="/images/MathHW_2.png" download="3/20/2017 - HW Sheet">
+      <img class="hw" src="/images/MathHW_2.png">
+    </a>
+  </li>
+  <li>
+    Multiplying/Dividing Rational Expressions:
+<br>
+    <a id="hw" href="/images/MathHW_1.png" download="3/21/2017 - HW Sheet">
+      <img class="hw" src="/images/MathHW_1.png">
+    </a>
+  </li>
+  <li>
+    Adding/Subtracting Rational Expressions:
+<br>
+    <a id="hw" href="/images/MathHW_3.png" download="3/22/2017 - HW Sheet">
+      <img class="hw" src="/images/MathHW_3.png">
+    </a>
+  </li>
+  <li>
+    Solving Rational Equations:
+<br>
+    <a id="hw" href="/images/MathHW_4.png" download="3/23/2017 - HW Sheet">
+      <img class="hw" src="/images/MathHW_4.png">
+    </a>
+  </li>
+  <li>
+    Rational Equations/Rational Expressions:
+<br>
+    <a id="hw" href="/images/MathHW_5.png" download="3/24/2017 - HW Sheet">
+      <img class="hw" src="/images/MathHW_5.png">
+    </a>
+  </li>
+  <li>
+    Simplifying Radical Expressions:
+<br>
+    <a id="hw" href="/images/MathHW_6.png" download="3/27/2017 - HW Sheet">
+      <img class="hw" src="/images/MathHW_6.png">
+    </a>
+  </li>
+  <li>
+    Solving Radical Equations:
+<br>
+    <a id="hw" href="/images/MathHW_7.png" download="3/28/2017 - HW Sheet">
+      <img class="hw" src="/images/MathHW_7.png">
+    </a>
+  </li>
+  <li>
+    Quiz Review - Radical/Rational Equations/Expressions:
+<br>
+    <a id="hw" href="/images/MathHW_8.png" download="3/29/2017 - Quiz Review">
+      <img class="hw" src="/images/MathHW_8.png">
+    </a>
+    <a id="hw" href="/images/MathHW_8_pt2.png" download="3/29/2017 - Quiz Review">
+      <img class="hw" src="/images/MathHW_8_pt2.png">
+    </a>
+  </li>
+  <li>
+    Graphing Rational Functions:
+<br>
+    <a id="hw" href="/images/MathHW_9.png" download="4/10/2017 - Graphing Rational Functions">
+      <img class="hw" src="/images/MathHW_9.png">
+    </a>
+    <a id="hw" href="/images/MathHW_9pt2.png" download="4/10/2017 - Graphing Rational Functions">
+      <img class="hw" src="/images/MathHW_9pt2.png">
+    </a>
+  </li>
+  <li>
+    Graphing Rational Functions II:
+<br>
+    <a id="hw" href="/images/MathHW_10.png" download="4/12/2017 - Graphing Rational Functions II">
+      <img class="hw" src="/images/MathHW_10.png">
+    </a>
+    <a id="hw" href="/images/MathHW_10_pt2.png" download="4/12/2017 - Graphing Rational Functions II">
+      <img class="hw" src="/images/MathHW_10_pt2.png">
+    </a>
+    <a id="hw" href="/images/MathHW_10_pt3.png" download="4/12/2017 - Graphing Rational Functions II">
+      <img class="hw" src="/images/MathHW_10_pt3.png">
+    </a>
+  </li>
+  <li>
+    Graphs of Exponential Functions:
+<br>
+    <a id="hw" href="/images/MathHW_11.png" download="5/09/2017 - Graphs of Exponential Functions">
+      <img class="hw" src="/images/MathHW_11.png">
+    </a>
+    <a id="hw" href="/images/MathHW_11_pt2.png" download="5/09/2017 - Graphs of Exponential Functions">
+      <img class="hw" src="/images/MathHW_11_pt2.png">
+    </a>
+    <a id="hw" href="/images/MathHW_11_pt3.png" download="5/09/2017 - "Graphs of Exponential Functions">
+      <img class="hw" src="/images/MathHW_11_pt3.png">
+    </a>
+  </li>
+</ul>
+<br>
+<span id="second-header">Keys=</span>
+<ul>
+  <li>
+    Simplifying Rational Expressions:
+<br>
+    <a id="hw" href="/images/MathAK_2.png" download="3/20/2017 - Answer Key">
+      <img class="hw" src="/images/MathAK_2.png">
+    </a>
+  </li>
+  <li>
+    Multiplying/Dividing Rational Expressions:
+<br>
+    <a id="hw" href="/images/MathAK_1.png" download="3/21/2017 - Answer Key">
+      <img class="hw" src="/images/MathAK_1.png">
+    </a>
+  </li>
+  <li>
+    Adding/Subtracting Rational Expressions:
+<br>
+    <a id="hw" href="/images/MathAK_3.png" download="3/22/2017 - Answer Key">
+      <img class="hw" src="/images/MathAK_3.png">
+    </a>
+  </li>
+  <li>
+    Solving Rational Equations:
+<br>
+    <a id="hw" href="/images/MathAK_4.png" download="3/23/2017 - Answer Key">
+      <img class="hw" src="/images/MathAK_4.png">
+    </a>
+  </li>
+  <li>
+    Rational Equations/Rational Expressions:
+<br>
+    <a id="hw" href="/images/MathAK_5.png" download="3/24/2017 - Answer Key">
+      <img class="hw" src="/images/MathAK_5.png">
+    </a>
+  </li>
+  <li>
+    Simplifying Radical Expressions:
+<br>
+    <a id="hw" href="/images/MathAK_6.png" download="3/27/2017 - Answer Key">
+      <img class="hw" src="/images/MathAK_6.png">
+    </a>
+  </li>
+  <li>
+    Solving Radical Equations:
+<br>
+    <a id="hw" href="/images/MathAK_7.png" download="3/28/2017 - Answer Key">
+      <img class="hw" src="/images/MathAK_7.png">
+    </a>
+  </li>
+  <li>
+    Quiz Review - Radical/Rational Equations/Expressions:
+<br>
+    <a id="hw" href="/images/MathAK_8.png" download="3/29/2017 - Answer Key">
+      <img class="hw" src="/images/MathAK_8.png">
+    </a>
+  </li>
+  <li>
+    Graphing Rational Functions:
+<br>
+    <a id="hw" href="/images/MathAK_9.png" download="4/10/2017 - Answer Key">
+      <img class="hw" src="/images/MathAK_9.png">
+    </a>
+  </li>
+  <li>
+    Graphing Rational Functions II:
+<br>
+    <a id="hw" href="/images/MathAK_10.png" download="4/12/2017 - Answer Key">
+      <img class="hw" src="/images/MathAK_10.png">
+    </a>
+  </li>
+</ul>
+<p class="bottom"> </p>
+
+<!----- End Homework ------>
+
+<!----- Begin Formulae ------>
+
+<p class="header">Formulae</p>
+<p class="body">
+<span id="second-header">Distance=</span>
+<br>
+<span id="math">P<sub>1</sub>P<sub>2</sub> [Point 1, Point 2] = &#8730;[(x<sub>2</sub>-x<sub>1</sub>)<sup>2</sup> + (y<sub>2</sub>-y<sub>1</sub>)<sup>2</sup>]</span>
+</p>
+
+<p class="body">
+<span id="second-header">Midpoint=</span>
+<br>
+<span id="math">M([x<sub>1</sub>+x<sub>2</sub>] &divide; 2, [y<sub>1</sub>+y<sub>2</sub>] &divide; 2)</span>
+</p>
+
+<p class="body"><span id="second-header">Slope=</span>
+<br>
+<span id="math">m = (y<sub>2</sub> - y<sub>1</sub>) &divide; (x<sub>2</sub> - x<sub>1</sub>)</span>
+</p>
+
+<p class="body">
+<span id="second-header">Triangle Shoelace=</span>
+<br>
+<span id="math">AREA = <sup>1</sup>&frasl;<sub>2</sub> &times; |(x<sub>1</sub>y<sub>2</sub>)-(x<sub>2</sub>y<sub>1</sub>) + (x<sub>2</sub>y<sub>3</sub>)-(x<sub>3</sub>y<sub>2</sub>) + (x<sub>3</sub>y<sub>1</sub>)-(x<sub>1</sub>y<sub>3</sub>)|</span>
+</p>
+
+<p class="body">
+<span id="second-header"><span id="qushoelace">Quadrilateral Shoelace=</span></span>
+<br>
+<span id="math">AREA = <sup>1</sup>&frasl;<sub>2</sub> &times; |(x<sub>1</sub>y<sub>2</sub>)-(x<sub>2</sub>y<sub>1</sub>) + (x<sub>2</sub>y<sub>3</sub>)-(x<sub>3</sub>y<sub>2</sub>) + (x<sub>3</sub>y<sub>4</sub>)-(x<sub>4</sub>y<sub>3</sub>) +(x<sub>4</sub>y<sub>1</sub>)-(x<sub>1</sub>y<sub>4</sub>)|</span>
+</p>
+
+<p class="body">
+<span id="second-header">FOIL=</span>
+<br>
+<span id="math">(x + y)<sup>2</sup> = x<sup>2</sup> + 2xy + y<sup>2</sup></span>
+</p>
+
+<p class="body">
+<span id="second-header">Internally Divided Segment=</span>
+<br>
+<span id="math">P([(mx<sub>2</sub>+nx<sub>1</sub>) &divide; (m+n)], [(my<sub>2</sub>+ny<sub>1</sub>) &divide; (m+n)])</span>
+</p>
+
+<p class="body">
+<span id="second-header">Externally Divided Segment=</span>
+<br>
+<span id="math">P([(mx<sub>2</sub>-nx<sub>1</sub>) &divide; (m-n)], [(my<sub>2</sub>-ny<sub>1</sub>) &divide; (m-n)])</span>
+</p>
+
+<p class="body">
+<span id="second-header">Slope-Intercept Form=</span>
+<br>
+<span id="math">y = mx + b</span>
+</p>
+
+<p class="body">
+<span id="second-header">Slope-Point Form=</span>
+<br>
+<span id="math">y - y<sub>1</sub> = m(x - x<sub>1</sub>)</span>
+</p>
+
+<p class="body">
+<span id="second-header">Inscribed Angle=</span>
+<br>
+<span id="math">i[inscribed] = <sup>1</sup>&frasl;<sub>2</sub> &times; c[central]</span>
+</p>
+
+<p class="body">
+<span id="second-header">Arc Length=</span>
+<br>
+<span id="math">length of A&#865;B = </span><sup>&#952;</sup>&frasl;<span id="math"><sub>360&deg;</sub> &times; c[circumference]</span>
+</p>
+
+<p class="body">
+<span id="second-header">Area of a Sector=</span>
+<br>
+<span id="math">area of the sector CAB = </span><sup>&#952;</sup>&frasl;<span id="math"><sub>360&deg;</sub> &times; a[area]</span>
+</p>
+
+<p class="body">
+<span id="second-header">Volume of a Sphere=</span>
+<br>
+<span id="math">V = <sup>4</sup>&frasl;<sub>3</sub> &times; &#960;r<sup>3</sup></span>
+</p>
+
+<p class="body">
+<span id="second-header">Volume of a Cylinder=</span>
+<br>
+<span id="math">V = &#960;r<sup>2</sup>h</span>
+</p>
+
+<p class="body">
+<span id="second-header">Volume of a Pyramid=</span>
+<br>
+<span id="math">V = <sup>Bh</sup>&frasl;<sub>3</sub></span>
+<br>
+B means 'area of the base', so use the area formula for that specific shape (Circular[cone], Triangular, Rectangular, Square)
+</p>
+
+<p class="body">
+<span id="second-header">Quadratic Equation (Standard Form)=</span>
+<br>
+<span id="math">ax<sup>2</sup> + bx + c = 0</span>
+</p>
+
+<p class="body">
+<span id="second-header">Quadratic Formula=</span>
+<br>
+<span id="math">x = (-b � &#8730;[b<sup>2</sup> - 4ac]) &divide; 2a</span>
+</p>
+
+<p class="body">
+<span id="second-header">Binomial Expansion=</span>
+<br>
+<span id="math">(x + y)<sup>n</sup> = x<sup>n</sup> + <sup>n</sup>C<sub>1</sub>x<sup>n-1</sup>y + <sup>n</sup>C<sub>2</sub>x<sup>n-2</sup>y<sup>2</sup> + ... + <sup>n</sup>C<sub>n-1</sub>xy<sup>n-1</sup> + y<sup>n</sup></span>
+</p>
+
+<p class="body">
+<span id="second-header">Proving a Right Triangle=</span>
+<br><br>
+<b>Method 1:</b> Show two sides of the triangle are perpendicular by demonstrating their slopes are opposite reciprocals.
+<br>
+<b>Method 2:</b> Calculate the distances of all three sides and then test Pythagorean's theorem to show the three lengths make Pythagorean's theorem true.
+</p>
+
+<p class="body">
+<span id="second-header">Proving a Parallelogram=</span>
+<br><br>
+<b>Method 1:</b> Show both pairs of opposite sides are parallel by showing they have equal slopes.
+<br>
+<b>Method 2:</b> Show that one pair of adjacent sides isn't perpendicular.
+<br>
+<b>Method 3:</b> Show that the diagonals aren't perpendicular.
+</p>
+
+<p class="body">
+<span id="second-header">Proving a Non-Square Rectangle=</span>
+<br><br>
+<b>Method 1:</b> Show both pairs of opposite sides are parallel by showing they have equal slopes.
+<br>
+<b>Method 2:</b> Show that one pair of adjacent sides is perpendicular.
+<br>
+<b>Method 3:</b> Show that the diagonals aren't perpendicular.
+</p>
+
+<p class="body">
+<span id="second-header">Proving a Rhombus=</span>
+<br><br>
+<b>Method 1:</b> Show both pairs of opposite sides are parallel by showing they have equal slopes.
+<br>
+<b>Method 2:</b> Show that one pair of adjacent sides isn't perpendicular.
+<br>
+<b>Method 3:</b> Show that the diagonals are perpendicular.
+</p>
+
+<p class="body">
+<span id="second-header">Proving a Square=</span>
+<br><br>
+<b>Method 1:</b> Show both pairs of opposite sides are parallel by showing they have equal slopes.
+<br>
+<b>Method 2:</b> Show that one pair of adjacent sides is perpendicular.
+<br>
+<b>Method 3:</b> Show that the diagonals are perpendicular.
+</p>
+
+<p class="body">
+<span id="second-header">Proving a Regular Trapezoid=</span>
+<br><br>
+<b>Method 1:</b> Prove that only there is only one pair of parallel sides.
+<br>
+<b>Method 2:</b> Prove that it is isosceles if the nonparallel sides are congruent (using <span id="hlight-g">distance formula</span>).
+</p>
+
+<p class="body">
+<span id="second-header">Proving an Irregular Trapezoid=</span>
+<br><br>
+<b>Method 1:</b> Prove that there are no pairs of parallel sides.
+<br>
+<b>Method 2:</b> Graph the points and find every side's <sup>rise</sup>&frasl;<sub>run</sub>; none of the sides will have the same <sup>rise</sup>&frasl;<sub>run</sub>.
+</p>
+
+<!----- End Formulae ------>
+
+<!------ Begin Units ------->
+
+<p class="header">Geometry</p>
+<span id="second-header">Unit 1 - Euclidean Circles=</span>
+<br><br>
+<span id="third-header">Vocabulary=</span>
+<br>
+<b>Arc:</b> A part of the circumference of a circle or other curve.
+<br>
+<b>Center:</b> The center of the circle, usually symbolized by a dot.
+<br>
+<b>Radius:</b> The distance between the center and any point on the circle.
+<br>
+<b>Diameter:</b> A specific type of chord. It is the distance between one point on the circle and another point on the circle that passes through the center.
+<br>
+<b>Chord:</b> The distance between one point on the circle and another point on the circle.
+<br>
+<b>Secant Line:</b> A line that passes through the circle and touches two points on the circle.
+<br>
+<b>Tangent Line:</b> A line that touches one point on the circle.
+<br>
+<b>Point of Tangency:</b> The point that touches both the tangent line and the circle.
+<br>
+<b>Common Tangent:</b> A line that is tangent to two or more circles. They can be external or internal.
+<br>
+<b>Sector:</b> A portion, or slice, of the entire area of the circle.
+<br>
+<img src="/images/euclid-circle.png" style="width: 192px;height: 192px;">
+<br><br>
+<span id="third-header">Arcs=</span>
+<br>
+An arc is a section of the circle that is separated from the rest of the circumference by two radii separated by a central angle. Arcs are measured in degrees because it is near impossible to find the length of a curve. The central angle is the angle that separates the two radii. Due to an arc being an angle, the measure of the central angle is equivalent to its arc.
+<br>
+<img src="/images/centr-ang.gif">
+<br>
+There are three different arcs. There is the minor arc (written as A&#865;B), which means the central angle is less than 180<sup>o</sup>. There is the major arc (written as A&#865;C&#865;B), which means the central angle is greater than 180<sup>o</sup>. Finally, there is a semicircle, which is when the central angle is 180<sup>o</sup>, making the two radii a diameter.
+<br>
+There is also an <span id="hlight-g">inscribed angle</span>, which created an arc that can also be called an intercepted arc. The inscribed angle's measure is half of the central angle or intercepted angle.
+<br>
+<img src="/images/inscr-ang.gif" style="width: 160px;height: 160px;">
+<br>
+It is important to remember that any quadrilateral inside of a circle (known as a cyclic quadrilateral) has its opposite angles supplementary to each other.
+<br>
+<img src="/images/cyclic-quad.svg" style="width: 128px;height: 128px;">
+<br><br>
+<span id="third-header" style="margin-bottom: 0px;">Theorems=</span>
+<ol style="margin-top: 0px;margin-bottom: 0px;">
+  <li>The angle between a tangent and a chord &theta; <span id="math">= <sup>mT&#865;P</sup>&frasl;<sub>2</sub></span></li>
+  <li>The angle between two chords &theta; <span id="math">= [mA&#865;C + mD&#865;B] &divide; 2</span></li>
+  <li>The angle between two tangents &theta; <span id="math">= [mQ&#865;S&#865;R - mQ&#865;R] &divide; 2</span></li>
+  <li>The angle between two secants &theta; <span id="math">= [mR&#865;T - mQ&#865;S] &divide; 2</span></li>
+  <li>The angle between a tangent and a secant &theta; <span id="math">= [mT&#865;R - mT&#865;Q] &divide; 2</span></li>
+  <li>A radius perpendicular to a chord bisects the chord</li>
+  <li>Congruent chords are equidistant from the center</li>
+  <li>Congruent chords intercept congruent arcs</li>
+  <li>Parallel chords intercept congruent arcs</li>
+  <li>Chord segments <span id="math">PA &times; PB = PC &times; PD</span></li>
+  <li>Segments of secants <span id="math">PA &times; PB = PC &times; PD)</span></li>
+  <li>Segments of a tangent and a secant <span id="math">PA &times; PB = PT<sup>2</sup></span></li>
+  <li>If two tangents intersect outside a circle, then the distances from the intersecting point and the points of tangency are congruent <span id="math">TP &cong; TQ</span></li>
+</ol>
+<p class="bottom"> </p>
+
+<p class="body">
+<span id="second-header">Unit 2 - Geometric Circles=</span>
+<br><br>
+<b>Standard Equation:</b> <span id="math">(x - a)<sup>2</sup> + (y - b)<sup>2</sup> = r<sup>2</sup></span>, where (a,b) = center of circle; r = radius; (x,y) = any point on circle [left as variables]
+<br><br>
+If circle touches/is tangent to <span id="math">x = n(number)</span>, use the equation: <span id="math">r = |(a-n)|</span>
+<br>
+If circle touches/is tangent to <span id="math">y = n(number)</span>, use the equation: <span id="math">r = |(b-n)|</span>
+<br>
+The line x = 0 is the y-axis; the line y = 0 is the x-axis
+<br><br>
+If given area and center, use the equation <span id="math">&#960;r<sup>2</sup> = <i>ga</i>(given area)</span>
+<br>
+If given circumference and center, use the equation: <span id="math">&#960;d = <i>gc</i></span>(given circumference)
+<br><br>
+If given the two endpoints of the diameter, use the <span id="hlight-g">distance formula</span> to find the diameter, then divide by 2 to find the radius. Next, find the <span id="hlight-g">midpoint</span> of the diameter to find the center. Finally, input the radius and the center into the standard equation and you have your answer.
+<br><br>
+<span id="third-header">Finding Standard Form from General Form=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite the given Generic Form
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Simplify the equation
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Group families
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> <span id="hlight-g">FOIL</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> Conversion (note: <i>n</i> is equivalent to the middle number divided by 2 &times; var)
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 6:</b> Finding radius and center
+<br><br>
+<i>Example(s):</i>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> <span id="math">x<sup>2</sup> + y<sup>2</sup> + 12x - 10y + 12 = 0</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> <span id="math">x<sup>2</sup> + y<sup>2</sup> + 12x - 10y = -12</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> <span id="math">(x<sup>2</sup>+12x) + (y<sup>2</sup>-10y) = -12</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> <span id="math">(x<sup>2</sup>+12x+36) + (y<sup>2</sup>-10y+25) = -12</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> <span id="math">(x+6)<sup>2</sup> + (y-5)<sup>2</sup> = 49</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 6:</b> <span id="math">C(-6, 5); r = 7</span>
+<br><br>
+<span id="third-header">Finding Tangent Line from Circle Equation and Given Point=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite the given Standard Form and given point
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Finding center
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Finding slope of the radius [between given point and center]
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Find the opposite reciprocal of the radius' slope [slope of tgt line]
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> Write the unfinished <span id="hlight-g">slope-intercept form</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 6:</b> Find y-intercept by substituting the given point into the <span id="hlight-g">slope-intercept form</span> and simplifying
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 7:</b> Complete the <span id="hlight-g">slope-intercept form</span>
+<br><br>
+<i>Example(s):</i>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> <span id="math">x<sup>2</sup> + y<sup>2</sup> = 10</span> P(1, 3)</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> <span id="math">C(0, 0)</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> <span id="math">slope of radius = 3-0 &divide; 1-0 = <sup>3</sup>&frasl;<sub>1</sub> = 3</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> <span id="math">slope of tgt = <sup>-1</sup>&frasl;<sub>3</sub></span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> eq. of tgt: <span id="math">y = (<sup>-1</sup>&frasl;<sub>3</sub>)x + b</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 6:</b> this tgt passes through (1, 3)
+<br>
+ &#8594; <span id="math">3 = <sup>-1</sup>&frasl;<sub>3</sub>(1) + b</span>
+<br>
+ &#8594; <span id="math">3 = <sup>-1</sup>&frasl;<sub>3</sub> + b</span>
+<br>
+ &#8594; <span id="math">3 + <sup>1</sup>&frasl;<sub>3</sub> = b</span>
+<br>
+ &#8594; <span id="math"><sup>10</sup>&frasl;<sub>3</sub> = b</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 7:</b> eq. of tgt: <span id="math">y = (<sup>-1</sup>&frasl;<sub>3</sub>)x + <sup>10</sup>&frasl;<sub>3</sub></span>
+<br><br>
+<span id="third-header">Finding Tangent Line from Circle Equation and Given Point v2=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite given Standard Form and given point
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Finding center
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Finding slope of the radius [between given point and center]
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Find the opposite reciprocal of the radius' slope [slope of tgt line]
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> Substitute the unknown values into the <span id="hlight-g">slope-point form</span> and simplify
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 6:</b> Rewrite the answer
+<br><br>
+<i>Example(s):</i>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> <span id="math">x<sup>2</sup> + y<sup>2</sup> = 10</span> P(1, 3)</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> <span id="math">C(0, 0)</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> <span id="math">slope of radius = 3-0 &divide; 1-0 = <sup>3</sup>&frasl;<sub>1</sub> = 3</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> <span id="math">slope of tgt = <sup>-1</sup>&frasl;<sub>3</sub></span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> eq. of tgt is,
+<br>
+ &#8594; <span id="math">y-3 = <sup>-1</sup>&frasl;<sub>3</sub>(x-1)</span>
+<br>
+ &#8594; <span id="math">y-3 = (<sup>-1</sup>&frasl;<sub>3</sub>)x + <sup>1</sup>&frasl;<sub>3</sub></span>
+<br>
+ &#8594; <span id="math">y = (<sup>-1</sup>&frasl;<sub>3</sub>)x + <sup>1</sup>&frasl;<sub>3</sub> + 3</span>
+<br>
+ &#8594; <span id="math">y = (<sup>-1</sup>&frasl;<sub>3</sub>)x + <sup>10</sup>&frasl;<sub>3</sub></span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 6:</b> <span id="math">y = (<sup>-1</sup>&frasl;<sub>3</sub>)x + <sup>10</sup>&frasl;<sub>3</sub></span>
+</p>
+
+<p class="body">
+<span id="second-header">Unit 3 - Probability=</span>
+<br><br>
+<b>Sample Space:</b> A list of all possible outcomes; normally listed in set notation <span id="math">S={A,B}</span>
+<br>
+<b>Outcome:</b> The end result of a certain event
+<br>
+<b>Set:</b> A set is a well-defined collection of objects
+<br>
+<b>Element:</b> Each object in a set
+<br>
+<b>Independent Events:</b> An event whose probability does not change due to another event taking place <span id="math">P(A&#8745;B) = P(A) &#8745; P(B)</span>
+<br>
+<b>Dependent Events:</b> An event whose probability does change due to another event taking place <span id="math">P(A&#8745;B) = P(A) &#8746; P(B|A)</span>
+<br>
+<b>Venn Diagram:</b> A comparison of two or more events and their outcomes
+<br>
+<b><u>U</u>nion:</b> Comparison of the outcomes of <u>EITHER</u> set
+<br>
+<b>I<u>n</u>tersection:</b> Comparison of the outcomes <u>SHARED</u> by each set
+<br>
+<b>Complement:</b> All outcomes that are NOT the event
+<br>
+<b>Conditional Probability:</b> The probability of an event given the probability of another event <span id="math">P(A|B) = P(A&#8745;B) &divide; P(B)</span>
+<br>
+<b>Contingency Table:</b> A table showing the distribution of one variable in rows and another in columns, used to study the association between the two variables.
+<br>
+<b>Mutually Exclusive Events:</b> Events that do not share any outcomes
+<br>
+<b>Event:</b> Desired outcome of an experiment
+</p>
+
+<p class="header">Algebra</p>
+<p class="body" style="padding-bottom: 0px;">
+<span id="second-header">Unit 4 - Quadratics=</span>
+<br><br>
+<img onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="/images/comp-num.1" width="150" height="96" style="cursor: none; transition: 0.7s steps(50)">
+<script>
+function zoomIn(x) {
+    x.style.height = "258px";
+    x.style.width = "400px";
+}
+
+function zoomOut(x) {
+    x.style.height = "96px";
+    x.style.width = "150px";
+}
+</script>
+<br><br>
+<span id="third-header">Imaginary Numbers=</span>
+<br>
+Some imaginary numbers include: &#8730;-9, &#8730;-16, &#8730;-48, &#8732;-16, -243<sup>1/6</sup>, and -10<sup>1/8</sup>.
+<br><br>
+<b>Definition:</b> (negative number)<sup>1/n</sup>, where "n" is both greater than or equal to 2 and is even.
+<br><br>
+<i>i</i> is the <b>special imaginary number</b>:
+<br>
+<span id="math">i = &#8730;-1</span>
+<br>
+<span id="math">i<sup>2</sup> = -1</span>
+<br>
+<span id="math">i<sup>3</sup> = -i</span>
+<br>
+<span id="math">i<sup>4</sup> = 1</span>
+<br>
+<span id="math">i<sup>5</sup> = i</span>
+<br>
+<span id="math">i<sup>6</sup> = -1</span>
+<br><br>
+<u>RULE</u>: <i>i</i><sup> positive multiple of 4</sup> = 1, which can be implemented into the rules of exponents to find ALL values of <i>i</i>.
+<br><br>
+Other imaginary numbers are in terms of <i>i</i>, such as &#8730;-9 being equivalent to 3<i>i</i> because &#8730;-9 is equivalent to &#8730;-1 (or <i>i</i>) &times; &#8730;9
+<br><br>
+<u>RULE</u>: <i>i</i> will never be in the denominator, so <span id="math"><sup>1</sup>&frasl;<sub>-i</sub></span> is equivalent to <i>i</i>
+<br><br>
+<span id="third-header">Complex Numbers=</span>
+<br>
+DIVISION RULE: Multiply the denominator by its conjugate (<span id="math">a + ib &#8594; a - ib</span>) [change the sign of the <b>imaginary part</b>] and the numerator by the denominator's conjugate
+<br><br>
+<i>Example(s):</i>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> <span id="math">(6i + 7) &divide; (3 + 5i)</span> [Restate the Problem]
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> <span id="math">(6i + 7)(3 - 5i) &divide; (3 + 5i)(3 - 5i)</span> [Multiply the numerator and denominator by the denominator's conjugate]
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> <span id="math">(18i - 30i^2 - 35i) &divide; (9 - 15i + 15i - 25i^2)</span> [<span id="hlight-g">FOIL</span>]
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> <span id="math">(-17i + 51) &divide; (34)</span> [Simplify]
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> <span id="math">(-i + 3) &divide; 2</span> [Simplify]
+<br><br>
+ABSOLUTE VALUE: Use the equation: <span id="math">&#8730;(x<sup>2</sup> + y<sup>2</sup>)</span>, where <i>x</i> is the real number of the real part and <i>y</i> is the real number of the imaginary part.
+<br><br>
+<style>
+ol.quadbull {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol.quadbull li {
+    padding-left: 16px;
+}
+
+ol.quadbull li:before {
+    content: "Step ";
+    font-weight: bold;
+}
+</style>
+<span id="third-header" style="margin-bottom: 0px;">Solving Quadratic Equations=</span>
+<ol style="margin-top: 0px;margin-bottom: 0px;">
+  <li>Taking the Square Root:
+    <ol class="quadbull" type="1">
+      <li><b>1:</b> Rewrite the Problem</li>
+      <li><b>2:</b> Simplify the equation until you are left with var^2 = <i>n</i>(number)</li>
+      <li><b>3:</b> Find the square root of either side</li>
+      <li><b>4:</b> Rewrite the answer
+<br><br>
+      <i>Example(s):</i>
+<br>
+      &nbsp;&nbsp;&nbsp;<b>Step 1:</b> <span id="math">4x<sup>2</sup> + 1 = -63</span>
+<br>
+      &nbsp;&nbsp;&nbsp;<b>Step 2:</b> <span id="math">x<sup>2</sup> = -16</span>
+<br>
+      &nbsp;&nbsp;&nbsp;<b>Step 3:</b> <span id="math">&#8730;x<sup>2</sup> = &#8730;-16</span>
+<br>
+      &nbsp;&nbsp;&nbsp;<b>Step 4:</b> <span id="math">x = &plusmn;4i</span>
+      </li>
+    </ol>
+  </li>
+<br>
+  <li>Factorizing (<i>a</i> = 1):
+    <ol class="quadbull">
+      <li><b>1:</b> Rewrite the Problem</li>
+      <li><b>2:</b> Simplify so that <i>n</i>(number) is equal to 0 and <i>a</i> = 1</li>
+      <li><b>3:</b> Find the values of <i>b</i> and <i>c</i></li>
+      <li><b>4:</b> Find two numbers whose sum is equal to the value of <i>b</i> and whose product is equal to <i>c</i></li>
+      <li><b>5:</b> Fill out the following equation: <span id="math">(var + num1)(var + num2) = 0</span></li>
+      <li><b>6:</b> Both (var + num1) and (var + num2) are equal to 0, so use that fact to find both values of var</li>
+      <li><b>7:</b> Rewrite the Answer
+<br><br>
+      <i>Example(s):</i>
+<br>
+      &nbsp;&nbsp;&nbsp;<b>Step 1:</b> <span id="math">b<sup>2</sup> + 11b + 28 = 0</span>
+<br>
+      &nbsp;&nbsp;&nbsp;<b>Step 5:</b> <span id="math">(b + 7)(b + 4) = 0</span>
+<br>
+      &nbsp;&nbsp;&nbsp;<b>Step 6:</b> <span id="math">b + 7 = 0, b + 4 = 0</span>
+<br>
+      &nbsp;&nbsp;&nbsp;<b>Step 7:</b> <span id="math">b = -7, -4</span>
+      </li>
+    </ol>
+  </li>
+<br>
+  <li>Factorizing by Grouping (<i>a</i> &#8800; 1)
+    <ol class="quadbull">
+      <li><b>1:</b> Rewrite the Problem</li>
+      <li><b>2:</b> Simplify so that <i>n</i>(number) is equal to 0</li>
+      <li><b>3:</b> Multiply the values of <i>a</i> and <i>c</i> together [we'll call this P]</li>
+      <li><b>4:</b> Using P and the value of <i>b</i>, find two numbers whose sum is equal to the value of <i>b</i> and whose product is equal to P</li>
+      <li><b>5:</b> Fill out the following equation: <span id="math">(var + num1)(var + num2) = 0</span></li>
+      <li><b>6:</b> Both (var + num1) and (var + num2) are equal to 0, so use that fact to find both values of var</li>
+      <li><b>7:</b> Rewrite the Answer
+<br><br>
+      <i>Example(s):</i>
+<br>
+      &nbsp;&nbsp;&nbsp;<b>Step 1:</b> <span id="math">2n<sup>2</sup> + 11n + 14 = 0</span>
+<br>
+      &nbsp;&nbsp;&nbsp;<b>Step 5:</b> <span id="math">(n + 7)(n + 4) = 0</span>
+<br>
+      &nbsp;&nbsp;&nbsp;<b>Step 6:</b> <span id="math">n + 7 = 0, n + 4 = 0</span>
+<br>
+      &nbsp;&nbsp;&nbsp;<b>Step 7:</b> <span id="math">n = -7, -4</span>
+      </li>
+    </ol>
+  </li>
+</ol>
+<p class="bottom"> </p>
+<p class="body">
+<span id="second-header">Unit 5 - Polynomials=</span>
+<br><br>
+<span id="third-header">Adding/Subtracting Polynomials=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite the Question
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Distribute the addition/subtraction sign
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Remove the parentheses
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Combine like-terms
+<br><br>
+<i>Example(s):</i>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> <span id="math">(x<sup>2</sup> + 3x - 2) - (-2x + 3)</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> <span id="math">(x<sup>2</sup> + 3x - 2) + (2x - 3)</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> <span id="math">x<sup>2</sup> <span id="red">+ 3x</span> <span id="blue">- 2</span> <span id="red">+ 2x</span> <span id="blue">- 3</span></span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> <span id="math">x<sup>2</sup> <span id="red">+ 5x</span> <span id="red">- 5</span></span>
+<br><br>
+<span id="third-header">Multiplying Polynomials=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite the Question
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> FOIL the terms together
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Simplify
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Combine like-terms
+<br><br>
+<i>Example(s):</i>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> <span id="math">(x<sup>2</sup> + 3x - 2)(-2x + 3)</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> <span id="math">(x<sup>2</sup>)(-2x) + (x<sup>2</sup>)(3) + (3x)(-2x) + (3x)(3) + (-2)(-2x) +(-2)(3)</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> <span id="math">-2x<sup>3</sup> <span id="red">+ 3x<sup>2</sup> - 6x<sup>2</sup></span> <span id="blue">+ 9x + 4x</span> - 6</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> <span id="math">-2x<sup>3</sup> <span id="red">- 6x<sup>2</sup></span> <span id="blue">+ 13x</span> - 6</span>
+<br><br>
+<span id="third-header">Dividing Polynomials (Synthetic)=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite the Question
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Create and fill in the Synthetic Chart (if there is a missing term, replace it with 0)
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Solve to find the quotient and remainder of the equation
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Restate the Question w/ Answer
+<br><br>
+<i>Example(s):</i>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> <span id="math">(3x<sup>4</sup> - x<sup>2</sup> + 3x - 2) &divide; (x + 3)</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> <span id="math">-3<span style="margin-left: 5px; border-left: 1px solid black; border-bottom: 1px solid black; padding-bottom: 15px;">&nbsp;3&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;-1&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;-2&nbsp;</span></span>
+<br><br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> <span id="math">Q(x) = 3x<sup>3</sup> - 9x<sup>2</sup> + 26x - 75, R(x) = 225</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> <span id="math">(3x<sup>4</sup> - x<sup>2</sup> + 3x - 2) &divide; (x + 3) = (3x<sup>3</sup> - 9x<sup>2</sup> + 26x - 75) + (225 &divide; [x + 3])</span>
+<br><br>
+<span id="third-header">Dividing Polynomials (Long)=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite the Question
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Create and fill in the Long Division Template (if there is a missing term, replace it with 0)
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Solve to find the quotient and remainder of the equation
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Restate the Question w/ Answer
+<br><br>
+<i>Example(s):</i>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> <span id="math">(3x<sup>4</sup> - x<sup>2</sup> + 3x - 2) &divide; (x + 3)</span>
+<br><br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b>  <span id="math">x+3<span style="margin-left: 5px; border-left: 1px solid black; border-top: 1px solid black; padding-top: 3px;">&nbsp;3x<sup>4</sup> + 0x<sup>3</sup> - x<sup>2</sup> + 3x - 2&nbsp;</span></span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> <span id="math">Q(x) = 3x<sup>3</sup> - 9x<sup>2</sup> + 26x - 75, R(x) = 225</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> <span id="math">(3x<sup>4</sup> - x<sup>2</sup> + 3x - 2) &divide; (x + 3) = (3x<sup>3</sup> - 9x<sup>2</sup> + 26x - 75) + (225 &divide; [x + 3])</span>
+<br><br>
+<span id="third-header">Remainder/Factor Theorem=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite the Question
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Find the root of the division statement (root is the value of the variable)
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> For the polynomial P(var), substitute the root into the function [Remainder = P(root)]
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Replace the variable will the root in the remainder function
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> Simplify (if P(root) = 0, the divisor is a factor and the root is a zero)
+<br><br>
+<i>Example(s):</i>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> <span id="math">(2x<sup>3</sup> - 6x<sup>2</sup> - 16x + 8) &divide; (x + 2)</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Root = -2
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> <span id="math">P(x) = 2x<sup>3</sup> - 6x<sup>2</sup> - 16x + 8, Remainder = P(-2)</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> <span id="math">P(-2) = 2(-2)<sup>3</sup> - 6(-2)<sup>2</sup> - 16(-2) + 8</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> <span id="math">P(-2) = 0</span>
+<br><br>
+<span id="third-header">Finding a Specific Term w/ Binomial Expansion=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite the Question
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Replace the term with <span id="math">T<sub>t</sub></span> where <i>t</i> = term number
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Replace the <span id="math">T<sub>t</sub></span> with <span id="math">T<sub>r+1</sub></span> where <i>r</i> = term number - 1
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Find the value of 'r'
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> Using the equation <span id="math"><sup>n</sup>C<sub>r</sub>(x)<sup>n-r</sup>(y)<sup>r</sup></span>, fill in all given values
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 6:</b> Simplify
+<br><br>
+<i>Example(s):</i>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> 4th term in the expansion of <span id="math">(2y - 1)<sup>6</sup></span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> <span id="math">T<sub>4</sub></span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> <span id="math">T<sub>4</sub> = T<sub>3+1</sub></span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> <span id="math">r = 3</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> <span id="math"><sup>6</sup>C<sub>3</sub>(2y)<sup>6-3</sup>(-1)<sup>3</sup></span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 6:</b> <span id="math">T<sub>4</sub> = -160y<sup>3</sup></span>
+<br><br>
+<span id="third-header">Finding Coefficients=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite the Question
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Using the given values, fill in the equation: T<sub>r+1</sub> = <sup>n</sup>C<sub>r</sub>(x)<sup>n-r</sup>(y)<sup>r</sup>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Move the parts of the coefficient to the front
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Find the value of 'r'
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> Substitute in the value of 'r' into the coefficient expression
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 6:</b> Simplify
+<br><br>
+<i>Example(s):</i>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Find the coefficient of <span id="math">y<sup>3</sup> in (2y - 1)<sup>6</sup></span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> <span id="math">T<sub>r+1</sub> = <sup>6</sup>C<sub>r</sub>(2y)<sup>6-r</sup>(-1)<sup>r</sup></span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> <span id="math">T<sub>r+1</sub> = [<sup>6</sup>C<sub>r</sub>2<sup>6-r</sup>(-1)<sup>r</sup>] &times; y<sup>6-r</sup></span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> <span id="math">r = 3</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> <span id="math">coeff of y<sup>3</sup> = <sup>6</sup>C<sub>3</sub>2<sup>6-3</sup>(-1)<sup>3</sup></span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 6:</b> <span id="math">coeff of y<sup>3</sup> = -160</span>
+<br><br>
+<span id="third-header">Descartes' Rule of Sign=</span>
+<br>
+Let P(x) of polynomial
+<br>
+<span id="red">a)</span> The number of change of sign in P(x) is the maximum number of positive real roots or less by even numbers.
+<br>
+<span id="red">b)</span> The number of change of sign in P(-x) is the maximum number of negative real roots or less by even numbers.
+<br><br>
+<span id="third-header">Solving Cubics=</span>
+<br>
+Three types of cubics:
+<br>
+- <span id="red"><span id="math">A<sup>3</sup> &plusmn; B<sup>3</sup></span> [Two Terms]</span>
+<br>
+- <span id="blue">Three Terms</span>
+<br>
+- <span id="green">Four Terms</span>
+<br><br>
+For <span id="math">A<sup>3</sup> <b>-</b> B<sup>3</sup></span>, use: <span id="math">(A - B)(A<sup>2</sup> + AB + C<sup>2</sup>)</span>
+<br>
+For <span id="math">A<sup>3</sup> <b>+</b> B<sup>3</sup></span>, use: <span id="math">(A + B)(A<sup>2</sup> - AB + C<sup>2</sup>)</span>
+<br>
+For three terms, use Trial-N-Error or Rational Roots
+<br>
+For four terms, use Trial-N-Error, Rational Roots, or Grouping and Factoring
+<br><br>
+<span id="third-header">Solving Quartics=</span>
+<br>
+- <span id="red">Three Terms</span>
+<br>
+- <span id="blue">Four Terms</span>
+<br><br>
+For three terms, solve it like a quadratic
+<br>
+For four terms, remove an 'x' and then solve the remaining equation like a cubic
+</p>
+
+<p class="body">
+<span id="second-header">Unit 6 - Functions=</span>
+<br><br>
+<span id="third-header">Adding/Subtracting Functions=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Start off with your heading declaration: (f &plusmn; g)(x) = f(x) &plusmn; g(x)
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Substitute in the values of f(x) and g(x) into the second half of the above declaration
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Simplify
+<br><br>
+<span id="third-header">Multiplying Functions=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Start off with your heading declaration: (f &times; g)(x) = f(x) &times; g(x)
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Substitute in the values of f(x) and g(x) into the second half of the above declaration in FOIL format
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Simplify
+<br><br>
+<span id="third-header">Dividing Functions=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Start off with your heading declaration: (<sup>f</sup>&frasl;<sub>g</sub>)(x) = f(x) &divide; g(x)
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Substitute in the values of f(x) and g(x) into the second half of the above declaration in fractional format
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Simplify
+<br><br>
+<span id="third-header">Composite Functions=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Start off with your heading declaration: (f &#8728; g)(x) = f[g(x)]
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Substitute in your value g(x) into each 'x' of f(x)
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Simplify
+<br><br>
+<i>Example(s):</i>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> <span id="math">(g &#8728; h)(x) = g[h(x)]</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> <span id="math">[g(x) = 3x - 4, h(x) = 3x + 1] = 3(3x + 1) - 4</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> <span id="math">9x - 1</span>
+<br><br>
+<span id="third-header">Finding Inverses=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Replace f(x) with 'x' and replace x with 'y'
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Solve for y
+<br><br>
+<span id="third-header">Verifying Inverses=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Find f[g(x)] and g[f(x)]
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> If both f[g(x)] and g[f(x)] are equal to x, they are inverses
+<br><br>
+<span id="third-header">Graphing Functions=</span>
+<br>
+Here is a <a href="http://tutorial.math.lamar.edu/Classes/Alg/GraphFunctions.aspx" target="_blank">website</a> describing how to graph a function based on its degree, factors, and x-intercepts. It will also teach you how to derive an equation from a graph.
+</p>
+
+<span id="second-header">Unit 7 - Graphing Functions=</span>
+<br><br>
+<span id="third-header">Simplifying Rational Expressions=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite the Expression
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> State the condition (denominator &#8800; 0 [simplify condition])
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Simplify the expression
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> State the Result + Excluded Values in {}'s
+<br><br>
+<i>Example(s):</i>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> <span id="math">(2a<sup>2</sup> + 6a) &divide; 2a<sup>2</sup></span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> <span id="math">a &#8800; 0</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> <span id="math">1 + <sup>3</sup>&frasl;<sub>a</sub></span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> <span id="math">1 + <sup>3</sup>&frasl;<sub>a</sub> {0}</span>
+<br><br>
+<span id="third-header">Multiplying Rational Expressions=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite the Problem
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Factor
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> State the Condition (denom. &#8800; 0 [simplify condition])
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Simplify
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> Multiply
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 6:</b> State the Simplified Final Result with Excluded Values in {}'s
+<br><br>
+<i>Example(s):</i>
+<br><br>
+<img class="ex-high" src="/images/MathEX_1.png">
+<br><br>
+<span id="third-header">Dividing Rational Expressions=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite the Problem
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Factor
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> State the Condition (denom. &#8800; 0 [simplify condition])
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> KCF (Keep | Change | Flip)
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> State new Condition (denom. &#8800; 0 [simplify condition])
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 6:</b> Simplify
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 7:</b> Multiply
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 8:</b> State the Simplified Final Result with Condensed Excluded Values in {}'s
+<br><br>
+<i>Example(s):</i>
+<br><br>
+<img class="ex-high" src="/images/MathEX_2.png">
+<br><br>
+<span id="third-header">Adding/Subtracting Rational Expressions=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Restate the Problem
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Find Common Denominator
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Combine Numerators
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Simplify Final Result (factored form [if possible])
+<br><br>
+<i>Example(s):</i>
+<br><br>
+<img class="ex-wide" src="/images/MathEX_3.png">
+<hr>
+<img class="ex-wide" src="/images/MathEX_5.png">
+<br>
+I recommend practicing the <u>SUBTRACTION</u>. The homework sheets and answer keys can be found above.
+<br><br>
+<span id="third-header">Solving Rational Equations=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Restate the Problem
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Find Common Denominator
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Combine Numerators
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Cross-Multiply
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> Solve for the Variable
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 6:</b> Find Extraneous Values
+<br><br>
+<i>Example(s):</i>
+<br><br>
+<img src="/images/MathEX_6.png" class="ex-high">
+<hr>
+<img src="/images/MathEX_7.png" class="ex-high">
+<hr>
+<img src="/images/MathEX_8.png" class="ex-high">
+<br><br>
+<span id="third-header">Properties of Radical Expressions=</span>
+<ol style="margin-top: 0px; margin-bottom: 0px;">
+  <li><span id="math">&radic;[a<sup>2</sup>] = a, (&radic;a)<sup>2</sup> = a</span></li>
+  <li><span id="math">&radic;a &times; &radic;b = &radic;[a &times; b]</span> ONLY when a > 0 and b > 0</li>
+  <li><span id="math">&radic;a &divide; &radic;b = &radic;[<sup>a</sup>&frasl;<sub>b</sub>]</span> (OR) <span id="math">a&radic;c &divide; b&radic;d = <sup>a</sup>&frasl;<sub>b</sub> &times; &radic;[<sup>c</sup>&frasl;<sub>d</sub>]</span></li>
+  <li>
+    <i>Like-Terms:</i>
+<br>
+    &nbsp;&nbsp;&nbsp;1. <span id="math">a<sub>1</sub>&radic;b &plusmn; a<sub>2</sub>&radic;b = (a<sub>1</sub> &plusmn; a<sub>2</sub>) &times; &radic;b</span>
+<br>
+    &nbsp;&nbsp;&nbsp;2. <span id="math">a<sub>1</sub>&radic;b &times; a<sub>2</sub>&radic;b = a<sub>1</sub> &times; a<sub>2</sub> &times; b</span>
+<br>
+    &nbsp;&nbsp;&nbsp;3. <span id="math">a<sub>1</sub>&radic;b &divide; a<sub>2</sub>&radic;b = a<sub>1</sub> &divide; a<sub>2</sub></span>
+  </li>
+</ol>
+<br><br>
+<span id="third-header">Solving Radical Equations=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Square Both Sides
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Solve for the Variable
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Check for Extraneous Solutions
+<br><br>
+<span id="third-header">Finding Asymptotes of Special Cases of Rational Functions=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite the function in the form of <span id="math">f(x) = (1 &divide; [x - h]) + k</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Find the vertical asymptote using <span id="math">x = h</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Find the horizontal asymptote using <span id="math">y = k</span>
+<br><br>
+<span id="third-header">Graphing Special Cases of Rational Functions</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Find the Vertical Asymptote [we'll call this <i>VA</i>] of the Function using <span id="math">x = h</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Find the Horizontal Asymptote [we'll call this <i>HA</i>] of the Function using <span id="math">y = k</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Find the Intercepts using <span id="math">0 = (1 &divide; [x - h]) + k</span> for the x-intercept or <span id="math">P(x, 0)</span> and <span id="math">y = (1 &divide; [0 - h]) + k</span> for the y-intercept or <span id="math">P(0, y)</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Find the y-values of <span id="math">x = {h - &frac12;, h - 1, h - 2, h + &frac12;, h + 1, h + 2}</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> Graph the function using the points above as well as the intercepts
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 6:</b> Find the domain and range of the function
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 7:</b> Find the increasing interval and decreasing interval of the function
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 8:</b> Find the end-behavior
+<br><br>
+<i>Example(s):</i>
+<br>
+<img src="/images/MathEX_11.png" class="ex-wide">
+<br><br>
+<span id="third-header">Finding Holes in Rational Functions=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite the Function in Factored Form
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Find the factors in the denominator that are the same as the factors in the numerator, those are the x-coordinate of the holes
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Cancel the factors that match and replace <i>x</i> with the x-coordinate of the holes to find the y-coordinate
+<br><br>
+<span id="third-header">Graphing Rational Functions=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Rewrite the Function in Factored Form
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Find any Holes in the Function
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Find and Graph the Asymptotes of the Function
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Find and Plot the x-intercepts and y-intercept
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 5:</b> Enter the Original Function into the Graphing Calculator
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 6:</b> Graph the Function to the Best of Your Ability
+<br><br>
+<span id="third-header">Graphing Square Root Functions=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Refer to the transformational function <span id="math">f(x) = a &times; &radic;(x - h) + k</span>, in which:
+<ul style="margin-top: 0px; margin-bottom: 0px;">
+  <li><i>a</i> &#8800; 0</li>
+  <li><i>a</i> < 0 results in reflection over the x-axis</li>
+  <li>-1 < <i>a</i> < 1 results in a vertical shrink/horizontal stretch</li>
+  <li><i>a</i> &gt; 1 (OR) <i>a</i> < -1 results in a vertical stretch/horizontal shrink</li>
+  <li><i>k</i> &gt; 0 results in a translation upwards</li>
+  <li><i>k</i> < 0 results in a translation downwards</li>
+  <li><i>h</i> &gt; 0 results in a translation to the right</li>
+  <li><i>h</i> < 0 results in a translation to the left</li>
+</ul>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Find the y-values of <span id="math">x = {h, h + 1, h + 4, h + 9}</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Plot the Points
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Find the Domain and Range, where <span id="math">Domain = [h, <sup>+</sup>&infin;)</span> and <span id="math">Range = [k, <sup>&plusmn;</sup>&infin;)</span>
+<br><br>
+<span id="third-header">Graphing Cube Root Functions=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Refer to the transformational function <span id="math">f(x) = a &times; &#8731;(x - h) + k</span>, in which:
+<ul style="margin-top: 0px; margin-bottom: 0px;">
+  <li><i>a</i> &#8800; 0</li>
+  <li><i>a</i> < 0 results in reflection over the x-axis</li>
+  <li>-1 < <i>a</i> < 1 results in a vertical shrink/horizontal stretch</li>
+  <li><i>a</i> &gt; 1 (OR) <i>a</i> < -1 results in a vertical stretch/horizontal shrink</li>
+  <li><i>k</i> &gt; 0 results in a translation upwards</li>
+  <li><i>k</i> < 0 results in a translation downwards</li>
+  <li><i>h</i> &gt; 0 results in a translation to the right</li>
+  <li><i>h</i> < 0 results in a translation to the left</li>
+</ul>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Find the y-values of <span id="math">x = {h - 8, h - 1, h, h + 1, h + 8}</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Plot the Points
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Find the Domain and Range, where <span id="math">Domain = (<sup>-</sup>&infin;, <sup>+</sup>&infin;)</span> and <span id="math">Range = (<sup>&plusmn;</sup>&infin;, <sup>&plusmn;</sup>&infin;)</span>
+<br><br>
+<span id="third-header">Graphing Absolute Value Functions=</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 1:</b> Refer to the transformational function <span id="math">f(x) = a &times; |x - h| + k</span>, in which:
+<ul style="margin-top: 0px; margin-bottom: 0px;">
+  <li><i>a</i> &#8800; 0</li>
+  <li><i>a</i> < 0 results in reflection over the x-axis</li>
+  <li>-1 < <i>a</i> < 1 results in a vertical shrink/horizontal stretch</li>
+  <li><i>a</i> &gt; 1 (OR) <i>a</i> < -1 results in a vertical stretch/horizontal shrink</li>
+  <li><i>k</i> &gt; 0 results in a translation upwards</li>
+  <li><i>k</i> < 0 results in a translation downwards</li>
+  <li><i>h</i> &gt; 0 results in a translation to the right</li>
+  <li><i>h</i> < 0 results in a translation to the left</li>
+</ul>
+&nbsp;&nbsp;&nbsp;<b>Step 2:</b> Find the y-values of <span id="math">x = {h - 3, h - 2, h - 1, h, h + 1, h + 2, h + 3}</span>
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 3:</b> Plot the Points
+<br>
+&nbsp;&nbsp;&nbsp;<b>Step 4:</b> Find the Domain and Range, where <span id="math">Domain = (<sup>-</sup>&infin;, <sup>+</sup>&infin;)</span> and <span id="math">Range = (<sup>-</sup>&infin;, k]</span> (OR) <span id="math">Range = [k, <sup>+</sup>&infin;)</span>
+<br><br>
+<span id="third-header">Piecewise Functions=</span>
+<br>
+Piecewise functions are exactly what their name suggests. A <span id="hlight-y">piecewise function</span> does not, unlike the square root, rational, cube root, and absolute value functions, have a parent or transformational function.
+There are two different types of piecewise functions:
+<ul style="margin-top: 0px; margin-bottom: 0px;">
+  <li>Continuous (e.g. <span id="hlight-g">absolute value function</span>)</li>
+  <li>Discontinuous</li>
+</ul>
+<br>
+<i>Example(s):</i>
+<ol style="margin-top: 0px; margin-bottom: 0px;">
+  <li><span id="math">f(x) = {3x - 4 if 0 < x &le; 3, 2x if -6 &le; x &le; 0}</span><br><img src="/images/MathEX_12.png" class="ex-high"></li>
+  <li><span id="math">f(x) = {0 if 0 < x < 5, 10 if 5 &le; x &le; 11, 25 if 11 < x &le; 17, 35 if x &gt; 17}</span><br><img src="/images/MathEX_13.png" class="ex-wide"></li>
+</ol>
+<br><br>
+<span id="third-header">Step Functions=</span>
+<br><br />
+<i>a<sub>1</sub></i> &nbsp; <input id="a1" type="number">
+<br><br />
+<i>a<sub>2</sub></i> &nbsp; <input id="a2" type="number">
+<br><br />
+<i>x</i>&nbsp;&nbsp; &nbsp; <input type="number" id="x">
+<br><br />
+<i>h</i>&nbsp;&nbsp; &nbsp; <input id="h" type="number">
+<br><br />
+<i>k</i>&nbsp;&nbsp; &nbsp; <input type="number" id="k">
+<br><br />
+<button onclick="calc()">Calculate!</button>
+<br><br />
+<span id="math"><span id="output">f(x) = a<sub>1</sub> &times; [a<sub>2</sub>x - h] + k</span></span>
+<script>
+function stepf(x, a1, a2, h, k) {
+  var hor_shift = Math.floor(a2 * x - h);
+  var dil_ref = a1 * hor_shift;
+  return (dil_ref-(0-k));
+}
+
+function calc() {
+  var x = document.getElementById('x').value;
+  var a1 = document.getElementById('a1').value;
+  var a2 = document.getElementById('a2').value;
+  var h = document.getElementById('h').value;
+  var k = document.getElementById('k').value;
+  // eq: f(x) = a[x - h] + k
+  document.getElementById('output').innerHTML = 'f\(' + x + '\)' + ' = ' + a1 + '\[' + a2 + '\(' + x + '\)' + ' - \(' + h + '\)' + '\]' + ' + ' + '\(' + k + '\)' + ' = ' + stepf(x, a1, a2, h, k);
+}
+</script>
+<br><br />
+<i>Analysis of Equation:</i>
+<ul style="margin-bottom: 0px; margin-top: 0px;">
+  <li><i>a<sub>1</sub></i> is the vertical growth factor if greater than 0 (OR) reflection factor over x-axis if less than 0</li>
+  <li><i>a<sub>2</sub></i> is the horizontal growth factor if greater than 0 (OR) reflection factor over y-axis if less than 0</li>
+  <li><i>x</i> is the variable</li>
+  <li><i>h</i> is the horizontal shift</li>
+  <li><i>k</i> is the vertical shift</li>
+</ul>
+<p class="bottom"> </p>
+<span id="second-header">Unit 8 - Exponential and Logarithmic Functions=</span>
+<br><br>
+<span id="third-header">Exponential Functions=</span>
+<br>
+An <span id="hlight-y">exponential function</span> is any function that follows the transformational formula <span id="math">f(x) = a(b)<sup>x-h</sup> + k</span>:
+<ul style="margin-bottom: 0px; margin-top: 0px;">
+  <li><i>b:</i> the base number, such as 2 in <span id="math">f(x) = 2<sup>x</sup></span></li>
+  <li><i>x:</i> the exponent and will be the x-variable in the function</li>
+  <li><i>a:</i> the dilation/x-axis reflection factor:</li>
+  <li><i>h:</i> the horizontal shift</li>
+  <li><i>k:</i> the vertical shift</li>
+  <li>There is no y-axis reflection factor in an exponential function because a function can be reflected over the x-axis if the numerator and denominator of the base are switched</li>
+</ul>
+<br />
+<i>Equation Editor:</i>
+<br><br />
+<i>a</i> &nbsp; <input id="a" type="number">
+<br><br />
+<i>b</i> &nbsp; <input id="b" type="number" min="0">
+<br><br />
+<i>x</i> &nbsp; <input type="number" id="x2">
+<br><br />
+<i>h</i> &nbsp; <input id="h2" type="number">
+<br><br />
+<i>k</i> &nbsp; <input type="number" id="k2">
+<br><br />
+<button onclick="calc2()">Calculate!</button>
+<br><br />
+<span id="math"><span id="output2">f(x) = a(b)<sup>x-h</sup> + k</span></span>
+<script>
+function expf(x, a, b, h, k) {
+  var hor_shift = x - h;
+  var base = Math.pow(b, hor_shift);
+  var dil_ref = a * base;
+  return (dil_ref-(0-k));
+}
+
+function calc2() {
+  var x = document.getElementById('x2').value;
+  var a = document.getElementById('a').value;
+  var b = document.getElementById('b').value;
+  var h = document.getElementById('h2').value;
+  var k = document.getElementById('k2').value;
+  // eq: f(x) = a(b)^(x-h) + k
+  document.getElementById('output2').innerHTML = 'f\(' + x + '\)' + ' = ' + a + '\(' + b + '\)' + '\<sup\>' + x + '-' + '\(' + h + '\)' + '\<\/sup\>' + ' + \(' + k + '\)' + ' = ' + expf(x, a, b, h, k);
+}
+</script>
+<br><br />
+If the base of the exponential function is less than 1 but greater than 0, the function is known as <span id="hlight-y">exponential decay</span>.
+If the base of the exponential function is greater than 1, the function is known as <span id="hlight-y">exponential growth</span>.
+<br><br />
+Exponential functions also have a special number: <i>e</i> (known as <span id="hlight-y">Euler's number</span>).
+Euler's number is about 2.718, but is best represented by 2 < <i>e</i> < 3.
+The function <span id="math">f(x) = e<sup>x</sup></span> is a special exponential growth function using Euler's number.
+The function <span id="math">f(x) = e<sup>-x</sup></span> is a special exponential decay function using Euler's number.
+The transformational function using Euler's number is <span id="math">f(x) = a(e)<sup>&plusmn;x-h</sup> + k</span>.
+<br><br />
+You can find the characteristics of an exponential function using these formulae:
+<ul style="margin-top: 0px; margin-bottom: 0px;">
+  <li><b>Domain:</b> <span id="math">(<sup>-</sup>&infin;, <sup>+</sup>&infin;)</span></li>
+  <li><b>Range:</b> <span id="math">(k, <sup>&plusmn;</sup>&infin;)</span></li>
+  <li><b>Horizontal Asymptote:</b> <span id="math">y = k</span></li>
+  <li><b>X-Intercept:</b> <span id="math">(log<sub>b</sub>(<sup>-k</sup>&frasl;<sub>a</sub>) + h, 0)</span></li>
+  <li><b>Y-Intercept:</b> Find <span id="math">f(0)</span></li>
+</ul>
+<br />
+<span id="third-header">Logarithmic Functions=</span>
+<br>
+<span id="hlight-y">Logarithmic functions</span> are the inverses of exponential functions.
+If the exponential parent function is <span id="math">f(x) = b<sup>x</sup></span>, then the <span id="hlight-y">logarithmic parent function</span> is <span id="math">x = log<sub>b</sub>[f(x)]</span>.
+In the logarithmic parent function, <i>x</i> represents the exponent, <i>b</i> is the base, and <i>f(x)</i> is the x-coordinate on the graph.
+The value inside of the logarithm <span id="math">(x - h)</span> must <b>NEVER</b> be &le; 0.
+The rules regarding the base of an exponential function still apply to the base of a logarithmic function.
+In an actual logarithmic function, <i>x</i> is referred to as <i>f(x)</i> (OR) <i>y</i>, and <i>f(x)</i> is referred to as <i>x</i>.
+<br><br />
+<i>Equation Editor:</i>
+<br><br />
+<i>x</i> &nbsp; <input type="number" id="x3">
+<br><br />
+<i>b</i> &nbsp; <input id="b2" type="number" min="0">
+<br><br />
+<i>h</i> &nbsp; <input id="h3" type="number">
+<br><br />
+<i>k</i> &nbsp; <input type="number" id="k3">
+<br><br />
+<button onclick="calc3()">Calculate!</button>
+<br><br />
+<span id="math"><span id="output3">f(x) = log<sub>b</sub>(x - h) + k</span></span>
+<script>
+function logf(x, b, h, k) {
+  var h_shift = x - h;
+  var logFunc = Math.log(h_shift) / Math.log(b);
+  var v_shift = logFunc - (-k);
+  return v_shift;
+}
+
+function calc3() {
+  var x = document.getElementById('x3').value;
+  var b = document.getElementById('b2').value;
+  var h = document.getElementById('h3').value;
+  var k = document.getElementById('k3').value;
+  // eq: f(x) = logb(x-h) + k
+  document.getElementById('output3').innerHTML = 'f\(' + x + '\)' + ' = ' + 'log\<sub\>\(' + b + '\)\<\/sub\>\(' + x + ' - ' + '\(' + h + '\)\)' + ' + \(' + k + '\)' + ' = ' + logf(x, b, h, k);
+}
+</script>
+<br><br />
+There are two types of special logarithmic functions: <span id="hlight-y">common logarithm</span> and <span id="hlight-y">natural logarithm</span>.
+A common logarithm is a logarithmic function with the base 10 (i.e. <span id="math">f(x) = log<sub>10</sub>(x)</span>).
+In the common logarithm, there is no need to write the base, so it is written as <span id="math">log(x)</span>.
+A natural logarithm is a logarithmic function with the base <i>e</i> (i.e. <span id="math">f(x) = log<sub>e</sub>(x)</span>).
+In the natural logarithm, the "log" is written as "ln", which stands for natural logarithm (just backwards).
+<br><br />
+You can find the characteristics of a logarithmic function using these formulae:
+<ul style="margin-top: 0px; margin-bottom: 0px;">
+  <li><b>Domain:</b> <span id="math">(h, <sup>&plusmn;</sup>&infin;)</span></li>
+  <li><b>Range:</b> <span id="math">(<sup>-</sup>&infin;, <sup>+</sup>&infin;)</span></li>
+  <li><b>Vertical Asymptote:</b> <span id="math">y = h</span></li>
+  <li><b>X-Intercept:</b> <span id="math">(b<sup>-k</sup> + k, 0)</span></li>
+  <li><b>Y-Intercept:</b> Find <span id="math">f(0)</span></li>
+</ul>
+<p class="bottom"> </p>
+
+<!----- End Units ------>
+
+<!---------End Content----------->
+<div id="footer"></div>
+</div>
+</html>

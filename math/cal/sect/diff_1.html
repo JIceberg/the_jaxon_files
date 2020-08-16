@@ -1,0 +1,138 @@
+<span id="second-header">Derivatives</span>
+<br><br />
+A <span id="hlight-y">derivative</span> is a function that shares a tangent point to another function at a
+certain value of <i>x</i>.
+<br><br />
+Traditional definition: <i>f</i> '(<i>c</i>) = lim<sub><i>h</i> &rarr; 0</sub> (<i>f</i>(<i>c</i> + <i>h</i>)
+&minus; <i>f</i>(<i>c</i>)) &divide; <i>h</i>.
+<br />
+Alternate definition: <i>f</i> '(<i>c</i>) = lim<sub><i>x</i> &rarr; <i>c</i></sub> (<i>f</i>(<i>x</i> + <i>c</i>)
+&minus; <i>f</i>(<i>c</i>)) &divide; (<i>x</i> &minus; <i>c</i>).
+<br><br />
+<span id="third-header">Basic Differentiation Using Derivatives</span>
+<br><br />
+<b>First Derivative</b>: <i>f</i> '(<i>x</i>), <i>y</i> ', <sup>d<i>y</i></sup>&frasl;<sub>d<i>x</i></sub>
+<br>
+  &emsp; &rarr; <i>the derivative of a function</i>
+<br />
+<b>Second Derivative</b>: <i>f</i> ''(<i>x</i>), <i>y</i> ", <sup>d&sup2;<i>y</i></sup>&frasl;<sub>d<i>x</i>&sup2;</sub>
+<br>
+  &emsp; &rarr; <i>the derivative of the derivative of a function</i>
+<br />
+<b>Power Rule</b>: if <i>f</i>(<i>x</i>) = <i>x</i><sup><i>n</i></sup>,
+<i>f</i> '(<i>x</i>) = <i>n</i>&times;<i>x</i><sup><i>n</i> &minus; 1</sup>
+<br>
+  &emsp; &rarr; <i>ex: f</i>(<i>x</i>) = 3<i>x</i>&sup2;, <i>f</i> '(<i>x</i>) = 6<i>x</i>
+<br /><br />
+<b>Addition Rule</b>: if <i>f</i>(<i>x</i>) = <i>g</i>(<i>x</i>) &plusmn; <i>h</i>(<i>x</i>) &plusmn; &hellip;,
+<i>f</i> '(<i>x</i>) = <i>g</i>'(<i>x</i>) &plusmn; <i>h</i>'(<i>x</i>) &plusmn; &hellip;
+<br>
+  &emsp; &rarr; <i>ex: f</i>(<i>x</i>) = <i>x</i><sup>3</sup> &minus; 7<i>x</i> + 5,
+  <i>f</i> '(<i>x</i>) = 3<i>x</i>&sup2; &minus; 7
+<br /><br />
+<b>Product Rule</b>: if <i>f</i>(<i>x</i>) = <i>g</i>(<i>x</i>) &times; <i>h</i>(<i>x</i>),
+<i>f</i> '(<i>x</i>) = <i>g</i>'(<i>x</i>)&times;<i>h</i>(<i>x</i>) + <i>h</i>'(<i>x</i>)&times;<i>g</i>(<i>x</i>)
+<br>
+  &emsp; &rarr; <i>ex: f</i>(<i>x</i>) = (4<i>x</i>&sup2; + 3)&radic;(x &minus; 3),
+  <i>f</i> '(<i>x</i>) = 8<i>x</i>&radic;(x &minus; 3) + &frac12;(x &minus; 3)<sup>-&frac12;</sup>(4<i>x</i>&sup2; + 3)
+<br /><br />
+<b>Quotient Rule</b>: if <i>f</i>(<i>x</i>) = <i>g</i>(<i>x</i>) &divide; <i>h</i>(<i>x</i>),
+<i>f</i> '(<i>x</i>) = [<i>g</i>'(<i>x</i>) &times; <i>h</i>(<i>x</i>) &minus; <i>h</i>'(<i>x</i>) &times; <i>g</i>(<i>x</i>)]
+&divide; [<i>h</i>(<i>x</i>)]&sup2;
+<br>
+<img style="width: 23vw;" src="https://www.mathportal.org/calculus/differentiation/product-and-quotient-rule_files/5.gif">
+<br><br />
+<u>NO NEED TO SIMPLIFY FOR DERIVATIVES</u> (unless specified otherwise)
+<br><br />
+<span id="third-header">Derivatives of Trigonometric Functions</span>
+<br><br />
+<ul class="two-column-list">
+<li>
+  <sup>d(sin <i>x</i>)</sup>&frasl;<sub>d<i>x</i></sub> = cos <i>x</i>
+</li>
+<li>
+  <sup>d(cos <i>x</i>)</sup>&frasl;<sub>d<i>x</i></sub> = -sin <i>x</i>
+</li>
+<li>
+  <sup>d(tan <i>x</i>)</sup>&frasl;<sub>d<i>x</i></sub> = sec&sup2;<i>x</i>
+</li>
+<li>
+  <sup>d(sec <i>x</i>)</sup>&frasl;<sub>d<i>x</i></sub> = tan <i>x</i>&times;sec <i>x</i>
+</li>
+<li>
+  <sup>d(csc <i>x</i>)</sup>&frasl;<sub>d<i>x</i></sub> = -cot <i>x</i>&times;csc <i>x</i>
+</li>
+<li>
+  <sup>d(cot <i>x</i>)</sup>&frasl;<sub>d<i>x</i></sub> = -csc&sup2;<i>x</i>
+</li>
+</ul>
+<span id="third-header">Chain Rule</span>
+<br><br />
+How do you find the derivative of a function within another function, like sin(<i>x</i>&sup2;)?
+Is it just cos(x&sup2;)? No. When differentiating, it is important that the derivatives ALL functions
+be included in the solution.
+<br />
+The chain rule is defined as: <sup>d[(f &#9702; g)(<i>x</i>)]</sup>&frasl;<sub>d<i>x</i></sub>
+= (<i>f</i> ' &#9702; <i>g</i>)(<i>x</i>) &times; <i>g</i>'(<i>x</i>)
+<br><br />
+If you are given the equation <i>y</i> = sin((3 &minus; 7<i>x</i>)&sup2;), what is <i>y</i> '?
+<br />
+The best method for using chain rule is to break it down into various functions.
+There are three functions within the equation, so it can be rewritten as (<i>f</i> &#9702; [<i>g</i> &#9702; <i>h</i>])(<i>x</i>).
+<br />
+Next, define the functions and their derivatives:
+<br>
+&bull; <i>f</i>(<i>x</i>) = sin <i>x</i>, <i>f</i> '(<i>x</i>) = cos <i>x</i>
+<br />
+&bull; <i>g</i>(<i>x</i>) = <i>x</i>&sup2;, <i>g</i>'(<i>x</i>) = 2<i>x</i>
+<br>
+&bull; <i>h</i>(<i>x</i>) = 3 &minus; 7<i>x</i>, <i>h</i>'(<i>x</i>) = -7
+<br />
+Finally, set up the chain rule:
+<i>y</i> ' = cos((3 &minus; 7<i>x</i>)&sup2;) &times; <sup>d[(3 &minus; 7<i>x</i>)&sup2;]</sup>&frasl;<sub>d<i>x</i></sub>.
+<br>
+Because there is a composite function within the composite function, the chain rule must be applied once more. In fact, for an equation
+comprised of <i>k</i> functions, the chain rule must be applied <i>k</i>&minus;1 times.
+<br />
+Thus, the final answer (unsimplified) is:
+<i>y</i> ' = cos((3 &minus; 7<i>x</i>)&sup2;) &times; 2(3 &minus; 7<i>x</i>) &times; -7.
+<br><br />
+Beware of composites! The derivatives of sin&sup2;<i>x</i> and sin(<i>x</i>&sup2;) are not the same!
+The result depends on the "outside" and "inside" functions!
+<br><br />
+<span id="third-header">Derivatives &amp; Graphing</span>
+<br><br />
+Consider the function <graphfile class="cover-div" onclick="uncover('twelve');"><i>p</i>(<i>x</i>)</graphfile>.
+<br />
+We want to sketch the derivative graph of <span style="color: red;"><i>p</i>'(<i>x</i>)</span>. Using derivative rules:
+<br>
+&bull; When the function is horizontal, the derivative function is at zero
+<br />
+&bull; A curved function has either a linear or curved derivative
+<br>
+&bull; A function with a negative slope has a derivative below the x-axis
+<br />
+&bull; A function with a positive slope has a derivative above the x-axis 
+<br><br />
+Here is the actual derivative graph of the function: <graphfile style="color: red;" class="cover-div" onclick="uncover('deriv1');"><i>p</i>'(<i>x</i>)</graphfile>.
+<br />
+Notice how the maximum and minimum points on <i style="color: black;">p</i> are x-intercepts on <i style="color: red;">p'</i>.
+<br><br />
+We now know the graph of <span style="color: red;"><i>p</i>'(<i>x</i>)</span>. What is the graph of <span style="color: blue;"><i>p</i>"(<i>x</i>)</span>?
+<br />
+When the graph has a "cusp" or sharp edge, the derivative at that point will be an undefined jump discontinuity.
+<br />
+With that in mind, here is the graph of <graphfile style="color: blue;" class="cover-div" onclick="uncover('deriv2');"><i>p</i>"(<i>x</i>)</graphfile>.
+<br><br />
+How does one find the graph of the original function when given its derivative?
+Say the function <i>p</i>(<i>x</i>) is actually the derivative of another function, <span style="color: green;"><i>g</i>(<i>x</i>)</span>.
+What would this function look like?
+<br><br />
+<span id="third-header">Tangent Lines</span>
+<br><br />
+We all know the equation of a line is <i>y</i> = <i>mx</i> + <i>b</i>.
+Well, another way to write this is <i>y</i> &minus; <i>y</i><sub>0</sub> = <i>m</i>(<i>x</i> &minus; <i>x</i><sub>0</sub>),
+where the point <point id="coord">( <i>x</i><sub>0</sub>, <i>y</i><sub>0</sub> )</point> is the point of tangency between the
+tangent line and original function.
+<br />
+<i>m</i>, the slope, is the value of <i>f</i> '(<i>x</i><sub>0</sub>), where <i>f</i>(<i>x</i>) is the original function.

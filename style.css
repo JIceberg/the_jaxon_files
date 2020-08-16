@@ -1,0 +1,287 @@
+img.hov {
+    width: 200px; 
+    height: 200px;
+    margin-top: 10vh;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px;
+    border-style: inset;
+    position: relative;
+    margin-bottom: 12vh;
+}
+
+.hov:hover {
+    background-color: #f4f4f4;
+}
+
+center.slog {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 25vw;
+  transition: 0.2s steps(50);
+  padding: 7px;
+}
+
+center.slog:hover {
+  cursor: pointer;
+  color: red;
+  border-color: silver;
+}
+
+center.slog:active {
+  background-color: silver;
+  border-color: grey;
+}
+
+slogan {
+  font-size: 15pt;
+  font-family: Segoe UI, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  background-color: #f9f9f9;
+  border: 1px solid #e6e6e6;
+}
+  
+  #hlight-y {
+    background-color: rgba(248, 255, 71, 0.5);
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  #hlight-p {
+    background-color: rgba(205, 35, 224, 0.5);
+    padding-left: 2px;
+    padding-right: 2px;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+  #hlight-b {
+    background-color: rgba(63, 242, 255, 0.5);
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  #hlight-g {
+    background-color: rgba(42, 211, 56, 0.5);
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  p.subtitle {
+    font: 600 18pt Segoe UI, Arial;
+    font-weight: bold;
+    color: gray;
+  }
+  
+  p.header {
+    font: 500 14pt Segoe UI, Calibri;
+    text-decoration: underline;
+    font-weight: lighter;
+    color: #666
+  }
+  
+  p.body {
+    font: 500 12pt Times, Arial;
+    padding-bottom: 50px;
+    color: black;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    font-family: Arial;
+    transition: 0.2s steps(12);
+    text-decoration: none;
+  }
+  
+  .navbar li a {
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown:hover, .navbar #item:hover {
+      background-color: #f1f1f1;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    min-width: 200px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block !important;
+    text-decoration: none;
+    transition: 0.1s steps(20);
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #f1f1f1;
+      padding-left: 25px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .title {
+    top: 0;
+    margin: 0;
+    background-color: #e6e6e6;
+    font-size: 2em;
+    line-height: calc(120px - 2em);
+    font-family: Segoe UI;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-shadow: 0 0 15px white;
+  }
+  
+  #footer {
+    bottom: 0;
+    left: calc(-1 * (2vw - 6px));
+    right: 0;
+    position: absolute;
+    width: 100vw;
+    background-color: #f7f7f7;
+    font: 500 10pt Aerial, sans-serif;
+    color: black;
+    box-shadow: 0 0 10px black;
+    user-select: none;
+  }
+  
+  #foot {
+    text-align: center;
+  }
+  
+  #fixed {
+    position: fixed;
+    user-select: none;
+    z-index: 50;
+  }
+  
+  #search, #social {
+    float: right;
+    padding-top: 12px;
+    padding-right: 10px;
+  }
+  
+  #main {
+    position: absolute;
+    top: 120px;
+    width: 95vw;
+    left: calc(2vw - 6px);
+    min-height: calc(100vh - 120px);
+  }
+  
+  body {
+    overflow-x: hidden;
+    cursor: default; !important
+  }
+  
+  #second-header {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  #third-header {
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  #main a {
+    color: blue;
+    text-decoration: none; !important
+  }
+  
+  #main a:hover {
+    color: purple;
+    text-decoration: underline;
+  }
+  
+  .bottom {
+    padding-bottom: 50px;
+  }
+  
+  .standard-list li a {
+    display: block;
+    text-align: left;
+    padding: 0px;
+  }
+  
+  .standard-list li a:hover {
+    background-color: white;
+  }
+  
+  #math {
+    font-family: Monospace, Cambria;
+    font-style: italic;
+    font-size: 12pt;
+  }
+  
+  table#tlist {
+    width: 100%;
+  }
+  
+  table#tlist, table#tlist th, table#tlist td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  table#tlist th, table#tlist td {
+    padding: 5px;
+    text-align: left;
+  }
+  
+  table#tlist tr:nth-child(even) {
+    background-color: #eee;
+  }
+  
+  table#tlist tr:nth-child(odd) {
+    background-color:#fff;
+  }
+  
+  table#tlist th {
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+  }
+  
+  .social-img {
+    max-width: 25px;
+    cursor: pointer;
+    position: relative;
+  }

@@ -1,0 +1,240 @@
+<span id="second-header">The Formal Definition of a Limit</span>
+<br><br />
+Let&apos;s refer to the informal definition of a limit: lim<sub><i>x</i> &rarr; <i>c</i></sub> <i>f</i>(<i>x</i>) = <i>L</i>.
+<br />
+This definition is informal because exact meanings have not yet been given to the two phrases:
+<br>
+&emsp; "<i>f</i>(<i>x</i>) becomes arbitrarily close to <i>L</i>"
+<br />
+and
+<br>
+&emsp; "<i>x</i> approaches <i>c</i>"
+<br /><br />
+The first person to assign mathematically rigorous meanings to these two phrases was
+<span id="hlight-b">Augustin-Louis Cauchy</span>.
+His <span id="hlight-g">&epsilon;-&delta; definition of limit</span> is the standard used today.
+<br><br />
+Let &epsilon; represent a small positive number (such as 0.01).
+The phrase "<i>f</i>(<i>x</i>) becomes arbitrarily close to <i>L</i>" means that
+<i>f</i>(<i>x</i>) &isin; (<i>L</i> &minus; &epsilon;, <i>L</i> &plus; &epsilon;).
+Using absolute value, this can be written as
+<br>
+&emsp; | <i>f</i>(<i>x</i>) &minus; <i>L</i> | &#60; &epsilon;
+<br />
+Similarly, the phrase "<i>x</i> approaches <i>c</i>" means that there exists a positive number
+&delta; such that <i>x</i> &isin; (<i>c</i> &minus; &delta;, <i>c</i>)&cup;(<i>c</i>, <i>c</i> &plus; &delta;).
+This fact can be expressed by the double inequality
+<br>
+&emsp; 0 &#60; | <i>x</i> &minus; <i>c</i> | &#60; &delta;
+<br />
+<img src="images/ex-1.png" class="ex-img">
+<br />
+Below is a table of values for the function
+<graphfile class="cover-div" onclick="uncover('seven')">
+  <i>m</i>(<i>a</i>)</graphfile>:
+<table id="t1">
+  <tr>
+    <th><i>m</i></th>
+    <th><i>m</i>(<i>a</i>)</th>
+  </tr>
+  <tr>
+    <td>1.9</td>
+    <td>3.61</td>
+  </tr>
+  <tr>
+    <td>1.99</td>
+    <td>3.96</td>
+  </tr>
+  <tr>
+    <td>1.999</td>
+    <td>3.996</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>undef.</td>
+  </tr>
+  <tr>
+    <td>2.001</td>
+    <td>4.004</td>
+  </tr>
+  <tr>
+    <td>2.01</td>
+    <td>4.04</td>
+  </tr>
+  <tr>
+    <td>2.1</td>
+    <td>4.41</td>
+  </tr>
+</table>
+<br />
+Using the epsilon-delta definition, what is a reasonable estimate for lim<sub><i>a</i> &rarr; 2</sub> <i>m</i>(<i>a</i>)?
+<br />
+First, determine the &delta; with 0 &#60; | <i>a</i> &minus; <i>c</i> | &#60; &delta;.
+This means that 0 &#60; | <i>a</i> &minus; 2 | &#60; &delta;; therefore,
+(<i>a</i> &minus; 2) &isin; (-&delta;, &delta;) which becomes
+<i>a</i> &isin; (2 &minus; &delta;, &delta; &plus; 2).
+<br><br />
+Next, determine what values of <i>a</i> should be used to determine the limit.
+Start with &delta; = 0.1, and then solve for <i>m</i>(<i>a</i>) where
+<i>a</i> &isin; (2 &minus; &delta;, &delta; &plus; 2) to determine the &delta;-intervals.
+Then divide &delta; by 10 repeatedly to get a more precise interval with each division.
+<br><br />
+For <i>m</i>(<i>a</i>), what is &epsilon; when &delta; = 0.01?
+First, determine <i>m</i>(<i>c</i> &plusmn; &delta;) {3.96, 4.04}.
+Then, find the absolute value of the difference between those two results.
+This yields 2&epsilon; = 0.08, so divide by 2.
+Therefore, &epsilon; = 0.04.
+<br><br />
+Finally, the limit is within reach.
+If | <i>m</i>(<i>a</i>) &minus; <i>L</i> | &#60; &epsilon;,
+then | 3.96&cup;4.04 &minus; <i>L</i> | &#60; 0.04.
+Therefore, <i>L</i> = 4.
+<br><br />
+<br><br />
+<span id="second-header">Trigonometric Limits</span>
+<br><br />
+There are two defined limits that are important to remember when dealing with the limits of trigonometric functions:
+<br>
+&emsp; &bull; lim<sub><i>x</i> &rarr; 0</sub> (<sup>1</sup>&frasl;<sub><i>x</i></sub>sin <i>x</i>) = 1
+<br />
+&emsp; &bull; lim<sub><i>x</i> &rarr; 0</sub> (<sup>1</sup>&frasl;<sub><i>x</i></sub>(1 &minus; cos <i>x</i>)) = 0
+<br><br />
+What is
+lim<sub><i>x</i> &rarr; 0</sub> [(cos2<i>x</i> &minus; 1) &divide; (cos <i>x</i> &minus; 1)]?
+<br />
+When we insert <i>x</i> = 0 into the equation, the result is <sup>0</sup>&frasl;<sub>0</sub>.
+This result is indeterminate, meaning there is a hole at <i>x</i> = 0 and an existing limit.
+<b>"0 over 0, keep going."</b>
+<br />
+The first step is to use the double angle theorem (<i>see</i> <a href="/math/precal">Precalculus</a>) to separate
+cos2<i>x</i> into a factorable component. In this case, we want to use cos2<i>x</i> = 2cos&sup2;<i>x</i> &minus; 1
+because we want to have one trigonmetric functon throughout the entire problem.
+<br />
+Then, we substitute and simplify:
+lim<sub><i>x</i> &rarr; 0</sub> [(2cos&sup2;<i>x</i> &minus; 2) &divide; (cos <i>x</i> &minus; 1)].
+<br />
+Notice that the numerator can be factored twice: by undistributing the 2 and using difference of squares. Thus,
+lim<sub><i>x</i> &rarr; 0</sub> [(2(cos&sup2;<i>x</i> &minus; 1)) &divide; (cos <i>x</i> &minus; 1)] =
+lim<sub><i>x</i> &rarr; 0</sub> [(2(cos <i>x</i> &minus; 1)(cos <i>x</i> &plus; 1)) &divide; (cos <i>x</i> &minus; 1)].
+<br />
+The factor (cos <i>x</i> &minus; 1) is in both the numerator and denominator, so it can be removed from the problem entirely:
+lim<sub><i>x</i> &rarr; 0</sub> [2(cos <i>x</i> &plus; 1)].
+<br />
+Finally, we can input <i>x</i> = 0 into the equation to find the limit:
+lim<sub><i>x</i> &rarr; 0</sub> [2(cos(0) &plus; 1)] =
+lim<sub><i>x</i> &rarr; 0</sub> [2(1 &plus; 1)] =
+lim<sub><i>x</i> &rarr; 0</sub> 4.
+<br />
+Referring back to our properties of limits, the limit of a constant is the same as the value of that constant.
+Therefore, the limit is 4.
+<br><br />
+<br><br />
+<span id="second-header">Behavior of Functions Using Limits</span>
+<br><br />
+Look at the graph <graphfile class="cover-div" onclick="uncover('eight')"><i>d</i>(<i>x</i>)</graphfile>.
+Its end behavior can be defined as the following:
+<br />
+&emsp; &bull; lim<sub><i>x</i> &rarr; -&infin;</sub> = 0
+<br />
+&emsp; &bull; lim<sub><i>x</i> &rarr; 0</sub> = unbounded
+<br />
+&emsp; &bull; lim<sub><i>x</i> &rarr; &infin;</sub> = 0
+<br><br />
+<span id="third-header">Infinities and Zeroes</span>
+<br />
+When determining the end behavior of a function without graphing, it is useful to know how numbers, zeroes, and infinities operate mathematically.
+Below is a list of properties of infinity and zero, along with their relation with the number <i>n</i>.
+<ul class="two-column-list">
+    <li><i>n</i> &divide; &infin; = 0</li>
+    <li>&infin; &times;/&divide; <i>n</i> = &infin;</li>
+    <li>&infin; &divide; &infin; = indet.</li>
+    <li>0 &times;/&divide; <i>n</i> = 0</li>
+    <li><i>n</i> &divide; 0 = DNE</li>
+    <li>0 &divide; 0 = indet.</li>
+    <li>&infin; &plusmn; <i>n</i> = &infin;</li>
+    <li>&infin; &plusmn; &infin; = indet.</li>
+    <li><i>n</i> &minus; &infin; = -&infin;</li>
+    <li><i>n</i> &divide; <i>n</i> = 1</li>
+</ul>
+Using those properties of infinity and zero, we can determine the end behavior of limits without graphing.
+If the graph of the function were unkown, but we were given the equation
+<i>f</i>(<i>x</i>) = <sup><i>x</i>&sup2;</sup>&frasl;<sub><i>x</i>&sup2; + 2</sub>, then what is lim<sub><i>x</i> &rarr; &infin;</sub> <i>f</i>(<i>x</i>)?
+<br />
+In this case, we factor out the largest degree from both the numerator and denominator:
+<i>f</i>(<i>x</i>) = <sup><i>x</i>&sup2;</sup>&frasl;<sub><i>x</i>&sup2;(1 + <sup>2</sup>&frasl;<sub><i>x</i>&sup2;</sub>)</sub>.
+The <sup>2</sup>&frasl;<sub><i>x</i>&sup2;</sub> becomes 0 because <i>x</i> = &infin;. The <i>x</i>&sup2; can be cancelled out.
+Therefore, the final result is <i>f</i>(&infin;) = <sup>1</sup>&frasl;<sub>1</sub>, or 1.
+<br />
+Conclusion: lim<sub><i>x</i> &rarr; &infin;</sub> <i>f</i>(<i>x</i>) = 1.
+<br><br />
+If <i>f</i>(<i>x</i>) = - <sup>;<i>x</i>&sup2;</sup>&frasl;<sub><i>x</i> &minus; 2</sub>, what is
+lim<sub><i>x</i> &rarr; -&infin;</sub> <i>f</i>(<i>x</i>)?
+<br />
+Start by factoring out the largest degree from both the numerator and denominator:
+<i>f</i>(<i>x</i>) = <sup><i>x</i>&sup2;(-1)</sup>&frasl;<sub><i>x</i>(1 &minus; <sup>2</sup>&frasl;<sub><i>x</i></sub>)</sub>.
+The (&minus; <sup>2</sup>&frasl;<sub><i>x</i></sub>) simplifies to 0 because <i>x</i> = -&infin;.
+The <i>x</i>&sup2; and <i>x</i> cancel and leave <i>x</i> on the numerator.
+Thus, the solution to <i>f</i>(-&infin;) = <sup>-(-&infin;)</sup>&frasl;<sub>1</sub> = &infin;.
+<br />
+Conclusion: lim<sub><i>x</i> &rarr; -&infin;</sub> <i>f</i>(<i>x</i>) = &infin;.
+<br><br />
+If <i>f</i>(<i>x</i>) = &radic;(<i>x</i>&sup2; + 2<i>x</i> + 1), what is the value of lim<sub><i>x</i> &rarr; -&infin;</sub> <i>f</i>(<i>x</i>)?
+<br />
+First, factor the largest degree:
+<i>f</i>(<i>x</i>) = &radic;(<i>x</i>&sup2;(1 + <sup>2</sup>&frasl;<sub><i>x</i></sub> + <sup>1</sup>&frasl;<sub><i>x</i>&sup2;</sub>)).
+Then, we cancel our values using the divide by infinity rule:
+<i>f</i>(<i>x</i>) = &radic;(<i>x</i>&sup2;). Now, we simplify.
+However, because our <i>x</i>-value is less than 0, it becomes <i>f</i>(<i>x</i>) = -<i>x</i>, because a negative times
+a negative is a positive. Finally, input the negative infinity: <i>f</i>(-&infin;) = -(-&infin;) = &infin;.
+<br />
+Conclusion: lim<sub><i>x</i> &rarr; -&infin;</sub> <i>f</i>(<i>x</i>) = &infin;.
+<br><br />
+<span id="third-header">The Speed of a Function</span>
+<br />
+When one function is "faster" than another, its range reaches infinity more quickly.
+This is because there are different sizes of infinity.
+In order from the slowest to fastest functions, it is:
+logarithmic, linear, power (<i>x</i><sup><i>k</i></sup>), exponential, and factorial.
+<br><br />
+When a function <i>g</i>(<i>x</i>) is comprised of a slow divided by a fast, then
+lim<sub><i>x</i> &rarr; &infin;</sub> <i>g</i>(<i>x</i>) = 0.
+Because the denominator reaches infinity before the numerator, we call back to our rule that
+a number divided by infinity is equal to 0.
+<span id="third-header">Continuity</span>
+<br />
+When a function is <span id="hlight-p">continuous</span>, every <i>x</i>-value has a defined <i>y</i>-value
+and does not have any holes, asymptotes, or <span id="hlight-b">jumps</span>&mdash;a jump is where the
+<i>x</i>-value has both an undefined <i>y</i>-value <i>and</i> a defined point.
+<br><br />
+<b>How does continuity relate to limits</b>?
+<br><br />
+There are three conditions a function must follow in order to be considered continuous:
+<ol style="margin-top: 0px;">
+  <li><i>f</i>(<i>x</i>) is a function that has a domain of (-&infin;, &infin;)</li>
+  <li>There is a bidirectional limit for every value of <i>x</i></li>
+  <li>lim<sub><i>x</i> &rarr; <i>c</i></sub> <i>f</i>(<i>x</i>) = <i>f</i>(<i>c</i>) for any value of <i>c</i></li>
+</ol>
+There are two types of dicontinuities: removable and unremovable.
+Holes are removable, while asymptotes and jumps are unremovable.
+This is beacause holes can still be the limit of the function, but not the defined point at that <i>x</i>-value.
+<br><br />
+When describing the continuity of a function, it is best to write the domain without including points of discontinuity.
+<br>
+Consider the following function:
+<graphfile class="cover-div" onclick="uncover('nine')"><i>h</i>(<i>k</i>)</graphfile>.
+<br />
+When describing the continuity of this function within the interval [-4, 4], we would say that
+<i>k</i><sub>cont</sub> &isin; (-4, -2)&cup;(-2, 0)&cup;(0, 2)&cup;(2, 4).
+Each break in the continuity of <i>h</i> is a jump.
+<br><br />
+Here&apos;s another example:
+<graphfile class="cover-div" onclick="uncover('ten')"><i>g</i>(<i>z</i>)</graphfile>.
+<br />
+There&apos;s a jump discontinuity at <i>z</i> = 2, so the continuity of <i>g</i> is
+<i>z</i><sub>cont</sub> &isin; (-&infin;, 2)&cup;(2, &infin;).
+<br><br />
+Let&apos;s take a look at a function with a hole:
+<graphfile class="cover-div" onclick="uncover('eleven')"><i>p</i>(<i>x</i>)</graphfile>.
+<br />
+Although the function has a limit at every existing point, the limit at <i>x</i> = -2, which is -4, does not equal
+the value of the function at <i>x</i> = -2, which is undefined.

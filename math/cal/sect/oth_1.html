@@ -1,0 +1,195 @@
+<span id="second-header">Slope Fields</span>
+<br><br />
+A <span id="hlight-y">differential equation</span> is an equation that represents the derivative of some
+function. For example, we could have the following differential equation:
+&nbsp; <i>y</i>&apos; = <i>x</i> &minus; <i>y</i>
+<br />
+A <span id="hlight-g">slope field</span> is a sketch of all the possible slopes of the function
+depending on the coordinates. Here's a slope field for the differential equation we
+listed above:
+<br>
+<img src="images/de-1.png" style="width: 12vw;" title="y&apos; = x &minus; y">
+<br />
+This function shows the slope of the function at certain values of <i>x</i> and <i>y</i>.
+Since we are not given a certain point on the function that exists, we cannot determine
+which of the infinite set of possible functions this particular one could be. Thus, we cannot
+draw a certain solution as there is an infinite number of them. Why? Well, because the
+derivative of a constant is zero, so there could always be some constant in the function that
+we don't know about! <i>Recall that an indefinite integral always results in the anti-derivative followed by a constant</i>.
+<br><br />
+<br><br />
+<span id="second-header">Solving Differential Equations</span>
+<br><br />
+<span id="third-header">Separable Differential Equations</span>
+<br><br />
+Say we have the differential equation
+<graphfile class="cover-div" onclick="uncover('de1')"><i>y</i>&apos; = &minus;<i>xy</i></graphfile>.
+This function can be rewritten as <sup>d<i>y</i></sup>&frasl;<sub>d<i>x</i></sub> = &minus;<i>xy</i>.
+This is called a <span id="hlight-b">separable differential function</span> because
+it can be separated into two different halves: a <i>y</i>-side and an <i>x</i>-side.
+If we divide both sides by <i>y</i> and then multiply both sides by d<i>x</i> we have:
+<sup>d<i>y</i></sup>&frasl;<sub><i>y</i></sub> = &minus;<i>x</i> d<i>x</i>.
+It looks like an integral on either side without the integral notation. Thus, let&apos;s add that notation and integrate:
+<br>
+&emsp; &emsp; &nbsp;
+&int; <sup>1</sup>&frasl;<sub><i>y</i></sub> d<i>y</i> = &minus; &int; <i>x</i> d<i>x</i>
+&nbsp;&rarr;&nbsp;
+ln <i>y</i> = &minus;&frac12;<i>x</i><sup>2</sup> + <i>C</i>
+<br />
+If needed, you can solve for <i>y</i> while remembering that the value of <i>C</i>
+is representative of ANY constant, so manipulating it with another constant will always yield <i>C</i>.
+<br><br />
+If we are given a particular solution for the equation above such as <i>f</i> (0) = 2,
+then we must solve for that particular value of <i>C</i>. If I plug in <i>y</i> = 2 and <i>x</i> = 0,
+then I get that <i>C</i> must be equal to 2 for this particular solution.
+Therefore, the specific solution for the differential equation would be:
+<br />
+<i>y</i> = <i>f</i> (<i>x</i>) = 2e<sup>&minus;&frac12;<i>x</i><sup>2</sup></sup>
+<br><br />
+<span id="third-header">Proportionality</span>
+<br><br />
+<u>Introduction</u>
+<br>
+Let&apos;s say that we can model the growth rate of bacteria because the rate of growth
+is proportional to the number of bacteria. The number of bacteria in thousands is represented using <i>B</i>
+and the time in hours is represented with <i>t</i>.
+At <i>t</i> = 0, there are 1,000 bacteria and at <i>t</i> = 5, there are 500,000 bacteria.
+Create a model equation, <i>B</i>(<i>t</i>), for the number of bacteria at time <i>t</i>.
+<br><br />
+<u>Lesson</u>
+<br>
+Okay, let&apos;s take a look at this question. It says that the rate of growth (the derivative/slope) is
+proportional to the number of bacteria.
+This calls for a proportionality constant <i>k</i> as we do not know the exact proportion.
+Now, let&apos;s write out this equation:
+<sup>d<i>B</i></sup>&frasl;<sub>d<i>t</i></sub> = <i>kB</i>.
+We can use separation of differential equations to solve for the general solution to <i>B</i>(<i>t</i>):
+<br>
+&emsp; &emsp; &nbsp;
+&int; <sup>1</sup>&frasl;<sub><i>B</i></sub> d<i>B</i> = <i>k</i> &int; d<i>t</i>
+&nbsp;&rarr;&nbsp;
+ln <i>B</i> = <i>kt</i> + <i>C</i>
+&nbsp;&rarr;&nbsp;
+<i>B</i>(<i>t</i>) = <i>C</i>e<sup><i>kt</i></sup>
+<br />
+The next step is to input the particular points into the function in order to solve for <i>k</i> and <i>C</i>
+in the particular solution. In this case, <i>C</i> = 1 and <i>k</i> = <sup>1</sup>&frasl;<sub>5</sub>&times;ln(500).
+This makes the particular solution, when simplified:
+<br>
+<i>B</i>(<i>t</i>) = (500)<sup><sup><i>t</i></sup>&frasl;<sub>5</sub></sup>
+<br />
+The reason for this resulting in such a simple function is because we have solved for a model
+that represents some proportion. That is how you work with a problem dealing with proportionality.
+<br><br />
+<span id="third-header">Euler's Method</span>
+<br><br />
+<u>Introduction</u>
+<br>
+We know that the slope-point formula is
+<i>y</i> &minus; <i>y</i><sub>0</sub> = <i>m</i>(<i>x</i> &minus; <i>x</i><sub>0</sub>).
+If we think about this in terms of a <i>change</i> in slope, the slope <i>m</i> can be represented using the derivative of the function
+and the changes in <i>x</i> and <i>y</i> can be represented by &Delta; (final &minus; initial):
+<i>y<sub>f</sub></i> &minus; <i>y<sub>i</sub></i> = <i>y</i> &apos;<sub><i>i</i></sub> &Delta;<i>x</i>.
+Next, let&apos;s declare the "initial" values to be relative to some number <i>n</i> and then solve for <i>y<sub>f</sub></i> :
+&nbsp;
+<i>y</i><sub><i>n</i> + 1</sub> = <i>y<sub>n</sub></i> + <i>y</i> &apos;<sub><i>n</i></sub> &Delta;<i>x</i>.
+<br />
+Using this formula to approximate the next value of <i>y</i> when given the differential equation and a particular solution
+is called <span id="hlight-g">Euler's method</span>.
+<br><br />
+<u>Lesson</u>
+<br>
+To use Euler's method, we must first create a table such as the one below with a certain number steps where
+each step is labeled some value of <i>n</i>:
+<table class="euler">
+    <tr>
+        <th id="step"><i>n</i></th>
+        <th><i>x<sub>n</sub></i></th>
+        <th><i>y<sub>n</sub></i></th>
+        <th><i>y</i> &apos;<sub><i>n</i></sub></th>
+        <th><i>y</i><sub><i>n</i> + 1</sub> = <i>y<sub>n</sub></i> + <i>y</i> &apos;<sub><i>n</i></sub> &Delta;<i>x</i></th>
+    </tr>
+    <tr>
+        <td id="step">0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td id="step">1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td id="step">&vellip;</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<br />
+This is an unfilled Euler's method table. If we are given a differential equation and a point on the function,
+we can approximate <i>f</i> (<i>x</i>) using a certain number of steps and an <i>x</i>-distance (&Delta;<i>x</i>) between
+each step.
+<br />
+For instance, let&apos;s say that <sup>d<i>y</i></sup>&frasl;<sub>d<i>x</i></sub> = <i>x</i> + 2<i>y</i> and
+that <i>f</i> (0) = 1. Find <i>f</i> (1) using four equal steps:
+<table class="euler">
+    <tr>
+        <th id="step"><i>n</i></th>
+        <th><i>x<sub>n</sub></i></th>
+        <th><i>y<sub>n</sub></i></th>
+        <th><i>y</i> &apos;<sub><i>n</i></sub></th>
+        <th><i>y</i><sub><i>n</i> + 1</sub> = <i>y<sub>n</sub></i> + <i>y</i> &apos;<sub><i>n</i></sub> &Delta;<i>x</i></th>
+    </tr>
+    <tr>
+        <td id="step">0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td><i>y</i><sub>1</sub> = 0 + 2(0.25) = 1.5</td>
+    </tr>
+    <tr>
+        <td id="step">1</td>
+        <td>0.25</td>
+        <td>1.5</td>
+        <td>3.25</td>
+        <td><i>y</i><sub>2</sub> = 1.5 + 3.25(0.25) = 2.313</td>
+    </tr>
+    <tr>
+        <td id="step">2</td>
+        <td>0.5</td>
+        <td>2.313</td>
+        <td>5.125</td>
+        <td><i>y</i><sub>3</sub> = 2.313 + 5.125(0.25) = 3.594</td>
+    </tr>
+    <tr>
+        <td id="step">3</td>
+        <td>0.75</td>
+        <td>3.594</td>
+        <td>7.938</td>
+        <td><i>y</i><sub>4</sub> = 3.594 + 7.938(0.25) = 5.939</td>
+    </tr>
+    <tr>
+        <td id="step">4</td>
+        <td>1</td>
+        <td>5.939</td>
+        <td>&mdash;</td>
+        <td>&mdash;</td>
+    </tr>
+</table>
+Therefore, the approximate answer is that <i>f</i> (1) is around 5.939.
+<br><br />
+<span id="third-header">Logistic Growth</span>
+<br><br />
+&bull; &emsp; <sup>d<i>P</i></sup>&frasl;<sub>d<i>t</i></sub> = <i>kP</i>(<i>M</i> &minus; <i>P</i>)
+<br />
+&bull; &emsp; <i>P</i>(<i>t</i>) = <i>M</i>(1 + <i>A</i>e<sup>-<i>Mkt</i></sup>)<sup>-1</sup>
+<br />
+&bull; &emsp; <i>A</i> = <sup><i>M</i></sup>&frasl;<sub><i>P</i>(0)</sub> &minus; 1
+<br />
+&bull; &emsp; <i>t</i><sub>&frac12;</sub> = <sup>ln <i>A</i></sup>&frasl;<sub><i>Mk</i></sub>

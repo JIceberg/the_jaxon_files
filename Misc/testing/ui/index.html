@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jaxon | Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	<script>
+            $(function(){
+                $("#head-cont").load("header.html");
+                $("#foot-cont").load("footer.html");
+                $("#nav-cont").load("nav.html");
+            });
+        </script>
+        <style>
+            #main {
+                position: absolute;
+                top: 135px;
+                width: 95vw;
+                left: calc(2vw - 6px);
+                min-height: calc(100vh - 120px);
+            }
+            
+            html {
+                overflow-x: hidden;
+            }
+        </style>
+    </head>
+    <body onclick="">
+        
+        <!-- The Header -->
+        
+        <div id="head-cont"></div>
+        
+        <!-- The Navigation -->
+        <div id="nav-cont"></div>
+        
+        <!-- The Main Body -->
+        
+        <div id="main">
+            
+        </div>
+        
+        <!-- The Footer -->
+        <div id="foot-cont"></div>
+        
+    </body>
+</html>

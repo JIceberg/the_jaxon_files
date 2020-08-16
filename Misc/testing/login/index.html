@@ -1,0 +1,60 @@
+<?DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      function openModal(id) {
+        document.getElementById(id).style.display = "block";
+      }
+      
+      function closeModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <a href="/">Go back</a>
+    <br><br />
+    <button onclick="openModal('signup')">Sign Up</button>
+    <div class="pop-up" id="signup">
+      <div class="content">
+        <span class="close" onclick="closeModal('signup')">&times;</span>
+        <span id="head">Sign Up</span>
+        <br />
+        <req>*</req><span id="subhead"> = required field</span>
+        <br><br />
+        <form action="signup.php">
+        
+          <label>Username</label>
+          <br>
+          <input name="user" id="user" type="text" placeholder="Enter Username..." maxlength="20" required />&nbsp;<req>*</req>
+          
+          <br><br />
+          
+          <label>Password</label>
+          <br>
+          <input name="pass1" id="pass-1" type="password" placeholder="Enter Password..." maxlength="20" required />&nbsp;<req>*</req>
+          <br><br />
+          <input name="pass2" id="pass-2" type="password" placeholder="Re-Enter Password..." maxlength="20" required />&nbsp;<req>*</req>
+          
+          <br><br />
+          
+          <label>Date of Birth</label>
+          <br>
+          <input name="bday" id="bday" type="date" />
+          
+          <br><br />
+          
+          <label>Email</label>
+          <br>
+          <input width="250px" name="email" id="mail" type="email" placeholder="Ex: jaxon@randume.org" />
+          
+          <br><br />
+          
+          <input type="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

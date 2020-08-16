@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | ELA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      table {
+        width: 100%;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+      
+      table#tlist tr:nth-child(even) {
+        background-color: #eee;
+      }
+      
+      table#tlist tr:nth-child(odd) {
+        background-color:#fff;
+      }
+      
+      table#tlist th {
+        background-color: black;
+        color: white;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Roots</p>
+      <p class="header">List #6</p>
+      <table id="tlist">
+        <tr>
+          <th>Root</th>
+          <th>Meaning</th>
+          <th>Origin</th>
+          <th>Example(s)</th>
+        </tr>
+        <tr>
+          <td>-grad- | -gress-</td>
+          <td>to step</td>
+          <td>Latin</td>
+          <td>graduate, progressive, grade</td>
+        </tr>
+        <tr>
+          <td>-grad- | -graph-</td>
+          <td>write / draw / describe / record</td>
+          <td>Latin</td>
+          <td>diagram, seismograph, calligraphy, grammar</td>
+        </tr>
+        <tr>
+          <td>-greg-</td>
+          <td>flock / herd</td>
+          <td>Latin</td>
+          <td>gregarious, segregate, egregious</td>
+        </tr>
+        <tr>
+          <td>-hemi- | -semi-</td>
+          <td>half</td>
+          <td>Latin</td>
+          <td>hemisphere, semiprecious, semicolon</td>
+        </tr>
+        <tr>
+          <td>-ject-</td>
+          <td>to cast or throw</td>
+          <td>Latin</td>
+          <td>eject, conjecture, adjective</td>
+        </tr>
+        <tr>
+          <td>-here- | -hes-</td>
+          <td>to stick or cling</td>
+          <td>Latin</td>
+          <td>adhesive, adhere, hesitate, inherent</td>
+        </tr>
+        <tr>
+          <td>-hosp-</td>
+          <td>guest</td>
+          <td>Latin</td>
+          <td>hospitable, hospital, hospice</td>
+        </tr>
+        <tr>
+          <td>-host-</td>
+          <td>stranger / enemy</td>
+          <td>Latin</td>
+          <td>hostile, hostage, host</td>
+        </tr>
+        <tr>
+          <td>-intel-</td>
+          <td>to know or think</td>
+          <td>Latin</td>
+          <td>intelligent, intelligible, intellect</td>
+        </tr>
+        <tr>
+          <td>-init- | -fin-</td>
+          <td>beginning | end</td>
+          <td>Latin</td>
+          <td>initiate, initial | finite, confine</td>
+        </tr>
+      </table>
+      <br><hr /><br />
+      <a href="/larts/lit10/rtchar/5.html">Previous List</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/larts/lit10/rtchar/7.html">Next List</a>
+      <p class="bottom"> </p>
+      <!----------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

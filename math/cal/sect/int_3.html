@@ -1,0 +1,176 @@
+<span id="second-header">Advanced Integral Applications</span>
+<br><br />
+<span id="third-header">Improper Integrals</span>
+<br><br />
+<u>Introduction</u>:
+<br />
+We understand what defines an integral, as it is a measure of the area underneath a function.
+But there are sometimes when the area is essentially infinite or unsolvable due to there being a discontinuity within the function.
+These are called <span id="hlight-g">improper integrals</span>.
+<br>
+Take, for instance, &nbsp;
+<graphfile class="cover-div" onclick="uncover('int1')">&int;<sup id="int-param-a">1</sup><sub id="int-param-b">-2</sub>
+<sup>1</sup>&frasl;<sub><i>x</i><sup>2</sup></sub> d<i>x</i></graphfile>.
+<br />
+There is a vertical asymptote at <i>x</i> = 0, which is within the constraints of the definite integral.
+This integral is also <span id="hlight-b">divergent</span>, meaning the limit of the improper integral
+is either infinite or does not exist (in this case, does not exist because there is a discontinuity within the constraints).
+In order to discern if an improper integral is divergent or <span id="hlight-b">convergent</span>,
+meaning that the integral does have a limit that it approaches, one must evaluate it to see if it
+approaches a certain value.
+<br><br />
+<u>Concept</u>
+<br />
+The <i>concept</i> of an improper integral is easy to break down.
+An integral is improper if there is either a discontinuity within the bounding constraints or one of the constraints
+is infinity.
+<br><br />
+Example(s):
+<br>
+<ul style="margin-top: 0px; margin-bottom: 0px;">
+  <li>
+    &int;<sup id="int-param-a">0</sup><sub id="int-param-b">&minus;&infin;</sub> e<sup><i>x</i></sup> d<i>x</i>
+  </li>
+  <br />
+  <li>
+    &int;<sup id="int-param-a">e</sup><sub id="int-param-b">0</sub> ln <i>x</i> d<i>x</i>
+  </li>
+  <br />
+  <li>
+    &int;<sup id="int-param-a">2</sup><sub id="int-param-b">1</sub> <sup>1</sup>&frasl;<sub>&radic;(<i>x</i> &minus; 1)</sub> d<i>x</i>
+  </li>
+</ul>
+<br><br />
+In order to "fix" an improper integral, we must rewrite it as a limit as it approaches the discontinuity or infinity.
+<br />
+For instance,
+&int;<sup id="int-param-a">0</sup><sub id="int-param-b">&minus;&infin;</sub> e<sup><i>x</i></sup> d<i>x</i>
+should be rewritten as lim<sub><i>a</i> &rarr; &minus;&infin;</sub>
+&int;<sup id="int-param-a">0</sup><sub id="int-param-b"><i>a</i></sub> e<sup><i>x</i></sup> d<i>x</i>.
+<br />
+IF there are two discontinuities or both constraints are infinity, then we can rewrite it as a sum of two limits.
+<br />
+For instance,
+&int;<sup id="int-param-a">2</sup><sub id="int-param-b">-1</sub> <sup>1</sup>&frasl;<sub><i>x</i><sup>2</sup></sub> d<i>x</i>
+should be rewritten as
+lim<sub><i>b</i> &rarr; 0<sup>&minus;</sub>
+&int;<sup id="int-param-a"><i>b</i></sup><sub id="int-param-b">-1</sub> <sup>1</sup>&frasl;<sub><i>x</i><sup>2</sup></sub> d<i>x</i> +
+lim<sub><i>a</i> &rarr; 0<sup>&plus;</sub>
+&int;<sup id="int-param-a">2</sup><sub id="int-param-b"><i>a</i></sub> <sup>1</sup>&frasl;<sub><i>x</i><sup>2</sup></sub> d<i>x</i>.
+<br><br />
+<span id="third-header">Area Between Curves</span>
+<br><br />
+<u>Introduction</u>
+<br />
+Find the area between the functions
+<graphfile class="cover-div" onclick="uncover('int2')"><i>g</i>(<i>x</i>) = (<i>x</i> &minus; 2)<sup>2</sup> + 1 and <i>f</i> (<i>x</i>) = <i>x</i> + 1</graphfile>.
+<br />
+This can be fund by finding the difference between the area under <i>f</i> (<i>x</i>) within the points of intersection between the two
+functions [<i>a</i>, <i>b</i>] and the area under <i>g</i>(<i>x</i>) from <i>a</i> to <i>b</i>.
+<br />
+Therefore, the area is &int;<sup id="int-param-a"><i>b</i></sup><sub id="int-param-b"><i>a</i></sub> <i>f</i> (<i>x</i>) d<i>x</i>
+&minus; &int;<sup id="int-param-a"><i>b</i></sup><sub id="int-param-b"><i>a</i></sub> =
+&int;<sup id="int-param-a"><i>b</i></sup><sub id="int-param-b"><i>a</i></sub> [<i>f</i> (<i>x</i>) &minus; <i>g</i>(<i>x</i>)] d<i>x</i>.
+<br />
+Now, we find the points of intersection by finding the values of <i>x</i> where <i>f</i>(<i>x</i>) = <i>g</i>(<i>x</i>).
+This makes <i>a</i> = 1 and <i>b</i> = 4.
+Now, we evaluate the formula we derived for the area, leading to the answer of &nbsp;<sup>9</sup>&frasl;<sub>2</sub>.
+<br><br />
+<u>Lesson</u>
+<br />
+That was an example of finding the area between an upper and lower function. But what if the function depends on <i>y</i>
+instead of <i>x</i>? This would make use of methods to find the area between a left and right function.
+<br />
+Say we want to find the area between 4 &minus; <i>x</i> = <i>y</i><sup>2</sup> and <i>y</i> = <i>x</i> &minus; 2.
+It would be easier if we use <i>y</i> as our independent variable for both equations.
+This means we rewrite them as <i>x</i> = 4 &minus; <i>y</i><sup>2</sup> and <i>x</i> = <i>y</i> + 2.
+<br />
+Now, we put <b>everything</b> in terms of <i>y</i>. We&apos;ll say the function on the right serves the same purpose as the upper function.
+This makes the formula for the area:
+<br>
+&emsp; &emsp;
+<sup> &nbsp; </sup>
+&int;<sup id="int-param-a"><i>b</i></sup><sub id="int-param-b"><i>a</i></sub> (4 &minus; <i>y</i><sup>2</sup>) d<i>y</i>
+&minus;
+&int;<sup id="int-param-a"><i>b</i></sup><sub id="int-param-b"><i>a</i></sub> (<i>y</i> + 2) d<i>y</i>
+=
+&int;<sup id="int-param-a"><i>b</i></sup><sub id="int-param-b"><i>a</i></sub> (4 &minus; <i>y</i><sup>2</sup> &minus; <i>y</i> &minus; 2) d<i>y</i>
+=
+&int;<sup id="int-param-a"><i>b</i></sup><sub id="int-param-b"><i>a</i></sub> (2 &minus; <i>y</i> &minus; <i>y</i><sup>2</sup>) d<i>y</i>
+<br />
+Now, we need to find the points of intersection, <i>a</i> and <i>b</i>.
+This is when 4 &minus; <i>y</i><sup>2</sup> = <i>y</i> + 2.
+Thus, <i>a</i> = -2 and <i>b</i> = 1. Let&apos;s input these points into the formula and evaluate:
+<br>
+&emsp; &emsp;
+<sup> &nbsp; </sup>
+&int;<sup id="int-param-a">1</sup><sub id="int-param-b">-2</sub> (2 &minus; <i>y</i> &minus; <i>y</i><sup>2</sup>) d<i>y</i>
+=
+(2<i>y</i> - &frac12; <i>y</i><sup>2</sup> &minus; &frac13;
+<i>y</i><sup>3</sup>)|<sup id="int-param-a" style="padding: 0px;">1</sup><sub id="int-param-b">-2</sub>
+=
+<sup>9</sup>&frasl;<sub>2</sub>
+<br><br />
+<span id="third-header">Finding Volume</span>
+<br><br />
+<u>Introduction</u>:
+<br />
+Say we have a rectangle with width 3 and height 4.
+If we rotate it about the <i>x</i>-axis to form a three-dimensional shape, what volume would it fill?
+<br><br />
+The radius of this cylinder would be the height of this rectangle since the axis of rotation is the <i>x</i>-axis,
+and the rectangle&apos;s width is the cylinder&apos;s height.
+Let&apos;s label this rectangle as the function <i>R</i>(<i>x</i>) and say it is
+bounded by <i>x</i> = -1 and <i>x</i> = 2, as these will be our radial edges.
+<br />
+How do we find the area of this function? By using an integral, of course!
+To find the area, consider the following formula:
+<br>
+&emsp; &emsp; <sup>&nbsp;</sup>
+<i>A</i> = &int;<sup id="int-param-a">2</sup><sub id="int-param-b">-1</sub> <i>R</i>(<i>x</i>) d<i>x</i>
+<br />
+But, how do we find the volume of the cylinder formed by the rotation of the rectangle?
+Well, a cylinder is just a bunch of circles stacked on top of each other.
+Since there can be an infinite number of circles in the cylinder, we can say that <i>R</i>(<i>x</i>) encapsulates the
+radii of each circle on the cylinder. How do we find the volume, though?
+Well, the volume is just the sum of the areas of an infinite number of circles.
+To find the area of a circle, we use &pi;<i>r</i><sup>2</sup>.
+Since <i>R</i>(<i>x</i>) is the magnitude of the radius at point <i>x</i>,
+we can use the function <i>R</i> to represent the radii in the equation for area:
+<br>
+&emsp; &emsp; &nbsp;
+<i>A</i> = &pi;[<i>R</i>(<i>x</i>)]<sup>2</sup>
+<br />
+Therefore, we can model the volume as an infinite sum&ndash;or integral&ndash;of the area of the infinite points between the radial edges:
+<br>
+&emsp; &emsp; <sup>&nbsp;</sup>
+<i>V</i> = &int;<sup id="int-param-a">2</sup><sub id="int-param-b">-1</sub> &pi;[<i>R</i>(<i>x</i>)]<sup>2</sup> d<i>x</i>
+<br><br />
+<u>Lesson</u>
+<br />
+This is known as the "<b>disk method</b>" for finding a rotational volume, as it deals with using the area of a circle
+to find the volume of a cylindrical figure.
+<br /><br />
+How would we find the volume if we rotate the area between two functions around an axis of rotation? We would use the "<b>washer method</b>"
+because there is empty space between the area and he axis of rotation.
+It is a <i>washer</i> because it has an inner and outer radius.
+You can see the washer method at work <a href="http://www.mathdemos.org/mathdemos/washermethod/gallery/gallery.html">here</a>.
+The main formula for the washer method is:
+<br>
+&emsp; &emsp; <sup>&nbsp;</sup>
+<i>V</i> = &int;<sup id="int-param-a"><i>b</i></sup><sub id="int-param-b"><i>a</i></sub>
+&pi;[<i>R</i><sup>2</sup> &minus; <i>r</i><sup>2</sup>] d<i>x</i>
+<br />
+<i>R</i> is the distance between the outer function and the axis of rotation, meaning it is the outer radius.
+<i>r</i> is the distance between the inner function and the axis of rotation, meaning it is the inner radius.
+<br><br />
+The next method is known as the "<b>cross section</b>" method as it deals with, who would've thought, cross sections.
+You first take your two-dimensional area, and then you extend it into
+the third dimension using a known cross section, such as a square, perpendicular to one of the two axes.
+The area of this known cross section is labelled using the function <i>A</i>(<i>x</i>).
+If we take the sum of an infinite number of these cross sections across the definite span of the function
+from <i>a</i> to <i>b</i>. This requires an integral.
+<br><br />
+<iframe width="500" height="310" src="https://www.youtube.com/embed/1NRFRNGXPLQ"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><hr /><br />

@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | ELA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      table {
+        width: 100%;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+      
+      table#tlist tr:nth-child(even) {
+        background-color: #eee;
+      }
+      
+      table#tlist tr:nth-child(odd) {
+        background-color:#fff;
+      }
+      
+      table#tlist th {
+        background-color: black;
+        color: white;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Roots</p>
+      <p class="header">List #7</p>
+      <table id="tlist">
+        <tr>
+          <th>Root</th>
+          <th>Meaning</th>
+          <th>Origin</th>
+          <th>Example(s)</th>
+        </tr>
+        <tr>
+          <td>-labor- | -oper-</td>
+          <td>to work</td>
+          <td>Latin</td>
+          <td>laborious, cooperative, opera</td>
+        </tr>
+        <tr>
+          <td>-leg-</td>
+          <td>legal</td>
+          <td>Latin</td>
+          <td>legal, legitimate, privilege, relegate</td>
+        </tr>
+        <tr>
+          <td>-lev-</td>
+          <td>light / lift / raise</td>
+          <td>Latin</td>
+          <td>elevate, alleviate, relevant, elevator</td>
+        </tr>
+        <tr>
+          <td>-loc-</td>
+          <td>place</td>
+          <td>Latin</td>
+          <td>location, locomotion, locus</td>
+        </tr>
+        <tr>
+          <td>-log- | -loqu-</td>
+          <td>thought / word/ speech</td>
+          <td>Latin</td>
+          <td>logic, eulogy, loquacious, ventriloquist</td>
+        </tr>
+        <tr>
+          <td>-lum- | -loc-</td>
+          <td>light</td>
+          <td>Latin</td>
+          <td>luminary, luminous, lucid, pellucid</td>
+        </tr>
+        <tr>
+          <td>-manu-</td>
+          <td>hand</td>
+          <td>Latin</td>
+          <td>manual, manufacture, manipulate, manage</td>
+        </tr>
+        <tr>
+          <td>-mar-</td>
+          <td>sea</td>
+          <td>Latin</td>
+          <td>marine, marsh, maritime, mermaid</td>
+        </tr>
+        <tr>
+          <td>-mater- | -pater-</td>
+          <td>mother | father</td>
+          <td>Latin</td>
+          <td>maternal, matrimony | paternal, patronize</td>
+        </tr>
+        <tr>
+          <td>-medi-</td>
+          <td>middle</td>
+          <td>Latin</td>
+          <td>mediocre, mediator, intermediary, immediate</td>
+        </tr>
+      </table>
+      <br><hr /><br />
+      <a href="/larts/lit10/rtchar/6.html">Previous List</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/larts/lit10/rtchar/8.html">Next List</a>
+      <p class="bottom"> </p>
+      <!----------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

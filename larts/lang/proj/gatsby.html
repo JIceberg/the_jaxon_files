@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Great Gatsby</title>
+        <link rel="stylesheet" type="text/css" href="gatsby.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script> 
+            $(function(){
+              $(".shop").load("shop.html");
+            });
+            
+            var isOpen = false;
+            var itemPage = 0;
+            
+            function openNav() {
+                var nav = document.getElementById('nav');
+                var menu = document.getElementById('menu');
+                var main = document.getElementById('main');
+                
+                if (isOpen == false) {
+                    var width = 250;
+                    nav.style.width = width + "px";
+                    menu.style.marginLeft = width + "px";
+                    main.style.paddingLeft = width + "px";
+                    isOpen = true;
+                } else {
+                    var width = 0;
+                    nav.style.width = width;
+                    menu.style.marginLeft = width;
+                    main.style.paddingLeft = width;
+                    isOpen = false;
+                }
+            }
+            
+            function nextItems() {
+                var item1 = document.getElementById('item-1');
+                var item2 = document.getElementById('item-2');
+                var item3 = document.getElementById('item-3');
+                var item4 = document.getElementById('item-4');
+                var item5 = document.getElementById('item-5');
+                var item6 = document.getElementById('item-6');
+                if (itemPage == 0) {
+                    itemPage++;
+                    item1.style.display = "none";
+                    item2.style.display = "none";
+                    item3.style.display = "table-cell";
+                    item4.style.display = "table-cell";
+                } else if (itemPage == 1) {
+                    itemPage++;
+                    item3.style.display = "none";
+                    item4.style.display = "none";
+                    item5.style.display = "table-cell";
+                    item6.style.display = "table-cell";
+                } else {
+                    itemPage = 0;
+                    item5.style.display = "none";
+                    item6.style.display = "none";
+                    item1.style.display = "table-cell";
+                    item2.style.display = "table-cell";
+                }
+            }
+            
+            function prevItems() {
+                var item1 = document.getElementById('item-1');
+                var item2 = document.getElementById('item-2');
+                var item3 = document.getElementById('item-3');
+                var item4 = document.getElementById('item-4');
+                var item5 = document.getElementById('item-5');
+                var item6 = document.getElementById('item-6');
+                if (itemPage == 0) {
+                    itemPage = 2;
+                    item1.style.display = "none";
+                    item2.style.display = "none";
+                    item5.style.display = "table-cell";
+                    item6.style.display = "table-cell";
+                } else if (itemPage == 1) {
+                    itemPage--;
+                    item3.style.display = "none";
+                    item4.style.display = "none";
+                    item1.style.display = "table-cell";
+                    item2.style.display = "table-cell";
+                } else {
+                    itemPage--;
+                    item5.style.display = "none";
+                    item6.style.display = "none";
+                    item3.style.display = "table-cell";
+                    item4.style.display = "table-cell";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="menu" onclick="openNav();">
+            <span title="Menu">&#8285;</span>
+        </div>
+        <div id="nav">
+            <a class="title">Menu</a>
+            <a class="link" href="/larts/lang/" onclick="alert('Your progress might not have saved.');">
+                <img src="/images/delete2">
+                Exit
+            </a>
+            <a href="profile.html" class="sect">
+                <img src="/images/default-user.png">
+                Profile
+            </a>
+            <a href="settings.html" class="sect">
+                <img src="/images/settings.png">
+                Settings
+            </a>
+            <a href="help.html" class="sect">
+                <img src="/images/help.png">
+                Help
+            </a>
+        </div>
+        <div id="main">
+            <div class="sub-main" style="background-color: rgba(158, 195, 255, 0.8) !important;">
+                <div class="title">Shop</div>
+            </div>
+            <div class="shop"></div>
+        </div>
+    </body>
+</html>

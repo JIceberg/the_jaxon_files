@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<title>Jaxon | Text Document</title>
+<head>
+<link href="txt_area.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+counter = function() {
+    var value = $('#user').val();
+
+    if (value.length == 0) {
+        $('#words').html(0);
+        return;
+    }
+
+    var regex = /\s+/gi;
+    var wordCount = value.trim().replace(regex, ' ').split(' ').length;
+
+    $('#words').html(wordCount);
+};
+
+$(document).ready(function() {
+    $('#user').change(counter);
+    $('#user').keydown(counter);
+    $('#user').keypress(counter);
+    $('#user').keyup(counter);
+    $('#user').blur(counter);
+    $('#user').focus(counter);
+});
+
+function loadf() {
+    var n = document.getElementById("uload").files[0].name;
+    var dn = document.getElementById("name");
+    dn.value = n;
+    var file = document.getElementById("uload").files[0];
+    var blob = new Blob([file]);
+    var fileReader = new FileReader();
+    fileReader.onload = function(fileLoadedEvent) {
+	var textFromFileLoaded = fileLoadedEvent.target.result;
+	document.getElementById("user").value = textFromFileLoaded;
+    };
+    fileReader.readAsText(blob, "UTF-8");
+    console.log("Successfully Uploaded File");
+
+}
+function savef() {
+    var user = document.getElementById("user").value ;
+    localStorage["user"] = user ;
+    localStorage.setItem("user", user) ;
+    var name = document.getElementById("name").value ;
+    localStorage["name"] = name ;
+    localStorage.setItem("name", name) ;
+    console.log("Saved Successfully")
+}
+function clearf() {
+    var user = document.getElementById("user").value ;
+    localStorage["user"] = "" ;
+    var name = document.getElementById("name").value ;
+    localStorage["name"] = "" ;
+    console.log("Cleared Save")
+}
+function downloadf() {
+    var textToWrite = document.getElementById('user').value;
+    var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
+    var name = document.getElementById('name').value;
+    var fileNameToSaveAs = 'Untitled';
+    if (name != '') fileNameToSaveAs = name;
+    var downloadLink = document.createElement("a");
+    downloadLink.download = fileNameToSaveAs;
+    downloadLink.innerHTML = "Download File";
+    if (window.webkitURL != null) {
+	downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+    } else {
+	downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+	downloadLink.onclick = destroyClickedElement;
+	downloadLink.style.display = "none";
+	document.body.appendChild(downloadLink);
+    }
+    downloadLink.click();
+    console.log("Downloaded File");
+
+}
+
+function destroyClickedElement(event) {
+    document.body.removeChild(event.target);
+}
+function removef() {
+    var text = document.getElementById("user");
+    var name = document.getElementById("name");
+    name.value = "";
+    text.value = "";
+    console.log("Removed Text")
+
+}
+
+</script>
+</head>
+<body>
+<div class="nav">
+<input type="file" id="uload" />
+<img id="download" src="/images/download3.png" title="Download" onClick="downloadf()">
+<img id="uload2" src="/images/upload2.png" title="Load">
+<img id="load" src="/images/upload.png" title="Upload" onclick="loadf()">
+<img id="home" src="/images/home.png" title="Home" onclick="location.href='/'">
+<img id="save" src="/images/save.png" title="Save" onclick="savef()">
+<img id="remove" src="/images/backspace.png" title="Clear" onclick="removef()">
+<img id="clear" src="/images/delete2" title="Delete" onclick="clearf()">
+</div>
+<center>
+<textarea placeholder="Untitled" id="name" maxlength="12"></textarea>
+<br>
+<textarea placeholder="Enter Text Here..." id="user">
+</textarea>
+<p style="float: left; margin-left: 1.5vw; font-size: 14pt;">Word Count: <span id="words">0</span></p>
+</center>
+<script>
+
+if (localStorage["user"]) {
+    var user = localStorage["user"] ;
+    document.getElementById("user").value = user ;
+    console.log("Loaded Save")
+} else {
+    document.getElementById("user").value = "";
+    console.log("No Save Available")
+}
+
+if (localStorage["name"]) {
+    var name = localStorage["name"] ;
+    document.getElementById("name").value = name ;
+    console.log("Loaded Name")
+} else {
+    document.getElementById("name").value = "";
+    console.log("No Name Available")
+}
+$('#uload2').click(function() {
+    $('input[type=file]').click();
+    console.log("Loading File")
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<script>
+  function searchPage() {
+    var text = document.getElementById("search-bar").value;
+    
+    if (window.find) {
+   	  window.find(text);
+      console.log("FOUND");
+    } else alert("This function is not available in your browser");
+  }
+</script>
+<style>
+  #search-btn {
+    height: 18px;
+    width: 18px;
+    padding: 4px;
+    background-size: 18px 18px;
+    background-image: url(/images/search-1.png);
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  #search-btn:hover {
+    background-image: url(/images/search-2.png);
+  }
+  
+  #search-bar {
+    outline: none;
+    width: 1px;
+    padding-left: 5px;
+    transition: 0.4s steps(40);
+  }
+  
+  #search-bar:hover, #search-bar:active, #search-bar:focus {
+    width: 150px;
+  }
+</style>
+
+  <input type="text" placeholder="Search..." id="search-bar">
+  <button id="search-btn" title="Find" onclick="searchPage()"></button>
+
+<script>
+  var input = document.getElementById("search-bar");
+  
+  input.addEventListener("keyup", function(event) {
+      event.preventDefault();
+      if (event.keyCode === 13) {
+          document.getElementById("search-btn").click();
+      }
+  });
+</script>

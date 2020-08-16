@@ -1,0 +1,179 @@
+<br><hr class="border"><br />
+<div class="info-box">
+  <line id="header">Visualizing the First and Second Kinematics</line>
+  <br><br />
+  The first and second kinematics are the base equations, meaning the are not derived from other formulae.
+  But how do these kinematics work and what is their purpose? Well, both kinematics relate to some function
+  on a velocity-time graph. The area underneath the function is the displacment and the slope of the line is the acceleration.
+  In terms of calculus, the area is an <i>integral</i> and the slope is a <i>derivative</i>.
+  <br><br />
+  <count>I.</count>
+  <br><br />
+  We know that the slope of the function is acceleration
+  (because <span class="form"><i>a</i> = <sup>&Delta;<i>v</i></sup>&frasl;<sub><i>t</i></sub></span> )
+  and therefore can come up with a kind of linear equation for the funtion below:
+  <br>
+  <img id="expand" src="images/vt-1.png">
+  <br />
+  Let's start with our linear equation: <span class="form"><i>y</i> = b + m<i>x</i></span>.
+  Our "m" is the acceleration, so we'll replace it with <i>a</i>. The "b" is the initial veloity, so
+  we'll replace it with <i>v</i><sub>0</sub>.
+  <br>
+  &emsp; &rarr;
+  <span class="form"><i>y</i> = <i>v</i><sub>0</sub> + <i>ax</i></span>
+  <br />
+  The end point of the funtion is (<i>t</i>, <i>v</i><sub>f</sub>) when put into a coordinate pair
+  of (<i>x</i>, <i>y</i>). Therefore, we can replace them accordingly:
+  <br>
+  &emsp; &rarr;
+  <span class="form"><i>v</i><sub>f</sub> = <i>v</i><sub>0</sub> + <i>at</i></span>
+  <br><br />
+  <count>II.</count>
+  <br><br />
+  What is the displacement in relation to a velocity-time graph?
+  It is calulated from finding the area beneath the function.
+  Take a look at the graph below:
+  <br>
+  <img id="expand" src="images/vt-1_d3.png">
+  <br />
+  To get the area under the function, I sliced the function into two pieces and made a rectangle (which is easier to calculate area for rather than a trapezoid)
+  Notice where the cut took place&mdash;halfway between the final and initial velocities, which is the
+  height of our newly-made rectangle. The width is time, <i>t</i>. The area of a rectangle is width times height...
+  <br />
+  &emsp; &rarr;
+  <span class="form">&Delta;<i>x</i> = &frac12;(<i>v</i><sub>f</sub> + <i>v</i><sub>0</sub>)&times;<i>t</i></span>
+  <br><br />
+  You could also say that the equation comes directly from the formula for deriving the area of a trapezoid (<i>see</i> <a href="/math/3.html">Alg II/Geo B</a>).
+  However, it is much easier to visualize in the manner that I described.
+  <br><br />
+  <br><br />
+  <line id="header">Determining the Third and Fourth Kinematics</line>
+  <br><br />
+  The third and fourth kinematics are actually derived from the velocities in the first two kinematics.
+  However, they can also be found graphically. These two kinematics will be very useful when we move on to
+  two-dimensional kinematics.
+  <br><br />
+  <count>I.</count>
+  <br><br />
+  <b>Method 1a</b>: Replace the value of <i>v</i><sub>f</sub> in the second kinematic with the
+  definition of <i>v</i><sub>f</sub> in the first kinematic.
+  <br>
+  <span class="form">&Delta;<i>x</i> = &frac12;((<i>v</i><sub>0</sub> + <i>at</i>) + <i>v</i><sub>0</sub>)&times;<i>t</i></span>
+  <br  />
+  &emsp; &rarr;
+  <span class="form">&Delta;<i>x</i> = &frac12;(2<i>v</i><sub>0</sub> + <i>at</i>)&times;<i>t</i></span>
+  <br>
+  &emsp; &rarr;
+  <span class="form">&Delta;<i>x</i> = (<i>v</i><sub>0</sub> + &frac12;<i>at</i>)&times;<i>t</i></span>
+  <br />
+  &emsp; &rarr;
+  <span class="form">&Delta;<i>x</i> = <i>v</i><sub>0</sub><i>t</i> + &frac12;<i>at</i>&sup2;</span>
+  <br><br />
+  <b>Method 1b</b>: Knowing that the area under a velocity-time graph is the displacement, use this graph to solve for displacment.
+  <br>
+  <img id="expand" src="images/vt-1.png">
+  <br />
+  Our graph has endpoints (0, <i>v</i><sub>0</sub>) and (<i>t</i>, <i>v</i><sub>f</sub>).
+  We can break the area beneath the line into two shapes: a right triangle and a rectangle:
+  <br>
+  <img id="expand" src="images/vt-1_d.png">
+  <br />
+  The area of the rectangle can be represented as:
+  <span class="form"><i>v</i><sub>0</sub>&times;<i>t</i></span>
+  <br />
+  The area of the triangle can be represented as:
+  <span class="form">&frac12;&Delta;<i>v</i>&times;<i>t</i></span>
+  <br><br />
+  &Delta;<i>v</i> is the same as acceleration times time (<i>at</i>), so let's join the two areas together, substitute, and simplify.
+  <br>
+  &emsp; &rarr;
+  <span class="form">&Delta;<i>x</i> = <i>v</i><sub>0</sub>&times;<i>t</i> + &frac12;(<i>at</i>)&times;<i>t</i></span>
+  <br />
+  &emsp; &rarr;
+  <span class="form">&Delta;<i>x</i> = <i>v</i><sub>0</sub><i>t</i> + &frac12;<i>at</i>&times;<i>t</i></span>
+  <br>
+  &emsp; &rarr;
+  <span class="form">&Delta;<i>x</i> = <i>v</i><sub>0</sub><i>t</i> + &frac12;<i>at</i>&sup2;</span>
+  <br><br />
+  <count>II.</count>
+  <br><br />
+  <b>Method 2a</b>: Replace the value of <i>v</i><sub>0</sub> in the second kinematic with the
+  definition of <i>v</i><sub>0</sub> in the first kinematic.
+  <br>
+  <span class="form">&Delta;<i>x</i> = &frac12;(<i>v</i><sub>f</sub> + (<i>v</i><sub>f</sub> &minus; <i>at</i>))&times;<i>t</i></span>
+  <br />
+  &emsp; &rarr;
+  <span class="form">&Delta;<i>x</i> = &frac12;(2<i>v</i><sub>f</sub> &minus; <i>at</i>)&times;<i>t</i></span>
+  <br>
+  &emsp; &rarr;
+  <span class="form">&Delta;<i>x</i> = (<i>v</i><sub>f</sub> &minus; &frac12;<i>at</i>)&times;<i>t</i></span>
+  <br />
+  &emsp; &rarr;
+  <span class="form">&Delta;<i>x</i> = <i>v</i><sub>f</sub> <i>t</i> &minus; &frac12;<i>at</i>&sup2;</span>
+  <br><br />
+  <b>Method 2b</b>: Knowing that the area under a velocity-time graph is the displacement, use this graph to solve for displacment.
+  <br>
+  <img id="expand" src="images/vt-1.png">
+  <br />
+  Our graph has endpoints (0, <i>v</i><sub>0</sub>) and (<i>t</i>, <i>v</i><sub>f</sub>).
+  We can ignore the fact that the area underneath the graph is a trapezoid and imagine that the shape is actually a rectangle surrounding the graph:
+  <br>
+  <img id="expand" src="images/vt-1_d2.png">
+  <br />
+  The area of this rectangle can be represented as
+  <span class="form"><i>v</i><sub>f</sub> &times;<i>t</i></span>
+  <br>
+  However, we want to fiind the displacement under the graph, so
+  we must subtract the area of the above triangle to get the value of the trapezoidal area.
+ 	The area of that triangle is
+  <span class="form">&frac12;&Delta;<i>v</i>&times;<i>t</i></span>.
+  <br><br />
+  All that's left is finding the difference, substituting &Delta;<i>v</i> with <i>at</i>, and simplifying:
+  <br>
+  &emsp; &rarr;
+  <span class="form">&Delta;<i>x</i> = <i>v</i><sub>f</sub> &times;<i>t</i> &minus; &frac12;(<i>at</i>)&times;<i>t</i></span>
+  <br />
+  &emsp; &rarr;
+  <span class="form">&Delta;<i>x</i> = <i>v</i><sub>f</sub> <i>t</i> &minus; &frac12;<i>at</i>&times;<i>t</i></span>
+  <br>
+  &emsp; &rarr;
+  <span class="form">&Delta;<i>x</i> = <i>v</i><sub>f</sub> <i>t</i> &minus; &frac12;<i>at</i>&sup2;</span>
+  <br><br />
+  <br><br />
+  <line id="header">Discovering the Fifth Kinematic</line>
+  <br><br />
+  The fifth kinematic, <span class="form"><i>v</i><sub>f</sub> &sup2; &minus; <i>v</i><sub>0</sub>&sup2; = 2<i>a</i>&Delta;<i>x</i></span>,
+  looks a little strange. That is because it is a derived equation by using the definition of time from the first and second kinematics 
+  <br><br />
+  Using the first kinematic, we can define time as
+  <span class="form"><i>t</i> = <sup>(<i>v</i><sub>f</sub> &minus; <i>v</i><sub>0</sub>)</sup>&frasl;<sub><i>a</i></sub></span>
+  <br />
+  Using the second kinematic, we can define time as
+  <span class="form"><i>t</i> = <sup>2&Delta;<i>x</i></sup>&frasl;<sub>(<i>v</i><sub>f</sub> + <i>v</i><sub>0</sub>)</sub></span>
+  <br><br />
+  Now we have two definitions for time. Thus, we can set them equal to each other:
+   <span class="form">
+     <sup>(<i>v</i><sub>f</sub> &minus; <i>v</i><sub>0</sub>)</sup>&frasl;<sub><i>a</i></sub>
+     =
+     <sup>2&Delta;<i>x</i></sup>&frasl;<sub>(<i>v</i><sub>f</sub> + <i>v</i><sub>0</sub>)</sub>
+  </span>
+  <br><br />
+  Finally, we make it look a little nicer by simplifying:
+  <br>
+  &emsp; &rarr;
+  <span class="form">
+    (<i>v</i><sub>f</sub> &minus; <i>v</i><sub>0</sub>)(<i>v</i><sub>f</sub> + <i>v</i><sub>0</sub>)
+    =
+    2<i>a</i>&Delta;<i>x</i>
+  </span>
+  <br />
+  &emsp; &rarr;
+  <span class="form">
+    <i>v</i><sub>f</sub> &sup2; &minus; <i>v</i><sub>0</sub>&sup2;
+    =
+    2<i>a</i>&Delta;<i>x</i>
+  </span>
+  <br><br />
+  The fifth kinematic is extremely useful because, unlike the others, it does not rely on time.
+</div>
+<br><hr class="border"><br />

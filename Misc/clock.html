@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jaxon | Miscellaneous</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script> 
+$(function(){
+  $("#fixed").load("/header.html");
+  $("#footer").load("/footer.html");
+});
+</script>
+<style>
+#body {
+  color: black;
+  font-family: Segoe UI;
+  user-select: none;
+}
+p.header {
+  text-align: center;
+  font-size: 3em;
+}
+#circle {
+  margin: 0 auto;
+  border: 4px solid grey;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 0 5px black;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 50px;
+  z-index: 15;
+  cursor: pointer;
+  padding: none;
+}
+#fill {
+  background-color: green;
+  width: 300px;
+  height: 0px;
+  bottom: 0;
+  position: absolute;
+  z-index: -2;
+  box-shadow: 0 0 2px black;
+}
+input {
+  font-size: 18pt;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 50px;
+}
+.inputs {
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+#break {
+  margin-right: 170px;
+}
+#info {
+  margin: 0 auto;
+  text-align: center;
+  font: 300 18pt Segoe UI;
+  height: auto;
+}
+#ss {
+  margin-left: 95px;
+}
+#timer {
+  margin: 0 auto;
+  text-align: center;
+  font: 300 25pt Segoe UI;
+  z-index: 25;
+  margin-top: 50px;
+}
+#sessname {
+  margin: 0 auto;
+  text-align: center;
+  font: 300 30pt Arial, Sans-Serif;
+  z-index: 25;
+  margin-top: 75px;
+}
+</style>
+<div id="fixed"></div>
+<div id="main">
+<!---------Begin Content---------->
+<p class="subtitle">Pomodoro Clock</p>
+<div id="body">
+<div id="info">
+  <span id="bk">Break Time</span>
+  <span id="ss">Session Time</span>
+</div>
+<div class="inputs">
+  <input id="break" value="5" type="number" max="60" min="1" onchange="toggleTime(0);">
+  <input id="sess" type="number" max="60" min="1" value="25" onchange="toggleTime(1);">
+</div>
+<div id="circle" onclick="startClock();"><div id="fill"></div>
+  <p id="sessname">Session</p>
+  <p id="timer">25:00</p>
+</div>
+</div>
+<p class="bottom"> </p>
+<!----------End Content----------->
+<div id="footer"></div>
+</div>
+<script>
+var sessLength = document.getElementById('sess').value;
+var breakLength = document.getElementById('break').value;
+var sessName = document.getElementById('sessname');
+var minLeft, secLeft = 0;
+var reset = false;
+var sess = false;
+var br = false;
+var sTotal = sessLength * 60;
+var timeLeft = sessLength * 60;
+var bTotal = breakLength * 60;
+var sStart, bStart;
+function dis(val) {
+  return ('0' + val).slice(-2);
+}
+function startClock() {
+  if (!sess && !br) {
+    reset = false;
+    start();
+  } else if (sess && !br) {
+    reset = true;
+    sess = false;
+    clearInterval(sStart);
+  }
+}
+function toggleTime(val) {
+  if (val == true) {
+    if (document.getElementById('sess').value < 1) document.getElementById('sess').value = 1;
+    else {
+      sessLength = Math.round(document.getElementById('sess').value);
+      sessLength = document.getElementById('sess').value;
+      if (!sess) sTotal = sessLength * 60;
+    }
+  }
+  else {
+    if (document.getElementById('break').value<1) document.getElementById('break').value=1;
+    else {
+      breakLength=Math.round(document.getElementById('break').value);
+      document.getElementById('break').value=breakLength;
+      if (!br) bTotal=breakLength*60;
+    }
+  }
+}
+function sessStart() {
+      if (secLeft===1 && minLeft===0) {
+      var wav = 'https://s3.amazonaws.com/freecodecamp/simonSound1.mp3';
+      var audio = new Audio(wav);
+	    audio.play();
+      startBreak();
+      }
+      else if (secLeft===0 && minLeft !== 0) {
+        clearInterval(bStart);
+        secLeft=59;
+        minLeft-=1;
+      }
+      else {
+        secLeft-=1;
+      }
+      timeLeft-=1;
+      var disTime = dis(minLeft) + ":" + dis(secLeft);
+      document.getElementById('timer').innerHTML = disTime;
+      document.getElementById('fill').style.height=(300-(timeLeft/sTotal)*300) + "px";
+}
+function start() {
+  if (!reset && !sess) {
+    clearInterval(bStart);
+    sessName.innerHTML = 'Session';
+    br=false;
+    sess=true;
+    secLeft = 0;
+    minLeft = sessLength;
+    timeLeft = sessLength * 60;
+  document.getElementById('fill').style.backgroundColor="green";
+    sStart=setInterval(function() {
+      sessStart()
+    },1000);
+  }
+}
+function breakStart() {
+      if (secLeft===1 && minLeft===0) {
+        var wav = 'https://s3.amazonaws.com/freecodecamp/simonSound1.mp3';
+        var audio = new Audio(wav);
+	      audio.play();
+        start();
+      }
+      else if (secLeft===0 && minLeft !== 0) {
+        clearInterval(sStart);
+        secLeft = 59;
+        minLeft -= 1;
+      }
+      else {
+        secLeft -= 1;
+      }
+      timeLeft -= 1;
+      var disTime=dis(minLeft) + ":" + dis(secLeft);
+      document.getElementById('timer').innerHTML=disTime;
+      document.getElementById('fill').style.height=(300-(timeLeft/bTotal)*300) + "px";
+
+}
+function startBreak() {
+  if (!reset && !br) {
+    clearInterval(sStart);
+    sessName.innerHTML = 'Break';
+  document.getElementById('fill').style.backgroundColor="red";
+    br=true;
+    sess=false;
+    secLeft=0;
+    minLeft=breakLength;
+    timeLeft=breakLength*60;
+    bStart=setInterval(function() {
+      breakStart()
+    },1000);    
+  }
+}
+</script>		

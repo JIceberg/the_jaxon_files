@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | ELA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      table {
+        width: 100%;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+      
+      table#tlist tr:nth-child(even) {
+        background-color: #eee;
+      }
+      
+      table#tlist tr:nth-child(odd) {
+        background-color:#fff;
+      }
+      
+      table#tlist th {
+        background-color: black;
+        color: white;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Roots</p>
+      <p class="header">List #2</p>
+      <table id="tlist">
+        <tr>
+          <th>Root</th>
+          <th>Meaning</th>
+          <th>Origin</th>
+          <th>Example(s)</th>
+        </tr>
+        <tr>
+          <td>-capit- | -cipit-</td>
+          <td>head</td>
+          <td>Latin</td>
+          <td>capital, precipitation</td>
+        </tr>
+        <tr>
+          <td>-carne-</td>
+          <td>meat / flesh</td>
+          <td>Latin</td>
+          <td>carnage, carrion, reincarnate</td>
+        </tr>
+        <tr>
+          <td>-cept- | -cept- | -ceit- | -ceiv-</td>
+          <td>to take hold / seize</td>
+          <td>Latin</td>
+          <td>receipt, intercept, deceit</td>
+        </tr>
+        <tr>
+          <td>-centr- | -center-</td>
+          <td>middle</td>
+          <td>Greek</td>
+          <td>eccentric, epicenter, egocentric</td>
+        </tr>
+        <tr>
+          <td>-chron- | -temp-</td>
+          <td>time</td>
+          <td>Latin &amp; Greek</td>
+          <td>chronic, temporal, extemporous</td>
+        </tr>
+        <tr>
+          <td>-cid- | -cis-</td>
+          <td>to cut or kill</td>
+          <td>Latin</td>
+          <td>decide, regicide, incision</td>
+        </tr>
+        <tr>
+          <td>-circum-</td>
+          <td>around</td>
+          <td>Latin</td>
+          <td>circumference, circumstance</td>
+        </tr>
+        <tr>
+          <td>-clam-</td>
+          <td>cry out</td>
+          <td>Latin</td>
+          <td>exclaim, claim</td>
+        </tr>
+        <tr>
+          <td>-clud- | -clus-</td>
+          <td>shut</td>
+          <td>Latin</td>
+          <td>conclude, seclude, occulde</td>
+        </tr>
+        <tr>
+          <td>-cogn-</td>
+          <td>to know</td>
+          <td>Latin</td>
+          <td>incognito, cognizant, recognition</td>
+        </tr>
+      </table>
+      <br><hr /><br />
+      <a href="/larts/lit10/rtchar/">Previous List</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/larts/lit10/rtchar/3.html">Next List</a>
+      <p class="bottom"> </p>
+      <!----------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

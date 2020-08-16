@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | ELA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      table {
+        width: 100%;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+      
+      table#tlist tr:nth-child(even) {
+        background-color: #eee;
+      }
+      
+      table#tlist tr:nth-child(odd) {
+        background-color:#fff;
+      }
+      
+      table#tlist th {
+        background-color: black;
+        color: white;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Roots</p>
+      <p class="header">List #11</p>
+      <table id="tlist">
+        <tr>
+          <th>Root</th>
+          <th>Meaning</th>
+          <th>Origin</th>
+          <th>Example(s)</th>
+        </tr>
+        <tr>
+          <td>-sci-</td>
+          <td>to know</td>
+          <td>Latin</td>
+          <td>science, conscientious, subconscious, prescient</td>
+        </tr>
+        <tr>
+          <td>-scope-</td>
+          <td>to examine or view</td>
+          <td>Greek</td>
+          <td>horoscope, microscope, periscope, stethoscope</td>
+        </tr>
+        <tr>
+          <td>-scrib-</td>
+          <td>to write</td>
+          <td>Latin</td>
+          <td>scribe, prescribe, inscription, script</td>
+        </tr>
+        <tr>
+          <td>-sens- | -sent-</td>
+          <td>to feel / perceive / sense</td>
+          <td>Latin</td>
+          <td>sensory, sensitive, sentimental, consent</td>
+        </tr>
+        <tr>
+          <td>-sol-</td>
+          <td>alone / lonely</td>
+          <td>Latin</td>
+          <td>desolate, sole, isolate, solitaire</td>
+        </tr>
+        <tr>
+          <td>-spec-</td>
+          <td>to look</td>
+          <td>Latin</td>
+          <td>spectator, inspect, suspect, respect</td>
+        </tr>
+        <tr>
+          <td>-spir-</td>
+          <td>breathe</td>
+          <td>Latin</td>
+          <td>respiration, expire, perspire, aspire</td>
+        </tr>
+        <tr>
+          <td>-stat- | -sist-</td>
+          <td>to stand</td>
+          <td>Latin</td>
+          <td>stature, status, persist, insist</td>
+        </tr>
+        <tr>
+          <td>-struct-</td>
+          <td>to build or make</td>
+          <td>Latin</td>
+          <td>destructive, obstruct, instruction, destroy</td>
+        </tr>
+        <tr>
+          <td>-tact- | -tang-</td>
+          <td>to touch</td>
+          <td>Latin</td>
+          <td>tactile, contact, tangible, tangent</td>
+        </tr>
+      </table>
+      <br><hr /><br />
+      <a href="/larts/lit10/rtchar/10.html">Previous List</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/larts/lit10/rtchar/12.html">Next List</a>
+      <p class="bottom"> </p>
+      <!----------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jaxon | Alg I, Geo A</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script> 
+$(function(){
+  $("#fixed").load("/header.html");
+  $("#footer").load("/footer.html");
+});
+function nLarge() {
+  var nlarge = document.getElementById('nlarge');
+  if (nlarge.style.width == '128px') {
+    nlarge.style.width = '350px';  
+  } else {
+    nlarge.style.width = '128px';
+  }
+}
+
+</script>
+<div id="fixed"></div>
+<div id="main">
+<!---------Begin Content---------->
+<p class="subtitle">Alg I/Geom A</p>
+<p class="header">Congruence</p>
+<span id="second-header">Definitions=</span>
+<br><br>
+<ol style="margin-top: 0px;">
+  <li><b>Parallel Lines</b>: Lines with the same slope on the same plane that never intersect</li>
+  <li><b>Perpendicular Lines</b>: Lines with opposite reciprocal slopes on the same plane that intersect to form 90&deg; angles</li>
+  <li><b>Line Segments</b>: Lines bounded by two endpoints that contain every point on the line between its endpoints</li>
+  <li><b>Theorem</b>: A statement that can be proved</li>
+  <li><b>Circle</b>: An arc where all points on the arc are equidistant from a center point</li>
+  <li><b>Angle</b>: Two lines or rays diverging to form a common point</li>
+  <li><b>Centroid</b>: The point where all 3 medians intersect and is often described as the triangle's center of gravity</li>
+  <li><b>Circumcenter</b>: The point where the perpendicular bisectors of the sides intersect</li>
+  <li><b>Incenter</b>: The point where the three angle bisectors are always concurrent and always meet in the triangle's interior</li>
+  <li><b>Orthocenter</b>: The point where all three altitudes of the triangle intersect</li>
+  <li><b>Bisector</b>: A line that cuts another line into two equal parts</li>
+  <li><b>Midsegment</b>: The line segment in a triangle that splits the two sides into two equal parts and has the same slope as the base</li>
+  <li><b>Transversal</b>: A line that cuts through parallel lines</li>
+</ol>
+<span id="second-header">Transformations=</span>
+<br><br>
+The equation for a transformation is y = f(x - h)<sup>n</sup> + k, where <i>f</i> represents the growth factor, <i>h</i> represents a shift on the x-axis, <i>n</i> represents the rate of change [not part of a transformation, only used for polynomial functions (quadratic, cubic, etc)], and <i>k</i> represents a shift on the y-axis.
+<br><br>
+<span id="third-header">Translations=</span>
+<br>
+A translation is the shifting of a figure on a plane.
+<br>
+To shift the figure, the equation is T(x) = (x - h) + k, where <i>h</i> is the shift on the x-axis and <i>k</i> is the shift on the y-axis.
+<br>
+The expression for a translation is T(x + h, y + k), where <i>h</i> is the shift on the x-axis and <i>k</i> is the shift on the y-axis.
+<br><br>
+<span id="third-header">Rotations=</span>
+<br>
+If center of rotation is the origin; cRot(0, 0):
+<br>
+90&deg; CCW or 270&deg; CW: P(x, y) &#8594; Rot(-y, x)
+<br>
+180&deg; CCW or 180&deg; CW: P(x, y) &#8594; Rot(-x, -y)
+<br>
+270&deg; CCW or 90&deg; CW: P(x, y) &#8594; Rot(y, -x)
+<br><br>
+If the center of rotation is not the origin; cRot(a, b):
+<br>
+Change P(x, y) to P(m, n), where <i>m</i> represents the x-point - <i>a</i>, and <i>n</i> represents the y-point - <i>b</i>
+<br>
+90&deg; CCW or 270&deg; CW: P(m, n) &#8594; Rot(-n+b, m+a)
+<br>
+180&deg; CCW or 180&deg; CW: P(m, n) &#8594; Rot(-m+a, -n+b)
+<br>
+270&deg; CCW or 90&deg; CW: P(x, y) &#8594; Rot(n+b, -m+a)
+<br><br>
+<span id="third-header">Rotational Symmetry=</span>
+<ul style="margin-top: 0px;">
+  <li>The rotational symmetry of a regular polygon is found by dividing 360/n</li>
+  <li>A regular polygon is a polygon in which all of the sides and angles are congruent</li>
+  <li>Therefore, the rotational symmetry of an equilateral triangle is 120&deg; because 360/3 is 120</li>
+  <li>As well, the rotational symmetry for a square is 90&deg; because 360/4 is 90</li>
+  <li>Also, the rotational symmetry for a pentagon is 72&deg; because 360/5 is 72</li>
+  <li>Thus, the rotational symmetry for a hexagon is 60&deg; because 360/6 is 60</li>
+  <li>You can rotate a regular polygon whatever number is multiple of its rotational symmetry</li>
+</ul>
+<span id="third-header">Line Symmetry=</span>
+<ul style="margin-top: 0px;">
+  <li>Line symmetry is when you can cut a shape in half and both sides are exact reflections of each other</li>
+</ul>
+<br>
+<span id="third-header">Reflections=</span>
+<br>
+A reflection is the creation of a mirror figure over a line.
+<br>
+The formula for a reflection over the x-axis is P(x, y) &#8594; Ref(x, -y).
+<br>
+The formula for a reflection over the y-axis is P(x, y) &#8594; Ref(-x, y).
+<br>
+A reflection over the line y = x is same as a 180&deg; rotation.
+<br><br>
+<span id="third-header">Dilation=</span>
+<br>
+A dilation is the change in a figure's size. This type of transformation creates <u>similar</u> figures, while the others create <u>congruent</u> figures.
+<br>
+The formula for a dilation is D(x, y) = (f*x, f*y), where <i>f</i> is the dilation factor.
+<br><br>
+The center of dilation is a fixed point on a plane that corresponds to the pre-image; if cDil(0, 0) and (0, 0) is the same as point A, then point A' on the after-image will be at (0, 0).
+<br>
+The distance between the center of dilation and any point on the after-image is the original distance between the center and the point on the pre-image multiplied by the scale factor.
+<br><br>
+<span id="second-header">Triangles=</span>
+<br><br>
+<span id="third-header">Pythagorean Theorem=</span>
+<br>
+The Pythagorean Theorem is a theorem that states that a right triangle's side lengths MUST meet this setup: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+<br>
+The formula for the Pythagorean Theorem is a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>, where <i>a</i> is the short leg, <i>b</i> is the long leg, and <i>c</i> is the hypotenuse.
+<br><br>
+Here are the steps for using the Pythagorean Theorem:
+<br>
+<b>Step 1:</b> Find the measure of the two legs and the hypotenuse
+<br>
+<b>Step 2:</b> Insert the measures of the sides into the formula (if the two legs are the same length, just use 2*a<sup>2</sup> = c<sup>2</sup>)
+<br>
+<b>Step 3:</b> Simplify to find <i>c</i>
+<br><br>
+<i>Example:</i>
+<br>
+<b>Step 1:</b> a = 3, b = 4, c = ?
+<br>
+<b>Step 2:</b> (3)<sup>2</sup> + (4)<sup>2</sup> = c<sup>2</sup>
+<br>
+<b>Step 3:</b> 9 + 16 = c<sup>2</sup> &#8594; 25 = c<sup>2</sup> &#8594; 5 = <i>c</i>
+<br><br>
+<span id="third-header">Proving Congruence=</span>
+<ul style="margin-top: 0px;">
+  <li>SSS:<br><img src="http://www.skwirk.com/content/upload/images/Secondary/NSW/Year_10/Maths/geometry/tp1/ch4/tp1ch4_image3.jpg" style="width:64px;height:auto;transition:1.3s steps(50);cursor:none;" onmouseover="this.style.width='256px'" onmouseout="this.style.width='64px'"></li>
+  <li>SAS:<br><img src="https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3A77ca1d4d5a96259729f68cffe461702e9c92b5abb6018335683fa888%2BIMAGE%2BIMAGE.1" style="width:64px;height:auto;transition:1.3s steps(50);cursor:none;" onmouseover="this.style.width='256px'" onmouseout="this.style.width='64px'"></li>
+  <li>ASA:<br><img src="http://www.emathematics.net/imagenes/aas1.gif" style="width:64px;height:auto;transition:1.3s steps(50);cursor:none;" onmouseover="this.style.width='256px'" onmouseout="this.style.width='64px'"></li>
+  <li>AAS:<br><img src="http://sushiyasmathandstuff.weebly.com/uploads/9/6/1/1/9611141/697524549.jpg?371" style="width:64px;height:auto;transition:1.3s steps(50);cursor:none;" onmouseover="this.style.width='256px'" onmouseout="this.style.width='64px'"></li>
+</ul>
+<span id="third-header">Perimeter and Area=</span>
+<br>
+A = Bh/2
+<br>
+P = side1 + side2 + side3
+<br><br>
+<span id="third-header">Special Triangles=</span>
+<br>
+30-60-90: The angles on a 30-60-90 triangle are, you guessed it, 30&deg;, 60&deg;, and 90&deg;
+<br>
+<img src="http://study.com/cimages/multimages/16/30-60-90-example-diagram.png" style="width:32px;height:auto;transition:1.3s steps(50);cursor:none;" onmouseover="this.style.width='128px'" onmouseout="this.style.width='32px'">
+<br>
+45-45-90: The angles on a 45-45-90 triangle are, you got it right AGAIN, 45&deg;, 45&deg;, and 90&deg;
+<br>
+<img src="http://d2r5da613aq50s.cloudfront.net/wp-content/uploads/258409.image1.jpg" style="width:32px;height:auto;transition:1.3s steps(50);cursor:none;" onmouseover="this.style.width='128px'" onmouseout="this.style.width='32px'">
+<br><br>
+<span id="second-header">Congruent v. Similar Figures=</span>
+<br><br>
+Congruent figures have the same size, shape, and angle measures.
+<br>
+Similar figures have corresponding sides that are proportional and the same shape and angle measures.
+<br><br>
+<span id="second-header">Transversals=</span>
+<br><br>
+<img id="nlarge" src="/images/transversal.png" style="width:128px;height:auto;transition:1s steps(50);cursor:pointer;" onclick="nLarge()">
+<br><br>
+In the image above, two <span id="hlight-g" title="Lines with the same slope on the same plane that never intersect">parallel lines</span> are cut by a <span id="hlight-g" title="A line that cuts through parallel lines">transversal</span>.
+<br><br>
+m&ang;1 &cong; m&ang;3 : Vertical Angles
+<br>
+m&ang;5 &cong; m&ang;8 : Vertical Angles
+<br>
+m&ang;2 &cong; m&ang;4 : Vertical Angles
+<br>
+m&ang;6 &cong; m&ang;7 : Vertical Angles
+<br><br>
+m&ang;1 &cong; m&ang;5 : Corresponding Angles
+<br>
+m&ang;2 &cong; m&ang;6 : Corresponding Angles
+<br>
+m&ang;3 &cong; m&ang;7 : Corresponding Angles
+<br>
+m&ang;4 &cong; m&ang;8 : Corresponding Angles
+<br><br>
+m&ang;1 &cong; m&ang;8 : Alternate Exterior Angles
+<br>
+m&ang;2 &cong; m&ang;7 : Alternate Exterior Angles
+<br><br>
+m&ang;3 &cong; m&ang;6 : Alternate Interior Angles
+<br>
+m&ang;4 &cong; m&ang;5 : Alternate Interior Angles
+<p class="bottom"> </p>
+<p class="header">Similarity, Right Triangles, and Trigonometry</p>
+<span id="second-header">Trigonometry=</span>
+<br><br>
+Remember <b>S</b>OH-<b>C</b>AH-<b>T</b>OA, because:
+<br>
+sin&theta; = opposite/hypotenuse, cos&theta; = adjacent/hypotenuse, tan&theta; = opposite/adjacent
+<br><br>
+To find the measure of an angle, use sin<sup>-1</sup>(opposite/hypotenuse), cos<sup>-1</sup>(adjacent/hypotenuse), tan<sup>-1</sup>(opposite/adjacent)
+<br><br>
+To find the length of a side, use sin&theta; = opposite/hypotenuse, cos&theta; = adjacent/hypotenuse, tan&theta; = opposite/adjacent
+<p class="bottom"> </p>
+<!----------End Content--------->
+<div id="footer"></div>
+</div>
+</body>
+</html>

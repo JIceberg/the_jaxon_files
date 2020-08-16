@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | Economics</title>
+    
+    <!-- styling -->
+    <link rel="stylesheet" type="text/css" href="styling/image.css">
+    <link rel="stylesheet" type="text/css" href="styling/list.css">
+    <link rel="stylesheet" type="text/css" href="styling/table.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+        
+        $("#sup-dem").load("sec/supply-demand.html"); 
+        $("#markets").load("sec/market-structures.html");
+        $("#factor").load("sec/factor.html");
+        $("#gdp").load("sec/gdp.html");
+        $("#nipd").load("sec/nipd.html");
+        $("#fiscal").load("sec/money-assets.html");
+      });
+     </script>
+   </head>
+   <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Economics</p>
+      
+      <p class="header">Introduction to Economic Theory</p>
+      <p class="body">
+          In order to understand the production and consumption of goods and services,
+          as well as the transfer of wealth and allocation of resources, we use
+          <span id="hlight-y" title="the study of production, consumption, and related concepts">economics</span>. The reason why we must study economics
+          is because of <span id="hlight-b" title="the lack of resources for production">scarcity</span>.
+          <br />
+          Scarcity occurs because <i>unlimited wants</i> meet <i>limited resources</i>,
+          leading to a need for allocation of available resources to account for the needs and wants
+          of the people. Scarcity leads to three questions that need to be answered by any economic system:
+          <br><br />
+          &emsp; 1. How do we produce goods and services?
+          <br />
+          &emsp; 2. What do we produce with the limited resources available?
+          <br />
+          &emsp; 3. For whom do we produce for in order to meet their needs and wants?
+          <br><br />
+          There are two types of economic systems on the extreme: market and command. A market economy
+          delegates the answering of these three questions to the individuals and firms.
+          A command economy delegatest the questions to the government. The reason why command economies
+          are less successful than market economies is because they do not account for the wants of the people
+          and only regard the needs. A mixed economy utilizes characteristics of both market and command economies.
+          <br />
+          In answering these questions, one must consider the trade-offs of a certain decision.
+          The most valuable trade-off is known as the <span id="hlight-g">opportunity cost</span>.
+          For example, if I have to choose between studying for a test, preparing for a violin competition,
+          and doing a college tour, and I choose studying for the test, then the other options become my trade-offs.
+          If I had not studied for the test, then I most likely would have done the college tour. That means
+          that the tour is my opportunity cost, since it is the most valuable option among the trade-offs.
+          <br><br />
+          There are four types of resources: land, labor, capital, and entrepreneurship.
+          Land is the location and geographical areas that are used to produce; labor is the human
+          resources that are used such as employees, workers, etc; capital is the tools
+          that are used to aid production; and entrepreneurship is the advent of creativity that leads
+          to the ideas of production and therefore leads to the utilization of the other types
+          of resources.
+          <br><br />
+          <span id="second-header">Production Possibilities</span>
+          <br><br />
+          We can model the possibilities of production for a system can be modeled using
+          a production possibilities curve or frontier (PPC/PPF), which displays the allocation
+          and relationship between two possible results of production. This also shows
+          the opportunity cost. You can have zero, constant, or increasing/decreasing opportunity cost.
+          <br />
+          <img src="images/ppc.png" class="large-img">
+      </p>
+      
+      <p class="header">Supply and Demand</p>
+      <p class="body" id="sup-dem"></p>
+      
+      <p class="header">Market Structures</p>
+      <p class="body" id="markets"></p>
+      
+      <p class="header">Factor Markets</p>
+      Recall from the circular flow model that the <span id="hlight-y">factor market</span>
+      is where firms pay the households for resources.
+      <br />
+      <img class="large-img" src="images/circular-flow.JPG">
+      <p class="body" id="factor"></p>
+      
+      <p class="header">Basic Macroeconomic Concepts</p>
+      <p class="body" id="gdp"></p>
+      
+      <p class="header">National Income and Price Determination</p>
+      <p class="body" id="nipd"></p>
+      
+      <p class="header">Money and Banking</p>
+      <p class="body" id="fiscal"></p>
+      
+      <!----------End Content----------->
+      <div id="footer"></div>
+    </div>
+  </body>
+  </body>
+</html>

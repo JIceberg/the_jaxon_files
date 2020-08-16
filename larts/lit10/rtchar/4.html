@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | ELA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      table {
+        width: 100%;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+      
+      table#tlist tr:nth-child(even) {
+        background-color: #eee;
+      }
+      
+      table#tlist tr:nth-child(odd) {
+        background-color:#fff;
+      }
+      
+      table#tlist th {
+        background-color: black;
+        color: white;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Roots</p>
+      <p class="header">List #4</p>
+      <table id="tlist">
+        <tr>
+          <th>Root</th>
+          <th>Meaning</th>
+          <th>Origin</th>
+          <th>Example(s)</th>
+        </tr>
+        <tr>
+          <td>-cor-</td>
+          <td>heart</td>
+          <td>Latin</td>
+          <td>courage, concord, record</td>
+        </tr>
+        <tr>
+          <td>-cred- | -cert-</td>
+          <td>believe / sure / trust</td>
+          <td>Latin</td>
+          <td>credo, creditor, ascertain</td>
+        </tr>
+        <tr>
+          <td>-cycl-</td>
+          <td>circle</td>
+          <td>Greek</td>
+          <td>cyclical, cyclops, encyclopedia</td>
+        </tr>
+        <tr>
+          <td>-dem- | -pop-</td>
+          <td>people</td>
+          <td>Greek (dem) | Latin (pop)</td>
+          <td>epidemic, demagogue, populist</td>
+        </tr>
+        <tr>
+          <td>-dict-</td>
+          <td>to say or speak</td>
+          <td>Latin</td>
+          <td>verict, prediction, benediction</td>
+        </tr>
+        <tr>
+          <td>-doc-</td>
+          <td>to teach</td>
+          <td>Latin</td>
+          <td>doctrine, documentary, docile</td>
+        </tr>
+        <tr>
+          <td>-dur-</td>
+          <td>hard</td>
+          <td>Latin</td>
+          <td>durable, duress, obdurate</td>
+        </tr>
+        <tr>
+          <td>-dyna-</td>
+          <td>power</td>
+          <td>Latin</td>
+          <td>dynamic, dynasty, dynameter</td>
+        </tr>
+        <tr>
+          <td>-dys-</td>
+          <td>badly / ill</td>
+          <td>Greek</td>
+          <td>dystopia, dysfunction, dysplasia</td>
+        </tr>
+        <tr>
+          <td>-equ-</td>
+          <td>equal / even / level</td>
+          <td>Latin</td>
+          <td>equate, equivocal, equilibrium</td>
+        </tr>
+      </table>
+      <br><hr /><br />
+      <a href="/larts/lit10/rtchar/3.html">Previous List</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/larts/lit10/rtchar/5.html">Next List</a>
+      <p class="bottom"> </p>
+      <!----------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

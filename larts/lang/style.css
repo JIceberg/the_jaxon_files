@@ -1,0 +1,63 @@
+hyperlink {
+  user-select: none;
+  cursor: pointer;
+}
+
+.hidden-list {
+  display: none;
+  transition: 1s steps(100);
+}
+
+table.list {
+  display: block;
+  margin: 0 auto;
+  width: max-content;
+  border: 3px solid black;
+}
+
+.list tr {
+  height: max-content;
+}
+
+.list td {
+  border-bottom: 1px dashed black;
+}
+
+.header-row, .header-row td {
+  border-bottom: 1px solid black;
+}
+
+.list #bottom, #bottom td {
+  border-bottom: none;
+}
+
+td#word {
+  font-weight: bolder;
+  text-align: left; !important
+  padding: 10px;
+}
+
+td#par-sp {
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+  border-right: 1px solid black;
+}
+
+td#extend {
+  padding: 10px;
+  max-width: 300px;
+}
+
+td#syn-ant {
+  padding: 15px;
+  border-left: 1px solid black;
+  max-width: 250px;
+}
+
+td#sents {
+  padding: 6px;
+  border-left: 1px solid black;
+  min-width: 300px;
+  max-width: 400px;
+}

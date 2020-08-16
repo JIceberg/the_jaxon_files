@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | ELA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      table {
+        width: 100%;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+      
+      table#tlist tr:nth-child(even) {
+        background-color: #eee;
+      }
+      
+      table#tlist tr:nth-child(odd) {
+        background-color:#fff;
+      }
+      
+      table#tlist th {
+        background-color: black;
+        color: white;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Roots</p>
+      <p class="header">List #5</p>
+      <table id="tlist">
+        <tr>
+          <th>Root</th>
+          <th>Meaning</th>
+          <th>Origin</th>
+          <th>Example(s)</th>
+        </tr>
+        <tr>
+          <td>-fall- | -fals-</td>
+          <td>deceive / wrong / lie</td>
+          <td>Latin</td>
+          <td>falsetto, fallible, fallacy</td>
+        </tr>
+        <tr>
+          <td>-fen-</td>
+          <td>to strike</td>
+          <td>Latin</td>
+          <td>offend, fend</td>
+        </tr>
+        <tr>
+          <td>-flec- | -flex-</td>
+          <td>to bend</td>
+          <td>Latin</td>
+          <td>reflex, genuflect, circumflex</td>
+        </tr>
+        <tr>
+          <td>-foli-</td>
+          <td>leaf</td>
+          <td>Latin</td>
+          <td>exfoliate, portfolio</td>
+        </tr>
+        <tr>
+          <td>-form-</td>
+          <td>to shape</td>
+          <td>Latin</td>
+          <td>formative, conform, uniform</td>
+        </tr>
+        <tr>
+          <td>-fort-</td>
+          <td>strong</td>
+          <td>Latin</td>
+          <td>fortress, forte, effort, reinforce</td>
+        </tr>
+        <tr>
+          <td>-frac- | -frag-</td>
+          <td>to break</td>
+          <td>Latin</td>
+          <td>fraction, infraction, fragment</td>
+        </tr>
+        <tr>
+          <td>-gen-</td>
+          <td>birth / origin</td>
+          <td>Latin</td>
+          <td>gene, genocide, generosity, gentle, genuine</td>
+        </tr>
+        <tr>
+          <td>-geo- | -ter-</td>
+          <td>earth</td>
+          <td>Greek (geo) | Latin (ter)</td>
+          <td>geology, territory, terrestrial, george</td>
+        </tr>
+        <tr>
+          <td>-gest-</td>
+          <td>to bear or carry</td>
+          <td>Latin</td>
+          <td>suggest, congestion, gesture</td>
+        </tr>
+      </table>
+      <br><hr /><br />
+      <a href="/larts/lit10/rtchar/4.html">Previous List</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/larts/lit10/rtchar/6.html">Next List</a>
+      <p class="bottom"> </p>
+      <!----------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | ELA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+    </script>
+    <style>
+      table {
+        width: 100%;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        padding: 5px;
+        text-align: left;
+      }
+      
+      table#tlist tr:nth-child(even) {
+        background-color: #eee;
+      }
+      
+      table#tlist tr:nth-child(odd) {
+        background-color:#fff;
+      }
+      
+      table#tlist th {
+        background-color: black;
+        color: white;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">Roots</p>
+      <p class="header">List #9</p>
+      <table id="tlist">
+        <tr>
+          <th>Root</th>
+          <th>Meaning</th>
+          <th>Origin</th>
+          <th>Example(s)</th>
+        </tr>
+        <tr>
+          <td>-ology-</td>
+          <td>study</td>
+          <td>Greek</td>
+          <td>geology, biology, astrology, archaeology</td>
+        </tr>
+        <tr>
+          <td>-onym-</td>
+          <td>name</td>
+          <td>Latin</td>
+          <td>synonym, anoymous, acronym, homonym</td>
+        </tr>
+        <tr>
+          <td>-ora-</td>
+          <td>mouth</td>
+          <td>Latin</td>
+          <td>oracle, orator, orally</td>
+        </tr>
+        <tr>
+          <td>-ord- | -ordin-</td>
+          <td>order / rank /arrange</td>
+          <td>Latin</td>
+          <td>ordinal, disorder, coordinate</td>
+        </tr>
+        <tr>
+          <td>-para-</td>
+          <td>beside / near</td>
+          <td>Greek</td>
+          <td>paralllel, paradox, parody, parasite</td>
+        </tr>
+        <tr>
+          <td>-ped-</td>
+          <td>foot</td>
+          <td>Latin</td>
+          <td>pedestrian, pedestal, centipede, impede</td>
+        </tr>
+        <tr>
+          <td>-phil-</td>
+          <td>love</td>
+          <td>Greek</td>
+          <td>philanthropy, hydrophilic, Philadelphia</td>
+        </tr>
+        <tr>
+          <td>-phob-</td>
+          <td>fear</td>
+          <td>Greek</td>
+          <td>claustrophobia, xenophobia, acrophobia</td>
+        </tr>
+        <tr>
+          <td>-phon-</td>
+          <td>sound</td>
+          <td>Greek</td>
+          <td>symphony, cacophony, phonetic, microphone</td>
+        </tr>
+        <tr>
+          <td>-photo-</td>
+          <td>light</td>
+          <td>Greek</td>
+          <td>photosynthesis, photon, photic</td>
+        </tr>
+      </table>
+      <br><hr /><br />
+      <a href="/larts/lit10/rtchar/8.html">Previous List</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="/larts/lit10/rtchar/10.html">Next List</a>
+      <p class="bottom"> </p>
+      <!----------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

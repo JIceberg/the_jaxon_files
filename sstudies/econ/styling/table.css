@@ -1,0 +1,24 @@
+/* TABLE OF VALUES */
+
+table.val, .val td, .val th {  
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table.val {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.val th, .val td {
+    padding: 5px;
+    text-align: center;
+}
+
+.val th {
+    line-height: 25pt;
+}
+
+.val tr:first-child {
+    background-color: #eee;
+}

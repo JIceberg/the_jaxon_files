@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html style="background-image: url('images/gg-bg-2.jpg');">
+    <head>
+        <title>The Great Gatsby</title>
+        <link rel="stylesheet" type="text/css" href="gatsby.css">
+        <script> 
+            var isOpen = false;
+
+            function openNav() {
+                var nav = document.getElementById('nav');
+                var menu = document.getElementById('menu');
+                var main = document.getElementById('main');
+                
+                if (isOpen == false) {
+                    var width = 250;
+                    nav.style.width = width + "px";
+                    menu.style.marginLeft = width + "px";
+                    main.style.paddingLeft = width + "px";
+                    isOpen = true;
+                } else {
+                    var width = 0;
+                    nav.style.width = width;
+                    menu.style.marginLeft = width;
+                    main.style.paddingLeft = width;
+                    isOpen = false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="menu" onclick="openNav();">
+            <span title="Menu">&#8285;</span>
+        </div>
+        <div id="nav">
+            <a class="title">Menu</a>
+            <a class="link" href="/larts/lang/" onclick="alert('Your progress might not have saved.');">
+                <img src="/images/delete2">
+                Exit
+            </a>
+            <a href="gatsby.html" class="sect">
+                <img src="images/gold.png">
+                Shop
+            </a>
+            <a href="profile.html" class="sect">
+                <img src="/images/default-user.png">
+                Profile
+            </a>
+            <a href="settings.html" class="sect">
+                <img src="/images/settings.png">
+                Settings
+            </a>
+        </div>
+        <div id="main">
+            <div class="sub-main">
+                <div class="title">Help</div>
+                <br>
+                <img style="width: 25%;" src="/images/help.png">
+                <br />
+                <div id="main-text">
+                    Hello, and welcome to <i>The Great Gatsby</i>, the RPG!
+                    What is an RPG, you ask? Well, an RPG is a role-playing game
+                    which means that the players assume the roles of fictional characters
+                    and act out their roles in the narrative as those characters.
+                    It is your responsibility to make sure the narrative goes through its proper course
+                    and ends in the correct manner! Why is <i>The Great Gatsby</i> an RPG?
+                    Well, it is because the story progresses through the point of view of Nick Carraway, whose beliefs
+                    and thoughts are internalized by the reader in a way similar to a role-playing game.
+                    The readers feel the same way as the fictional character whose role they assume.
+                    The characters of the story are symbolized by the different items in the shop, which
+                    is where you purchase items to use as a means of progressing through the story.
+                    The reason for why I chose to use these items to represent the characters is because
+                    they seem to be all characters with unique pasts that aid in the progression
+                    of the story, just like items in an RPG.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

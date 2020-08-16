@@ -1,0 +1,146 @@
+.side-bar {
+    height: 200vh;
+    width: 100%;
+    z-index: 101;
+    position: fixed;
+    background-color: #690c12;
+    left: calc(-100vw + 50px);
+    top: -50vh;
+    transition: 0.3s steps(25);
+    transition-timing-function: ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 100%;
+}
+
+.side-bar:hover {
+    left: -60vw;
+}
+
+#nav-pane {
+    margin-top: 50vh;
+    margin-left: 60vw;
+    padding: 25px;
+}
+
+#nav-pane h2 {
+    color: white;
+    font: 500 22pt Segoe UI, sans-serif;
+    font-style: italic;
+    cursor: pointer;
+}
+
+#nav-pane h3 {
+    margin-bottom: 0px;
+    transition: 0.1s steps(32);
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+#nav-pane .dropdown, #nav-pane h3 {
+    max-width: fit-content;
+    color: white;
+    padding: 10px;
+    font: 400 16pt Arial, sans-serif;
+}
+
+.dropdown #drop-content {
+    display: none;
+    margin-top: 5px;
+    min-width: 150px;
+}
+
+.dropdown:hover #drop-content {
+    display: block;
+}
+
+.dropdown:hover a {
+    text-decoration: underline;
+}
+
+.dropdown:hover #drop-content a {
+    display: list-item !important;
+    list-style-type: none;
+    transition: 0.3s steps(12);
+    color: white;
+    font-size: 12pt;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown #drop-content a:hover, #nav-pane h3:hover {
+    padding-left: 15px;
+    color: silver;
+}
+
+@media only screen and (max-width: 1100px) {
+    .side-bar {
+        left: calc(-100vw + 40px);
+    }
+    
+    #nav-pane {
+        padding: 12px;
+    }
+    
+    #nav-pane h2 {
+        font-size: 11pt;
+    }
+    
+    #nav-pane .dropdown, #nav-pane h3 {
+        font-size: 8pt;
+        padding: 5px;
+    }
+    
+    .dropdown:hover #drop-content a {
+        font-size: 6pt;
+        padding: 4px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .side-bar {
+        left: calc(-100vw + 25px);
+    }
+    
+    #nav-pane h2 {
+        font-size: 6pt;
+    }
+    
+    #nav-pane {
+        padding: 8px;
+    }
+    
+    #nav-pane .dropdown, #nav-pane h3 {
+        font-size: 5pt;
+        padding: 3px;
+    }
+    
+    .dropdown:hover #drop-content a {
+        font-size: 3pt;
+        padding: 2px;
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+    .side-bar {
+        left: calc(-100vw + 75px);
+    }
+    
+    #nav-pane {
+        padding: 50px;
+    }
+    
+    #nav-pane h2 {
+        font-size: 44pt;
+    }
+    
+    #nav-pane .dropdown, #nav-pane h3 {
+        font-size: 40pt;
+    }
+    
+    .dropdown:hover #drop-content a {
+        font-size: 36pt;
+    }
+}

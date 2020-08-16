@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+In algebra, we learned that a <span id="hlight-b">sequence</span> is a set of numbers that follow
+a set order. There are two types: arithmetic and geometric. An arithmetic sequence is
+a set of numbers of which the difference between consecutive terms is constant.
+A geometric sequence is a set of numbers of which the ratio between consecutive terms
+is constant. A <span id="hlight-y">series</span> is the sum of all the terms in some defined
+sequence. It is represented using '&Sigma;' for summation.
+<br><br />
+<span id="second-header">Geometric Series</span>
+<br><br />
+In a geometric sequence, we have the expression <i>a<sub>n</sub></i> = <i>r</i> &times; <i>a</i><sub><i>n</i> &minus; 1</sub>,
+where <i>r</i> is the ratio and <i>a</i><sub><i>n</i> &minus; 1</sub> is the previous term in the sequence.
+<br />
+In a geometric series, we implement the summaton notation &Sigma;. This makes our expression:
+<br><br/>
+&emsp; &emsp;
+<sup>&nbsp;</sup>
+<graphfile class="cover-div summation" onclick="uncover('ser1')">
+    <i>s</i> =
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = 0</sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express"><i>a</i><sub>0</sub>(<i>r</i>)<sup><i>n</i></sup></span>
+</graphfile>
+<br><br />
+Now, a series can either <span id="hlight-g">converge</span> or <span id="hlight-g">diverge</span>.
+A convergent series is one that approaches a specific value, and a divergent series is one that does not.
+If a geometric series has a ratio that is constrained within the bounds of (-1, 1), then it
+will converge towards the value of <i>a</i><sub>0</sub>(1 &minus; <i>r</i>)<sup>-1</sup>.
+That means that if the initial value is 1 and the ratio is &frac12;, then the series will converge to 2.
+<br><br />
+<span id="second-header"><i>p</i>-Series</span>
+<br><br />
+A <i>p</i>-series is one that follows the following structure:
+<br><br />
+&emsp; &emsp;
+<sup>&nbsp;</sup>
+<span class="summation">
+    <i>s</i> =
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = 1</sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express"><i><sup>k</sup>&frasl;<sub>n<sup> p</sup></sub></i></span>
+</span>
+<br><br />
+If <i>p</i> is greater than 1, then the series will converge. If <i>p</i> is less than or equal to 1, then the series
+is divergent. A notable example of this type of series is the Basel problem (here is a child of this problem):
+<br><br />
+&emsp; &emsp;
+<sup>&nbsp;</sup>
+<graphfile class="cover-div summation" onclick="uncover('ser2')">
+    <i>s</i> =
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = 1</sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express"><sup>6</sup>&frasl;<sub><i>n</i><sup>2</sup></sub></span>
+    = &pi;<sup>2</sup>
+</graphfile>
+<br><br />
+<span id="second-header"><i>n</i>-th Term</span>
+<br><br />
+The <i>n</i>-th term test is a way to test if a series will certainly diverge; however, it has some flaws
+in that it cannot determine if a series will certainly converge.
+<br />
+<i>How does it work?</i> Say we have the following series:
+<br><br />
+&emsp; &emsp;
+<sup>&nbsp;</sup>
+<span class="summation">
+    <i>s</i> =
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = 0</sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express"><i>a<sub>n</sub></i></span>
+</span>
+<br><br />
+The <i>n</i>-term test for this series would be finding
+lim<sub><i>n</i> &rarr; &infin;</sub> <i>a<sub>n</sub></i> .
+If the limit does not approach zero, then the series definitely diverges.
+If the limit does approach zero, then further tests must be done in order to determine
+the convergence or divergence of the series.
+<br />
+The flaw of this test can be seen in the harmonic series:
+<br><br />
+&emsp; &emsp;
+<sup>&nbsp;</sup>
+<span class="summation">
+    <i>s</i> =
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = 1</sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express"><sup>1</sup>&frasl;<sub><i>n</i></sub></span>
+</span>
+<br><br />
+The harmonic series is divergent, but the <i>n</i>-th term test determines that the limit
+does in fact approach zero. Therefore, it cannot accurately determine if the series is convergent
+and is only useful for enabling future testing methods, such as the integral test, or declaring
+that a series definitely diverges. Furthermore, any convergent series must pass the <i>n</i>-th term test
+in order for that series to be convergent. In other words, all convergent series pass the <i>n</i>-th term
+test but passing the <i>n</i>-th term test does not make a series convergent.
+<br><br />
+<span id="third-header">Telescoping Method</span>
+<br />
+This requires the ability to rewrite a certain series in the foollowing way:
+<br><br />
+&emsp; &emsp;
+<sup>&nbsp;</sup>
+<span class="summation">
+    <i>s</i> =
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = <i>a</i></sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express">
+        (<i>a<sub>n</sub></i> &minus; <i>b<sub>n</sub></i>)
+    </span>
+</span>
+&nbsp;=&nbsp;
+<span class="summation">
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = <i>a</i></sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express"><i>a<sub>n</sub></i></span>
+</span>
+&minus;
+<span class="summation">
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = <i>b</i></sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express"><i>a<sub>n</sub></i></span>
+</span>
+<br><br />
+For example:
+<br><br />
+&emsp; &emsp;
+<sup>&nbsp;</sup>
+<span class="summation">
+    <i>s</i> =
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = 1</sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express">
+        (<sup>1</sup>&frasl;<sub><i>n</i></sub> &minus; <sup>1</sup>&frasl;<sub><i>n</i> + 1</sub>)
+    </span>
+</span>
+&nbsp;=&nbsp;
+<span class="summation">
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = 1</sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express"><sup>1</sup>&frasl;<sub><i>n</i></sub></span>
+</span>
+&minus;
+<span class="summation">
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = 2</sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express"><sup>1</sup>&frasl;<sub><i>n</i></sub></span>
+</span>
+&nbsp;=&nbsp;
+<span class="summation">
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = 1</sub>
+    <sup id="cntr-top">1</sup>
+    <span id="express"><sup>1</sup>&frasl;<sub><i>n</i></sub></span>
+</span>
+= 1
+<br><br />
+Note that this only works if the series passes the <i>n</i>-term test.
+This is because if you write out the complete expanded form of the
+series, you would get end up needing to find the <i>n</i>-th term to solve for the series.
+<br><br />
+<span id="third-header">Integral Test</span>
+<br />
+In order to perform the integral test, there are three constraints for the series:
+<ul style="margin-top: 0px; margin-bottom: 0px;">
+    <li>lim<sub><i>n</i> &rarr; &infin;</sub> <i>a<sub>n</sub></i> = 0</li>
+    <li><i>a<sub>n</sub></i> decreasing</li>
+    <li><i>a<sub>n</sub></i> &gt; 0</li>
+</ul>
+<br><br />
+If the series passes all three of these constraints, then it is possible to determine the convergence of the series
+by means of the <i>integral test</i>. The following is the formula for the integral test:
+<br><br />
+&emsp; &emsp;
+<sup>&nbsp;</sup>
+<span class="summation">
+    <i>s</i> =
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = <i>a</i></sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express"><i>a<sub>n</sub></i></span>
+</span>
+&nbsp;&rarr;&nbsp;
+<i>a<sub>n</sub></i> = <i>f</i> (<i>n</i>)
+&nbsp;&rarr;&nbsp;
+<sup>&nbsp;</sup>
+&int;<sup id="int-param-a">&infin;</sup><sub id="int-param-b"><i>a</i></sub>
+&nbsp;<i>f</i> (<i>x</i>) d<i>x</i>
+<br><br />
+If the integral results in a number, the series will converge (but not to that number).
+If the integral diverges, so will the series.
+<br><br />
+<span id="third-header">Comparison Test(s)</span>
+<br />
+Say you have a function that you'd rather not integrate for time's sake, but it looks rather similar to another
+series you've seen before. Well, in this case, you can use the direct comparison test.
+For example:
+<br><br />
+<sup>&nbsp;</sup>
+<span class="summation">
+    <i>s</i><sub>given</sub> =
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = 1</sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express">(<i>n</i><sup>2</sup> &plus; 1)<sup>-1</sup></span>
+</span>
+<br><br />
+This series is very similar to the following known series:
+<br><br />
+<sup>&nbsp;</sup>
+<span class="summation">
+    <i>s</i><sub>known</sub> =
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = 1</sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express"><sup>1</sup>&frasl;<sub><i>n</i><sup>2</sup></sub></span>
+</span>
+<br><br />
+Now, we can compare them like this:
+<br><br />
+<sup>&nbsp;</sup>
+<span class="summation">
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = 1</sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express">(<i>n</i><sup>2</sup> &plus; 1)<sup>-1</sup></span>
+</span>
+&nbsp;&lt;&nbsp;
+<span class="summation">
+    <span id="sigma">&Sigma;</span>
+    <sub id="cntr-btm"><i>n</i> = 1</sub>
+    <sup id="cntr-top">&infin;</sup>
+    <span id="express"><sup>1</sup>&frasl;<sub><i>n</i><sup>2</sup></sub></span>
+</span>
+<br><br />
+Since <i>s</i><sub>known</sub> is convergent, then <i>s</i><sub>given</sub>
+converges because it is less than some number.
+However, it only absolutely converges if
+the absolute value of the series also converges. If the absolute value diverges, then the series
+only conditionally converges.
+If the known series is divergent and the given series is greater than that known series, then
+the series diverges.
+If neither of these constraints are met, then there must be further testing.
+This can be done using the <i>limit comparison test</i>, the formula for which is the following:
+<br>
+&emsp; &emsp; &nbsp;
+lim<sub><i>n</i> &rarr; &infin;</sub> | <i>s</i><sub>given</sub> &divide; <i>s</i><sub>known</sub> | = <i>L</i>
+<br />
+If <i>L</i> is a number, then the given series will follow the same behavior as the known series (<i>i.e.</i> if the known series
+diverges, the given series will also diverge). If <i>L</i> is infinity or zero, then the given series' behavior is
+impossible to determine with the limit comparison test.
+<br><br />
+<span id="third-header">Ratio and Root Tests</span>
+<br><br />
+<u>Ratio Test</u>
+<ul style="margin-top: 0px; margin-bottom: 0px;">
+    <li>lim<sub><i>n</i> &rarr; &infin;</sub> | <i>a</i><sub><i>n</i> + 1</sub> &divide; <i>a<sub>n</sub></i> | = <i>L</i></li>
+    <li>if <i>L</i> &lt; 1, the series converges</li>
+    <li>if <i>L</i> &gt; 1, the series diverges</li>
+    <li>if <i>L</i> = 1, it is impossible to determine the convergence/divergence of the series</li>
+</ul>
+<br />
+<u>Root Test</u>
+<ul style="margin-top: 0px; margin-bottom: 0px;">
+    <li>lim<sub><i>n</i> &rarr; &infin;</sub> | <i>a<sub>n</sub></i> |<sup><sup>1</sup>&frasl;<sub><i>n</i></sub></sup> = <i>L</i></li>
+    <li>if <i>L</i> &lt; 1, the series converges</li>
+    <li>if <i>L</i> &gt; 1, the series diverges</li>
+    <li>if <i>L</i> = 1, it is impossible to determine the convergence/divergence of the series</li>
+</ul>

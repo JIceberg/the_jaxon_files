@@ -1,0 +1,102 @@
+<!---- extrema, concavity, intervals of increase/decrease, inflexion points, critical points, first + second derivative tests ----->
+<span id="second-header">Determining the Behavior of a Function</span>
+<br><br />
+You can determine a function&apos;s behavior by looking at its derivative.
+If the value of <i>f</i> &apos;(<i>c</i>) is positive, then <i>f</i> (<i>x</i>) is increasing at
+<i>x</i> = <i>c</i>. If <i>f</i> &apos;(<i>c</i>) is negative, then <i>f</i> (<i>x</i>) is decreasing
+at <i>x</i> = <i>c</i>. If <i>f</i> &apos;(<i>c</i>) is zero, then <i>f</i> (<i>x</i>) has
+a horizontal tangent line at <i>x</i> = <i>c</i>. If <i>f</i> &apos;(<i>c</i>) is undefined,
+then <i>f</i> (<i>x</i>) has a vertical tangent line at <i>x</i> = <i>c</i>.
+<br />
+The critical points of a function, <i>f</i> (<i>x</i>), are the points where <i>f</i> &apos;(<i>x</i>) = 0
+or <i>f</i> &apos;(<i>x</i>) is undefined. For instance, the critical points of
+<i>y</i> = &frac13; <i>x</i><sup>3</sup> &minus; 4<i>x</i> are found using <i>y</i> &apos;, which is
+<i>x</i><sup>2</sup> &minus; 4, so the values are <i>x</i><sub>crit</sub> = -2, 2 because those values make <i>y</i> &apos; = 0.
+We can express the intervals of increase and decrease through a table:
+<br><br />
+<table class="interval">
+  <tr>
+    <th id="func"><i>f</i> &apos;</th>
+    <td>(-&infin;, -2)</th>
+    <td>(-2, 2)</th>
+    <td>(2, &infin;)</th>
+  </tr>
+  <tr>
+    <td id="func"><i>x</i> &minus; 2</td>
+    <td>&minus;</td>
+    <td>&minus;</td>
+    <td>&plus;</td>
+  </tr>
+  <tr>
+    <td id="func"><i>x</i> &plus; 2</td>
+    <td>&minus;</td>
+    <td>&plus;</td>
+    <td>&plus;</td>
+  </tr>
+  <tr>
+    <td id="func">Inc/Dec:</td>
+    <td>&uarr;</td>
+    <td>&darr;</td>
+    <td>&uarr;</td>
+  </tr>
+</table>
+<br />
+Because the function is also the same as (<i>x</i> + 2)(<i>x</i> &minus; 2), we can break down the function into two functions in the table.
+Then, we multiply the signs together to get whether the function is increasing or decreasing on that interval.
+This means the function is increasing on the interval(s) (-&infin;, -2) and (2, &infin;), and is decreasing on the interval (-2, 2).
+Therefore, there is a relative maximum at <i>x</i> = -2 and a relative minimum at <i>x</i> = 2.
+Finding extrema by interpreting an interval table for the first derivative is called the <span id="hlight-b">first derivative test</span>.
+<br><br />
+The second derivative can show the concavity of a function.
+If <i>f</i> &apos;&apos;(<i>c</i>) is positive at <i>x</i> = <i>c</i>, then <i>f</i> (<i>x</i>) is concave up at <i>x</i> = <i>c</i>.
+If <i>f</i> &apos;&apos;(<i>c</i>) is negative at <i>x</i> = <i>c</i>, then <i>f</i> (<i>x</i>) is concave down at <i>x</i> = <i>c</i>.
+If <i>f</i> &apos;&apos;(<i>x</i>) = 0, then that defined value of <i>x</i> is an inflexion point on the graph of <i>f</i> (<i>x</i>), or a point where
+the function changes concavity.
+<br />
+For the function <i>y</i> = &frac13; <i>x</i><sup>3</sup> &minus; 4<i>x</i>, the second derivative would be <i>y</i> &apos;&apos; = 2<i>x</i>.
+This means our point of inflexion is <i>x</i><sub>inflex</sub> = 0.
+Let&apos;s do the same thing we did with the first derivative and set up an interval table:
+<br><br />
+<table class="interval">
+  <tr>
+    <th id="func"><i>y</i> &apos;&apos;</th>
+    <td>(-&infin;, 0)</td>
+    <td>(0, &infin;)</td>
+  </tr>
+  <tr>
+    <td id="func">2<i>x</i></td>
+    <td>&minus;</td>
+    <td>&plus;</td>
+  </tr>
+  <tr>
+    <td id="func">CC:</td>
+    <td>&darr;</td>
+    <td>&uarr;</td>
+  </tr>
+</table>
+<br><br />
+This means the function is concave down on the interval (-&infin;, 0) and concave up on the interval (0, &infin;).
+<br />
+We can use the second derivative to find extrema as well using what is known as the <span id="hlight-b">second derivative test</span>.
+Our first step is to take the critical points of <i>y</i> &apos;, which were -2 and 2, and plug them into the second derivative.
+If the result is negative, the concavity at that point is down, so there is a maximum.
+If the result is positive, the concavity at that point is up, so there is a minimum.
+However, the second derivative test may fail if there are undefined points on the function.
+<p class="bottom"></p>
+<!---- related rates + optimization ----->
+<span id="second-header">Applications of Differentiation</span>
+<br><br />
+Using differentiation, we can solve a lot of complex problems by interpreting them as functions.
+For instance, say we were given the following problem:
+<br>
+&emsp; &emsp; <b>Find two numbers whose sum is 20 and whose product is as large as possible</b>.
+<br />
+Such a problem is known as <span id="hlight-g">optimization</span>.
+To solve it, we must set up two parameter functions.
+These would be <i>x</i> + <i>y</i> = 20 and <i>xy</i> = max.
+<br><br />
+Below is an example of <span id="hlight-g">related rates</span>, which is another application of differentiation:
+<br><br />
+<iframe width="500" height="315" src="https://www.youtube.com/embed/bWlXJaA0nV4" frameborder="0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><hr /><br />

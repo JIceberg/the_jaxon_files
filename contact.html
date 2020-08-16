@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | Contact</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+      
+      function rdmSlog() {
+        var rdm = Math.round(Math.random() * 7);
+        var links = new Array();
+        
+        links[0] = "/math/precal/";
+        links[1] = "/science/chem/";
+        links[2] = "/math/cal/";
+        links[3] = "/math/calc.html";
+        links[4] = "/sstudies/vid/";
+        links[5] = "/science/vid/";
+        links[6] = "/Misc/txt_area.html";
+        links[7] = "/math/3.html";
+        
+        window.location = links[rdm];
+      }
+    </script>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">The Jaxon Files</p>
+      <p class="header">Contact <i>The Jaxon Files</i></p>
+      <table style="font-size: 15pt; text-align: left;">
+          <tr>
+              <td style="padding-right: 1.8em;">
+                  Email
+              </td>
+              <td>
+                  <a href="mailto:jisenberg1050@gmail.com">jisenberg1050@gmail.com</a>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  YouTube
+              </td>
+              <td>
+                  <a href="https://www.youtube.com/channel/UChpZclfT7gPYQhBtcnFyRwA" target="_blank">Jackson Isenberg</a>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  Twitter
+              </td>
+              <td>
+                  <a href="https://twitter.com/JaxonFiles" target="_blank">@JaxonFiles</a>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  Instagram
+              </td>
+              <td>
+                  <a href="https://www.instagram.com/the_jaxon_files/?hl=en" target="_blank">the_jaxon_files</a>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  Discord
+              </td>
+              <td>
+                  <a href="https://discordapp.com" target="_blank">JaxonFiles#9841</a>
+              </td>
+          </tr>
+      </table>
+      <center class="slog">
+        <slogan onclick="rdmSlog()">When School Just Isn&apos;t Enough</slogan>
+      </center>
+      <p class="bottom" style="margin: 0 auto; text-align: center;">
+      	<img class="hov" src="/logo3.png" onclick="window.location.href='javascript:history.go(-1)';">
+      </p>
+      <!---------End Content---------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jaxon | Lang</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script> 
+      $(function(){
+        $("#fixed").load("/header.html");
+        $("#footer").load("/footer.html");
+      });
+      $(function(){
+        $("#one").load("vocab/one.html");
+        $("#two").load("vocab/two.html");
+        $("#three").load("vocab/3.html");
+        $("#four").load("vocab/4.html");
+        $("#five").load("vocab/5.html");
+        $("#six").load("vocab/6.html");
+        $("#seven").load("vocab/7.html");
+        $("#eight").load("vocab/8.html");
+      });
+      
+      function show(x, y) {
+        var display = document.getElementById(x).style.display;
+        if (display == "none") {
+          document.getElementById(x).style.display = "block";
+          y.innerHTML = '\u25BC';
+        }
+        else  {
+          document.getElementById(x).style.display = "none";
+          y.innerHTML = '\u25B2';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="fixed"></div>
+    <div id="main">
+      <!---------Begin Content---------->
+      <p class="subtitle">AP Lang</p>
+      <p class="header">Vocabulary Lists</p>
+      
+      <!----- VOCAB ------>
+      <!--- I want these to be click-and-load hidden lists --->
+      
+      <span id="second-header" style="user-select: none;">Vocab List #1 &nbsp; <hyperlink onclick="show('one', this);">&#9650;</hyperlink></span>
+      <br><br />
+      <div id="one" class="hidden-list"></div>
+      
+      <span id="second-header" style="user-select: none;">Vocab List #2 &nbsp; <hyperlink onclick="show('two', this);">&#9650;</hyperlink></span>
+      <br><br />
+      <div id="two" class="hidden-list"></div>
+      
+      <span id="second-header" style="user-select: none;">Vocab List #3 &nbsp; <hyperlink onclick="show('three', this);">&#9650;</hyperlink></span>
+      <br><br />
+      <div id ="three" class="hidden-list"></div>
+      
+      <span id="second-header" style="user-select: none;">Vocab List #4 &nbsp; <hyperlink onclick="show('four', this);">&#9650;</hyperlink></span>
+      <br><br />
+      <div id ="four" class="hidden-list"></div>
+      
+      <span id="second-header" style="user-select: none;">Vocab List #5 &nbsp; <hyperlink onclick="show('five', this);">&#9650;</hyperlink></span>
+      <br><br />
+      <div id ="five" class="hidden-list"></div>
+      
+      <span id="second-header" style="user-select: none;">Vocab List #6 &nbsp; <hyperlink onclick="show('six', this);">&#9650;</hyperlink></span>
+      <br><br />
+      <div id ="six" class="hidden-list"></div>
+      
+      <span id="second-header" style="user-select: none;">Vocab List #7 &nbsp; <hyperlink onclick="show('seven', this);">&#9650;</hyperlink></span>
+      <br><br />
+      <div id ="seven" class="hidden-list"></div>
+      
+      <span id="second-header" style="user-select: none;">Vocab List #8 &nbsp; <hyperlink onclick="show('eight', this);">&#9650;</hyperlink></span>
+      <br><br />
+      <div id="eight" class="hidden-list"></div>
+      
+      <span id="second-header" style="user-select: none;">Vocab List #9 &nbsp; <hyperlink onclick="show('nine', this);">&#9650;</hyperlink></span>
+      <br><br />
+      <div id="nine" class="hidden-list">
+          <a target="_blank" href="https://drive.google.com/file/d/1l7XhHTAPA0zEULPeYpNrkRdQSA7pipoq/view?usp=sharing">Vocab List 9</a>
+      </div>
+      
+      <p class="bottom"></p>
+      
+      <p class="header">Rhetorical Triangle</p>
+      <p class="body">
+          <img src="images/rhetorical-triangle.png" width="500">
+      </p>
+      
+      <p class="header">Videos</p>
+      <iframe width="560" height="310" src="https://www.youtube.com/embed/zyUNtvUaEOM" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br><br />
+      <iframe width="560" height="310" src="https://www.youtube.com/embed/pDk2bwTS6Uo" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p class="bottom"></p>
+      
+      <p class="header"><i>The Great Gatsby</i></p>
+      <p class="body">
+          &emsp; - &nbsp; <a href="proj/gatsby.html">Metaphor Project</a>
+      </p>
+      <!--------End Content--------->
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>
