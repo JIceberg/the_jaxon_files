@@ -1,0 +1,57 @@
+<style>
+    @media only screen and (max-height: 449px) {
+        #footer {
+            position: fixed;
+            background-color: #690c12;
+            color: white;
+            min-width: 300px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            bottom: -30vh;
+            right: 0;
+            left: 0;
+            transition: 0.2s steps(25);
+            cursor: pointer;
+            height: 38vh;
+            box-shadow: 0px 0px 10px black;
+        }
+    }
+    
+    @media only screen and (min-height: 449px) {
+        #footer {
+            position: fixed;
+            background-color: #690c12;
+            color: white;
+            min-width: 300px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            bottom: -30vh;
+            right: 0;
+            left: 0;
+            padding-top: 0.5vh;
+            transition: 0.2s steps(25);
+            cursor: pointer;
+            height: 35vh;
+            box-shadow: 0px 0px 10px black;
+        }
+    }
+    
+    #footer:hover {
+        bottom: 0;
+    }
+    
+    .menu {
+        text-align: center;
+        font: 300 13pt Segoe UI, sans-serif;
+    }
+</style>
+
+<div id="footer" onclick="">
+    <div class="menu">
+        &#x2630;
+    </div>
+</div>
